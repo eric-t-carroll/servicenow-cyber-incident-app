@@ -1,9 +1,9 @@
 # ServiceNow Cyber Incident Custom Application
 
-This custom application has been created to provide hands experience, reinforcing the ServiceNow Certified System Administration (CSA) and Certified Application Developer (CAD) courses. I am starting this project after just completing my CSA and am just starting CAD.
+This custom application has been created to provide hands experience, reinforcing the ServiceNow Certified System Administration (CSA) and Certified Application Developer (CAD) courses. I am starting this project after completing my CSA and am just starting CAD.
 
 ## Project context
-ServiceNow PDI with Zurich patch 6 (01-16-2026).
+ServiceNow PDI with Zurich patch 6 (build: glide-zurich-07-01-2025__patch6-01-16-2026).
 Lab content is based on CSA and CAD certifications.
 Update sets exported as XML and committed per lab.
 
@@ -21,12 +21,14 @@ Update sets exported as XML and committed per lab.
     - Access requests managed via IT portal
  - Cyber incident playbook added (CAD phase)
 
-### Repo structure
+## Repository structure
+```
 servicenow-cyber-incident-app/
 ├── update-sets/
 │   ├── csa-labs/        # Update set XMLs from CSA practice labs
 │   └── cad-labs/        # Update set XMLs from CAD development labs
 └── README.md
+```
 
 ### Lab index
 

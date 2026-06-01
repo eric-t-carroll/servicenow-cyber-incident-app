@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-01 07:09:44">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Lab01 - environment setup and update set workflow.</description>
+<inserted/>
+<name>Lab01 - PDI setup and update set workflow</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>690487c83b590710ef5d9dc643e45ab9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-01 07:09:41</sys_created_on>
+<sys_id>3a2987843b990710ef5d9dc643e45aa0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-01 07:09:41</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_225b6a5fc0a8016400be95bf109ad07e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>System timezone for all users unless overridden in the user's record</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.sys.default.tz</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>fred.luddy</sys_created_by><sys_created_on>2005-02-17 22:06:18</sys_created_on><sys_id>225b6a5fc0a8016400be95bf109ad07e</sys_id><sys_mod_count>17</sys_mod_count><sys_name>glide.sys.default.tz</sys_name><sys_package display_value="System (glidesoft)" source="glidesoft">bd3bae02183232108bb255f46a373a76</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_225b6a5fc0a8016400be95bf109ad07e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 07:04:25</sys_updated_on><type>timezone</type><value>Australia/Melbourne</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=225b6a5fc0a8016400be95bf109ad07e"/></record_update>]]></payload>
+<payload_hash>1076691732</payload_hash>
+<remote_update_set display_value="Lab01 - PDI setup and update set workflow">3a2987843b990710ef5d9dc643e45aa0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-01 07:09:41</sys_created_on>
+<sys_id>722987843b990710ef5d9dc643e45aa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e81ff89c00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-01 07:09:41</sys_updated_on>
+<table/>
+<target_name>glide.sys.default.tz</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>16f7c304a499071088d6d55a2d02605f</update_guid>
+<update_guid_history>16f7c304a499071088d6d55a2d02605f:1076691732,b9f7c304ac990710bdb0c101fd395f5a:681917965</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_24de57037f000001002b3574b0ad5187</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Date format</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.sys.date_format</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2005-12-13 16:05:17</sys_created_on><sys_id>24de57037f000001002b3574b0ad5187</sys_id><sys_mod_count>13</sys_mod_count><sys_name>glide.sys.date_format</sys_name><sys_package display_value="System (glidesoft)" source="glidesoft">bd3bae02183232108bb255f46a373a76</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_24de57037f000001002b3574b0ad5187</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 07:04:57</sys_updated_on><type>date_format</type><value>dd/MM/yyyy</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=24de57037f000001002b3574b0ad5187"/></record_update>]]></payload>
+<payload_hash>1784345394</payload_hash>
+<remote_update_set display_value="Lab01 - PDI setup and update set workflow">3a2987843b990710ef5d9dc643e45aa0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-01 07:09:41</sys_created_on>
+<sys_id>b62987843b990710ef5d9dc643e45aa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e820022420000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-01 07:09:41</sys_updated_on>
+<table/>
+<target_name>glide.sys.date_format</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>77180b04f5990710086001e1bb84bf07</update_guid>
+<update_guid_history>77180b04f5990710086001e1bb84bf07:1784345394,a618c704d799071044a010e89d705c59:-1933659150</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_4fad40f6c611228e01172f8f67a17549</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Browser tab title</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.product.name</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>fred.luddy</sys_created_by><sys_created_on>2005-01-08 00:15:49</sys_created_on><sys_id>4fad40f6c611228e01172f8f67a17549</sys_id><sys_mod_count>7</sys_mod_count><sys_name>glide.product.name</sys_name><sys_package display_value="System (apps/system2)" source="apps/system2">842be202183232108bb255f46a373ad7</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_4fad40f6c611228e01172f8f67a17549</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 07:04:17</sys_updated_on><type>string</type><value>Cyber Incident PDI - Zurich</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=4fad40f6c611228e01172f8f67a17549"/></record_update>]]></payload>
+<payload_hash>712611401</payload_hash>
+<remote_update_set display_value="Lab01 - PDI setup and update set workflow">3a2987843b990710ef5d9dc643e45aa0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-01 07:09:41</sys_created_on>
+<sys_id>fa2987843b990710ef5d9dc643e45aa2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e81ff7ba20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-01 07:09:41</sys_updated_on>
+<table/>
+<target_name>glide.product.name</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>ddf783042e990710c23b11188634a3cc</update_guid>
+<update_guid_history>ddf783042e990710c23b11188634a3cc:712611401,68f783046d9907103944f3794804d0c6:1369617114</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>pwd_process_4ff0c881bf220100710071a7bf0739fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pwd_process"><pwd_process action="INSERT_OR_UPDATE"><active>false</active><allow_verification_choice>false</allow_verification_choice><apply_to_all_users>true</apply_to_all_users><auto_gen_password>true</auto_gen_password><change>false</change><cred_store display_value="Local ServiceNow Instance">6e51033fbf020100710071a7bf0739e0</cred_store><description>Service-desk process for the local ServiceNow as a stand-alone credential-store</description><display_captcha>false</display_captcha><display_password>true</display_password><email_password_reset_url>false</email_password_reset_url><enable_security_score_notification>false</enable_security_score_notification><enabled_on_chatbot>false</enabled_on_chatbot><enrollment_reminder>false</enrollment_reminder><expiration_run_period/><expiration_run_start/><expiration_run_time/><expiration_run_time_zone/><expiration_schedule_frequency/><expiration_warn_days/><identification_type/><label>Service-Desk Password Reset for Local ServiceNow</label><min_verifications>1</min_verifications><name>Service-Desk Password Reset for Local ServiceNow</name><password_needs_reset>true</password_needs_reset><post_processor/><process_owner/><public_access>false</public_access><public_url/><pwd_validity_days/><redirect_url/><reset>true</reset><run_dayofmonth/><run_dayofweek/><run_start/><run_time/><run_type/><security_score/><send_email>true</send_email><send_expiration_reminder>false</send_expiration_reminder><sender_alias/><sys_class_name>pwd_process</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2013-07-11 18:00:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4ff0c881bf220100710071a7bf0739fa</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Service-Desk Password Reset for Local ServiceNow</sys_name><sys_package display_value="Password Reset" source="com.glideapp.password_reset">58917a8e18f632108bb255f46a373a4e</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>pwd_process_4ff0c881bf220100710071a7bf0739fa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 07:03:10</sys_updated_on><unlock_account>true</unlock_account><url_suffix/><user_experience_entry/><user_experience_failure/><user_experience_footer/><user_experience_header/><user_experience_success/></pwd_process><sys_translated_text action="delete_multiple" query="documentkey=4ff0c881bf220100710071a7bf0739fa"/></record_update>]]></payload>
+<payload_hash>559401970</payload_hash>
+<remote_update_set display_value="Lab01 - PDI setup and update set workflow">3a2987843b990710ef5d9dc643e45aa0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-01 07:09:41</sys_created_on>
+<sys_id>fe2987843b990710ef5d9dc643e45aa0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e81fe691c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-01 07:09:41</sys_updated_on>
+<table/>
+<target_name>Service-Desk Password Reset for Local ServiceNow</target_name>
+<type>Password Reset Process</type>
+<update_domain>global</update_domain>
+<update_guid>d4b74bc0dc9907107d99bfa83e4a49a5</update_guid>
+<update_guid_history>d4b74bc0dc9907107d99bfa83e4a49a5:559401970,874d3f5fd30103104197b3977f02acc6:559401970</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
