@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-02 03:46:00">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Configuring the form layout and sections for the customer Cyber Incident Management application.</description>
+<inserted/>
+<name>Lab04 - CYB form layout and sections</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>05bddb5883d14310fc06fecfeeaad31a</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>e424a75c83154310fc06fecfeeaad358</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_27f02b9483154310fc06fecfeeaad36a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Resolution" section_id="27f02b9483154310fc06fecfeeaad36a" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>close_code</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:54</sys_created_on><sys_id>d3b2a79883154310fc06fecfeeaad3d8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">27f02b9483154310fc06fecfeeaad36a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolution_notes</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:54</sys_created_on><sys_id>9fb2a79883154310fc06fecfeeaad3d8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">27f02b9483154310fc06fecfeeaad36a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolved</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:54</sys_created_on><sys_id>5bb2a79883154310fc06fecfeeaad3d9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">27f02b9483154310fc06fecfeeaad36a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolved_by</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:54</sys_created_on><sys_id>17b2a79883154310fc06fecfeeaad3da</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">27f02b9483154310fc06fecfeeaad36a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Resolution</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>27f02b9483154310fc06fecfeeaad36a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_section_27f02b9483154310fc06fecfeeaad36a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:16</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>320469237</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>2024a75c83154310fc06fecfeeaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866a9cf80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>53b2a798821543103b9d4b779d7beadd</update_guid>
+<update_guid_history>53b2a798821543103b9d4b779d7beadd:320469237,73f06b9492154310502bf5e85863ae1a:731222475</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_aff02b9483154310fc06fecfeeaad36b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Containment Detail" section_id="aff02b9483154310fc06fecfeeaad36b" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>containment_method</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>7bf06b9483154310fc06fecfeeaad31d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Containment Detail" display_value="Containment Detail" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">aff02b9483154310fc06fecfeeaad36b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Containment Detail</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aff02b9483154310fc06fecfeeaad36b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_section_aff02b9483154310fc06fecfeeaad36b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:16</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-546880595</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>2424a75c83154310fc06fecfeeaad35b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e8663a51a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>33f06b9439154310d537e0a333b0a120</update_guid>
+<update_guid_history>33f06b9439154310d537e0a333b0a120:-546880595</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_resolution_notes</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="resolution_notes" table="x_1776078_cyber_0_cyber_incident"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Resolution Notes</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>resolution_notes</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_cyber_incident</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:51</sys_created_on><sys_id>7ab2679883154310fc06fecfeeaad3c2</sys_id><sys_name>Resolution Notes</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_cyber_incident_resolution_notes</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:52</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1182066225</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>2c24a75c83154310fc06fecfeeaad358</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866a96da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Resolution Notes</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>83b2a798ef1543105ed96b5016973760</update_guid>
+<update_guid_history>83b2a798ef1543105ed96b5016973760:-1182066225,feb2a79860154310e0da3a9f811d2e39:2125511538</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_resolution_notes_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="resolution_notes" label="Resolution Notes" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>resolution_notes</element><help/><hint/><label>Resolution Notes</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:51</sys_created_on><sys_id>3ab2679883154310fc06fecfeeaad3df</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Resolution Notes</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_resolution_notes_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:53</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>98171365</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>6024a75c83154310fc06fecfeeaad359</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866a985c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Resolution Notes</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>8fb2a798de154310656af5814e165f7f</update_guid>
+<update_guid_history>8fb2a798de154310656af5814e165f7f:98171365,83b2a798431543102b1567576ded4e68:98171365,32b2a798ed1543102b969509a27d0f3d:1239880754</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_3e6962d4835d0310fc06fecfeeaad31b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="3e6962d4835d0310fc06fecfeeaad31b" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>c4e36f1c83154310fc06fecfeeaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>44e36f1c83154310fc06fecfeeaad305</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>c0e36f1c83154310fc06fecfeeaad306</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>persistent_threat</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>40e36f1c83154310fc06fecfeeaad307</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_required_to_asd</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>cce36f1c83154310fc06fecfeeaad307</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>4ce36f1c83154310fc06fecfeeaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>c8e36f1c83154310fc06fecfeeaad309</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>on_hold_reason</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>48e36f1c83154310fc06fecfeeaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>c4e36f1c83154310fc06fecfeeaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>44e36f1c83154310fc06fecfeeaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>c0e36f1c83154310fc06fecfeeaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>40e36f1c83154310fc06fecfeeaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:44:51</sys_created_on><sys_id>cce36f1c83154310fc06fecfeeaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:44:51</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-01 23:29:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3e6962d4835d0310fc06fecfeeaad31b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_section_3e6962d4835d0310fc06fecfeeaad31b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 23:29:28</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1242359278</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>6424a75c83154310fc06fecfeeaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866f27120000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>40e36f1c48154310909eab8f7076a513</update_guid>
+<update_guid_history>40e36f1c48154310909eab8f7076a513:1242359278,9fb2a798a51543106a5291d4d3780ac8:-1025363997,73f02b9430154310e204ec064c133fda:-1543340764,b84a975888d14310353b951aaad90b54:-825503716,d42a1358fbd14310abfc8fbdab10c93a:428573085,4be91b1877d143109b0d3828ab455717:58704483,98299b9410d1431023f9481ca1c38440:830511944,93e8939474d14310c66412f49eb9e2c4:130720382,17a61b5077d143108e4413d543f9409f:-1023294530,82d59bdcef9143105b366e174485d57b:-1095660887,4715539c00914310ce3f4aed49611e3d:1005408660,72745b1c56914310cfc6b7e0be092680:274247503,ca935798bd914310ec808049f4d311b9:-215061062,240253d4cb914310bada95933545ba56:1126269251,4c11df1459914310f85de6eba98a0a5f:-1985748277,61905fd0cd9143109e427f0af626159a:1543456363,764093d0d2914310eea750167d1b5816:1951442406,33df839074914310cbc6520b4d9bf381:-1899924409</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_cbb2a79883154310fc06fecfeeaad383</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Notes" section_id="cbb2a79883154310fc06fecfeeaad383" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>watch_list</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:54</sys_created_on><sys_id>97b2a79883154310fc06fecfeeaad3cc</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">cbb2a79883154310fc06fecfeeaad383</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:54</sys_created_on><sys_id>53b2a79883154310fc06fecfeeaad3cd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">cbb2a79883154310fc06fecfeeaad383</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Notes</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cbb2a79883154310fc06fecfeeaad383</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_section_cbb2a79883154310fc06fecfeeaad383</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:53</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>677699447</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>6824a75c83154310fc06fecfeeaad35b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866a9c860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>9bb2a798e01543107bbbfda39c874dcf</update_guid>
+<update_guid_history>9bb2a798e01543107bbbfda39c874dcf:677699447</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_form_sections_67f02b9483154310fc06fecfeeaad36d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="67f02b9483154310fc06fecfeeaad36d" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2ff02b9483154310fc06fecfeeaad373</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">67f02b9483154310fc06fecfeeaad36d</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3e6962d4835d0310fc06fecfeeaad31b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:16</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:39:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9bb2a79883154310fc06fecfeeaad3a4</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">67f02b9483154310fc06fecfeeaad36d</sys_ui_form><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">cbb2a79883154310fc06fecfeeaad383</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:53</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aff02b9483154310fc06fecfeeaad37b</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">67f02b9483154310fc06fecfeeaad36d</sys_ui_form><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:16</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a3f02b9483154310fc06fecfeeaad38a</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">67f02b9483154310fc06fecfeeaad36d</sys_ui_form><sys_ui_section caption="Containment Detail" display_value="Containment Detail" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">aff02b9483154310fc06fecfeeaad36b</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:53</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2ff02b9483154310fc06fecfeeaad382</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">67f02b9483154310fc06fecfeeaad36d</sys_ui_form><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">27f02b9483154310fc06fecfeeaad36a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:39:53</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>67f02b9483154310fc06fecfeeaad36d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_form_sections_67f02b9483154310fc06fecfeeaad36d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:16</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+<payload_hash>-1043298970</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>a424a75c83154310fc06fecfeeaad359</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866a9a840000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Sections</type>
+<update_domain>global</update_domain>
+<update_guid>1bb2a798f71543107899b52534b072ae</update_guid>
+<update_guid_history>1bb2a798f71543107899b52534b072ae:-1043298970,5fb2a798c51543108cba4a1626a8b2a7:896241440,17b2a79841154310906de5e7587fa49c:635282798,67f02b9436154310249ecff6f9c6508d:-629473906,ebf02b9466154310a2aa6ea8dc697485:-1105129178,6bf02b943d15431087d715f8f4ae827e:-635951280,eff02b945e1543104dcd8d1fe66d9d77:-330762700,a7f02b9434154310a408916a41d52471:63821296</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_67f02b9483154310fc06fecfeeaad365</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Investigation &amp; Diagnosis Detail" section_id="67f02b9483154310fc06fecfeeaad365" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_section action="DELETE"><caption>Investigation &amp; Diagnosis Detail</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>67f02b9483154310fc06fecfeeaad365</sys_id><sys_mod_count/><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2026-06-02 03:39:53</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>379033526</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>a824a75c83154310fc06fecfeeaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866a9a070000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>5bb2a798881543107ba28783a75a8a9f</update_guid>
+<update_guid_history>5bb2a798881543107ba28783a75a8a9f:379033526,bff06b9468154310d2277992b0154e06:395922596</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_x_1776078_cyber_0_cyber_incident_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>9c93631c83154310fc06fecfeeaad3cb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>short_description</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>1493631c83154310fc06fecfeeaad3cc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>state</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>9893631c83154310fc06fecfeeaad3cc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>acsc_incident_severity</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>1093631c83154310fc06fecfeeaad3cd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>persistent_threat</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>9493631c83154310fc06fecfeeaad3cd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>threat_category</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>1c93631c83154310fc06fecfeeaad3cd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>assigned_to</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>9093631c83154310fc06fecfeeaad3ce</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>opened_at</element><list_id display_value="x_1776078_cyber_0_cyber_incident" element="NULL" name="x_1776078_cyber_0_cyber_incident" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dc93631c83154310fc06fecfeeaad3ca</list_id><max_value>false</max_value><min_value>false</min_value><position>7</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_id>1893631c83154310fc06fecfeeaad3ce</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1776078_cyber_0_cyber_incident</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:43:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dc93631c83154310fc06fecfeeaad3ca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_list_x_1776078_cyber_0_cyber_incident_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:43:30</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>-1598240004</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>e824a75c83154310fc06fecfeeaad359</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e866dea680000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>5493631c48154310dcbe8f06f38dc3d2</update_guid>
+<update_guid_history>5493631c48154310dcbe8f06f38dc3d2:-1598240004,0093abd87f154310f237692711fdb347:-1407484680</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_abf02b9483154310fc06fecfeeaad368</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Classification" section_id="abf02b9483154310fc06fecfeeaad368" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>threat_category</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>b7f06b9483154310fc06fecfeeaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>threat_actor_classification</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>73f06b9483154310fc06fecfeeaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>acsc_essential_eight_control_gap</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>3ff06b9483154310fc06fecfeeaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>f7f06b9483154310fc06fecfeeaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>attack_vector</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>b3f06b9483154310fc06fecfeeaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>mitre_att_ck_tactic</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>7ff06b9483154310fc06fecfeeaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>data_classification_of_affected_assets</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:17</sys_created_on><sys_id>3bf06b9483154310fc06fecfeeaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">abf02b9483154310fc06fecfeeaad368</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:17</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Classification</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-02 03:32:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>abf02b9483154310fc06fecfeeaad368</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">6986e250835d0310fc06fecfeeaad398</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">6986e250835d0310fc06fecfeeaad398</sys_scope><sys_update_name>sys_ui_section_abf02b9483154310fc06fecfeeaad368</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-02 03:32:16</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>199422599</payload_hash>
+<remote_update_set display_value="Lab04 - CYB form layout and sections">e424a75c83154310fc06fecfeeaad358</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-02 03:45:59</sys_created_on>
+<sys_id>ec24a75c83154310fc06fecfeeaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e8663a49b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-02 03:45:59</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>fbf06b94b615431099e004ebcebe3511</update_guid>
+<update_guid_history>fbf06b94b615431099e004ebcebe3511:199422599</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
