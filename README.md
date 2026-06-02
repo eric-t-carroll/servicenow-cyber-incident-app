@@ -45,7 +45,7 @@ servicenow-cyber-incident-app/
 
 | Lab | Name | Phase | Status |
 |-----|------|-------|--------|
-| 01 | PDI activation, GitHub repo and update set workflow | CSA | Complete |
+| 01 | PDI activation, GitHub repo and update set workflow | CSA | Completed |
 | 02 | Scoped app creation and task table extension | CSA | Completed |
 | 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
 | 04 | Custom form layout and views | CSA | Planned |
