@@ -49,24 +49,24 @@ servicenow-cyber-incident-app/
 | 02 | Scoped app creation and task table extension | CSA | Completed |
 | 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
 | 04 | Custom form layout and views | CSA | Completed |
-| 05 | State model — investigation, containment, eradication, recovery | CSA | Planned |
-| 06 | UI policies — phase fields visible only in correct state | CSA | Planned |
-| 07 | ACLs — restrict access to MIM and security roles | CSA | Planned |
-| 08 | IT portal access request form and approval workflow | CSA | Planned |
-| 09 | Notifications and persistent threat out-of-band alert | CSA | Planned |
-| 10 | Inbound email actions and SLA definitions | CSA | Planned |
-| 11 | Reports and Cyber Incident dashboard | CSA | Planned |
-| 12 | CMDB basics and linking affected CIs to incidents | CSA | Planned |
-| 13 | Import sets, transform maps and data sources | CSA | Planned |
-| 14 | Scripted REST API — expose Cyber Incident endpoint | CSA | Planned |
-| 15 | Business rules — server-side automation | CAD | Planned |
-| 16 | Client scripts and UI actions | CAD | Planned |
-| 17 | Flow Designer — automated lifecycle workflow | CAD | Planned |
-| 18 | Script includes and GlideRecord API | CAD | Planned |
-| 19 | Playbook Designer — Cyber Incident response playbook | CAD | Planned |
-| 20 | ATF — automated testing for the app | CAD | Planned |
-| 21 | IntegrationHub — outbound notification spoke | CAD | Planned |
-| 22 | App Engine Studio polish and GitHub branching strategy | CAD | Planned |
+| 05 | State model — investigation, containment, eradication, recovery | CSA | Completed |
+| 05 | UI policies — phase fields visible only in correct state | CSA | Completed |
+| 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
+| 07 | IT portal access request form and approval workflow | CSA | Planned |
+| 08 | Notifications and persistent threat out-of-band alert | CSA | Planned |
+| 09 | Inbound email actions and SLA definitions | CSA | Planned |
+| 10 | Reports and Cyber Incident dashboard | CSA | Planned |
+| 11 | CMDB basics and linking affected CIs to incidents | CSA | Planned |
+| 12 | Import sets, transform maps and data sources | CSA | Planned |
+| 13 | Scripted REST API — expose Cyber Incident endpoint | CSA | Planned |
+| 14 | Business rules — server-side automation | CAD | Planned |
+| 15 | Client scripts and UI actions | CAD | Planned |
+| 16 | Flow Designer — automated lifecycle workflow | CAD | Planned |
+| 17 | Script includes and GlideRecord API | CAD | Planned |
+| 18 | Playbook Designer — Cyber Incident response playbook | CAD | Planned |
+| 19 | ATF — automated testing for the app | CAD | Planned |
+| 20 | IntegrationHub — outbound notification spoke | CAD | Planned |
+| 21 | App Engine Studio polish and GitHub branching strategy | CAD | Planned |
 
 
 ### Reference standards
