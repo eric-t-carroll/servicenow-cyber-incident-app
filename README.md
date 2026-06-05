@@ -47,11 +47,11 @@ servicenow-cyber-incident-app/
 |-----|------|-------|--------|
 | 01 | PDI activation, GitHub repo and update set workflow | CSA | Completed |
 | 02 | Scoped app creation and task table extension | CSA | Completed |
-| 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
-| 04 | Custom form layout and views | CSA | Completed |
-| 05 | State model — investigation, containment, eradication, recovery | CSA | Completed |
-| 05 | UI policies — phase fields visible only in correct state | CSA | Completed |
-| 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
+| 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Planned |
+| 04 | Custom form layout and views | CSA | Planned |
+| 05 | State model — investigation, containment, eradication, recovery | CSA | Planned |
+| 05 | UI policies — phase fields visible only in correct state | CSA | Planned |
+| 06 | ACLs — restrict access to MIM and security roles | CSA | Planned |
 | 07 | IT portal access request form and approval workflow | CSA | Planned |
 | 08 | Notifications and persistent threat out-of-band alert | CSA | Planned |
 | 09 | Inbound email actions and SLA definitions | CSA | Planned |
@@ -89,4 +89,4 @@ servicenow-cyber-incident-app/
 
 ## Personal learnings
  - Initally extended the Incident table. Decided to start again with task table extgension, so CYB records did not appear in the Incident lists and views.
-  - Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped applicaiton did not capture creation of the application scope. Found this is by design and to manually publish an aplication to update set in the application record after creating it - 'application record > publish to update set'.
+  - Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped application did not capture creation of the application scope. Found this is by design. I have to manually publish an application to update set, from the application record after creating it - 'application record > publish to update set'.
