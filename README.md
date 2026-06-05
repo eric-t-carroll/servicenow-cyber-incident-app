@@ -86,6 +86,7 @@ servicenow-cyber-incident-app/
 - GlideRecord utility Script Include for common queries
 - IntegrationHub spoke for ASD notification obligations under SOCI Act
 - Business Impact Assessment application — standalone multi-table app for structured BIA during major incidents, designed to support optional Microsoft Teams Adaptive Card integration in a corporate instance.
+ - Improve UI on teh CYB form (state flows, mandatory fields, visible fields etc)
 
 ## Personal learnings
  - Initally extended the Incident table. Decided to start again with task table extgension, so CYB records did not appear in the Incident lists and views.

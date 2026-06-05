@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-05 03:13:33">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Create the state model for CYB and add some UI Policies to show and hide fields.</description>
+<inserted/>
+<name>LAB05 - State Model and UI Policies</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c784ba5dc391431043481cedd40131bb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>1679f219c3d1431043481cedd4013152</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_7c663291c3d1431043481cedd401312d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>containment_method</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:01:25</sys_created_on><sys_id>7c663291c3d1431043481cedd401312d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>containment_method</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_7c663291c3d1431043481cedd401312d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:01:25</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="Show Containment Detail when state is Containment">ad263a51c3d1431043481cedd4013101</ui_policy><value/><value_action>ignore</value_action><visible>true</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=7c663291c3d1431043481cedd401312d"/></record_update>]]></payload>
+<payload_hash>-829880468</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>1a79f219c3d1431043481cedd4013153</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95ba77000000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>containment_method</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>78b6f2919dd14310f9f047767fb15049</update_guid>
+<update_guid_history>78b6f2919dd14310f9f047767fb15049:-829880468</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_ad263a51c3d1431043481cedd4013101</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;stateIN12,13,14,3^EQ&lt;item display_value="12,13,14,3" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="12,13,14,3"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Show Containment Detail when state is &amp;gt;= Containment&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:59:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ad263a51c3d1431043481cedd4013101&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Show Containment Detail when state is &amp;gt;= Containment&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_ad263a51c3d1431043481cedd4013101&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 03:01:58&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1497409802</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>1e79f219c3d1431043481cedd4013154</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95baf6730000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Show Containment Detail when state is &gt;= Containment</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>3cd63e911dd14310e6120e209ce475b6</update_guid>
+<update_guid_history>3cd63e911dd14310e6120e209ce475b6:1497409802,41c6fa91aad14310a17f20d2c6fa140e:1651300148,4a56fa512bd1431091b5d280883518f5:-1424232297</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_bd477ed1c3d1431043481cedd40131f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;state=15^EQ&lt;item display_value="On Hold" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="15"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;On Hold Reason mandatory and visible when On Hold&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 03:04:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bd477ed1c3d1431043481cedd40131f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;On Hold Reason mandatory and visible when On Hold&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_bd477ed1c3d1431043481cedd40131f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 03:05:42&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1724554941</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>5279f219c3d1431043481cedd4013155</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95be63190000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>On Hold Reason mandatory and visible when On Hold</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>aba7fa15a2d14310e815d94323b4baad</update_guid>
+<update_guid_history>aba7fa15a2d14310e815d94323b4baad:-1724554941,7b777615f3d143108203b60f03b93545:1002930737,1877fed119d14310968e7ec068c6e2c2:-1154999128</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_state</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="state" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>state</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:54:21</sys_created_on><sys_id>9515b69dc391431043481cedd4013141</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_state</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:54:21</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>New</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:54:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>43e4769dc391431043481cedd40131f6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:54:21</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Investigation &amp; Diagnosis</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:55:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ec253e9dc391431043481cedd4013148</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:55:15</sys_updated_on><value>11</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Containment</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:56:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b575b6ddc391431043481cedd4013167</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:56:14</sys_updated_on><value>12</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Eradication</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:56:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ad853ed5c391431043481cedd4013125</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:56:37</sys_updated_on><value>13</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Recovery</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:56:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8f953eddc391431043481cedd4013108</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:56:56</sys_updated_on><value>14</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>On Hold</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:57:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dcb53eddc391431043481cedd401310b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:57:13</sys_updated_on><value>15</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Closed</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>7</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:57:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ccc5f211c3d1431043481cedd40131a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:57:33</sys_updated_on><value>3</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1736636204</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>5a79f219c3d1431043481cedd4013152</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95b6ea990000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.state</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>c8d53e11fbd143109eec7b93df7667a6</update_guid>
+<update_guid_history>c8d53e11fbd143109eec7b93df7667a6:-1736636204,2bb5b211acd143104c3b71a76900c239:-1044895683,9fa5bedd07914310c9c8d3d5b24d5c1b:1154067186,5295fadd79914310e24197aedbb9d0e2:695227748,7c857add56914310c4df1b821f28801b:-819731940,6e4572dd0b914310d5c5fc0be43517e7:-2054052869,1915fa9d52914310bb8371277c946307:-280465220</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_8a87f615c3d1431043481cedd40131eb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>on_hold_reason</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:05:28</sys_created_on><sys_id>8a87f615c3d1431043481cedd40131eb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>on_hold_reason</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_8a87f615c3d1431043481cedd40131eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:05:28</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="On Hold Reason mandatory when On Hold">bd477ed1c3d1431043481cedd40131f2</ui_policy><value/><value_action>ignore</value_action><visible>true</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=8a87f615c3d1431043481cedd40131eb"/></record_update>]]></payload>
+<payload_hash>-1366996756</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>5e79f219c3d1431043481cedd4013153</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95be29b00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>on_hold_reason</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>40a7ba15e7d14310fc7700c6b8925f90</update_guid>
+<update_guid_history>40a7ba15e7d14310fc7700c6b8925f90:-1366996756</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_dd277ad1c3d1431043481cedd40131eb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>containment_method</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:03:30</sys_created_on><sys_id>dd277ad1c3d1431043481cedd40131eb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>containment_method</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_dd277ad1c3d1431043481cedd40131eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:03:30</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="Containment mehod is mandatory when state is Containment">c1e632d1c3d1431043481cedd40131b3</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=dd277ad1c3d1431043481cedd40131eb"/></record_update>]]></payload>
+<payload_hash>-1459223452</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>9279f219c3d1431043481cedd4013154</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95bc5e3b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>containment_method</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>9727bad18ed14310c088c7794d8abb22</update_guid>
+<update_guid_history>9727bad18ed14310c088c7794d8abb22:-1459223452</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_c1e632d1c3d1431043481cedd40131b3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;state=12^EQ&lt;item display_value="Containment" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="12"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;200&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Containment mehod is mandatory when state is Containment&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 03:02:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c1e632d1c3d1431043481cedd40131b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Containment mehod is mandatory when state is Containment&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_c1e632d1c3d1431043481cedd40131b3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 03:03:09&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>39558750</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>9679f219c3d1431043481cedd4013155</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95bc0bf90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Containment mehod is mandatory when state is Containment</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>9e17f6d12cd143106fb17caed3335a29</update_guid>
+<update_guid_history>9e17f6d12cd143106fb17caed3335a29:39558750,0a0772d194d14310d6d40546bdad8189:286403704</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_3eb7fa15c3d1431043481cedd40131d8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;state=3^EQ&lt;item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Resolution fields mandatory when Closed&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 03:06:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3eb7fa15c3d1431043481cedd40131d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Resolution fields mandatory when Closed&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_3eb7fa15c3d1431043481cedd40131d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 03:06:10&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1376871441</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>9e79f219c3d1431043481cedd4013152</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95bed03d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Resolution fields mandatory when Closed</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>2ec772554fd14310192e9068dabe7c20</update_guid>
+<update_guid_history>2ec772554fd14310192e9068dabe7c20:1376871441</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_70f7f655c3d1431043481cedd401313d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>close_notes</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:07:14</sys_created_on><sys_id>70f7f655c3d1431043481cedd401313d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>close_notes</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_70f7f655c3d1431043481cedd401313d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:08:46</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="Resolution fields mandatory when Closed">3eb7fa15c3d1431043481cedd40131d8</ui_policy><value/><value_action>ignore</value_action><visible>true</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=70f7f655c3d1431043481cedd401313d"/></record_update>]]></payload>
+<payload_hash>679045523</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>d279f219c3d1431043481cedd4013153</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95c12f100000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>close_notes</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>9868769595d14310f2913ce925ad0a68</update_guid>
+<update_guid_history>9868769595d14310f2913ce925ad0a68:679045523,ce083a553ad143109aa10db580bef39f:572419215</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_f4d7f255c3d1431043481cedd4013108</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>close_code</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:06:47</sys_created_on><sys_id>f4d7f255c3d1431043481cedd4013108</sys_id><sys_mod_count>0</sys_mod_count><sys_name>close_code</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_f4d7f255c3d1431043481cedd4013108</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:06:47</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="Resolution fields mandatory when Closed">3eb7fa15c3d1431043481cedd40131d8</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=f4d7f255c3d1431043481cedd4013108"/></record_update>]]></payload>
+<payload_hash>440052127</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>d679f219c3d1431043481cedd4013154</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95bf5f460000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>close_code</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>d7e7f25539d14310cdeb7df4ed76db4b</update_guid>
+<update_guid_history>d7e7f25539d14310cdeb7df4ed76db4b:440052127</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_3682ba59c391431043481cedd40131b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Resolution" section_id="3682ba59c391431043481cedd40131b5" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>close_code</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:09:59</sys_created_on><sys_id>dea872d5c3d1431043481cedd4013157</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3682ba59c391431043481cedd40131b5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:09:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>close_notes</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:09:59</sys_created_on><sys_id>9aa872d5c3d1431043481cedd4013158</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3682ba59c391431043481cedd40131b5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:09:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:09:59</sys_created_on><sys_id>56a872d5c3d1431043481cedd4013159</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3682ba59c391431043481cedd40131b5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:09:59</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolved</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:09:59</sys_created_on><sys_id>12a872d5c3d1431043481cedd401315a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3682ba59c391431043481cedd40131b5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:09:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolved_by</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:09:59</sys_created_on><sys_id>daa872d5c3d1431043481cedd401315a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3682ba59c391431043481cedd40131b5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:09:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Resolution</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:43:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3682ba59c391431043481cedd40131b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_3682ba59c391431043481cedd40131b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:43:16</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>42074250</payload_hash>
+<remote_update_set display_value="LAB05 - State Model and UI Policies">1679f219c3d1431043481cedd4013152</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:13:32</sys_created_on>
+<sys_id>da79f219c3d1431043481cedd4013155</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95c24d800000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:13:32</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>9aa872d5aad14310a8e3055dd1aadd5d</update_guid>
+<update_guid_history>9aa872d5aad14310a8e3055dd1aadd5d:42074250,4f82fa5932914310ee62d059909ea013:-1936665880</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
