@@ -91,3 +91,4 @@ servicenow-cyber-incident-app/
 ## Personal learnings
  - Initally extended the Incident table. Decided to start again with task table extgension, so CYB records did not appear in the Incident lists and views.
   - Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped application did not capture creation of the application scope. Found this is by design. I have to manually publish an application to update set, from the application record after creating it - 'application record > publish to update set'.
+   - Full restore up to Lab06 successful on the 5/6/2026. After importing groups XML yous till need to reasign the roles and group members.
