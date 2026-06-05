@@ -49,9 +49,9 @@ servicenow-cyber-incident-app/
 | 02 | Scoped app creation and task table extension | CSA | Completed |
 | 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
 | 04 | Custom form layout and views | CSA | Completed |
-| 05 | State model — investigation, containment, eradication, recovery | CSA | Planned |
-| 05 | UI policies — phase fields visible only in correct state | CSA | Planned |
-| 06 | ACLs — restrict access to MIM and security roles | CSA | Planned |
+| 05 | State model — investigation, containment, eradication, recovery | CSA | Completed |
+| 05 | UI policies — phase fields visible only in correct state | CSA | Completed |
+| 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
 | 07 | IT portal access request form and approval workflow | CSA | Planned |
 | 08 | Notifications and persistent threat out-of-band alert | CSA | Planned |
 | 09 | Inbound email actions and SLA definitions | CSA | Planned |

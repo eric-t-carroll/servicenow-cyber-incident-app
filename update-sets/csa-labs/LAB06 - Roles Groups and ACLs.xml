@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-05 03:32:05">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Create CYB roles and ACLs to restrict access to the application.</description>
+<inserted/>
+<name>LAB06 - Roles Groups and ACLs</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b7b93659c3d1431043481cedd4013131</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>3dbd7691c315431043481cedd401314c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_4afb729dc3d1431043481cedd40131ad</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Write access — MIM and Security team only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:24:27</sys_created_on><sys_id>4afb729dc3d1431043481cedd40131ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_4afb729dc3d1431043481cedd40131ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:24:27</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>92833483</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>31bd7691c315431043481cedd401314e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95cf8b130000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>c2fb729d69d143103e3ea20cf3dbcfb1</update_guid>
+<update_guid_history>c2fb729d69d143103e3ea20cf3dbcfb1:92833483</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_969bf25dc3d1431043481cedd40131ee</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:22:49</sys_created_on><sys_id>969bf25dc3d1431043481cedd40131ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="">225b3e1dc3d1431043481cedd40131f5</sys_security_acl><sys_update_name>sys_security_acl_role_969bf25dc3d1431043481cedd40131ee</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:22:49</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1343534389</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>35bd7691c315431043481cedd401314f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95ce0c990000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>225b3e1dc3d1431043481cedd40131f5</table>
+<target_name>.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>1e9bf25dc7d14310cdb03c9a1bee73f3</update_guid>
+<update_guid_history>1e9bf25dc7d14310cdb03c9a1bee73f3:-1343534389</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_880a7e59c3d1431043481cedd401316d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Major Incident Management personnel — CRW access to Cyber Incident records</description><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1776078_cyber_0.mim_user</name><scoped_admin>false</scoped_admin><suffix>mim_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:16:23</sys_created_on><sys_id>880a7e59c3d1431043481cedd401316d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_user_role_880a7e59c3d1431043481cedd401316d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:16:23</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>-758221909</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>39bd7691c315431043481cedd4013150</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95c829500000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.mim_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>402af299fed143101e348016afd85f6d</update_guid>
+<update_guid_history>402af299fed143101e348016afd85f6d:-758221909</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_de546e51c35d03102d84f44ed4013147</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description>Cyber security incident management application aligned to Australian Cyber Security Centre (ACSC) standards. Provides a secure, isolated environment for managing cyber incidents separate from standard ITSM processes. Access is restricted to Major Incident Management and Cyber Security team personnel only.</description><device_type>browser</device_type><hint/><name/><order>100</order><roles>x_1776078_cyber_0.admin,x_1776078_cyber_0.mim_user,x_1776078_cyber_0.security_analyst,x_1776078_cyber_0.user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:42:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>de546e51c35d03102d84f44ed4013147</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Cyber Incident Management</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_app_application_de546e51c35d03102d84f44ed4013147</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:30:12</sys_updated_on><title>Cyber Incident Management</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>1701254619</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>71bd7691c315431043481cedd401314d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95d4cf120000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table/>
+<target_name>Cyber Incident Management</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>164db6517a154310c72756524e56a5ba</update_guid>
+<update_guid_history>164db6517a154310c72756524e56a5ba:1701254619,c26562152a5d0310568dc1bc5b03e293:720852250,05a46691d15d0310ad4a8f8f5bf221d2:-74995952</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1d6bbe1dc3d1431043481cedd401318b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:23:30</sys_created_on><sys_id>1d6bbe1dc3d1431043481cedd401318b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="">225b3e1dc3d1431043481cedd40131f5</sys_security_acl><sys_update_name>sys_security_acl_role_1d6bbe1dc3d1431043481cedd401318b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:23:30</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1234213722</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>75bd7691c315431043481cedd401314e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95ceae050000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>225b3e1dc3d1431043481cedd40131f5</table>
+<target_name>.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>10cbba5d4bd14310bcd09932c9ac5334</update_guid>
+<update_guid_history>10cbba5d4bd14310bcd09932c9ac5334:1234213722</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_9b1cb69dc3d1431043481cedd4013161</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:25:12</sys_created_on><sys_id>9b1cb69dc3d1431043481cedd4013161</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">4afb729dc3d1431043481cedd40131ad</sys_security_acl><sys_update_name>sys_security_acl_role_9b1cb69dc3d1431043481cedd4013161</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:25:12</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1414641306</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>79bd7691c315431043481cedd401314f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95d03c1a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>d52c7a9dafd143102a478683abce9453</update_guid>
+<update_guid_history>d52c7a9dafd143102a478683abce9453:1414641306</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_225b3e1dc3d1431043481cedd40131f5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Create access — MIM and Security team only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:23:30</sys_created_on><sys_id>225b3e1dc3d1431043481cedd40131f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_225b3e1dc3d1431043481cedd40131f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:23:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>916670394</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>b5bd7691c315431043481cedd401314d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95ceae5c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>5ccbba5d73d143102ef1b055e451403b</update_guid>
+<update_guid_history>5ccbba5d73d143102ef1b055e451403b:916670394</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_67dbbe5dc3d1431043481cedd40131b1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:24:27</sys_created_on><sys_id>67dbbe5dc3d1431043481cedd40131b1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">35db3e5dc3d1431043481cedd4013192</sys_security_acl><sys_update_name>sys_security_acl_role_67dbbe5dc3d1431043481cedd40131b1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:24:27</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-2027686798</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>b9bd7691c315431043481cedd401314e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95cf8ad30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>c6fb729d84d14310b300d25d79b4daab</update_guid>
+<update_guid_history>c6fb729d84d14310b300d25d79b4daab:-2027686798</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e01c769dc3d1431043481cedd4013197</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:25:12</sys_created_on><sys_id>e01c769dc3d1431043481cedd4013197</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">4afb729dc3d1431043481cedd40131ad</sys_security_acl><sys_update_name>sys_security_acl_role_e01c769dc3d1431043481cedd4013197</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:25:12</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-736060887</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>bdbd7691c315431043481cedd401314f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95d03be50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>152c7a9d1bd14310e59a3f9050b59c4d</update_guid>
+<update_guid_history>152c7a9d1bd14310e59a3f9050b59c4d:-736060887</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_6a3abe59c3d1431043481cedd401310f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Cyber Security team personnel — CRW access to Cyber Incident records</description><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1776078_cyber_0.security_analyst</name><scoped_admin>false</scoped_admin><suffix>security_analyst</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:17:14</sys_created_on><sys_id>6a3abe59c3d1431043481cedd401310f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_user_role_6a3abe59c3d1431043481cedd401310f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:17:14</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>1385855861</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>f1bd7691c315431043481cedd4013150</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95c8efa90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.security_analyst</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>e05ab6998ad1431074e3a9cd9a8b59c4</update_guid>
+<update_guid_history>e05ab6998ad1431074e3a9cd9a8b59c4:1385855861</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_35db3e5dc3d1431043481cedd4013192</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Read access — MIM and Security team only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:23:52</sys_created_on><sys_id>35db3e5dc3d1431043481cedd4013192</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_35db3e5dc3d1431043481cedd4013192</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:23:52</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-922415956</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>f9bd7691c315431043481cedd401314d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95cf03e50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>b1db3e5de4d14310fc273d66f933fa96</update_guid>
+<update_guid_history>b1db3e5de4d14310fc273d66f933fa96:-922415956</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_8d1cb69dc3d1431043481cedd4013159</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:25:33</sys_created_on><sys_id>8d1cb69dc3d1431043481cedd4013159</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">35db3e5dc3d1431043481cedd4013192</sys_security_acl><sys_update_name>sys_security_acl_role_8d1cb69dc3d1431043481cedd4013159</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 03:25:33</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1406392319</payload_hash>
+<remote_update_set display_value="LAB06 - Roles Groups and ACLs">3dbd7691c315431043481cedd401314c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 03:32:04</sys_created_on>
+<sys_id>fdbd7691c315431043481cedd401314e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95d08c9a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 03:32:04</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>5e3c3e9d67d143109e98c8bb2f208837</update_guid>
+<update_guid_history>5e3c3e9d67d143109e98c8bb2f208837:-1406392319</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
