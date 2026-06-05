@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-05 02:36:25">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Creating custom fields alinged with ACSC definitions for the CYB application.</description>
+<inserted/>
+<name>Lab03 - ACSC custom fields</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>bea96615c351431043481cedd4013114</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>5ef0b295c391431043481cedd4013192</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_acsc_incident_severity</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="acsc_incident_severity" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:08:59</sys_created_on><sys_id>74baea95c351431043481cedd4013111</sys_id><sys_mod_count>0</sys_mod_count><sys_name>acsc_incident_severity</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_acsc_incident_severity</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:08:59</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint/><inactive>false</inactive><label>Critical</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:08:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>60aaaa95c351431043481cedd40131be</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:08:59</sys_updated_on><value>critical</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint/><inactive>false</inactive><label>High</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:09:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f1ba6e95c351431043481cedd40131ff</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:09:12</sys_updated_on><value>high</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint/><inactive>false</inactive><label>Medium</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:09:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>34caee95c351431043481cedd401318f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:09:24</sys_updated_on><value>medium</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint/><inactive>false</inactive><label>Low</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:09:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f7ca62d5c351431043481cedd401314e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:09:37</sys_updated_on><value>low</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>2003822819</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>12f0b295c391431043481cedd4013194</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958b08020000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Incident Severity</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>06daa2d5e45143105c4dd3c7e90d8b51</update_guid>
+<update_guid_history>06daa2d5e45143105c4dd3c7e90d8b51:2003822819,beca22d5b55143108dcc9176857010bb:-262277886,40caee9588514310e9ee5ca1cb9ecc20:1214596462,34ba6e953151431001829b06a8de4e84:-462856959</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="data_classification_of_affected_assets" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Data classification of affected assets&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;data_classification_of_affected_assets&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:22:10&lt;/sys_created_on&gt;&lt;sys_id&gt;59ad2a5dc351431043481cedd40131ff&lt;/sys_id&gt;&lt;sys_name&gt;Data classification of affected assets&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:22:10&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-462473537</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>12f0b295c391431043481cedd4013199</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959687410000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Data classification of affected assets</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>35bdea5d425143100aa6be9b66d506ff</update_guid>
+<update_guid_history>35bdea5d425143100aa6be9b66d506ff:-462473537</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="data_classification_of_affected_assets" label="Data classification of affected assets" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>data_classification_of_affected_assets</element><help/><hint/><label>Data classification of affected assets</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Data classification of affected assets</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:22:10</sys_created_on><sys_id>71bdea5dc351431043481cedd40131f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Data classification of affected assets</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:22:10</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-2032322221</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>12f0b295c391431043481cedd401319e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959687630000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Data classification of affected assets</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>f1bd2e5db25143108ba8e765e17d4502</update_guid>
+<update_guid_history>f1bd2e5db25143108ba8e765e17d4502:-2032322221</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="data_classification_of_affected_assets" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>data_classification_of_affected_assets</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:22:26</sys_created_on><sys_id>b1cd6619c351431043481cedd40131be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>data_classification_of_affected_assets</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:22:26</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>data_classification_of_affected_assets</element><hint/><inactive>false</inactive><label>Sensitive operational information</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:22:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2bbd6e5dc351431043481cedd4013196</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:23:41</sys_updated_on><value>sensitive_operational</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>data_classification_of_affected_assets</element><hint/><inactive>false</inactive><label>Private information</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:23:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7fedaa1dc351431043481cedd40131d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:23:28</sys_updated_on><value>private_information</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>data_classification_of_affected_assets</element><hint/><inactive>false</inactive><label>Critical infrastructure information</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:24:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>891ee69dc351431043481cedd40131ba</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:24:19</sys_updated_on><value>critical_infrastructure</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1038666877</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>16f0b295c391431043481cedd4013195</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95987f550000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Data classification of affected assets</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>9d3e2e9dec51431019ebdc2ca3a4bd58</update_guid>
+<update_guid_history>9d3e2e9dec51431019ebdc2ca3a4bd58:1038666877,001ee69d4951431013aa1f1933a02fb6:50332743,380ea69d4a51431064d8af29b3325531:-1753225924,f5cdae5d3a514310c204bebfa26fb485:-2076259499</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_persitant_threat</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="persitant_threat" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Persitant threat&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;false&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;persitant_threat&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:07:07&lt;/sys_created_on&gt;&lt;sys_id&gt;c92aa655c351431043481cedd4013124&lt;/sys_id&gt;&lt;sys_name&gt;Persitant threat&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_persitant_threat&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:07:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1360449403</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>16f0b295c391431043481cedd401319a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9588c2670000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Persitant threat</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>ed4aea552351431021cc943cb47a7a14</update_guid>
+<update_guid_history>ed4aea552351431021cc943cb47a7a14:-1360449403</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_persitant_threat_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="persitant_threat" label="Persitant threat" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>persitant_threat</element><help/><hint/><label>Persitant threat</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Persitant threats</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:07:08</sys_created_on><sys_id>e14aaa55c351431043481cedd40131da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Persitant threat</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_persitant_threat_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:07:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>60948238</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>16f0b295c391431043481cedd401319f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9588c2880000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Persitant threat</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>654aea55b75143105fb2ba23cf55e218</update_guid>
+<update_guid_history>654aea55b75143105fb2ba23cf55e218:60948238</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_39022e1dc31d03102d84f44ed4013130</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><filter_extension/><is_df_table>false</is_df_table><is_extendable>true</is_extendable><label>Cyber Incident</label><live_feed_enabled>false</live_feed_enabled><name>x_1776078_cyber_0_cyber_incident</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Task" name="task">85fb2e42187232108bb255f46a373ab3</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:31:06</sys_created_on><sys_id>39022e1dc31d03102d84f44ed4013130</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Cyber Incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_db_object_39022e1dc31d03102d84f44ed4013130</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:29:28</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>1871678767</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>1af0b295c391431043481cedd4013196</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959d37e80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>cd6f2e512c914310eee9b79e74652f7f</update_guid>
+<update_guid_history>cd6f2e512c914310eee9b79e74652f7f:1871678767,8e022e1deb1d031061a2ee9eba403ea5:585290398,79022e1d541d0310ea0b68bf90f0979e:1104244334</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_threat_category</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="threat_category" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Threat category&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;threat_category&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:10:18&lt;/sys_created_on&gt;&lt;sys_id&gt;fdea66d5c351431043481cedd401310b&lt;/sys_id&gt;&lt;sys_name&gt;Threat category&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_threat_category&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:10:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>861761001</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>1af0b295c391431043481cedd401319b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958bad430000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Threat category</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>580b2ad5c4514310e4a8a29b5ecbcede</update_guid>
+<update_guid_history>580b2ad5c4514310e4a8a29b5ecbcede:861761001</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_threat_category_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="threat_category" label="Threat category" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>threat_category</element><help/><hint/><label>Threat category</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Threat categories</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:10:19</sys_created_on><sys_id>940b2ad5c351431043481cedd40131d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Threat category</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_threat_category_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:10:19</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>447280773</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>1af0b295c391431043481cedd40131a0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958bad640000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Threat category</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>180b2ad5de5143101ba2024e5ac55ae1</update_guid>
+<update_guid_history>180b2ad5de5143101ba2024e5ac55ae1:447280773</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_caller</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="caller" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Caller&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;caller&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_user_role"&gt;sys_user_role&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:30:08&lt;/sys_created_on&gt;&lt;sys_id&gt;626fae51c391431043481cedd401317f&lt;/sys_id&gt;&lt;sys_name&gt;Caller&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_caller&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:30:08&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2030840196</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>1ef0b295c391431043481cedd4013197</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959dd4410000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Caller</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f68fe291f4914310995dabb40e07271e</update_guid>
+<update_guid_history>f68fe291f4914310995dabb40e07271e:2030840196</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_caller_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="caller" label="Caller" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>caller</element><help/><hint/><label>Caller</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Callers</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:30:08</sys_created_on><sys_id>aa8fe291c391431043481cedd4013115</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Caller</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_caller_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:30:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1093199930</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>1ef0b295c391431043481cedd401319c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959dd4690000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Caller</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7e8fe29116914310e61b7a5aa401372d</update_guid>
+<update_guid_history>7e8fe29116914310e61b7a5aa401372d:1093199930</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_close_code</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="close_code" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Close code&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;close_code&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:31:06&lt;/sys_created_on&gt;&lt;sys_id&gt;609f6691c391431043481cedd401317a&lt;/sys_id&gt;&lt;sys_name&gt;Close code&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_close_code&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:31:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>902770315</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>52f0b295c391431043481cedd4013198</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959eb4210000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Close code</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f4cf6e91629143103695a1af61450462</update_guid>
+<update_guid_history>f4cf6e91629143103695a1af61450462:902770315</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_close_code_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="close_code" label="Close code" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>close_code</element><help/><hint/><label>Close code</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Close codes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:31:06</sys_created_on><sys_id>e0cf6e91c391431043481cedd401315a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Close code</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_close_code_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:31:06</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>536594192</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>52f0b295c391431043481cedd401319d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959eb4420000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Close code</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b4cf6e9186914310fdd32f2697215b65</update_guid>
+<update_guid_history>b4cf6e9186914310fdd32f2697215b65:536594192</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_attack_vector</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="attack_vector" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>attack_vector</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:15:03</sys_created_on><sys_id>a91c2a59c351431043481cedd40131ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>attack_vector</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_attack_vector</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:15:03</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>attack_vector</element><hint/><inactive>false</inactive><label>Phishing</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:15:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ae0c2e59c351431043481cedd40131c0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:15:03</sys_updated_on><value>phishing</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>attack_vector</element><hint/><inactive>false</inactive><label>Credential stuffing</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:15:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e61cee59c351431043481cedd4013164</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:15:21</sys_updated_on><value>credential_stuffing</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>attack_vector</element><hint/><inactive>false</inactive><label>Vulnerability exploit</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:15:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b2c6299c351431043481cedd40131ac</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:15:49</sys_updated_on><value>vuln_exploit</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>attack_vector</element><hint/><inactive>false</inactive><label>Insider threat</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:16:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>694c2699c351431043481cedd40131bd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:16:06</sys_updated_on><value>insider_threat</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>attack_vector</element><hint/><inactive>false</inactive><label>Removable media</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:16:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d25caa15c351431043481cedd40131ac</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:16:31</sys_updated_on><value>removable_media</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>attack_vector</element><hint/><inactive>false</inactive><label>Third-party</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:16:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>017caa99c351431043481cedd40131ae</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:16:53</sys_updated_on><value>third_party</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1391904158</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>56f0b295c391431043481cedd4013194</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9591af9e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Attack vector</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>e08c2e9965514310bc05c159907ec7c5</update_guid>
+<update_guid_history>e08c2e9965514310bc05c159907ec7c5:-1391904158,0f6caa999d514310000143ff5bbe5857:-1744551948,015ce6992a514310cbf34b952489314d:-1808758700,704c269955514310f498c99732e47b69:445282463,8a2c62997e514310225e04439165424b:2034392568,a51cee59275143109b196d6f6eb9231c:2122974439</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_mitre_att_ck_tactic</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="mitre_att_ck_tactic" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;MITRE ATT&amp;amp;CK tactic&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;mitre_att_ck_tactic&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:28:23&lt;/sys_created_on&gt;&lt;sys_id&gt;bf0f2251c391431043481cedd40131c7&lt;/sys_id&gt;&lt;sys_name&gt;MITRE ATT&amp;amp;CK tactic&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_mitre_att_ck_tactic&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:29:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-856542064</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>56f0b295c391431043481cedd4013199</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959d36d60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.MITRE ATT&amp;CK tactic</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>306f2e51029143106218e3240fcdea79</update_guid>
+<update_guid_history>306f2e51029143106218e3240fcdea79:-856542064,892fe2516c914310c0c45e170ce3343f:1396450384</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_mitre_att_ck_tactic_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="mitre_att_ck_tactic" label="MITRE ATT&amp;CK tactic" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>mitre_att_ck_tactic</element><help/><hint/><label>MITRE ATT&amp;CK tactic</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>MITRE ATT&amp;CK tactics</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:28:23</sys_created_on><sys_id>c52fe251c391431043481cedd4013137</sys_id><sys_mod_count>1</sys_mod_count><sys_name>MITRE ATT&amp;CK tactic</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_mitre_att_ck_tactic_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:29:28</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-482430524</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>56f0b295c391431043481cedd401319e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959d36b70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.MITRE ATT&amp;CK tactic</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>fc6f2e51c59143106e6a6d5437bb8375</update_guid>
+<update_guid_history>fc6f2e51c59143106e6a6d5437bb8375:-482430524,492fe251fc914310fde88af629f9bf42:-1730593276</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_on_hold_reason</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="on_hold_reason" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>on_hold_reason</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:34:09</sys_created_on><sys_id>2170fa15c391431043481cedd4013181</sys_id><sys_mod_count>0</sys_mod_count><sys_name>on_hold_reason</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_on_hold_reason</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:34:09</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>on_hold_reason</element><hint/><inactive>false</inactive><label>Awaiting forensics</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:34:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d760fa15c391431043481cedd4013113</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:34:09</sys_updated_on><value>awaiting_forensics</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>on_hold_reason</element><hint/><inactive>false</inactive><label>Awaiting law enforcement</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:34:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aa703e15c391431043481cedd401316e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:34:26</sys_updated_on><value>awaiting_law_enforcement</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>on_hold_reason</element><hint/><inactive>false</inactive><label>Awaiting vendor</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:34:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c7803215c391431043481cedd40131b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:34:41</sys_updated_on><value>awaiting_vendor</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>on_hold_reason</element><hint/><inactive>false</inactive><label>Awaiting ASD response</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:34:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5e903255c391431043481cedd4013174</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:34:55</sys_updated_on><value>awaiting_asd</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1304762990</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>5af0b295c391431043481cedd4013195</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a2318b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.On hold reason</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>a8a072554d914310fa0e3018e0d88aa3</update_guid>
+<update_guid_history>a8a072554d914310fa0e3018e0d88aa3:1304762990,159032553e9143105116a8d648980021:374770100,a980be15d29143109b622249e5e9d117:-653809638,25703e15fe91431074a33c7c5abe0d1a:-1972418832</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_resolved</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="resolved" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Resolved&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;resolved&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;glide_date_time&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:32:55&lt;/sys_created_on&gt;&lt;sys_id&gt;d820fad1c391431043481cedd40131ff&lt;/sys_id&gt;&lt;sys_name&gt;Resolved&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_resolved&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:32:55&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>422763653</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>5af0b295c391431043481cedd401319a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a061a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Resolved</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>27207ed1919143101a09171df1afc58f</update_guid>
+<update_guid_history>27207ed1919143101a09171df1afc58f:422763653</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_resolved_by_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="resolved_by" label="Resolved by" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>resolved_by</element><help/><hint/><label>Resolved by</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Resolved by</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:33:29</sys_created_on><sys_id>af403615c391431043481cedd4013153</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Resolved by</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_resolved_by_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:33:29</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1236809167</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>5af0b295c391431043481cedd401319f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a0e41f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Resolved by</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>bb403615e29143104dffd0ee5a76625f</update_guid>
+<update_guid_history>bb403615e29143104dffd0ee5a76625f:-1236809167</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_acsc_essential_eight_control_gap</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="acsc_essential_eight_control_gap" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;ACSC Essential Eight control gap&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;acsc_essential_eight_control_gap&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:17:30&lt;/sys_created_on&gt;&lt;sys_id&gt;249c22d9c351431043481cedd4013127&lt;/sys_id&gt;&lt;sys_name&gt;ACSC Essential Eight control gap&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_acsc_essential_eight_control_gap&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:17:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-70055289</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>5ef0b295c391431043481cedd4013196</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959244780000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Essential Eight control gap</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f1ace2d99d5143102d9f7ca1c900de01</update_guid>
+<update_guid_history>f1ace2d99d5143102d9f7ca1c900de01:-70055289</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_acsc_essential_eight_control_gap_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="acsc_essential_eight_control_gap" label="ACSC Essential Eight control gap" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>acsc_essential_eight_control_gap</element><help/><hint/><label>ACSC Essential Eight control gap</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>ACSC Essential Eight control gaps</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:17:31</sys_created_on><sys_id>31aca2d9c351431043481cedd40131f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ACSC Essential Eight control gap</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_acsc_essential_eight_control_gap_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:17:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1728587040</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>5ef0b295c391431043481cedd401319b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959244980000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Essential Eight control gap</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b1ace2d9da514310474ab598f3b11a04</update_guid>
+<update_guid_history>b1ace2d9da514310474ab598f3b11a04:1728587040</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_f1092e91c351431043481cedd401311f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="f1092e91c351431043481cedd401311f" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>79092e91c351431043481cedd4013122</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>b5092e91c351431043481cedd4013124</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>71092e91c351431043481cedd4013125</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>active</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>f5092e91c351431043481cedd4013126</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>3d092e91c351431043481cedd4013125</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>b1092e91c351431043481cedd4013127</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>7d092e91c351431043481cedd4013127</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>parent</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>39092e91c351431043481cedd4013128</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>f1092e91c351431043481cedd4013129</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>bd092e91c351431043481cedd4013129</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>79092e91c351431043481cedd401312a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_id>35092e91c351431043481cedd401312b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>persitant_threat</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:07:07</sys_created_on><sys_id>214aaa55c351431043481cedd40131d3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:07:07</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_required_to_asd</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:07:54</sys_created_on><sys_id>f87aa295c351431043481cedd4013143</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:07:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:08:26</sys_created_on><sys_id>fc9ae695c351431043481cedd40131ca</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:08:26</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>threat_category</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:10:19</sys_created_on><sys_id>940b2ad5c351431043481cedd40131cf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:10:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>attack_vector</element><position>16</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:14:37</sys_created_on><sys_id>1ffbaa59c351431043481cedd4013156</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:14:37</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>acsc_essential_eight_control_gap</element><position>17</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:17:31</sys_created_on><sys_id>2daca2d9c351431043481cedd40131f1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:17:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>threat_actor_classification</element><position>18</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:20:31</sys_created_on><sys_id>655d2e1dc351431043481cedd40131ab</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:20:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>data_classification_of_affected_assets</element><position>19</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:22:10</sys_created_on><sys_id>b9bdea5dc351431043481cedd40131ef</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:22:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>containment_methos</element><position>20</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:24:43</sys_created_on><sys_id>974e22ddc351431043481cedd4013171</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:24:43</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>containment_method</element><position>21</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:25:54</sys_created_on><sys_id>209e2eddc351431043481cedd40131e4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:25:54</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>mitre_att_ck_tactic</element><position>22</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:28:23</sys_created_on><sys_id>492fe251c391431043481cedd401312f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:28:23</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller</element><position>23</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:30:08</sys_created_on><sys_id>e28fe291c391431043481cedd4013101</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:30:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>close_code</element><position>24</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:31:06</sys_created_on><sys_id>a8cf6e91c391431043481cedd4013145</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:31:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolved</element><position>25</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:32:56</sys_created_on><sys_id>ef207ed1c391431043481cedd401317e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:32:56</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>resolved_by</element><position>26</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:33:29</sys_created_on><sys_id>63403615c391431043481cedd401313f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:33:29</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>on_hold_reason</element><position>27</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:33:53</sys_created_on><sys_id>25603a15c391431043481cedd4013180</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:33:53</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f1092e91c351431043481cedd401311f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_f1092e91c351431043481cedd401311f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1466311114</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>5ef0b295c391431043481cedd40131a0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a141860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>e5603a1528914310427a8df809745586</update_guid>
+<update_guid_history>e5603a1528914310427a8df809745586:-1466311114,6b403615399143103fc781456ac4c851:1282585997,af207ed183914310d975aed8132ad784:9424547,accf6e91f5914310827e3a0daee45357:-1333065582,668fe291ec914310771795be6f7ba213:1856550846,812fe25153914310627dbdff650a6335:1101349064,e49e2eddd0514310fdcac99320a263e9:-1574561661,db4e22ddd95143103a7a1c3111ba5d76:-1330467004,7dbdea5d3551431034427bfdd01a22f4:449241457,a55d2e1d475143102469286eadd41fb0:-1590644613,e9aca2d991514310f72112eb073c11f6:273642103,5bfbaa5923514310b3b40f1c0a06eb5b:3588687,500b2ad5f8514310fcf86fc68b9f0bd4:69082984,389ae6955351431023d78c033598b0cf:1940457433,b07aa2957d5143108ebbf72b3fc4f848:-319924383,2d4aaa55af51431052612df75ceec1d7:-1918310699</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_acsc_essential_eight_control_gap</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="acsc_essential_eight_control_gap" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>acsc_essential_eight_control_gap</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:17:45</sys_created_on><sys_id>d1bc26d9c351431043481cedd401317c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>acsc_essential_eight_control_gap</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_acsc_essential_eight_control_gap</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:17:45</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Application patching</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:17:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dfac26d9c351431043481cedd4013163</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:18:25</sys_updated_on><value>app_patching</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>OS patching</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:17:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0abc66d9c351431043481cedd40131c5</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:18:21</sys_updated_on><value>os_patching</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Multi-factor authentication</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:18:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>70cc2ad9c351431043481cedd401311a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:18:12</sys_updated_on><value>mfa</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Restricting admin privileges</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:18:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>17dcead9c351431043481cedd401312f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:18:42</sys_updated_on><value>restrict_admin</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Application whitelisting</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:19:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>40fc6ed9c351431043481cedd40131a8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:19:01</sys_updated_on><value>app_whitelisting</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Disabling macros</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:19:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d10d221dc351431043481cedd40131b7</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:20:01</sys_updated_on><value>Disabling_macros</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Hardening user applications</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>7</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:19:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>591da21dc351431043481cedd40131cb</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:19:57</sys_updated_on><value>harden_apps</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_essential_eight_control_gap</element><hint/><inactive>false</inactive><label>Backups</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>8</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:19:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cd2d261dc351431043481cedd401318d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:19:46</sys_updated_on><value>backups</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1955964603</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>92f0b295c391431043481cedd4013193</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9594903a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Essential Eight control gap</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>263d2a1d105143108d0f8127f6dc057e</update_guid>
+<update_guid_history>263d2a1d105143108d0f8127f6dc057e:-1955964603,193de61d44514310f24b274f8f027532:-248112859,b22d661d6e5143105524df62f847deae:-276232923,6b1d261d015143106100770a9799ff20:204952045,f70da21d5c514310530aed0bad8a0d45:1264161575,7bfc221da95143101d64198c63e24e62:94782018,03ec6ed9ad514310fae8677c4db46f60:618644405,8bdcead9135143100611572ddaa6e62a:1634560786,75dcaad92d5143106b34eab528e36cb2:-1125670158,3fcc6ad9bc514310dab70b2ecd221d9d:-738229550,73bca6d9a55143106eec0c7e66ceef9b:978958752,1dbc66d91b5143105930248945d5263a:-2682751</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_acsc_incident_severity</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="acsc_incident_severity" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;ACSC Incident Severity&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;acsc_incident_severity&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:08:26&lt;/sys_created_on&gt;&lt;sys_id&gt;fa7a6695c351431043481cedd4013154&lt;/sys_id&gt;&lt;sys_name&gt;ACSC Incident Severity&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_acsc_incident_severity&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:08:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1080303993</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>92f0b295c391431043481cedd4013197</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9589f4a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Incident Severity</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>309ae6952f514310324f806ea10294da</update_guid>
+<update_guid_history>309ae6952f514310324f806ea10294da:1080303993</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_acsc_incident_severity_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="acsc_incident_severity" label="ACSC Incident Severity" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><help/><hint/><label>ACSC Incident Severity</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>ACSC Incident Severities</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:08:26</sys_created_on><sys_id>7c9ae695c351431043481cedd40131d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ACSC Incident Severity</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_acsc_incident_severity_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:08:26</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-50761899</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>92f0b295c391431043481cedd401319c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9589f4be0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Incident Severity</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>fc9ae69544514310c7b9dd3621d9dddc</update_guid>
+<update_guid_history>fc9ae69544514310c7b9dd3621d9dddc:-50761899</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_containment_method</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="containment_method" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Containment method&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;containment_method&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:25:53&lt;/sys_created_on&gt;&lt;sys_id&gt;5d8eeaddc351431043481cedd401315f&lt;/sys_id&gt;&lt;sys_name&gt;Containment method&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_containment_method&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:25:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1734379607</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>96f0b295c391431043481cedd4013198</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9599f0e10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Containment method</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>ec9e2eddcb5143100b812d9d0539e5f3</update_guid>
+<update_guid_history>ec9e2eddcb5143100b812d9d0539e5f3:1734379607</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_containment_method_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="containment_method" label="Containment method" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>containment_method</element><help/><hint/><label>Containment method</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Containment methods</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:25:54</sys_created_on><sys_id>2c9e2eddc351431043481cedd40131eb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Containment method</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_containment_method_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:25:54</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>516162436</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>96f0b295c391431043481cedd401319d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9599f0f80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Containment method</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>ac9e2edd8e5143102f1d41429ab89af6</update_guid>
+<update_guid_history>ac9e2edd8e5143102f1d41429ab89af6:516162436</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_close_code</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="close_code" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>close_code</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:31:20</sys_created_on><sys_id>0cdfee91c391431043481cedd4013125</sys_id><sys_mod_count>0</sys_mod_count><sys_name>close_code</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_close_code</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:31:20</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Threat neutralised</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:31:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8acfae91c391431043481cedd40131bb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:31:20</sys_updated_on><value>threat_neutralised</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>False positive</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:31:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>85df22d1c391431043481cedd401315e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:31:33</sys_updated_on><value>false_positive</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Handed to law enforcement</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:31:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>70ef6e5dc351431043481cedd40131be</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:31:50</sys_updated_on><value>law_enforcement</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Resolved by vendor</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:32:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8ff26d1c391431043481cedd4013139</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:32:08</sys_updated_on><value>vendor_resolved</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Unresolved</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:32:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>490072d1c391431043481cedd40131f6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:32:21</sys_updated_on><value>unresolved</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1503818231</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>9af0b295c391431043481cedd4013194</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959fd8cf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Close code</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>07003ad15691431030ceee32b4ef163f</update_guid>
+<update_guid_history>07003ad15691431030ceee32b4ef163f:1503818231,f3ffa6d1729143108a50fdfd2b86ed9d:-28765372,27efe2d1cd914310f7330e018952f699:-678672238,57df62d16591431083defd8572ea13b0:-1140761593,44dfee9126914310d73b0bc08d7a1fe4:1787794512</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_notification_required_to_asd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="notification_required_to_asd" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Notification required to ASD&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;false&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;notification_required_to_asd&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:07:53&lt;/sys_created_on&gt;&lt;sys_id&gt;e35aee55c351431043481cedd40131f2&lt;/sys_id&gt;&lt;sys_name&gt;Notification required to ASD&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_notification_required_to_asd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:07:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>194525915</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>9af0b295c391431043481cedd4013199</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e9589761c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Notification required to ASD</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>7c7aa295b65143105c6f52416c56255f</update_guid>
+<update_guid_history>7c7aa295b65143105c6f52416c56255f:194525915</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_notification_required_to_asd_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="notification_required_to_asd" label="Notification required to ASD" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>notification_required_to_asd</element><help/><hint/><label>Notification required to ASD</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Notification required to ASDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:07:54</sys_created_on><sys_id>b87aa295c351431043481cedd401314a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Notification required to ASD</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_notification_required_to_asd_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:07:54</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1387111700</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>9af0b295c391431043481cedd401319e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958976340000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Notification required to ASD</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>3c7aa295ae5143101577a68e4c188962</update_guid>
+<update_guid_history>3c7aa295ae5143101577a68e4c188962:1387111700</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_threat_actor_classification</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="threat_actor_classification" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>threat_actor_classification</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:20:51</sys_created_on><sys_id>ea6dae1dc351431043481cedd40131d7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>threat_actor_classification</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_threat_actor_classification</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:20:51</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_actor_classification</element><hint/><inactive>false</inactive><label>Nation-state</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:20:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8b5dae1dc351431043481cedd4013136</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:20:51</sys_updated_on><value>Nation_state</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_actor_classification</element><hint/><inactive>false</inactive><label>Cybercriminal</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:21:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>636d225dc351431043481cedd4013128</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:21:03</sys_updated_on><value>cybercriminal</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_actor_classification</element><hint/><inactive>false</inactive><label>Hacktivist</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:21:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3e7da25dc351431043481cedd40131f6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:21:15</sys_updated_on><value>hacktivist</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_actor_classification</element><hint/><inactive>false</inactive><label>Insider</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:21:27</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d98d265dc351431043481cedd4013117</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:21:27</sys_updated_on><value>insider</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_actor_classification</element><hint/><inactive>false</inactive><label>Unknown</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:21:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>109d665dc351431043481cedd40131d7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:21:39</sys_updated_on><value>unknown</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>218304551</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>9ef0b295c391431043481cedd4013195</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95960e6d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Threat actor classification</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>1e9de65d135143107e440ceae3213004</update_guid>
+<update_guid_history>1e9de65d135143107e440ceae3213004:218304551,d78d665dd4514310a74a3bc81cb5812b:237862157,2c8de25d96514310017633a573a60cb6:-1075631686,657da25df4514310f99ecee36fde8832:555881856,226dee1d36514310d5d5d887ea4de9c8:609952607</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_resolved_by</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="resolved_by" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Resolved by&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;resolved_by&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_user"&gt;sys_user&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:33:29&lt;/sys_created_on&gt;&lt;sys_id&gt;d9307215c391431043481cedd4013157&lt;/sys_id&gt;&lt;sys_name&gt;Resolved by&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_resolved_by&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:33:29&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1594549116</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>9ef0b295c391431043481cedd401319a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a0e4040000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Resolved by</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>fb4036150e914310517b5ff175c3f85c</update_guid>
+<update_guid_history>fb4036150e914310517b5ff175c3f85c:-1594549116</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_resolved_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="resolved" label="Resolved" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>resolved</element><help/><hint/><label>Resolved</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Resolved</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:32:56</sys_created_on><sys_id>e3207ed1c391431043481cedd4013187</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Resolved</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_resolved_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:32:56</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>443703891</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>9ef0b295c391431043481cedd401319f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a061cb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Resolved</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e3207ed1da9143109f5a821af6127f92</update_guid>
+<update_guid_history>e3207ed1da9143109f5a821af6127f92:443703891</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_threat_category</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="threat_category" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>threat_category</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:10:37</sys_created_on><sys_id>301baad5c351431043481cedd401316f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>threat_category</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_threat_category</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:10:37</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_category</element><hint/><inactive>false</inactive><label>Ransomware</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:10:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c20baad5c351431043481cedd4013163</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:10:37</sys_updated_on><value>ransomware</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_category</element><hint/><inactive>false</inactive><label>Data breach</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:11:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>651b2ed5c351431043481cedd4013174</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:11:00</sys_updated_on><value>data_breach</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_category</element><hint/><inactive>false</inactive><label>Denial of service</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:11:27</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fb2beed5c351431043481cedd40131cd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:11:27</sys_updated_on><value>denial_of_service</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_category</element><hint/><inactive>false</inactive><label>Business email compromise</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:11:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>974b26d5c351431043481cedd40131ad</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:14:02</sys_updated_on><value>bec</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_category</element><hint/><inactive>false</inactive><label>Supply chain compromise</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:12:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d06b6e15c351431043481cedd401316f</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:14:07</sys_updated_on><value>supply_chain</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>threat_category</element><hint/><inactive>false</inactive><label>Unauthorised access</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:12:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0a7b2ed5c351431043481cedd4013132</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:12:39</sys_updated_on><value>unauthorised_access</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1018359153</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>d2f0b295c391431043481cedd4013196</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958f276c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Threat category</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>b3dba65942514310ed729fab91805426</update_guid>
+<update_guid_history>b3dba65942514310ed729fab91805426:-1018359153,b2db6659a05143105f51802593a491ba:633409749,228bea196e514310ef744a542a4951af:745595163,057b2a19335143103901ac5821e30bdf:-783331625,fe5b6619b4514310f241b65f07b5643e:-1480247214,fc4ba219e9514310c2019c624cd5fc3b:557975521,5e2beed572514310bea34bc861bd5745:-1249391555,b01bead5bf5143108de5536e7c64f6e8:-1177080363</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_threat_actor_classification</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="threat_actor_classification" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Threat actor classification&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;threat_actor_classification&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:20:31&lt;/sys_created_on&gt;&lt;sys_id&gt;c54d6a1dc351431043481cedd40131f6&lt;/sys_id&gt;&lt;sys_name&gt;Threat actor classification&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_threat_actor_classification&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:20:31&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>319226797</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>d2f0b295c391431043481cedd401319b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959504550000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Threat actor classification</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>bd5d2e1d04514310bd7531be732a52ba</update_guid>
+<update_guid_history>bd5d2e1d04514310bd7531be732a52ba:319226797</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_threat_actor_classification_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="threat_actor_classification" label="Threat actor classification" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>threat_actor_classification</element><help/><hint/><label>Threat actor classification</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Threat actor classifications</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:20:31</sys_created_on><sys_id>e95d2e1dc351431043481cedd40131b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Threat actor classification</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_threat_actor_classification_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:20:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1577789732</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>d2f0b295c391431043481cedd40131a0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959504760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Threat actor classification</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7d5d2e1df8514310844d022d94e819bd</update_guid>
+<update_guid_history>7d5d2e1df8514310844d022d94e819bd:1577789732</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_attack_vector</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="attack_vector" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Attack vector&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;attack_vector&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:14:37&lt;/sys_created_on&gt;&lt;sys_id&gt;97eb2a59c351431043481cedd4013184&lt;/sys_id&gt;&lt;sys_name&gt;Attack vector&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_attack_vector&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:14:37&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-608139465</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>d6f0b295c391431043481cedd4013197</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958f9db20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Attack vector</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>dffbaa596351431003f6830dcdfd5c7e</update_guid>
+<update_guid_history>dffbaa596351431003f6830dcdfd5c7e:-608139465</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_attack_vector_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="attack_vector" label="Attack vector" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>attack_vector</element><help/><hint/><label>Attack vector</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Attack vectors</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:14:37</sys_created_on><sys_id>1ffbaa59c351431043481cedd4013176</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Attack vector</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_attack_vector_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:14:37</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1005645366</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>d6f0b295c391431043481cedd401319c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e958f9ddb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Attack vector</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>9ffbaa59105143105489b5e1d3f35c81</update_guid>
+<update_guid_history>9ffbaa59105143105489b5e1d3f35c81:1005645366</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_containment_methos</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="DELETE" element="containment_methos" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Containment method&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;containment_methos&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:24:43&lt;/sys_created_on&gt;&lt;sys_id&gt;dc4eae9dc351431043481cedd40131cc&lt;/sys_id&gt;&lt;sys_name&gt;Containment method&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_containment_methos&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:24:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-195762875</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>daf0b295c391431043481cedd4013198</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95999f3e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.containment_methos</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>db7e6add61514310da1fea91e632324d</update_guid>
+<update_guid_history>db7e6add61514310da1fea91e632324d:-195762875,c75ee2dd5d514310a45aaab8de4b3f9b:-1247816071,9b4e22dd4f514310f937e9e56055c18d:1661878041</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_containment_methos_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="containment_methos" label="Containment method" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="DELETE"><element>containment_methos</element><help/><hint/><label>Containment method</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Containment methods</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:24:43</sys_created_on><sys_id>134e22ddc351431043481cedd4013179</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Containment method</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_containment_methos_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:24:58</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-733925546</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>daf0b295c391431043481cedd401319d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95999d3a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.containment_methos</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>1b7e6add34514310add26efed25b5827</update_guid>
+<update_guid_history>1b7e6add34514310add26efed25b5827:-733925546,8b5ee2dd99514310142f55305222bf97:1406244646,5b4e22dd3e5143101a1fadab18ebd890:525517393</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_containment_method</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="containment_method" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>containment_method</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:26:12</sys_created_on><sys_id>cdaeeeddc351431043481cedd4013197</sys_id><sys_mod_count>0</sys_mod_count><sys_name>containment_method</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_containment_method</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:26:12</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>Network isolation</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:26:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1e9eeeddc351431043481cedd401318d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:26:12</sys_updated_on><value>network_isolation</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>Account disable</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:26:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>deae6211c391431043481cedd401311a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:27:15</sys_updated_on><value>account_disable</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>System shutdown</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:26:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>09bea211c391431043481cedd40131b3</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:27:10</sys_updated_on><value>system_shutdown</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>Patch applied</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:26:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>27beee9dc351431043481cedd4013103</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:27:07</sys_updated_on><value>patch_applied</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>Firewall rule</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:27:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>56ce6611c391431043481cedd40131d9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:27:00</sys_updated_on><value>firewall_rule</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>Third-party engagement</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:27:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5eee6a11c391431043481cedd40131cd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:27:37</sys_updated_on><value>third_party_engagement</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>containment_method</element><hint/><inactive>false</inactive><label>Other</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>7</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:27:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>26fe6211c391431043481cedd40131a8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:27:49</sys_updated_on><value>other</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1222083664</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:23</sys_created_on>
+<sys_id>def0b295c391431043481cedd4013194</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e959bb1960000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:23</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Containment method</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>a40f6e113c914310d1f66eeadce3e5a4</update_guid>
+<update_guid_history>a40f6e113c914310d1f66eeadce3e5a4:1222083664,61fe2e111d914310924d0f9b3a5ebc17:-219922023,d0ee6a11b09143103bfd24a8b94e55c9:2122894746,9fde6a115291431058cc7f6cd9f80c50:1861566906,5ade2a115a914310612c2bb89391fbd8:-1835078182,e8de2a11769143109c25525bfe7f260c:1009242618,a1ce6611c39143100c1a8ad0d1b7887a:200158440,62bee211b2914310d381870515cd3cdc:1580748111,04bea21101914310d59407c33eaa1046:2006276523,c5ae22119d91431001489ac2d2a8b3c6:-275769394</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_on_hold_reason</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="on_hold_reason" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;On hold reason&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;on_hold_reason&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:33:53&lt;/sys_created_on&gt;&lt;sys_id&gt;d950b615c391431043481cedd401315f&lt;/sys_id&gt;&lt;sys_name&gt;On hold reason&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_on_hold_reason&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 02:33:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-760175861</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>def0b295c391431043481cedd4013199</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a141f10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.On hold reason</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>65603a15ee9143104ee8f99d6ad30d90</update_guid>
+<update_guid_history>65603a15ee9143104ee8f99d6ad30d90:-760175861</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_on_hold_reason_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="on_hold_reason" label="On hold reason" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>on_hold_reason</element><help/><hint/><label>On hold reason</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>On hold reasons</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:33:53</sys_created_on><sys_id>2d603a15c391431043481cedd4013188</sys_id><sys_mod_count>0</sys_mod_count><sys_name>On hold reason</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_on_hold_reason_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:33:53</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>850119788</payload_hash>
+<remote_update_set display_value="Lab03 - ACSC custom fields">5ef0b295c391431043481cedd4013192</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-05 02:36:24</sys_created_on>
+<sys_id>def0b295c391431043481cedd401319e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e95a1420b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-05 02:36:24</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.On hold reason</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>25603a15229143104687f7df89c05193</update_guid>
+<update_guid_history>25603a15229143104687f7df89c05193:850119788</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
