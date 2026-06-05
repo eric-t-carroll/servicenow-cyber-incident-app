@@ -85,3 +85,8 @@ servicenow-cyber-incident-app/
 - Post-incident review table extending task
 - GlideRecord utility Script Include for common queries
 - IntegrationHub spoke for ASD notification obligations under SOCI Act
+- Business Impact Assessment application — standalone multi-table app for structured BIA during major incidents, designed to support optional Microsoft Teams Adaptive Card integration in a corporate instance.
+
+## Personal learnings
+ - Initally extended the Incident table. Decided to start again with task table extgension, so CYB records did not appear in the Incident lists and views.
+  - Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped applicaiton did not capture creation of the application scope. Found this is by design and to manually publish an aplication to update set in the application record after creating it - 'application record > publish to update set'.
