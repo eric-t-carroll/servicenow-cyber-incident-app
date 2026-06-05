@@ -48,7 +48,7 @@ servicenow-cyber-incident-app/
 | 01 | PDI activation, GitHub repo and update set workflow | CSA | Completed |
 | 02 | Scoped app creation and task table extension | CSA | Completed |
 | 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
-| 04 | Custom form layout and views | CSA | Planned |
+| 04 | Custom form layout and views | CSA | Completed |
 | 05 | State model — investigation, containment, eradication, recovery | CSA | Planned |
 | 05 | UI policies — phase fields visible only in correct state | CSA | Planned |
 | 06 | ACLs — restrict access to MIM and security roles | CSA | Planned |
