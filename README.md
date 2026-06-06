@@ -37,16 +37,17 @@ Update sets and data exports are exported as XML and committed per lab.
 ## Repository structure
 ```
 servicenow-cyber-incident-app/
-├── data-exports/          # XML exports with user and group data
-├── code-challenges        # temporary location for work in progress .js files
+├── Cyber Incident Management/      ← VSCode extension sync, do not edit manually
+│   └── src/
+├── data-exports/                   # XML exports with user and group data
+├── code-challenges                 # temporary location for work in progress .js files
 ├── update-sets/
-│   ├── csa-labs/          # Update set XML and .js from CSA labs and coding challenges
-│   └── cad-labs/          # Update set XML and .js from CAD labs and coding challenges
+│   ├── csa-labs/                   # Update set XML and .js from CSA labs and coding challenges
+│   └── cad-labs/                   # Update set XML and .js from CAD labs and coding challenges
 └── README.md
 ```
 
 ## Branching strategy
-
 | Branch | Purpose |
 |--------|---------|
 | `main` | Stable, completed work only. Merged into at the end of each completed lab. |
@@ -57,9 +58,8 @@ servicenow-cyber-incident-app/
 - Coding challenge `.js` files are committed to the active phase branch under `code-challenges/`.
 - Once the VSCode ServiceNow extension is configured, script files will be synced directly from the PDI into the active phase branch.
 
-
+## Work indexes
 ### Lab index
-
 | Lab | Name | Phase | Status |
 |-----|------|-------|--------|
 | 01 | PDI activation, GitHub repo and update set workflow | CSA | Completed |
@@ -86,11 +86,29 @@ servicenow-cyber-incident-app/
 | 21 | App Engine Studio polish | CAD | Planned |
 
 
-## Code-challenges index
+### Code-challenges index
 | Challenge | Name | Phase | Status |
 |-----------|------|-------|--------|
 | 01 | Containment Notes are mandatory at save | CSA | Completed |
 
+## Daily workflow overview
+### Coding Challenge Sessions
+1. Open VSCode, confirm you're on the correct branch (git branch)
+2. Open ServiceNow PDI in browser and make your script changes there
+3. In VSCode, click Sync File or Sync Project to pull changes down from PDI
+4. Review the .js file in VSCode to confirm it looks right
+5. git add . → git commit -m "message" → git push
+6. Update README coding challenges index if the challenge is complete
+
+
+### Project Build Sessions
+1. Open VSCode, confirm branch (git branch) — should be csa-labs for Labs 08-13, cad-labs for Labs 14-21
+2. Open ServiceNow PDI and do your lab work as normal
+3. When lab is complete, export update set XML and save to the correct folder (update-sets/csa-labs/ or update-sets/cad-labs/)
+4. In VSCode, click Sync Project to pull any script changes down
+5. git add . → git commit -m "Lab XX - description" → git push
+6. Merge to main when lab is fully complete
+7. Update README lab index status
 
 
 ## Restore instructions
@@ -99,7 +117,6 @@ servicenow-cyber-incident-app/
 
 
 ### Reference standards
-
 - [ACSC — Australian Cyber Security Centre](https://www.cyber.gov.au)
 - [ACSC Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
 - [Protective Security Policy Framework (PSPF)](https://www.protectivesecurity.gov.au)
@@ -107,18 +124,27 @@ servicenow-cyber-incident-app/
 
 
 ### Future work
-
 - Cyber incident response playbook (Lab 22, CAD phase)
 - Problem record auto-creation on incident closure
 - Change advisory gate between containment and eradication phases
 - Post-incident review table extending task
 - GlideRecord utility Script Include for common queries
 - IntegrationHub spoke for ASD notification obligations under SOCI Act
-- Business Impact Assessment application — standalone multi-table app for structured BIA during major incidents, designed to support optional Microsoft Teams Adaptive Card integration in a corporate instance.
- - Improve UI on the CYB form (state flows, mandatory fields, visible fields etc)
-  - Improve the catalog item and flow. e.g. ticket gets updated when group auto assign completes etc.
+- Business Impact Assessment application
+   - standalone multi-table app for structured BIA during major incidents, designed to support optional Microsoft Teams Adaptive Card integration in a corporate instance.
+- Improve UI on the CYB form (state flows, mandatory fields, visible fields etc)
+- Improve the catalog item and flow. e.g. ticket gets updated when group auto assign completes etc.
 
 ## Personal learnings
- - Initially extended the Incident table. Decided to start again with task table extension, so CYB records did not appear in the Incident lists and views.
-  - Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped application did not capture creation of the application scope. Found this is by design. I have to manually publish an application to update set, from the application record after creating it - 'application record > publish to update set'.
-   - Full restore up to Lab06 successful on the 5/6/2026. After importing groups XML you still need to reassign the roles and group members.
+ - 1/6: Initially extended the Incident table. Decided to start again with task table extension, so CYB records did not appear in the Incident lists and views.
+  - 5/6: Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped application did not capture creation of the application scope.
+      - This is by design.
+      - I have to manually publish an application to update set, from the application record after creating it - 'application record > publish to update set'.
+   - 5/6: Full restore up to Lab06 successful. After importing groups XML you still need to reassign the roles and group members.
+   - 6/6: VSCode has been configured with the ServiceNow Extension for VSCode and my custom application has been synced.
+      - Had to install JSNode to resolve npm install issue
+      - Cyber Incident Management/ folder contains PDI-synced app files
+         - Do not manually edit files in this folder — always edit in ServiceNow and sync down
+      - Always sync FROM ServiceNow into VSCode
+         - Never edit the .js files directly in VSCode and expect them to push back to ServiceNow.
+         - The sync is one direction: PDI → VSCode → GitHub.
