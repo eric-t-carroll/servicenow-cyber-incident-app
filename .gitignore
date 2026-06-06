@@ -1,1 +1,9 @@
 *.log
+
+# npm
+node_modules/
+
+# ServiceNow VSCode extension internals
+lib/
+system/
+tsconfig.json
