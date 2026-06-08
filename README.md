@@ -27,6 +27,20 @@ Update sets and data exports are exported as XML and committed per lab.
  - Cyber incident playbook added (CAD phase)
 
 
+## AI assisted development
+Project build is done with the assistance of Claude (Anthropic) as a technical coach and lab guide.
+ - Overall concepts for the project are provided me me.
+ - Architectural decisions are made based on a discussion with Claude about good practice.
+ - Claude provided step-by-step lab instructions, design recommendations, and answered technical questions throughout the build.
+ - All decisions, configuration, and code were reviewed and implemented by me.
+ - Claude is operating in an advisory capacity.
+ - Guidance was accepted, rejected, or modified based on my own experience as a process lead, judgement and testing.
+
+Coding challenges are supported by Claude acting as a tutor/coach.
+ - Claude guides toward solutions through questions and hints rather than providing direct answers, only sharing code when explicitly requested. 
+ - All code is written, tested and understood by me before being committed.
+
+
 ## Technical references
 - Scope name: cyber_0
 - Full scope prefix: x_1776078_cyber_0
@@ -90,6 +104,7 @@ servicenow-cyber-incident-app/
 | Challenge | Name | Phase | Status |
 |-----------|------|-------|--------|
 | 01 | Containment Notes are mandatory at save | CSA | Complete |
+| 02 | Auto assign new CYB tickets | CSA | Complete |
 
 ## Daily workflow overview
 ### Project Build Sessions
@@ -99,15 +114,16 @@ servicenow-cyber-incident-app/
 2. Do lab work in ServiceNow PDI as normal
 3. Export Update Set to VSCode folder
 4. Sync Project in VSCode to pull script files down
-5. git add . → git commit -m → git push
-6. Merge to main when lab is fully complete
-7. Update README lab index
+5. Update README lab index
+6. git add . → git commit -m → git push
+7. Merge to `main` when lab is fully complete
+ - git checkout main → git merge csa-labs → git push → git checkout csa-labs
 
 ### Coding Challenge Sessions
 1. Check active branch in terminal
 2. Make script changes in ServiceNow PDI
 3. Sync File or Sync Project in VSCode to pull changes down
-4. Review .js file in VSCode to confirm it looks correct
+4. Update README lab index
 5. git add . → git commit -m → git push
 6. Update README coding challenges index
 
@@ -156,3 +172,4 @@ To restore code challenges:
       - Always sync FROM ServiceNow into VSCode
          - Never edit the .js files directly in VSCode and expect them to push back to ServiceNow.
          - The sync is one direction: PDI → VSCode → GitHub.
+ - 9/6 - created a script version of 'auto-assign new tickets to Cyber Security' and then disabled it, for code practice. Then created a version using 'actions' which is left enabled (best practice). Both are captured in the update set.
