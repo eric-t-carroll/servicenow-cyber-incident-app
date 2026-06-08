@@ -138,6 +138,10 @@ To restore code challenges:
    - standalone multi-table app for structured BIA during major incidents, designed to support optional Microsoft Teams Adaptive Card integration in a corporate instance.
 - Improve UI on the CYB form (state flows, mandatory fields, visible fields etc)
 - Improve the catalog item and flow. e.g. ticket gets updated when group auto assign completes etc.
+ - Add containment_notes text field to the table and update client scripts to validate it
+ - Fix Caller field reference qualifier — currently showing system roles not users
+ - Fix record number prefix — showing TASK instead of CYB
+ - Closed record lockdown — prevent state changes after closure
 
 ## Personal learnings
  - 1/6: Initially extended the Incident table. Decided to start again with task table extension, so CYB records did not appear in the Incident lists and views.
