@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-08 01:20:32">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Client script - Containment Notes field is mandatory on save when in Containment state.</description>
+<inserted/>
+<name>Lab07.1 Code Challenge - Containment Notes validation</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8c532d1e8359c7101d28c430ceaad39f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-08 01:20:31</sys_created_on>
+<sys_id>086c7d5e831dc7101d28c430ceaad3f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-08 01:20:31</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_c1e632d1c3d1431043481cedd40131b3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;state=12^EQ&lt;item display_value="Containment" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="12"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;200&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Containment mehod is mandatory when state is Containment&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 03:02:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c1e632d1c3d1431043481cedd40131b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Containment mehod is mandatory when state is Containment&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_c1e632d1c3d1431043481cedd40131b3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-07 23:41:00&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>330938419</payload_hash>
+<remote_update_set display_value="Lab07.1 Code Challenge - Containment Notes validation">086c7d5e831dc7101d28c430ceaad3f4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-08 01:20:31</sys_created_on>
+<sys_id>046c7d5e831dc7101d28c430ceaad3f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea4760cac0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-08 01:20:31</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Containment mehod is mandatory when state is Containment</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>9695e552fe99c71093f63e6f35f3b532</update_guid>
+<update_guid_history>9695e552fe99c71093f63e6f35f3b532:330938419,9e17f6d12cd143106fb17caed3335a29:39558750,0a0772d194d14310d6d40546bdad8189:286403704</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_3764ad9e8359c7101d28c430ceaad37d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;CYB Containment Notes field is mandatory when state is Containment - on Save&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CYB Containment Notes are mandatory&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+	// Create variable for referring to future states in lifecycle
+    var forwardStates = ['13', '14', '15', '3'];
+
+    // Get value of containment method and state
+    var myContMethod = g_form.getValue('containment_method');
+    var myNewState = g_form.getValue('state');
+
+    // Check if state is moving forward from 'Containment'
+    if (g_scratchpad.originalState == '12' &amp;&amp; forwardStates.includes(myNewState)) {
+
+        // Check for empty Containment field
+        if (myContMethod == null || myContMethod == '') {
+
+            // Give the user a error and prevent save
+            g_form.addErrorMessage(`The 'Containment Method' is mandatory when moving from 'Containment' state.`);
+            return false;
+        }
+   }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-07 23:36:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3764ad9e8359c7101d28c430ceaad37d&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;CYB Containment Notes are mandatory&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_3764ad9e8359c7101d28c430ceaad37d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-08 00:59:38&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1309677042</payload_hash>
+<remote_update_set display_value="Lab07.1 Code Challenge - Containment Notes validation">086c7d5e831dc7101d28c430ceaad3f4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-08 01:20:31</sys_created_on>
+<sys_id>cc6c7d5e831dc7101d28c430ceaad3f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea4be0abd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-08 01:20:31</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>CYB Containment Notes are mandatory</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>12973516881dc710afaef53513eef93b</update_guid>
+<update_guid_history>12973516881dc710afaef53513eef93b:1309677042,30677116d41dc7107f75dd64459bbf7b:805424470,d5473dd28d1dc710b854021eff496dbb:1286147933,f70775d2511dc7106d13c16ffbbceee2:805424470,0bd6bd92db1dc710048b49eccccda54b:1286147933,26b67992171dc710262450d74fe3429b:805424470,aaa6f5de21d9c710305907402f681c63:1499751728,b866fd52ab1dc710830497bc58c0dcae:1787384478,b3063152061dc710bd1c64793e198eb5:-560339742,2ac53d12ac1dc710843c88a8d4d570a7:-515574399,2e5539dea2d9c710b98abde8ab9a410d:-190446598,8534b95e28d9c710f8f6eb900d46c91f:1411304827,1604f15e59d9c71088fbf07edbcab480:-543918398,8c71fdd673d9c71049036aab5be4c403:-823229447,132fe1d297d9c7101b6d9560a29857d3:-383732576,eafea1d210d9c710aefc304203261d9a:1871457292,4fa469de7459c7104cd98d773cc64dc6:504872863</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_5e3fe9d283d9c7101d28c430ceaad30e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Creating a variable called originalState for use in other onSubmit scripts&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CYB create variable for originalState&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   // Create variable to capture the original state
+   g_scratchpad.originalState = g_form.getValue('state');
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-08 00:28:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5e3fe9d283d9c7101d28c430ceaad30e&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;CYB create variable for originalState&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5e3fe9d283d9c7101d28c430ceaad30e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-08 00:58:40&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1634900682</payload_hash>
+<remote_update_set display_value="Lab07.1 Code Challenge - Containment Notes validation">086c7d5e831dc7101d28c430ceaad3f4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-08 01:20:31</sys_created_on>
+<sys_id>cc6c7d5e831dc7101d28c430ceaad3f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea4bd28220000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-08 01:20:31</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>CYB create variable for originalState</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>c467f992ee1dc710b5f9b57775070edc</update_guid>
+<update_guid_history>c467f992ee1dc710b5f9b57775070edc:-1634900682,9c477192aa1dc71077582eec810e3478:-3228609,470775d24f1dc7101d55392cbde59573:-1634900682,59c5f912031dc710374e393306fca9dd:-633948080,a434395e16d9c7102c1c6e9bf8e7c109:2029347143,f0d3b11e7dd9c710c605a8c967830c4a:-633948080,c662f55a7dd9c71036ef88f5fcd88177:161891074,d761bdd696d9c710780a7e3370d9cb87:675100915,0760f9d296d9c7108cdcc6403e04558d:1635847338</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

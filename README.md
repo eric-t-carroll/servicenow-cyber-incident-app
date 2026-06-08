@@ -89,32 +89,36 @@ servicenow-cyber-incident-app/
 ### Code-challenges index
 | Challenge | Name | Phase | Status |
 |-----------|------|-------|--------|
-| 01 | Containment Notes are mandatory at save | CSA | Completed |
+| 01 | Containment Notes are mandatory at save | CSA | Complete |
 
 ## Daily workflow overview
-### Coding Challenge Sessions
-1. Open VSCode, confirm you're on the correct branch (git branch)
-2. Open ServiceNow PDI in browser and make your script changes there
-3. In VSCode, click Sync File or Sync Project to pull changes down from PDI
-4. Review the .js file in VSCode to confirm it looks right
-5. git add . → git commit -m "message" → git push
-6. Update README coding challenges index if the challenge is complete
-
-
 ### Project Build Sessions
-1. Open VSCode, confirm branch (git branch) — should be csa-labs for Labs 08-13, cad-labs for Labs 14-21
-2. Open ServiceNow PDI and do your lab work as normal
-3. When lab is complete, export update set XML and save to the correct folder (update-sets/csa-labs/ or update-sets/cad-labs/)
-4. In VSCode, click Sync Project to pull any script changes down
-5. git add . → git commit -m "Lab XX - description" → git push
+1. Check active branch
+   - Labs 01-13 → csa-labs
+   - Labs 14-21 → cad-labs
+2. Do lab work in ServiceNow PDI as normal
+3. Export Update Set to VSCode folder
+4. Sync Project in VSCode to pull script files down
+5. git add . → git commit -m → git push
 6. Merge to main when lab is fully complete
-7. Update README lab index status
+7. Update README lab index
+
+### Coding Challenge Sessions
+1. Check active branch in terminal
+2. Make script changes in ServiceNow PDI
+3. Sync File or Sync Project in VSCode to pull changes down
+4. Review .js file in VSCode to confirm it looks correct
+5. git add . → git commit -m → git push
+6. Update README coding challenges index
 
 
-## Restore instructions
- - Retrieve and commit update sets up to and including LAB06.
- - import the Lab06 Groups XML export file. Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
+## Project restore instructions
+1. Retrieve and commit update sets up to and including LAB06.
+2. Import the Lab06 Groups XML export file. Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
 
+To restore code challenges:
+ - Retrieve and commit all update sets in order as per your existing restore instructions
+ - After restore, sync the VSCode extension to confirm the files match
 
 ### Reference standards
 - [ACSC — Australian Cyber Security Centre](https://www.cyber.gov.au)
