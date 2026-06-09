@@ -105,6 +105,8 @@ servicenow-cyber-incident-app/
 |-----------|------|-------|--------|
 | 01 | Containment Notes are mandatory at save | CSA | Complete |
 | 02 | Auto assign new CYB tickets | CSA | Complete |
+| 03 | UI Action, escalate to persistent threat | CSA | Complete |
+
 
 ## Daily workflow overview
 ### Project Build Sessions
@@ -123,9 +125,8 @@ servicenow-cyber-incident-app/
 1. Check active branch in terminal
 2. Make script changes in ServiceNow PDI
 3. Sync File or Sync Project in VSCode to pull changes down
-4. Update README lab index
+4. Update README coding challenges index
 5. git add . → git commit -m → git push
-6. Update README coding challenges index
 
 
 ## Project restore instructions
@@ -172,4 +173,4 @@ To restore code challenges:
       - Always sync FROM ServiceNow into VSCode
          - Never edit the .js files directly in VSCode and expect them to push back to ServiceNow.
          - The sync is one direction: PDI → VSCode → GitHub.
- - 9/6 - created a script version of 'auto-assign new tickets to Cyber Security' and then disabled it, for code practice. Then created a version using 'actions' which is left enabled (best practice). Both are captured in the update set.
+ - 9/6: created a script version of 'auto-assign new tickets to Cyber Security' and then disabled it, for code practice. Then created a version using 'actions' which is left enabled (best practice). Both are captured in the update set.

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-09 01:47:57">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Create a UI Action for escalating a CYB to persistent threat. Only Cyber Security has permission to escalate to persistent threat.</description>
+<inserted/>
+<name>Lab07.3 Code Challenge - UI Action, escalate to persistent threat</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5ef2b62283dd4b101d28c430ceaad3eb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>233c8b6683558b101d28c430ceaad33f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_234e7a2a83d18b101d28c430ceaad300</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:47:03</sys_created_on><sys_id>234e7a2a83d18b101d28c430ceaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.update</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_scope_privilege_234e7a2a83d18b101d28c430ceaad300</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:47:03</sys_updated_on><target_name>GlideRecord.update</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-1054490255</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>233c03a683558b101d28c430ceaad36d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9d8e1570000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table/>
+<target_name>GlideRecord.update</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>e34e7a2abcd18b10d0141941a5561102</update_guid>
+<update_guid_history>e34e7a2abcd18b10d0141941a5561102:-1054490255</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_01b283a283158b101d28c430ceaad3d1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 01:08:45</sys_created_on><sys_id>01b283a283158b101d28c430ceaad3d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident.persistent_threat">d2a243a283158b101d28c430ceaad341</sys_security_acl><sys_update_name>sys_security_acl_role_01b283a283158b101d28c430ceaad3d1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 01:08:45</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>2120576286</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>273c03a683558b101d28c430ceaad36e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eaa06cacc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident.persistent_threat</table>
+<target_name>.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>5ac90f22df558b101872233c768b88b4</update_guid>
+<update_guid_history>5ac90f22df558b101872233c768b88b4:2120576286,254307e219158b10e1689672d8406143:437870765</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_form_sections_fa82ba59c391431043481cedd40131b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="fa82ba59c391431043481cedd40131b6" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:43:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4382ba59c391431043481cedd40131bd</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fa82ba59c391431043481cedd40131b6</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:43:16</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5a7b36a283d18b101d28c430ceaad355</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fa82ba59c391431043481cedd40131b6</sys_ui_form><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:37:00</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:43:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0b82ba59c391431043481cedd40131be</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fa82ba59c391431043481cedd40131b6</sys_ui_form><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:37:00</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:43:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c382ba59c391431043481cedd40131c5</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_cyber_incident" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fa82ba59c391431043481cedd40131b6</sys_ui_form><sys_ui_section caption="Resolution" display_value="Resolution" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">3682ba59c391431043481cedd40131b5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:37:00</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:43:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fa82ba59c391431043481cedd40131b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_form_sections_fa82ba59c391431043481cedd40131b6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:43:16</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+<payload_hash>1045180895</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>2b3c03a683558b101d28c430ceaad36f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9cfafaf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Sections</type>
+<update_domain>global</update_domain>
+<update_guid>ec0cfae2ddd18b10a9b7238a4cb7ae46</update_guid>
+<update_guid_history>ec0cfae2ddd18b10a9b7238a4cb7ae46:1045180895,1a7b36a263d18b10deafc038e3d98458:-261155891,0ceafe22fbd18b10bd30287b08f3ff6e:-127778534,32cafa22b0d18b10a6c87f239710e1d6:997101100,8f82ba59789143104e1fea8da72202c7:-127778534,0782ba592e914310f28b3ab3efa1bfc1:789683345,fa82ba5912914310c53a1a43c5c85fba:-805768179</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_persitant_threat</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="DELETE" element="persitant_threat" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes&gt;edge_encryption_enabled=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Persitant threat&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;false&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;persitant_threat&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:07:07&lt;/sys_created_on&gt;&lt;sys_id&gt;c92aa655c351431043481cedd4013124&lt;/sys_id&gt;&lt;sys_name&gt;Persitant threat&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_persitant_threat&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 00:20:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1428960460</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>2b3c8b6683558b101d28c430ceaad340</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9c2965a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.persitant_threat</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>43b876ea6a918b10ac51ca43d52d6252</update_guid>
+<update_guid_history>43b876ea6a918b10ac51ca43d52d6252:-1428960460,c8383e6ace918b102d2f766d87e23cda:-510380696,ed4aea552351431021cc943cb47a7a14:-1360449403</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_752af2ae83918b101d28c430ceaad3a8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:28:54</sys_created_on><sys_id>752af2ae83918b101d28c430ceaad3a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: user roles and groups</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_scope_privilege_752af2ae83918b101d28c430ceaad3a8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:28:54</sys_updated_on><target_name>Glide API: user roles and groups</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1219213907</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>673c03a683558b101d28c430ceaad36d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9c843cb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table/>
+<target_name>Glide API: user roles and groups</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>712af2ae62918b10e11e309bb3cb3cab</update_guid>
+<update_guid_history>712af2ae62918b10e11e309bb3cb3cab:1219213907</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" extends="task" table="x_1776078_cyber_0_cyber_incident"><active>true</active><array>false</array><attributes/><audit>true</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_cyber_incident</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:31:06</sys_created_on><sys_id>71022e1dc31d03102d84f44ed4013136</sys_id><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_cyber_incident_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:31:42</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>481216490</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>673c8b6683558b101d28c430ceaad33f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9cad3e70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>becafa22b2d18b101ec194784d6e70fa</update_guid>
+<update_guid_history>becafa22b2d18b101ec194784d6e70fa:481216490,79022e1d211d0310ebd98f3d9959829b:-922022255</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_00d672a6831d4b101d28c430ceaad31b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;escalate_persistent_threat&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;gs.hasRole("x_1776078_cyber_0.security_analyst") &amp;amp;&amp;amp; current.persistent_threat == false&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Escalate to Persitent threat&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[// Set persitent threat to true
+current.persistent_threat = true;
+
+// Update work notes
+current.work_notes = "Escalated to persistent threat by " + gs.getUserDisplayName() + " on " + new GlideDateTime().getDisplayValue();
+
+// Update the record and stay
+current.update();
+action.setRedirectURL(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 00:27:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;00d672a6831d4b101d28c430ceaad31b&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;Escalate to Persitent threat&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_00d672a6831d4b101d28c430ceaad31b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 01:24:09&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1874775776</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>6b3c03a683558b101d28c430ceaad36e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9fad7b10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Escalate to Persitent threat</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>cfc64baafb158b1071a2b9ea2d65fc6a</update_guid>
+<update_guid_history>cfc64baafb158b1071a2b9ea2d65fc6a:1874775776,74c6c7aa54158b1027a5c3305ea9211d:460646985,96b647aa29158b10c6d340605b49a9ee:-7300552,78a643aa04158b10cd5d8d77c14db50b:1012493175,3b86cf6a74158b10d1d7f495d9dd2d13:-677601946,fa268b2a74158b10539377426bfb4135:253304017,f0a14fee7cd18b101ad5fbc0d92a4624:1105261319,7a304b2e6fd18b107f381ac70b5ac068:338446087,b020472e9ad18b10260ca32e8e53dfcf:858127315,d800cfea60d18b10d5b9da5d7e848082:-638643813,17bff6ead0d18b10cb39da2716d2b4dc:-392601922,687fbeaabed18b10229747dea8abc695:1114679868,d93fbe6ae2d18b100aa68cab54358f22:418530422,01ce7a2a32d18b1084e7b4ed028089c5:1400489509,bc4ef62a7cd18b1063a5e1e0e2482e93:1392864152,99bdfea64fd18b10cb2e9c3a49a61173:-353194580,731d72a6c1d18b105ae5451f30980cb9:-21156869,a4fcba660bd18b10a32b4daa135de8eb:93447970,3bac72663ad18b10a4824b7d3f87a75e:-1302371262,c1d9f66e9b918b100bdedf9841ea6e24:-801615198</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_1a7b36a283d18b101d28c430ceaad350</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Notes" section_id="1a7b36a283d18b101d28c430ceaad350" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>watch_list</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:41</sys_created_on><sys_id>a27b36a283d18b101d28c430ceaad38a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:41</sys_created_on><sys_id>267b36a283d18b101d28c430ceaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:41</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes_list</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:41</sys_created_on><sys_id>ee7b36a283d18b101d28c430ceaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:41</sys_created_on><sys_id>aa7b36a283d18b101d28c430ceaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:41</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:41</sys_created_on><sys_id>667b36a283d18b101d28c430ceaad399</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:41</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>activity.xml</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:41</sys_created_on><sys_id>227b36a283d18b101d28c430ceaad39a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">1a7b36a283d18b101d28c430ceaad350</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:41</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Notes</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1a7b36a283d18b101d28c430ceaad350</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_1a7b36a283d18b101d28c430ceaad350</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-669605875</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>6f3c03a683558b101d28c430ceaad36f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9cd8e4a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>a67b36a260d18b105cb9c84a69dab19d</update_guid>
+<update_guid_history>a67b36a260d18b105cb9c84a69dab19d:-669605875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_persistent_threat_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="persistent_threat" label="Persistent threat" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>persistent_threat</element><help/><hint/><label>Persistent threat</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:21:23</sys_created_on><sys_id>fb68f6aa83918b101d28c430ceaad355</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Persistent threat</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_persistent_threat_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:21:39</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-2036458784</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>6f3c8b6683558b101d28c430ceaad340</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9c19f090000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Persistent threat</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>2f78baaa0a918b100ae72dba522b56e5</update_guid>
+<update_guid_history>2f78baaa0a918b100ae72dba522b56e5:-2036458784,3f68f6aa35918b103ac30e61887f499a:-2036458784,3b68f6aa00918b10ffc260a74d8bba6c:1216409430</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_eacafa2283d18b101d28c430ceaad38d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="eacafa2283d18b101d28c430ceaad38d" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_section action="DELETE"><caption>New section 1</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>eacafa2283d18b101d28c430ceaad38d</sys_id><sys_mod_count/><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2026-06-09 00:32:03</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1142525599</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>a33c03a683558b101d28c430ceaad370</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9cb26340000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>40eafe2238d18b10d432cde90137b672</update_guid>
+<update_guid_history>40eafe2238d18b10d432cde90137b672:1142525599,7acafa22b8d18b10aaf89c4830b21aff:1741344582</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a8d98f2283558b101d28c430ceaad328</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description&gt;Allow write for persistent_threat in x_1776078_cyber_0_cyber_incident, if the ACL script returns true.&lt;/description&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident.persistent_threat&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = false;]]&gt;&lt;/script&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 01:43:29&lt;/sys_created_on&gt;&lt;sys_id&gt;a8d98f2283558b101d28c430ceaad328&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_cyber_incident.persistent_threat&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_a8d98f2283558b101d28c430ceaad328&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 01:43:52&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1600324683</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>ab3c03a683558b101d28c430ceaad36d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eaa0ce5f80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident.persistent_threat</table>
+<target_name>x_1776078_cyber_0_cyber_incident.persistent_threat</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>cc5b0fe2d9558b10ab37f338844c48a0</update_guid>
+<update_guid_history>cc5b0fe2d9558b10ab37f338844c48a0:-1600324683,123b4be202558b101f7b4512f814b058:-163802847</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_821703ea83158b101d28c430ceaad379</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;de_escalate_persistent_threat&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;gs.hasRole("x_1776078_cyber_0.security_analyst") &amp;amp;&amp;amp; current.persistent_threat == true&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;De-escalate Persitent threat&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[// Set persitent threat to true
+current.persistent_threat = false;
+
+// Update work notes
+current.work_notes = "Persistent threat de-escalated by " + gs.getUserDisplayName() + " on " + new GlideDateTime().getDisplayValue();
+
+// Update the record and stay
+current.update();
+action.setRedirectURL(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 01:25:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;821703ea83158b101d28c430ceaad379&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;De-escalate Persitent threat&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_821703ea83158b101d28c430ceaad379&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 01:26:13&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1293221141</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>af3c03a683558b101d28c430ceaad36e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9fcbd920000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>De-escalate Persitent threat</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>d9474beae0158b1027fcea91a26333b1</update_guid>
+<update_guid_history>d9474beae0158b1027fcea91a26333b1:-1293221141,421703ea1d158b1067f51eb449097e7c:-372976641</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_role_41d6faa683918b101d28c430ceaad3d1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:27:29</sys_created_on><sys_id>41d6faa683918b101d28c430ceaad3d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_ui_action display_value="">00d672a6831d4b101d28c430ceaad31b</sys_ui_action><sys_update_name>sys_ui_action_role_41d6faa683918b101d28c430ceaad3d1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:27:29</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+<payload_hash>502983225</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>e33c03a683558b101d28c430ceaad36f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9c6f69c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table/>
+<target_name>.x_1776078_cyber_0.security_analyst</target_name>
+<type>UI Action Role</type>
+<update_domain>global</update_domain>
+<update_guid>0dd9f66ee6918b100210d4a6411dad1a</update_guid>
+<update_guid_history>0dd9f66ee6918b100210d4a6411dad1a:502983225</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_persistent_threat</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="persistent_threat" table="x_1776078_cyber_0_cyber_incident"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Persistent threat</column_label><comments/><create_roles/><default_value>false</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>persistent_threat</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">boolean</internal_type><mandatory>false</mandatory><max_length>255</max_length><name>x_1776078_cyber_0_cyber_incident</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:21:23</sys_created_on><sys_id>f368f6aa83918b101d28c430ceaad320</sys_id><sys_name>Persistent threat</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_cyber_incident_persistent_threat</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:21:38</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1646306802</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>e33c8b6683558b101d28c430ceaad340</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9c19df60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Persistent threat</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e378baaa63918b103938a21ad084c3cc</update_guid>
+<update_guid_history>e378baaa63918b103938a21ad084c3cc:1646306802,3f68f6aabb918b1008c54b49436d0267:255687942</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_f1092e91c351431043481cedd401311f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="f1092e91c351431043481cedd401311f" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>d67b36a283d18b101d28c430ceaad378</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>927b36a283d18b101d28c430ceaad379</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>5e7b36a283d18b101d28c430ceaad379</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>persistent_threat</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>1a7b36a283d18b101d28c430ceaad37a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_required_to_asd</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>d27b36a283d18b101d28c430ceaad37b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>containment_method</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>9e7b36a283d18b101d28c430ceaad37b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>5a7b36a283d18b101d28c430ceaad37c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>167b36a283d18b101d28c430ceaad37d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>on_hold_reason</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>de7b36a283d18b101d28c430ceaad37d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>9a7b36a283d18b101d28c430ceaad37e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>567b36a283d18b101d28c430ceaad37f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>127b36a283d18b101d28c430ceaad380</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>da7b36a283d18b101d28c430ceaad380</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>967b36a283d18b101d28c430ceaad381</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 00:34:40</sys_created_on><sys_id>527b36a283d18b101d28c430ceaad382</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 00:34:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f1092e91c351431043481cedd401311f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_f1092e91c351431043481cedd401311f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>739065617</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>e73c03a683558b101d28c430ceaad370</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9cd8dd50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>167b36a225d18b105a174e9c07dc9786</update_guid>
+<update_guid_history>167b36a225d18b105a174e9c07dc9786:739065617,cceafe22c9d18b1010cdc565e8f97894:-1764792081,c878f6aa4b918b10b1ee4623a2d528d7:1023054208,cb82fa5973914310f4976e7c0392fe00:1053786085,e5603a1528914310427a8df809745586:-1466311114,6b403615399143103fc781456ac4c851:1282585997,af207ed183914310d975aed8132ad784:9424547,accf6e91f5914310827e3a0daee45357:-1333065582,668fe291ec914310771795be6f7ba213:1856550846,812fe25153914310627dbdff650a6335:1101349064,e49e2eddd0514310fdcac99320a263e9:-1574561661,db4e22ddd95143103a7a1c3111ba5d76:-1330467004,7dbdea5d3551431034427bfdd01a22f4:449241457,a55d2e1d475143102469286eadd41fb0:-1590644613,e9aca2d991514310f72112eb073c11f6:273642103,5bfbaa5923514310b3b40f1c0a06eb5b:3588687,500b2ad5f8514310fcf86fc68b9f0bd4:69082984,389ae6955351431023d78c033598b0cf:1940457433,b07aa2957d5143108ebbf72b3fc4f848:-319924383,2d4aaa55af51431052612df75ceec1d7:-1918310699</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_persitant_threat_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="persitant_threat" label="Persitant threat" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="DELETE"><element>persitant_threat</element><help/><hint/><label>Persitant threat</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural>Persitant threats</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:07:08</sys_created_on><sys_id>e14aaa55c351431043481cedd40131da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Persitant threat</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_persitant_threat_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:07:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>2031099902</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>eb3c03a683558b101d28c430ceaad36c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ea9c295700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.persitant_threat</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7eb876eaa3918b10353998655a637844</update_guid>
+<update_guid_history>7eb876eaa3918b10353998655a637844:2031099902,654aea55b75143105fb2ba23cf55e218:60948238</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_d2a243a283158b101d28c430ceaad341</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident.persistent_threat</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 01:08:45</sys_created_on><sys_id>d2a243a283158b101d28c430ceaad341</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.persistent_threat</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_d2a243a283158b101d28c430ceaad341</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 01:08:45</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1204222371</payload_hash>
+<remote_update_set display_value="Lab07.3 Code Challenge - UI Action, escalate to persistent threat">233c8b6683558b101d28c430ceaad33f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-09 01:47:56</sys_created_on>
+<sys_id>ef3c03a683558b101d28c430ceaad36d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eaa06cb9d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-09 01:47:56</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident.persistent_threat</table>
+<target_name>x_1776078_cyber_0_cyber_incident.persistent_threat</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>56c90f2253558b101333fa6eb96de0c1</update_guid>
+<update_guid_history>56c90f2253558b101333fa6eb96de0c1:-1204222371,694307e2c0158b10723e3702cc9a7a72:1507798505</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
