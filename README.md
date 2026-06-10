@@ -84,7 +84,7 @@ servicenow-cyber-incident-app/
 | 05 | UI policies — phase fields visible only in correct state | CSA | Completed |
 | 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
 | 07 | IT portal access request form and approval workflow | CSA | Completed |
-| 08 | Notifications and persistent threat out-of-band alert | CSA | Planned |
+| 08 | Notifications and persistent threat out-of-band alert | CSA | Completed |
 | 09 | Inbound email actions and SLA definitions | CSA | Planned |
 | 10 | Reports and Cyber Incident dashboard | CSA | Planned |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Planned |
@@ -158,7 +158,9 @@ To restore code challenges:
  - Add containment_notes text field to the table and update client scripts to validate it
  - Fix Caller field reference qualifier — currently showing system roles not users
  - Fix record number prefix — showing TASK instead of CYB
- - Closed record lockdown — prevent state changes after closure
+ - Closed record — prevent state changes after closure
+ - Some CYB notifications also result in an CYB incident task for completion of the notification work.
+ - HTML email styling
 
 ## Personal learnings
  - 1/6: Initially extended the Incident table. Decided to start again with task table extension, so CYB records did not appear in the Incident lists and views.

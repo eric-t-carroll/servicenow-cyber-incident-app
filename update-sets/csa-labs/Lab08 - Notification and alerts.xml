@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-10 00:16:40">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Creating CYB email notfications for new incident creation, persistent threat detection, ASD notification obligation, and three data classification legal routing notifications.</description>
+<inserted/>
+<name>Lab08 - Notification and alerts</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>1729573a83550f101d28c430ceaad310</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>c4f0080783990f101d28c430ceaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_cb3e573a83550f101d28c430ceaad3f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Incident" name="Incident"&gt;b8a7d60c4309b510bab01febb7b8f293&lt;/category&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition table="x_1776078_cyber_0_cyber_incident"&gt;notification_required_to_asdCHANGESTOtrue^EQ&lt;item endquery="false" field="notification_required_to_asd" goto="false" newquery="false" operator="CHANGESTO" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;This cyber incident has been flagged as requiring notification to the Australian Signals Directorate (ASD) under applicable legislation including the Security of Critical Infrastructure Act (SOCI Act).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Incident: ${number}&lt;/p&gt;
+&lt;p&gt;Summary: ${short_description}&lt;/p&gt;
+&lt;p&gt;Severity: ${acsc_incident_severity}&lt;/p&gt;
+&lt;p&gt;Threat Category: ${threat_category}&lt;/p&gt;
+&lt;p&gt;Data Classification: ${data_classification_of_affected_assets}&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Action required: Initiate ASD notification procedures.&lt;br&gt;Contact your legal and compliance team before submitting the notification.&lt;/p&gt;
+&lt;p&gt;${URI_REF}&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;ASD Notification Required&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="Cyber Security"&gt;b7aa36d9c3d1431043481cedd40131f1&lt;/recipient_groups&gt;&lt;recipient_users&gt;6816f79cc0a8016401c5a33be04be441&lt;/recipient_users&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Action Required - ASD Notification Obligation: ${number}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 21:50:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cb3e573a83550f101d28c430ceaad3f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;ASD Notification Required&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_cb3e573a83550f101d28c430ceaad3f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 22:02:14&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1185859708</payload_hash>
+<remote_update_set display_value="Lab08 - Notification and alerts">c4f0080783990f101d28c430ceaad392</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>04f0080783990f101d28c430ceaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eae6858c20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>ASD Notification Required</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>07222bb62f950f1063e341fea552a44f</update_guid>
+<update_guid_history>07222bb62f950f1063e341fea552a44f:1185859708,fb02eb7aa5950f106bdbbd80ac226257:2038078846,028f5fb203950f10db99df9d3ef36146:-474166445</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_55ab137e83550f101d28c430ceaad33c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Incident" name="Incident"&gt;b8a7d60c4309b510bab01febb7b8f293&lt;/category&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition table="x_1776078_cyber_0_cyber_incident"&gt;persistent_threatCHANGESTOtrue^EQ&lt;item endquery="false" field="persistent_threat" goto="false" newquery="false" operator="CHANGESTO" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;URGENT &amp;mdash; PERSISTENT THREAT ACTIVE&lt;br&gt;&lt;br&gt;A persistent threat actor has been identified as still active within the environment.&lt;br&gt;Standard communication channels may be compromised.&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Number: ${number}&lt;/p&gt;
+&lt;p&gt;Summary: ${short_description}&lt;/p&gt;
+&lt;p&gt;Threat Actor: ${threat_actor_classification}&lt;/p&gt;
+&lt;p&gt;Severity: ${acsc_incident_severity}&lt;/p&gt;
+&lt;p&gt;MITRE ATT&amp;amp;CK tactic: ${mitre_att_ck_tactic}&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Initiate out-of-band communication procedures immediately.&lt;br&gt;Do not discuss incident details via standard email or chat channels.&lt;br&gt;&lt;br&gt;${URI_REF} &amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;CYB - Persistent Threat Notification&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups&gt;b7aa36d9c3d1431043481cedd40131f1,818a32d9c3d1431043481cedd4013166&lt;/recipient_groups&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Persitent Threat Alert: ${number} - ${short_description}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 21:38:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;55ab137e83550f101d28c430ceaad33c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;CYB - Persistent Threat Notification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_55ab137e83550f101d28c430ceaad33c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 21:58:21&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1690048258</payload_hash>
+<remote_update_set display_value="Lab08 - Notification and alerts">c4f0080783990f101d28c430ceaad392</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>0cf0080783990f101d28c430ceaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eae64cae30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>CYB - Persistent Threat Notification</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>d641a33a42950f10e0aeec00e8a30062</update_guid>
+<update_guid_history>d641a33a42950f10e0aeec00e8a30062:1690048258,6dcc97beb1550f104c0709133dbdf97a:-563313118</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_d38f5f3683950f101d28c430ceaad34e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Incident" name="Incident"&gt;b8a7d60c4309b510bab01febb7b8f293&lt;/category&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition table="x_1776078_cyber_0_cyber_incident"&gt;data_classification_of_affected_assetsCHANGESTOsensitive_operational^EQ&lt;item display_value="Sensitive operational information" endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="CHANGESTO" or="false" value="sensitive_operational"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;LEGAL NOTIFICATION &amp;mdash; SENSITIVE OPERATIONAL INFORMATION&lt;br&gt;&lt;br&gt;A cyber incident has been identified affecting systems containing Sensitive Operational Information.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Incident: ${number}&lt;/p&gt;
+&lt;p&gt;Summary: ${short_description}&lt;/p&gt;
+&lt;p&gt;Severity: ${acsc_incident_severity}&lt;/p&gt;
+&lt;p&gt;Data Classification: Sensitive Operational Information&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Security and Legal team action required: Review incident details and assess disclosure obligations.&lt;br&gt;Coordinate with the MIM Lead before any external communications.&lt;br&gt;&lt;br&gt;${URI_REF}&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Sensitive Operational Information&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="Cyber Security"&gt;b7aa36d9c3d1431043481cedd40131f1&lt;/recipient_groups&gt;&lt;recipient_users&gt;6816f79cc0a8016401c5a33be04be441&lt;/recipient_users&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Legal Alert: Sensitive Operational Information Affected: ${number}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 21:54:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d38f5f3683950f101d28c430ceaad34e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Sensitive Operational Information&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_d38f5f3683950f101d28c430ceaad34e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 22:04:28&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-32165727</payload_hash>
+<remote_update_set display_value="Lab08 - Notification and alerts">c4f0080783990f101d28c430ceaad392</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>48f0080783990f101d28c430ceaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eae6a62d60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Sensitive Operational Information</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>3ba2afba35950f10b5e627e6e14c04b0</update_guid>
+<update_guid_history>3ba2afba35950f10b5e627e6e14c04b0:-32165727,3692abba91950f101b08325b6027a487:-2101559485,6482a7bafa950f10f3f1dba7d180be6f:-913589989,5542ef7a32950f10529ce11c785bc466:123174164,7c12eb7aa9950f10ff72eac6c6af47b7:-734330572,4f5067b616950f10647957ff4c9de4c2:-2031899500</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_58b9977a83550f101d28c430ceaad3a5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Incident" name="Incident"&gt;b8a7d60c4309b510bab01febb7b8f293&lt;/category&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html&gt;&lt;![CDATA[&lt;p&gt;Number: ${number}Number: ${number}Number: ${number}Number: ${number}&lt;/p&gt;]]&gt;&lt;/digest_html&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;A new Cyber Incident has been created and assigned to your assignment group.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Incident: ${number}&lt;/p&gt;
+&lt;p&gt;Short description: ${short_description}&lt;/p&gt;
+&lt;p&gt;Severity: ${acsc_incident_severity}&lt;/p&gt;
+&lt;p&gt;Threat category: ${threat_category}&lt;/p&gt;
+&lt;p&gt;State: ${state}&lt;/p&gt;
+&lt;p&gt;Opened: ${opened_at}&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Please review and action this incident.&lt;/p&gt;
+&lt;p&gt;${URI_REF}&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Cyber Incident Created&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="Cyber Security"&gt;b7aa36d9c3d1431043481cedd40131f1&lt;/recipient_groups&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;New Cyber Incident: ${number} - ${short_description}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 21:33:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;58b9977a83550f101d28c430ceaad3a5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cyber Incident Created&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_58b9977a83550f101d28c430ceaad3a5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 21:33:26&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1765436364</payload_hash>
+<remote_update_set display_value="Lab08 - Notification and alerts">c4f0080783990f101d28c430ceaad392</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>88f0080783990f101d28c430ceaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eae4df9e60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident Created</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>c99b137e8f550f10ed622760d2526e2b</update_guid>
+<update_guid_history>c99b137e8f550f10ed622760d2526e2b:1765436364</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_ee60237683950f101d28c430ceaad3f9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Incident" name="Incident"&gt;b8a7d60c4309b510bab01febb7b8f293&lt;/category&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition table="x_1776078_cyber_0_cyber_incident"&gt;data_classification_of_affected_assetsCHANGESTOprivate_information^EQ&lt;item display_value="Private information" endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="CHANGESTO" or="false" value="private_information"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;LEGAL NOTIFICATION &amp;mdash; PRIVATE INFORMATION&lt;br&gt;&lt;br&gt;A cyber incident has been identified affecting systems containing Private Information.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Incident: ${number}&lt;/p&gt;
+&lt;p&gt;Summary: ${short_description}&lt;/p&gt;
+&lt;p&gt;Severity: ${acsc_incident_severity}&lt;/p&gt;
+&lt;p&gt;Data Classification: Private Information&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Security and Legal team action required: Assess whether a notifiable data breach has occurred under the Notifiable Data Breaches (NDB) scheme.&lt;br&gt;A notification to the Office of the Australian Information Commissioner (OAIC) may be required within 24 hours.&amp;nbsp;&lt;br&gt;&lt;br&gt;${URI_REF}&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Private Information&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="Cyber Security"&gt;b7aa36d9c3d1431043481cedd40131f1&lt;/recipient_groups&gt;&lt;recipient_users&gt;6816f79cc0a8016401c5a33be04be441&lt;/recipient_users&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Legal Alert - Private Information Affected: ${number}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 21:55:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ee60237683950f101d28c430ceaad3f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Private Information&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_ee60237683950f101d28c430ceaad3f9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 22:01:55&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>167500783</payload_hash>
+<remote_update_set display_value="Lab08 - Notification and alerts">c4f0080783990f101d28c430ceaad392</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>8cf0080783990f101d28c430ceaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eae680d3b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Private Information</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>de122f7aa4950f109f1dbae108cc50b2</update_guid>
+<update_guid_history>de122f7aa4950f109f1dbae108cc50b2:167500783,07116ff6d4950f10802500fb255de376:-1406494175,69906fb6d2950f1013892802a5c99c0d:-179958076</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_b261e73a83950f101d28c430ceaad3a9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Incident" name="Incident"&gt;b8a7d60c4309b510bab01febb7b8f293&lt;/category&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition table="x_1776078_cyber_0_cyber_incident"&gt;data_classification_of_affected_assetsCHANGESTOcritical_infrastructure^EQ&lt;item display_value="Critical infrastructure information" endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="CHANGESTO" or="false" value="critical_infrastructure"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;LEGAL NOTIFICATION &amp;mdash; CRITICAL INFRASTRUCTURE ALERT&lt;br&gt;&lt;br&gt;A cyber incident has been identified affecting systems containing Critical Infrastructure Information.&lt;br&gt;This triggers mandatory reporting obligations under the Security of Critical Infrastructure Act 2018 (SOCI Act).&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Incident: ${number}&lt;/p&gt;
+&lt;p&gt;Summary: ${short_description}&lt;/p&gt;
+&lt;p&gt;Severity: ${acsc_incident_severity}&lt;/p&gt;
+&lt;p&gt;Data Classification: Critical Infrastructure Information&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Cyber Security and Legal team action required:&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;Mandatory notification to the Australian Signals Directorate (ASD) is required.&lt;br&gt;Engage legal counsel immediately. SOCI Act reporting timeframes are strictly enforced.&lt;br&gt;&lt;br&gt;${URI_REF}&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Critical Infrastructure Information&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups name="Cyber Security"&gt;b7aa36d9c3d1431043481cedd40131f1&lt;/recipient_groups&gt;&lt;recipient_users&gt;6816f79cc0a8016401c5a33be04be441&lt;/recipient_users&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Legal Alert - Critical Infrastructure Information Affected: ${number}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-09 22:01:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b261e73a83950f101d28c430ceaad3a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Critical Infrastructure Information&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_b261e73a83950f101d28c430ceaad3a9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-09 22:04:43&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>732414505</payload_hash>
+<remote_update_set display_value="Lab08 - Notification and alerts">c4f0080783990f101d28c430ceaad392</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-10 00:16:39</sys_created_on>
+<sys_id>ccf0080783990f101d28c430ceaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19eae6a9df20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-10 00:16:39</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Critical Infrastructure Information</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>6fb223faa9950f10bdf57c31870ec235</update_guid>
+<update_guid_history>6fb223faa9950f10bdf57c31870ec235:732414505,b002e77aad950f10ad62a047e3c86a1b:30735890</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
