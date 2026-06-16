@@ -85,7 +85,7 @@ servicenow-cyber-incident-app/
 | 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
 | 07 | IT portal access request form and approval workflow | CSA | Completed |
 | 08 | Notifications and persistent threat out-of-band alert | CSA | Completed |
-| 09 | Inbound email actions and SLA definitions | CSA | Planned |
+| 09 | Inbound email actions and SLA definitions | CSA | Completed |
 | 10 | Reports and Cyber Incident dashboard | CSA | Planned |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Planned |
 | 12 | Import sets, transform maps and data sources | CSA | Planned |
