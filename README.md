@@ -120,6 +120,8 @@ servicenow-cyber-incident-app/
 6. git add . → git commit -m → git push
 7. Merge to `main` when lab is fully complete
  - git checkout main → git merge csa-labs → git push → git checkout csa-labs
+8. Commit application changes via ServiceNow Studio source control
+ - ServiceNow Studio → Commit Changes → confirm push to portfolio repo → merge dev branch in with main when lab is completed.
 
 ### Coding Challenge Sessions
 1. Check active branch in terminal
