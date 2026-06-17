@@ -80,12 +80,11 @@ servicenow-cyber-incident-app/
 | 02 | Scoped app creation and task table extension | CSA | Completed |
 | 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
 | 04 | Custom form layout and views | CSA | Completed |
-| 05 | State model — investigation, containment, eradication, recovery | CSA | Completed |
-| 05 | UI policies — phase fields visible only in correct state | CSA | Completed |
+| 05 | State model & UI Policies | CSA | Completed |
 | 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
 | 07 | IT portal access request form and approval workflow | CSA | Completed |
 | 08 | Notifications and persistent threat out-of-band alert | CSA | Completed |
-| 09 | Inbound email actions and 'time to triage' SLA | CSA | Completed |
+| 09 | Form hygiene, inbound email actions and 'time to triage' SLA | CSA | Completed |
 | 10 | Reports and Cyber Incident dashboard | CSA | Planned |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Planned |
 | 12 | Import sets, transform maps and data sources | CSA | Planned |
@@ -103,9 +102,10 @@ servicenow-cyber-incident-app/
 ### Code-challenges index
 | Challenge | Name | Phase | Status |
 |-----------|------|-------|--------|
-| 01 | Containment Notes are mandatory at save | CSA | Complete |
+| 01 | Containment Notes are mandatory at save (replaced by UI Policy) | CSA | Deprecated |
 | 02 | Auto assign new CYB tickets | CSA | Complete |
 | 03 | UI Action, escalate to persistent threat | CSA | Complete |
+| 04 | State transition matrix and implementation | CSA | Planned |
 
 
 ## Daily workflow overview
@@ -147,24 +147,36 @@ To restore code challenges:
 
 
 ### Future work
-- Cyber incident response playbook (Lab 22, CAD phase)
+**CAD-phase scripting/architecture**
+- SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern
+- Configurable SLA duration parameters (admin-adjustable)
+- Regulatory SLA timers tied to specific notifications
+- Child tasks generated for notifications (ASD/Private Info/Critical Infrastructure)
+- Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
+- Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
+- Cyber incident response playbook (Lab 22)
 - Problem record auto-creation on incident closure
 - Change advisory gate between containment and eradication phases
 - Post-incident review table extending task
 - GlideRecord utility Script Include for common queries
-- IntegrationHub spoke for ASD notification obligations under SOCI Act
-- Business Impact Assessment application
-   - standalone multi-table app for structured BIA during major incidents, designed to support optional Microsoft Teams Adaptive Card integration in a corporate instance.
-- Improve UI on the CYB form (state flows, mandatory fields, visible fields etc)
-- Improve the catalog item and flow. e.g. ticket gets updated when group auto assign completes etc.
- - Add containment_notes text field to the table and update client scripts to validate it
- - Fix Caller field reference qualifier — currently showing system roles not users
- - Fix record number prefix — showing TASK instead of CYB
- - Closed record — prevent state changes after closure
- - Some CYB notifications also result in an CYB incident task for completion of the notification work.
- - HTML email styling
+- IntegrationHub spoke for ASD notification (SOCI Act)
+- Severity-based MIM call-out info message (High/Critical severity)
 
-## Personal learnings
+**Form/field hygiene**
+- Strip Ref:MSG watermark string from inbound email reply text before writing to work_notes
+- HTML email styling refinement / content wording review once real outbound email tested
+
+**Process/governance**
+- State transition matrix — comprehensive rules for valid state changes across full lifecycle,
+  Closed = permanent read-only lock, On Hold return-state behaviour
+- Improve catalog item/flow (e.g. ticket updates when group auto-assign completes)
+
+**Other**
+- Business Impact Assessment application
+- PDI outbound email setup (real SMTP, inbox testing)
+
+
+## Notable learnings
  - 1/6: Initially extended the Incident table. Decided to start again with task table extension, so CYB records did not appear in the Incident lists and views.
   - 5/6: Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped application did not capture creation of the application scope.
       - This is by design.
@@ -178,3 +190,5 @@ To restore code challenges:
          - Never edit the .js files directly in VSCode and expect them to push back to ServiceNow.
          - The sync is one direction: PDI → VSCode → GitHub.
  - 9/6: created a script version of 'auto-assign new tickets to Cyber Security' and then disabled it, for code practice. Then created a version using 'actions' which is left enabled (best practice). Both are captured in the update set.
+ - 16/6: created a portfolio repo and linked the application to source control via ServiceNow Studio. The first commit created multiple 'historical' commits in my repo. ServiceNow then detected those as a discrepancy with my local version. Had to stash the changes I was working on and pull the historical commits before I could commit the new Lab update. ServiceNow also created a 'stash' local update set, even though I had already completed my update set and exported it. Found the 2 updates sets to be identical when examining the contents in VS Code. Has worked without issue since puling down the historical commits.
+ - 18/8: Working through the process of analysing business process and creating design documents would reduce development friction. I'm basically making design decisions on the fly based on my previous work experience.
