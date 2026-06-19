@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-19 22:24:36">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Adding functionality to track affected CIs to the CYB tickets.</description>
+<inserted/>
+<name>Lab11 - CMDB and CI linking</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d5ce76ca832147901d28c430ceaad392</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-19 22:24:35</sys_created_on>
+<sys_id>4037870e836147901d28c430ceaad38d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-19 22:24:35</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_x_1776078_cyber_0_cyber_incident_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">e5808f8e832147901d28c430ceaad385</list_id><order_by/><position>0</position><related_list>task_sla.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-19 21:55:29</sys_created_on><sys_id>29808f8e832147901d28c430ceaad386</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-19 21:55:29</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">e5808f8e832147901d28c430ceaad385</list_id><order_by/><position>1</position><related_list>task_cmdb_ci_service.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-19 21:55:29</sys_created_on><sys_id>ad808f8e832147901d28c430ceaad386</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-19 21:55:29</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">e5808f8e832147901d28c430ceaad385</list_id><order_by/><position>2</position><related_list>task_ci.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-19 21:55:29</sys_created_on><sys_id>25808f8e832147901d28c430ceaad387</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-19 21:55:29</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Cyber Incident - Default view</calculated_name><filter/><name>x_1776078_cyber_0_cyber_incident</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-19 21:55:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e5808f8e832147901d28c430ceaad385</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cyber Incident - Default view</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_related_x_1776078_cyber_0_cyber_incident_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-19 21:55:29</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>-1425968259</payload_hash>
+<remote_update_set display_value="Lab11 - CMDB and CI linking">4037870e836147901d28c430ceaad38d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-19 22:24:35</sys_created_on>
+<sys_id>0437870e836147901d28c430ceaad38e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ee1e1c1b10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-19 22:24:35</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>2d808f8e41214790936c1a9294fab089</update_guid>
+<update_guid_history>2d808f8e41214790936c1a9294fab089:-1425968259,1570cb8ed02147908ef16377aa7c02d6:1919539798,5a31d94d87290f5024ace36060571615:-33880525</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_override_ad76cf8a836147901d28c430ceaad3bb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>task</base_table><calculation/><calculation_override>false</calculation_override><default_value/><default_value_override>false</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>false</display_override><element>cmdb_ci</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_1776078_cyber_0_cyber_incident</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual>active=true</reference_qual><reference_qual_override>true</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-19 22:23:09</sys_created_on><sys_id>ad76cf8a836147901d28c430ceaad3bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_override_ad76cf8a836147901d28c430ceaad3bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-19 22:23:09</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+<payload_hash>-22141000</payload_hash>
+<remote_update_set display_value="Lab11 - CMDB and CI linking">4037870e836147901d28c430ceaad38d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-19 22:24:35</sys_created_on>
+<sys_id>8437870e836147901d28c430ceaad38d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ee1fb186a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-19 22:24:35</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>cmdb_ci</target_name>
+<type>Dictionary Entry Override</type>
+<update_domain>global</update_domain>
+<update_guid>c7d60fcaa1614790734aaa18427a791e</update_guid>
+<update_guid_history>c7d60fcaa1614790734aaa18427a791e:-22141000</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
