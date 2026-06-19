@@ -87,7 +87,7 @@ servicenow-cyber-incident-app/
 | 09 | Form hygiene, inbound email actions and 'time to triage' SLA | CSA | Completed |
 | 10 | Reports and Cyber Incident dashboard | CSA | Completed |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Complete |
-| 12 | Import sets, transform maps and data sources | CSA | Planned |
+| 12 | Import sets, transform maps and data sources | CSA | Completed |
 | 13 | Scripted REST API — expose Cyber Incident endpoint | CSA | Planned |
 | 14 | Business rules — server-side automation | CAD | Planned |
 | 15 | Client scripts and UI actions | CAD | Planned |

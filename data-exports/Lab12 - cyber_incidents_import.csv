@@ -1,0 +1,6 @@
+short_description,description,severity,threat_category,state,caller
+Ransomware detected on finance server,Crypto-locker variant identified on PROD-FIN-01 — files encrypted,Critical,Ransomware,New,abel.tuter
+Suspicious login from overseas IP,Multiple failed logins then successful auth from IP 185.220.x.x,High,Unauthorised access,New,david.loo
+Phishing campaign targeting HR team,12 staff received credential-harvesting email — 2 clicked link,Medium,Phishing,New,abel.tuter
+Malware on exec laptop,Endpoint protection flagged trojan on CEO laptop — quarantined,High,Malware,New,david.loo
+Data exfiltration attempt blocked,DLP tool blocked large outbound transfer to unknown external endpoint,Critical,Data breach,New,abel.tuter
