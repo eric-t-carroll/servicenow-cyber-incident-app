@@ -85,7 +85,7 @@ servicenow-cyber-incident-app/
 | 07 | IT portal access request form and approval workflow | CSA | Completed |
 | 08 | Notifications and persistent threat out-of-band alert | CSA | Completed |
 | 09 | Form hygiene, inbound email actions and 'time to triage' SLA | CSA | Completed |
-| 10 | Reports and Cyber Incident dashboard | CSA | Planned |
+| 10 | Reports and Cyber Incident dashboard | CSA | Completed |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Planned |
 | 12 | Import sets, transform maps and data sources | CSA | Planned |
 | 13 | Scripted REST API — expose Cyber Incident endpoint | CSA | Planned |
@@ -191,4 +191,5 @@ To restore code challenges:
          - The sync is one direction: PDI → VSCode → GitHub.
  - 9/6: created a script version of 'auto-assign new tickets to Cyber Security' and then disabled it, for code practice. Then created a version using 'actions' which is left enabled (best practice). Both are captured in the update set.
  - 16/6: created a portfolio repo and linked the application to source control via ServiceNow Studio. The first commit created multiple 'historical' commits in my repo. ServiceNow then detected those as a discrepancy with my local version. Had to stash the changes I was working on and pull the historical commits before I could commit the new Lab update. ServiceNow also created a 'stash' local update set, even though I had already completed my update set and exported it. Found the 2 updates sets to be identical when examining the contents in VS Code. Has worked without issue since puling down the historical commits.
- - 18/8: Working through the process of analysing business process and creating design documents would reduce development friction. I'm basically making design decisions on the fly based on my previous work experience.
+ - 18/6: Working through the process of analysing business process and creating design documents would reduce development friction. I'm basically making design decisions on the fly based on my previous work experience.
+ - 18/6: Reports are captured in update sets, dashboards are not. Need to 'unload dashboard' to make sure it is captured in the same update set as the reports.
