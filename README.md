@@ -87,9 +87,9 @@ servicenow-cyber-incident-app/
 | 08 | Notifications and persistent threat out-of-band alert | CSA | Completed |
 | 09 | Form hygiene, inbound email actions and 'time to triage' SLA | CSA | Completed |
 | 10 | Reports and Cyber Incident dashboard | CSA | Completed |
-| 11 | CMDB basics and linking affected CIs to incidents | CSA | Complete |
+| 11 | CMDB basics and linking affected CIs to incidents | CSA | Completed |
 | 12 | Import sets, transform maps and data sources | CSA | Completed |
-| 13 | Apply field register changes after design review | CSA | Planned |
+| 13 | Apply field register changes after design review | CSA | Completed |
 | 14 | Multiple choice conversion | CSA | Planned |
 | 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Planned |
 | 16 | Business rule — Data Classification contains checks | CAD | Planned |
