@@ -89,26 +89,45 @@ servicenow-cyber-incident-app/
 | 10 | Reports and Cyber Incident dashboard | CSA | Completed |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Complete |
 | 12 | Import sets, transform maps and data sources | CSA | Completed |
-| 13 | Scripted REST API — expose Cyber Incident endpoint | CSA | Planned |
-| 14 | Business rules — server-side automation | CAD | Planned |
-| 15 | State transition matrix and enforcement | CAD | Planned |
-| 16 | Client scripts and UI actions | CAD | Planned |
-| 17 | Flow Designer — automated lifecycle workflow | CAD | Planned |
-| 18 | Script includes and GlideRecord API | CAD | Planned |
-| 19 | Playbook Designer — Cyber Incident response playbook | CAD | Planned |
-| 20 | ATF — automated testing for the app | CAD | Planned |
-| 21 | IntegrationHub — outbound notification spoke | CAD | Planned |
-| 22 | App Engine Studio polish | CAD | Planned |
+| 13 | Apply field register changes after design review | CSA | Planned |
+| 14 | Multiple choice conversion | CSA | Planned |
+| 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Planned |
+| 16 | Business rule — Data Classification contains checks | CAD | Planned |
+| 17 | Regulatory Notification Task table | CAD | Planned |
+| 18 | SOCI classification matrix-lookup | CAD | Planned |
+| 19 | Suggested/Confirmed approval pattern | CAD | Planned |
+| 20 | ASD/SOCI notification trigger | CAD | Planned |
+| 21 | OAIC/NDB notification trigger | CAD | Planned |
+| 22 | Ransomware payment reporting trigger | CAD | Planned |
+| 22a | Application Properties — configurable SLA targets | CAD | Planned |
+| 23 | Warning/info banner | CAD | Planned |
+| 24 | State transition matrix — design and enforcement | CAD | Planned |
+| 25 | Closure validation + Record Integrity ACL | CAD | Planned |
+| 25a | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
+| 26 | Urgency/Priority phase-gating | CAD | Planned |
+| 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
+| 28 | Client scripts and UI actions (general CAD coverage) | CAD | Planned |
+| 29 | Flow Designer — automated lifecycle workflow | CAD | Planned |
+| 30 | Script Includes & GlideRecord API (general CAD coverage) | CAD | Planned |
+| 31 | Playbook Designer — standard response playbook | CAD | Planned |
+| 32 | Playbook Designer — persistent threat branch | CAD | Planned |
+| 33 | ATF — automated testing | CAD | Planned |
+| 34 | IntegrationHub — outbound notification spoke | CAD | Planned |
+| 34a | Delegated Development walkthrough (role-play) | CAD | Planned |
+| 35 | App Engine Studio polish | CAD | Planned |
 
 
 ### Code-challenges index
-| Challenge | Name | Phase | Status |
-|-----------|------|-------|--------|
-| 01 | Containment Notes are mandatory at save (replaced by UI Policy) | CSA | Deprecated |
-| 02 | Auto assign new CYB tickets | CSA | Complete |
-| 03 | UI Action, escalate to persistent threat | CSA | Complete |
-| 04 | Structured JSON object from script include | CSA | Planned |
-| 05 | Parameters passed into function | CSA | Planned |
+| Challenge | Name | Status |
+|-----------|------|--------|
+| 01 | Containment Notes are mandatory at save (replaced by UI Policy) | Deprecated |
+| 02 | Auto assign new CYB tickets | Complete |
+| 03 | UI Action, escalate to persistent threat | Complete |
+| 04 | Object construction from a categorical input | Planned |
+| 05 | Parameter handling/validation on a multi-field input | Planned |
+| 06 | Array.indexOf()/.includes() against a multi-select field value | Planned |
+| 07 | Building a 2D lookup and querying it | Planned |
+| 08 | Error message patterns, reading a g_scratchpad value set by a Display Business Rule | Planned |
 
 
 ## Daily workflow overview
@@ -210,3 +229,4 @@ Cross-application extensions
  - 16/6: created a portfolio repo and linked the application to source control via ServiceNow Studio. The first commit created multiple 'historical' commits in my repo. ServiceNow then detected those as a discrepancy with my local version. Had to stash the changes I was working on and pull the historical commits before I could commit the new Lab update. ServiceNow also created a 'stash' local update set, even though I had already completed my update set and exported it. Found the 2 updates sets to be identical when examining the contents in VS Code. Has worked without issue since puling down the historical commits.
  - 18/6: Working through the process of analysing business process and creating design documents would reduce development friction. I'm basically making design decisions on the fly based on my previous work experience.
  - 18/6: Reports are captured in update sets, dashboards are not. Need to 'unload dashboard' to make sure it is captured in the same update set as the reports.
+ - 21/6: Decided to create a proper design spec instead of 'winging it'. A lot of decisions were being made on the fly and I could see a lot of rework coming because of it. It was also a good oportunity to make sure the design aligned with ACSC specifications and other regulatory requirements.
