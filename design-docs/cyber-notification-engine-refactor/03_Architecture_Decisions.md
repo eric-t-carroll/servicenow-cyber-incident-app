@@ -1,0 +1,125 @@
+# Cyber Incident Management — Architecture Decisions & Talking Points
+
+> **Purpose:** This document captures the reasoning behind the non-obvious design decisions from this session — the "why," not the "what." Use this as interview prep and portfolio material: each section is framed as a decision, an alternative that was considered and rejected, and the reasoning that tipped it.
+
+---
+
+## 1. Why C1–C6 instead of Critical/High/Medium/Low
+
+The original field used a generic four-value severity scale. The redesign adopted ACSC's actual operational categorisation matrix (C1–C6) instead — not as a renaming exercise, but because ASD revised that matrix in March 2022 specifically to prioritise Critical Infrastructure and Systems of National Significance reporting. Adopting C1–C6 isn't cosmetic alignment; it's using the same scale ASD will use when this organisation actually reports to them.
+
+**The detail that makes this defensible, not just directionally correct:** the matrix was traced precisely for the Regulated Critical Infrastructure significance column, and it turns out **C5 never resolves for that column** — every Cyber Effect row lands on C4 or jumps straight to C6. The choice list deliberately excludes C5 rather than including all six values for completeness. Including a category that can never legitimately apply isn't neutral — it gives analysts a value to mis-select and corrupts the data. This is the kind of detail that signals genuine engagement with the source material rather than pattern-matching "six severity levels, ship it."
+
+---
+
+## 2. Why the ACSC severity field stays separate from the legal SOCI/NDB determination
+
+It would have been simpler to derive the 12hr/72hr SOCI reporting trigger directly from ACSC severity (e.g. "C1–C3 = report"). This was explicitly rejected after walking through real counter-examples: C2 ("extensive compromise") can be a pure confidentiality event with zero availability impact — which fails the Significant Impact test (an availability-only legal test) even though it sounds severe. C3 collapses two different cyber effects (isolated compromise vs. coordinated-but-unconfirmed attack) onto one category, which have different legal outcomes.
+
+**The principle:** ACSC's C1–C6 measures *extent and intent of the cyber effect* — a real, useful operational triage signal. SOCI's significant/relevant impact tests measure something narrower and specifically legal — actual or imminent impact on availability/integrity/reliability/confidentiality of a regulated asset. The two are correlated, not identical. Collapsing one into the other looks fine until a real incident doesn't fit the pattern — and by then it's reporting under the wrong deadline. The two systems were kept deliberately separate, each doing one job.
+
+---
+
+## 3. Why a generic, configurable severity matrix was rejected for ACSC significance
+
+Early in the design, a fully general two-axis model (Cyber Effect × Significance, configurable like the real ACSC matrix) was considered — letting any organisation type determine its own column. This was deliberately walked back. The Significance axis (which column of the matrix applies) is **invariant** for this application — it will only ever run at one organisation, and that organisation's classification doesn't change incident to incident. Building a real second axis for a value that never varies is solving a problem that doesn't exist.
+
+**The test applied, worth reusing elsewhere:** does this axis actually vary independently, incident to incident? If yes, build it as a real input. If no, pre-resolve it at design time and bake it into the field definition instead. Recognising when *not* to add configurability is as much a sign of design judgement as recognising when to add it.
+
+---
+
+## 4. The matrix-lookup pattern, applied five times deliberately
+
+This session's single most-repeated architectural decision: replace hardcoded conditional logic with a data-driven lookup table validated by a Business Rule. It shows up as:
+
+1. The (rejected, but instructive) Cyber Effect × Significance matrix
+2. Impact × Affected Asset Type → SOCI classification
+3. The State Transition Matrix
+4. ServiceNow's own native Priority Lookup Rules (Impact × Urgency → Priority) — recognised as the precedent that justified pattern #2, not coincidentally similar to it
+5. The documentation structure itself — config/logic kept separate from sequencing, mirroring the same separation-of-concerns principle applied to the app
+
+**The interview-ready framing:** "I recognised ACSC's severity model as a two-axis lookup matrix — the same pattern ServiceNow already uses natively for Priority calculation — so I built the equivalent logic the same way instead of writing nested if/else conditions. I applied that same pattern consistently across the app wherever two genuinely independent inputs needed to combine into an outcome, including reusing it for the design documentation itself."
+
+---
+
+## 5. Why "Affected Asset Type" is a flat field at go-live, not a CMDB integration
+
+The full version of this feature — deriving asset criticality from the CMDB's Affected CIs and Impacted CIs relationships — was scoped and **deliberately deferred**, not because it's not the right long-term answer, but because building it before the CMDB relationship data exists and is trustworthy would mean building on sand. A flat, analyst-set field ships a working, legally-sound notification engine immediately.
+
+**The detail that matters for the interview answer:** the go-live field and the future CMDB-derived version were designed to present **the same value to the same downstream logic** — the Impact × Asset Type lookup, the SOCI suggested-classification calculation, and the warning-banner trigger never need to change when the CMDB integration lands later. Only *how the field gets populated* changes. This is a deliberate stable-interface decision: build to an interface now, swap the implementation underneath it later, without anything downstream needing to be touched. It's the difference between a "future release" and a future rebuild.
+
+---
+
+## 6. The Suggested/Confirmed pattern — a human gate, applied consistently
+
+Every regulatory determination in this design — SOCI classification, NDB eligibility, the ransomware payment trigger — follows the same shape: the system calculates a *suggested* outcome from objective inputs, and a person (via an Approval record, not a checkbox) must confirm it before anything fires. This wasn't designed once and copied; it was arrived at independently for SOCI, then deliberately reused for NDB rather than inventing a second mechanism.
+
+**Why this matters, stated plainly:** "likely serious harm," "materially disrupted," and similar legal tests are genuinely judgement calls — sensitivity of data, realistic risk of misuse, whether containment actually eliminated the risk. A system that silently auto-fires a 12-hour statutory notification based on a calculated field is making a legal determination without a lawyer in the loop. The suggested/confirmed split keeps the system fast (the suggestion is instant) without making it the final authority.
+
+---
+
+## 7. Why Legal got an Approval record, not a new checkbox mechanism
+
+The original "Confirmed by Legal/Compliance" design was a simple boolean. It was upgraded specifically because this application already has a working Approval pattern from Lab 07 (the IT portal access request workflow) — reusing it for Legal's sign-off here is more consistent than introducing a second, lighter-weight confirmation mechanism, and it produces a real audit trail (who approved, when, what they noted) instead of a tickbox anyone with form access could check. For a field gating a statutory notification, that audit trail isn't optional polish — it's the difference between a defensible process and an unverifiable one.
+
+---
+
+## 8. Why MIM gets a Watcher, not an Approval
+
+Legal and MIM are both "internal stakeholders on a notification task," but they were deliberately given different mechanisms once their actual roles were examined: Legal validates *whether* a notification is required and at what level — that's a decision, so it gets an Approval. MIM needs *visibility* that a serious incident is in flight, not a sign-off role — so it gets the task's native `Watch list` field instead. Same underlying mechanism (a `task` table feature), applied differently because the actual job differs. Defaulting both to the same treatment "for consistency" would have been the wrong kind of consistency.
+
+---
+
+## 9. Why Executive Escalation has no ServiceNow build at all
+
+The most counter-intuitive finding in this session: "Critical Infrastructure → executive escalation" turned out not to need a database field, a Flow, or a task. Executive engagement is governed entirely by the organisation's existing standalone Major Incident Management process — ServiceNow's job is to make the trigger condition unambiguous (Confirmed SOCI Classification = Significant → full MIM invocation), and the existing persistent warning banner already surfaces that condition. The actual escalation action belongs to the MIM runbook, not a ServiceNow task.
+
+**Worth stating directly in an interview:** not every requirement in a design needs a system build. Recognising that a requirement is fully satisfied by *existing* infrastructure plus documentation is a legitimate, defensible outcome — and arguably a stronger one than building a redundant mechanism just because the requirement sounded like it needed one.
+
+---
+
+## 10. Why Urgency is phase-gated and Priority is allowed to sit blank
+
+Extending `task` instead of `incident` meant inheriting Impact/Urgency/Priority "for free" — but Urgency (restoration speed) doesn't map cleanly onto cyber incident response, where rushing containment/eradication can be actively harmful (tipping off an attacker, destroying forensic evidence). Rather than hiding Urgency permanently, it's gated by `Cyber Incident Phase`: hidden through Investigation/Containment/Eradication, unlocked at Recovery — the exact point where restoration speed becomes a real, relevant question again.
+
+**The consequence accepted deliberately:** Priority sits blank for the front half of every incident's life, since it depends on Urgency. This was treated as *correct*, not a defect — ACSC Incident Severity is the real triage signal during that period, and a synthetic default Urgency value would manufacture a number nobody actually assessed, creating a false signal in the audit trail.
+
+---
+
+## 11. Why a write ACL, not just a UI Policy, locks the Closed state
+
+"Make a Closed record uneditable" could have been satisfied with UI Policy alone (grey out the fields). That was explicitly rejected as insufficient: UI Policy is form-level enforcement only — it does nothing against a REST API call, a background script, or a Data Import overwriting a closed record's fields. Given these records may underpin actual regulatory reports, "looks locked in the UI" and "is actually locked" are different claims, and only the second one matters for audit defensibility. The real mechanism is a write ACL at the data layer; UI Policy is kept as well, purely for a clean user experience, not as the enforcement mechanism itself.
+
+---
+
+## 12. Why "new records must be created into New" has zero exceptions
+
+This rule was deliberately built with no migration carve-out, even though legitimate historical data migration is a real scenario this app may eventually face. The reasoning: a standing exception in the rule is a permanent gap, while a one-off historical migration is better handled as an explicit, logged, elevated-permission action taken at that specific moment — visible in the audit trail as exactly what it was, rather than baked into the rule as a quiet, permanent bypass.
+
+**Why this rule matters more than it looks like it should:** a future monitoring-system integration (flagged but not yet built) would create incidents via API, not a person filling out a form. Without a hard insert-time constraint, a misconfigured integration or a bad Import Set mapping could insert records directly into Containment or even Closed — silently bypassing every mandatory-field gate, every classification step, and the entire audit trail this design depends on. This single rule is what makes the rest of the state model actually mean something, for every record, not just the ones that happen to follow the rules.
+
+---
+
+## 13. Choice lists: verified, not assumed — and what was deliberately left out
+
+Several choice lists were checked against primary sources (ACSC's Essential Eight page, ACSC's Types of Threats page, a standard threat-actor taxonomy) rather than assumed correct because they'd been in the build for several labs. Two genuine errors were found and corrected (Essential Eight terminology had drifted to deprecated ACSC language). Equally important: several plausible additions (Account compromise, Terrorist Group, several consumer-facing ACSC threat categories) were considered and explicitly declined, on the grounds that adding values "for completeness" that would never realistically get selected is the same kind of bloat this design avoided everywhere else — an unused C5, a redundant Close Code value, an unnecessary configurable Significance axis. A choice list audit isn't just "did we miss anything" — it's equally "did we only add what earns its place."
+
+---
+
+## 14. Why native Multiple Choice, not a junction table, for the multi-select conversions
+
+Five choice fields converted from single-select to multi-select this session. The alternative considered was a proper many-to-many junction table (Cyber Incident ↔ each selected choice value as its own related record), which is the more "enterprise" pattern and would allow per-selection metadata — e.g. tracking exactly when each individual containment method was applied, or notes specific to one selected threat category.
+
+That capability was deliberately not built, because none of these five fields have a real requirement for per-value metadata today. A junction table is the right tool when you need to query, report on, or annotate each selected value independently; here, the actual requirement is simply "more than one value can be true at once" — which ServiceNow's native Multiple Choice field type satisfies directly, with no custom table, no new relationships to maintain, and full native support in reporting (contains-filtering, grouping) for the Lab 10 dashboard work already planned. This is the same test applied in decision #3 (the rejected configurable Significance axis): build the flexibility that's actually needed, not the flexibility that sounds more sophisticated.
+
+**One field broke that simplicity, and it's worth being explicit about why:** Data Classification of Affected Assets isn't just a multi-select UI change — it feeds live calculated logic (the SOCI escalation floor, the NDB trigger), both of which previously assumed exactly one value could be true. Converting it required rewriting that logic from equality checks to contains-checks across all selected values, plus a new mutual-exclusivity rule for "None Identified" against every other value. The distinction worth carrying into the interview answer: not every multi-select conversion is purely cosmetic — when a field is also a calculation *input*, widening its cardinality can silently break the logic built on top of it unless that logic is explicitly revisited, not just the form.
+
+---
+
+## 15. Why the Urgency/Priority design didn't need a "Cyber Severity / Business Priority" redesign
+
+Partway through this session, a proposal surfaced (sourced from general AI-generated guidance, not verified against a specific named framework) arguing that cyber incidents need a fundamentally different prioritisation model than standard ITIL Impact × Urgency — citing the risk of premature restoration destroying forensic evidence, and the fact that a compromised endpoint with customer data access can matter more than an offline internal service regardless of immediate operational impact. The suggested fix was a two-field bifurcated model: "Cyber Severity" and "Business Priority."
+
+On inspection, this design already addressed both concerns — independently, earlier in the session, for unrelated reasons — via a **three-field split** rather than two: `ACSC Incident Severity` (C1–C6) and `Suggested SOCI Classification` jointly carry exactly what "Cyber Severity" was reaching for (data sensitivity, asset criticality, regulatory exposure), while native `Priority` was already deliberately gated to Recovery specifically *because* rushing restoration during Containment/Eradication can be actively harmful. The proposed redesign wasn't wrong — it was already built, under different field names, arrived at from first principles rather than copied from the same source.
+
+**The judgement call worth naming directly:** when handed a plausible-sounding "you're doing this wrong" critique, the right response isn't reflexive agreement or reflexive dismissal — it's mapping the critique's actual concerns onto what already exists before deciding whether anything needs to change. Here, nothing did. One genuinely new idea did surface from that exercise (a threat-velocity/spread-rate signal) and was deliberately *not* built — that kind of fast-changing, narrative information belongs in Work Notes, not a dropdown that goes stale the moment it's set.

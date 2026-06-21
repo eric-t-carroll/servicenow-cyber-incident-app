@@ -15,6 +15,7 @@ Update sets and data exports are exported as XML and committed per lab.
 ## Key features/decisions
  - Custom Cyber Incident Application extending the 'task' table.
     - Decision made not to extend the 'incident' table so records are kept separate from default incident lists and views (security requirement).
+    - Also keeps core tables safe from customisation and risk of incompatibility with future versions.
  - Australian Cyber Security Centre (ACSC) aligned fields
  - 'Persistent threat' flag triggers out-of-band communications procedures
  - Phase gated form sections align to the cyber incident lifecycle
@@ -90,13 +91,14 @@ servicenow-cyber-incident-app/
 | 12 | Import sets, transform maps and data sources | CSA | Completed |
 | 13 | Scripted REST API — expose Cyber Incident endpoint | CSA | Planned |
 | 14 | Business rules — server-side automation | CAD | Planned |
-| 15 | Client scripts and UI actions | CAD | Planned |
-| 16 | Flow Designer — automated lifecycle workflow | CAD | Planned |
-| 17 | Script includes and GlideRecord API | CAD | Planned |
-| 18 | Playbook Designer — Cyber Incident response playbook | CAD | Planned |
-| 19 | ATF — automated testing for the app | CAD | Planned |
-| 20 | IntegrationHub — outbound notification spoke | CAD | Planned |
-| 21 | App Engine Studio polish | CAD | Planned |
+| 15 | State transition matrix and enforcement | CAD | Planned |
+| 16 | Client scripts and UI actions | CAD | Planned |
+| 17 | Flow Designer — automated lifecycle workflow | CAD | Planned |
+| 18 | Script includes and GlideRecord API | CAD | Planned |
+| 19 | Playbook Designer — Cyber Incident response playbook | CAD | Planned |
+| 20 | ATF — automated testing for the app | CAD | Planned |
+| 21 | IntegrationHub — outbound notification spoke | CAD | Planned |
+| 22 | App Engine Studio polish | CAD | Planned |
 
 
 ### Code-challenges index
@@ -105,7 +107,8 @@ servicenow-cyber-incident-app/
 | 01 | Containment Notes are mandatory at save (replaced by UI Policy) | CSA | Deprecated |
 | 02 | Auto assign new CYB tickets | CSA | Complete |
 | 03 | UI Action, escalate to persistent threat | CSA | Complete |
-| 04 | State transition matrix and implementation | CSA | Planned |
+| 04 | Structured JSON object from script include | CSA | Planned |
+| 05 | Parameters passed into function | CSA | Planned |
 
 
 ## Daily workflow overview
@@ -162,6 +165,7 @@ To restore code challenges:
 - IntegrationHub spoke for ASD notification (SOCI Act)
 - Severity-based MIM call-out info message (High/Critical severity)
 
+
 **Form/field hygiene**
 - Strip Ref:MSG watermark string from inbound email reply text before writing to work_notes
 - HTML email styling refinement / content wording review once real outbound email tested
@@ -174,6 +178,19 @@ To restore code challenges:
 **Other**
 - Business Impact Assessment application
 - PDI outbound email setup (real SMTP, inbox testing)
+
+
+### Ideas for after the Cyber Incident Application
+Standalone applications / major builds
+ - BIA (Business Impact Assessment) application
+      - standalone application/table. Tasks for technical teams to populate impacted services during a large scale event. Eventually would link into teams to present the tasks.
+      - Possible future link: recovery/regulatory SLA complexity could eventually pull in BIA data and breached-data-type to dynamically adjust SLA targets.
+ - IntegrationHub spoke for ASD/SOCI Act — formal integration build, not a simple script
+
+Cross-application extensions
+ - Problem record auto-creation on closure
+ - Change advisory gate between containment and eradication - enable easy change management
+ - Post-incident review table — extending task, separate review processes
 
 
 ## Notable learnings
