@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-06-21 09:50:53">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Updating the ACSC severity choice list based on a design review.</description>
+<inserted/>
+<name>Lab13a - ACSC Severity choice list</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>232b222e83e90b901d28c430ceaad33a</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-21 09:50:52</sys_created_on>
+<sys_id>f6ddea62832d0b901d28c430ceaad319</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-21 09:50:52</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_acsc_incident_severity</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="acsc_incident_severity" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:08:59</sys_created_on><sys_id>74baea95c351431043481cedd4013111</sys_id><sys_mod_count>0</sys_mod_count><sys_name>acsc_incident_severity</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_acsc_incident_severity</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:08:59</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint>Select when there is sustained disruption to essential systems and the services they support.</hint><inactive>false</inactive><label>C1 - Sustained Disruption</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 09:44:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0b3ca6ae83e90b901d28c430ceaad392</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-21 09:44:35</sys_updated_on><value>c1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint>Select when compromise is broad across systems, accounts, or data, but essential services are not yet experiencing sustained disruption.</hint><inactive>false</inactive><label>C2 - Extensive Compromise</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 09:45:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a76c2eae83e90b901d28c430ceaad3a4</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-21 09:45:07</sys_updated_on><value>c2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint>Select when compromise is contained to a limited number of systems, or a deliberate, coordinated attack is underway without broader compromise.</hint><inactive>false</inactive><label>C3 - Isolated/Coordinated Compromise</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 09:45:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bf8c22ee83e90b901d28c430ceaad3b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-21 09:45:55</sys_updated_on><value>c3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint>Select for a low-level malicious attack with limited scope and no confirmed compromise.</hint><inactive>false</inactive><label>C4 - Low-Level Attack</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 09:46:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2fbce6ee83e90b901d28c430ceaad319</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-21 09:46:25</sys_updated_on><value>c4</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>acsc_incident_severity</element><hint>Select when an attack was attempted but unsuccessful - no compromise occurred.</hint><inactive>false</inactive><label>C6 - Unsuccessful Attack</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 09:47:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eeeceaee83e90b901d28c430ceaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-21 09:47:12</sys_updated_on><value>c6</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-665273668</payload_hash>
+<remote_update_set display_value="Lab13a - ACSC Severity choice list">f6ddea62832d0b901d28c430ceaad319</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-21 09:50:52</sys_created_on>
+<sys_id>3eddea62832d0b901d28c430ceaad319</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ee993b67f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-21 09:50:52</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.ACSC Incident Severity</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>890d2222822d0b9015a6d61065c4f806</update_guid>
+<update_guid_history>890d2222822d0b9015a6d61065c4f806:-665273668,65dcaaeeefe90b90f4d47115533e9d00:22385049,9ebca6ee41e90b90269e1eb3070c649d:-848278873,ae8c22eef6e90b906b9b3964f3742fb3:356867455,1d8ceeaebce90b90d1b8f5a4b9c405ef:1150532108,ae6ceaae1de90b90ddb716052ee180dd:-1891872907,2d3c66ae9ee90b90a3b298325ecb05cb:-64403059,213c66ae91e90b90b91bca1eef8fb9ba:-1232908936,ad3c66aeb7e90b901d13f89cb0cb9fa7:-1224102525,653c66ae28e90b9039e06fc77cb26395:678466807,06daa2d5e45143105c4dd3c7e90d8b51:2003822819,beca22d5b55143108dcc9176857010bb:-262277886,40caee9588514310e9ee5ca1cb9ecc20:1214596462,34ba6e953151431001829b06a8de4e84:-462856959</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
