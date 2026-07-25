@@ -116,8 +116,6 @@ Not designed this session — could not be verified against public sources. FIRB
 
 ---
 
-## Subsystem C — Impact / Urgency / Priority (Phase-Aware)
-
 ## Subsystem C — Impact / Urgency / Priority (Revised)
 
 > **Note:** This subsystem was substantially redesigned after the initial architecture review. The previous design phase-gated Urgency and left Priority blank pre-Recovery. That design is retired — see Architecture Decisions §10 and §15 for the revised rationale.

@@ -181,7 +181,7 @@ Upgraded from a simple checkbox to a proper **Approval record** (`sysapproval_ap
 | Task SLAs | EXISTING | Native `task_sla` related list |
 | Impacted CIs | EXISTING | Downstream/auto-derived CI relationships — used (alongside Affected CIs) to inform the Regulated/Essential-Service determination |
 | Affected CIs | EXISTING | Directly/manually linked CIs — same use as above |
-| Cyber Incident Phase | EXISTING (Lab 05) | Derived from State; values Investigation & Diagnosis, Containment, Eradication, Recovery. Drives UI policies including the new Urgency phase-gating this session. **Confidence note:** not independently visible as a standalone form field in screenshots — referenced throughout this session's design work as an existing operative field per the original build documentation (Lab 05). Worth a quick visual confirmation in the PDI, not a re-build. |
+| Cyber Incident Phase | EXISTING (Lab 05) | Derived from State; values Investigation & Diagnosis, Containment, Eradication, Recovery. Previously drove Urgency phase-gating UI Policy — that policy has been retired as of 25 July 2026 redesign. **Confidence note:** not independently visible as a standalone form field in screenshots — referenced throughout this session's design work as an existing operative field per the original build documentation (Lab 05). Worth a quick visual confirmation in the PDI, not a re-build. |
 
 ---
 
