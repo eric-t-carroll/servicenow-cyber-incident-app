@@ -52,13 +52,10 @@ Coding challenges are supported by Claude acting as a tutor/coach.
 ## Repository structure
 ```
 servicenow-cyber-incident-app/
-├── Cyber Incident Management/      ← VSCode extension sync, do not edit manually
-│   └── src/
 ├── data-exports/                   # XML exports with user and group data
-├── code-challenges                 # temporary location for work in progress .js files
 ├── update-sets/
-│   ├── csa-labs/                   # Update set XML and .js from CSA labs and coding challenges
-│   └── cad-labs/                   # Update set XML and .js from CAD labs and coding challenges
+│   ├── csa-labs/                   # Update set XML from CSA labs and coding challenges
+│   └── cad-labs/                   # Update set XML from CAD labs and coding challenges
 └── README.md
 ```
 
@@ -132,23 +129,25 @@ servicenow-cyber-incident-app/
 
 ## Daily workflow overview
 ### Project Build Sessions
-1. Check active branch
-   - Labs 01-13 → csa-labs
-   - Labs 14-21 → cad-labs
-2. Do lab work in ServiceNow PDI as normal
-3. Export Update Set to VSCode folder
-4. Sync Project in VSCode to pull script files down
+1. Apply Remote Changes in browser Studio before starting any session
+   - Browser Studio → Source Control → Apply Remote Changes
+2. Check active branch
+   - Labs 01-15 → csa-labs
+   - Labs 16-35 → cad-labs
+3. Do lab work in ServiceNow PDI as normal
+4. Export Update Set to VSCode folder
 5. Update README lab index
 6. git add . → git commit -m → git push
 7. Merge to `main` when lab is fully complete
  - git checkout main → git merge csa-labs → git push → git checkout csa-labs
-8. Commit application changes via ServiceNow Studio source control when full lab is completed.
- - ServiceNow Studio → Commit Changes → confirm push to portfolio repo → VS Code → checkout dev → pull → checkout main → merge dev branch in → push.
+8. Commit application changes via ServiceNow Studio source control
+   - Browser Studio → Source Control → Commit Changes → confirm push to portfolio repo
+   - Merge dev branch to main via GitHub Pull Request (Compare & pull request)
 
 ### Coding Challenge Sessions
 1. Check active branch in terminal
 2. Make script changes in ServiceNow PDI
-3. Sync File or Sync Project in VSCode to pull changes down
+3. Export Update Set to VSCode folder
 4. Update README coding challenges index
 5. git add . → git commit -m → git push
 
@@ -159,7 +158,6 @@ servicenow-cyber-incident-app/
 
 To restore code challenges:
  - Retrieve and commit all update sets in order as per your existing restore instructions
- - After restore, sync the VSCode extension to confirm the files match
 
 ### Reference standards
 - [ACSC — Australian Cyber Security Centre](https://www.cyber.gov.au)
