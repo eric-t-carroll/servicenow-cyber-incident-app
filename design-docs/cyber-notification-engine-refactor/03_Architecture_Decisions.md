@@ -78,11 +78,17 @@ The most counter-intuitive finding in this session: "Critical Infrastructure →
 
 ---
 
-## 10. Why Urgency is phase-gated and Priority is allowed to sit blank
+## 10. Why Impact and Urgency are set early, and why Priority is never downgraded
 
-Extending `task` instead of `incident` meant inheriting Impact/Urgency/Priority "for free" — but Urgency (restoration speed) doesn't map cleanly onto cyber incident response, where rushing containment/eradication can be actively harmful (tipping off an attacker, destroying forensic evidence). Rather than hiding Urgency permanently, it's gated by `Cyber Incident Phase`: hidden through Investigation/Containment/Eradication, unlocked at Recovery — the exact point where restoration speed becomes a real, relevant question again.
+The original design phase-gated Urgency — hiding it through Investigation, Containment, and Eradication, and leaving Priority blank until Recovery. That design was revisited and reversed after working through real operational concerns.
 
-**The consequence accepted deliberately:** Priority sits blank for the front half of every incident's life, since it depends on Urgency. This was treated as *correct*, not a defect — ACSC Incident Severity is the real triage signal during that period, and a synthetic default Urgency value would manufacture a number nobody actually assessed, creating a false signal in the audit trail.
+**The case for setting Impact and Urgency early:** Priority is what triggers the Major Incident Management process (P1/P2 = MIM engagement). If Priority is blank for the first half of the incident's life, the MIM process has no signal to fire against — a critical gap for a regulated entity where MIM engagement may itself be a process obligation. A rough-but-timely Priority is more operationally useful than a precise-but-delayed one. Teams can always revise their assessment as the incident develops.
+
+**The reframing of Urgency:** the original concern was that "urgency to restore" is dangerous in the early phases — rushing recovery before proper containment/eradication can destroy forensic evidence or tip off an attacker. That concern was valid, but the conclusion drawn from it (hide Urgency) was wrong. Urgency doesn't disappear in the early phases — it just points at a different question. "How urgently do we need to contain and stop spread" is a real, assessable question from minute one. The label doesn't need to change; urgency is a measure of speed/time regardless of what the speed is being applied to.
+
+**Why Priority is never downgraded once correctly set:** a correctly assessed P1 stays P1 for reporting and audit purposes. If the incident turns out to be less severe than initially assessed, the correct response is to document that in Work Notes, not to revise the Priority record retroactively. The historical accuracy of the Priority record — what was known, when, and what response it triggered — is more important than keeping Priority current as the incident evolves. Teams can slow their response behaviourally without touching the record.
+
+**The soft prompt design for Impact floor:** rather than hard-blocking low Impact values when sensitive data is involved, a warning fires when Data Classification contains Private Information, Sensitive Operational Information, or Critical Infrastructure Information and Impact is below the corresponding floor. The analyst can override — the system flags the inconsistency without overriding the analyst's judgement. This is the same suggested/confirmed philosophy applied in Subsystem B: the system surfaces information, a person decides.
 
 ---
 
@@ -116,10 +122,12 @@ That capability was deliberately not built, because none of these five fields ha
 
 ---
 
-## 15. Why the Urgency/Priority design didn't need a "Cyber Severity / Business Priority" redesign
+## 15. Why the Urgency/Priority design was eventually revised, not defended
 
-Partway through this session, a proposal surfaced (sourced from general AI-generated guidance, not verified against a specific named framework) arguing that cyber incidents need a fundamentally different prioritisation model than standard ITIL Impact × Urgency — citing the risk of premature restoration destroying forensic evidence, and the fact that a compromised endpoint with customer data access can matter more than an offline internal service regardless of immediate operational impact. The suggested fix was a two-field bifurcated model: "Cyber Severity" and "Business Priority."
+Early in the design, a proposal surfaced arguing that cyber incidents need a fundamentally different prioritisation model than standard ITIL Impact × Urgency — citing premature restoration risk and the fact that a compromised endpoint with sensitive data can matter more than an offline internal service. The initial response was to defend the existing phase-gating design as already addressing those concerns via the three-field split (ACSC Severity + SOCI Classification + phase-gated Priority).
 
-On inspection, this design already addressed both concerns — independently, earlier in the session, for unrelated reasons — via a **three-field split** rather than two: `ACSC Incident Severity` (C1–C6) and `Suggested SOCI Classification` jointly carry exactly what "Cyber Severity" was reaching for (data sensitivity, asset criticality, regulatory exposure), while native `Priority` was already deliberately gated to Recovery specifically *because* rushing restoration during Containment/Eradication can be actively harmful. The proposed redesign wasn't wrong — it was already built, under different field names, arrived at from first principles rather than copied from the same source.
+That defence was subsequently revisited and found to be incomplete. The real operational gap it missed: **Priority is what triggers MIM engagement**, and a blank Priority in the early phases means MIM has no system signal to fire against. Defending the phase-gating design was prioritising theoretical correctness ("urgency to restore shouldn't be assessed yet") over operational reality ("P1/P2 needs to exist so the right people are engaged immediately").
 
-**The judgement call worth naming directly:** when handed a plausible-sounding "you're doing this wrong" critique, the right response isn't reflexive agreement or reflexive dismissal — it's mapping the critique's actual concerns onto what already exists before deciding whether anything needs to change. Here, nothing did. One genuinely new idea did surface from that exercise (a threat-velocity/spread-rate signal) and was deliberately *not* built — that kind of fast-changing, narrative information belongs in Work Notes, not a dropdown that goes stale the moment it's set.
+The revised design keeps the three-field split intact — ACSC Severity still does its cyber-domain characterisation job, SOCI Classification still does its regulatory job, and Priority still does its MIM-triggering and operational triage job — but removes the phase-gating that was making Priority useless for the first half of every incident's life.
+
+**The judgement call worth naming directly:** when a design defence requires arguing that a blank field is "intentional and correct," that's a signal worth examining carefully. In this case, the blank Priority was genuinely harming the operational usefulness of the application.

@@ -142,8 +142,8 @@ servicenow-cyber-incident-app/
 6. git add . → git commit -m → git push
 7. Merge to `main` when lab is fully complete
  - git checkout main → git merge csa-labs → git push → git checkout csa-labs
-8. Commit application changes via ServiceNow Studio source control
- - ServiceNow Studio → Commit Changes → confirm push to portfolio repo → merge dev branch in with main when lab is completed.
+8. Commit application changes via ServiceNow Studio source control when full lab is completed.
+ - ServiceNow Studio → Commit Changes → confirm push to portfolio repo → VS Code → checkout dev → pull → checkout main → merge dev branch in → push.
 
 ### Coding Challenge Sessions
 1. Check active branch in terminal
@@ -230,3 +230,4 @@ Cross-application extensions
  - 18/6: Working through the process of analysing business process and creating design documents would reduce development friction. I'm basically making design decisions on the fly based on my previous work experience.
  - 18/6: Reports are captured in update sets, dashboards are not. Need to 'unload dashboard' to make sure it is captured in the same update set as the reports.
  - 21/6: Decided to create a proper design spec instead of 'winging it'. A lot of decisions were being made on the fly and I could see a lot of rework coming because of it. It was also a good oportunity to make sure the design aligned with ACSC specifications and other regulatory requirements.
+ - 9/7: **Priority/Urgency phase-gating retired:** original design hid Urgency pre-Recovery and left Priority blank. Revised — both mandatory from Investigation & Diagnosis onward. Priority drives MIM engagement (P1/P2); a blank Priority in early phases meant MIM had no signal. Correctly assessed Priority is never downgraded — reporting integrity > real-time accuracy.

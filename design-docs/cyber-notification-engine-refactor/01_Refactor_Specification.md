@@ -11,8 +11,8 @@
 
 - Choice list values replaced: Critical/High/Medium/Low → C1, C2, C3, C4, C6 (no C5). See Field Register §1.1 for exact values and help text.
 - Mechanical change only — `sys_choice` record edits on the existing field. No schema/field definition change.
-- Existing UI Policy (severity mandatory from Investigation & Diagnosis onward) is value-agnostic — unaffected.
-- Existing Lab 08 email templates reference `${acsc_incident_severity}` — auto-picks up new display labels, no template edit required.
+- UI Policy governing ACSC Severity mandatory state has been revised — see Subsystem C for the new trigger condition.
+- Existing Lab 08 email templates reference `${acsc_incident_severity}` — this field now lives on the parent Cyber Incident and is dot-walked into the ASD/SOCI notification task. Template references will need to be verified once notification task design is finalised in Labs 17–20.
 - **Retires** the old ASD Notification auto-tick rule ("Severity = Critical"). Replacement rule is in Subsystem B.
 
 ---
@@ -50,7 +50,8 @@
 
 See Field Register §2 for the full field list. Behavioural rules:
 
-- **Auto-creation trigger:** any Notification Type's specific trigger condition (see B.4–B.6) creates one task, parented to the Cyber Incident, Notification Type set accordingly.
+- **Auto-creation trigger:** fires on successful record save when the Notification Type's specific trigger condition is met (see B.4–B.6) AND all required fields are populated. Task is created complete — no partially-populated child records. A **duplicate guard** prevents a second task of the same Notification Type being created if the record is edited and re-saved after the task already exists: condition is "no active task of this Notification Type already exists on this parent incident."
+- **SLA clock:** starts from `Date/Time Became Aware` (analyst-set field) at the point the task is created — not from `sys_created_on` and not from when Suggested SOCI Classification was first calculated. The statutory clock is anchored to awareness time, not system processing time.
 - **Assignment:** group = Cyber Security (confirmed: same group as the main incident, not a separate "Cyber Security Operations" group).
 - **Legal:** Approval record (`sysapproval_approver`), not a checkbox. Runs in **parallel** with the task's SLA clock — legal review must not block the clock from running, since statutory deadlines don't pause for internal process.
 - **MIM:** added to the task's native `Watch list` field on creation. Static assignment group (confirmed — not an on-call roster, parked as a future-work item if that's ever needed).
@@ -66,6 +67,7 @@ See Field Register §2 for the full field list. Behavioural rules:
 - **Recipients:** urgent oral via 1300CYBER1 (1300 292 371); written via ACSC cyber incident reporting portal (cyber.gov.au)
 - **Field automation:** `Notification required to ASD` (boolean) = true when Confirmed SOCI Classification ∈ {Significant, Relevant}. **This retires the old "Severity = Critical" rule entirely.**
 - **Verification item (not a build task):** confirm whether your specific asset class sits on the SOCI (Application) Rules mandated list (s5, LIN 22/026) — if not, this is voluntary-but-built-to-the-same-standard, not strictly mandatory. Doesn't change the build either way.
+- **ACSC Severity scoping:** ACSC Severity (C1–C6) applies to this notification pathway only — not to OAIC/NDB or Ransomware Payment tasks. Field lives on the parent Cyber Incident (single source of truth) and is dot-walked into this task for reference. See Subsystem C for mandatory gate timing.
 
 ### B.5 OAIC Notification (Privacy Act 1988, Part IIIC — NDB scheme)
 
@@ -116,13 +118,41 @@ Not designed this session — could not be verified against public sources. FIRB
 
 ## Subsystem C — Impact / Urgency / Priority (Phase-Aware)
 
-- `Impact` = native `task.impact`, relabeled I1–I4. Not a new field. (Confirmed via the Recovery/Urgency design — this only works cleanly if Impact is the native field, not a separate parallel one.)
-- `Urgency` (native `task.urgency`): hidden via UI Policy while `Cyber Incident Phase` ∈ {Investigation & Diagnosis, Containment, Eradication}. Visible and **mandatory** at Recovery — same phase-gated mandatory pattern used everywhere else in the app.
-- **UI Policy constraint:** do not clear the Urgency value when hiding it. If an incident regresses from Recovery back to an earlier phase, Urgency should stay hidden again but retain whatever value was set — no "clear value" action on the policy.
-- **Priority** (native, calculated from Impact × Urgency): deliberately blank pre-Recovery, since Urgency is unset. This is intentional — ACSC Incident Severity is the real triage signal during Investigation/Containment/Eradication, not generic Priority.
-- **Dashboard implication for Lab 10:** sort/filter the Cyber Incident dashboard by ACSC Incident Severity, not Priority — Priority is meaningless for the front half of an incident's life.
+## Subsystem C — Impact / Urgency / Priority (Revised)
 
-**Revisited and confirmed (no change):** a later review raised whether cyber incidents need a fundamentally different prioritization model than standard ITIL Impact × Urgency (citing premature-restoration risk and internal-vs-external-exposure concerns). On review, this design already addresses both concerns via a three-field split rather than the generic Impact/Urgency pair alone: `ACSC Incident Severity` (C1–C6) and `Suggested SOCI Classification` (Subsystem B) jointly carry the "how severe/how exposed is this" signal, while native Priority is deliberately reserved for "how urgently do we want this restored" and gated to Recovery only. No redesign required — see Architecture Decisions document for the full comparison.
+> **Note:** This subsystem was substantially redesigned after the initial architecture review. The previous design phase-gated Urgency and left Priority blank pre-Recovery. That design is retired — see Architecture Decisions §10 and §15 for the revised rationale.
+
+- `Impact` = native `task.impact`, relabeled I1–I4. Visible and **mandatory from Investigation & Diagnosis onward**. No phase-gating.
+- `Urgency` = native `task.urgency`. Visible and **mandatory from Investigation & Diagnosis onward**. No phase-gating, no hiding via UI Policy at any stage.
+  - Urgency is a single field with a single label throughout the incident lifecycle. Its meaning naturally shifts — early phases: urgency to contain and stop spread; Recovery: urgency to restore service. No label change needed; urgency is a measure of speed/time regardless of phase.
+- `Priority` = native, calculated from Impact × Urgency. **Active from Investigation & Diagnosis onward** — no longer blank pre-Recovery. MIM process fires cleanly off P1/P2 from this point. Priority is also the trigger for MIM engagement in the standalone MIM process — see B.8.
+- **Priority is never downgraded once correctly assessed.** A correctly assessed P1 or P2 stays that way for reporting integrity. Teams can slow their response behaviourally without changing the record. The historical accuracy of the Priority record matters more than real-time adjustment.
+
+### C.1 ACSC Severity — mandatory gate (revised)
+
+ACSC Severity is no longer mandatory at Investigation & Diagnosis as a blanket rule. It becomes mandatory on the parent Cyber Incident form **only when `Suggested SOCI Classification ≠ No Report`** — enforced via UI Policy with that condition.
+
+**Rationale:** ACSC Severity describes actual current incident state (e.g. C1 = "sustained disruption to essential systems") — it cannot be accurately assessed before the scope of the incident is known. Making it mandatory early forces a speculative assessment that may never be revisited. It becomes assessable and relevant at the point a SOCI notification obligation is identified, which is exactly when Suggested SOCI Classification moves off "No Report."
+
+**Field location:** parent Cyber Incident (single source of truth). Dot-walked into the ASD/SOCI Regulatory Notification Task for reference and Legal review. Applies to ASD/SOCI notification pathway only — not present on OAIC/NDB or Ransomware Payment tasks.
+
+**Notification task creation dependency:** the ASD/SOCI Regulatory Notification Task is not created until the parent record saves successfully with ACSC Severity set. This ensures the task is created complete. See B.3 for the full creation trigger and duplicate guard.
+
+### C.2 Impact floor — soft prompt by Data Classification
+
+When `Data Classification of Affected Assets` is set or changed and `Impact` is below the floor for that classification, a warning message fires recommending reassessment. Analyst can override — this is a prompt, not a hard block.
+
+| Data Classification contains | Impact floor |
+|---|---|
+| Private Information | No lower than I2 |
+| Sensitive Operational Information | No lower than I2 |
+| Critical Infrastructure Information | No lower than I1 |
+
+**Mechanism:** onChange Client Script on Data Classification field, checks current Impact value against floor, fires `g_form.addInfoMessage()` or `g_form.addWarningMessage()` if below floor. Does not prevent save.
+
+### C.3 Dashboard implications
+
+Sort/filter the Cyber Incident dashboard by Priority from Investigation & Diagnosis onward — Priority is now meaningful throughout the incident lifecycle. ACSC Severity remains available for cyber-domain trending and ASD reporting context but is not a primary dashboard sort field.
 
 ---
 
@@ -132,7 +162,8 @@ Not designed this session — could not be verified against public sources. FIRB
 
 | State | Newly-mandatory |
 |---|---|
-| Investigation & Diagnosis | ACSC Incident Severity, Assigned to |
+| Investigation & Diagnosis | Impact, Urgency, Assigned to |
+| When Suggested SOCI Classification ≠ No Report | ACSC Incident Severity (conditional — see Subsystem C.1) |
 | Containment | Classification tab (Threat category, Threat actor classification, Attack vector, MITRE ATT&CK tactic, Data classification of affected assets) |
 | Eradication | Containment tab (Containment method, Containment notes) |
 | On Hold | On hold reason |
@@ -155,7 +186,7 @@ Not designed this session — could not be verified against public sources. FIRB
 **Key decisions baked into this matrix:**
 - **No skip-ahead transitions.** Every incident passes through Investigation & Diagnosis before Containment, even for obviously severe cases — ensures Severity/Assigned to are always set before containment action begins.
 - **Multi-step backward regression is allowed** (e.g. Recovery → Investigation & Diagnosis directly), not limited to one step back.
-- **Eradication → Closed is blocked, including for late-discovered False Positives.** Real containment actions were already taken against real systems by this point; a brief Recovery check-in to confirm those systems are genuinely fine is required before closing. This also protects the Urgency/Priority design in Subsystem C — skipping Recovery would bypass the point where Urgency unlocks.
+- **Eradication → Closed is blocked, including for late-discovered False Positives.** Real containment actions were already taken against real systems by this point; a brief Recovery check-in to confirm those systems are genuinely fine is required before closing.
 - **New → On Hold is blocked.** None of the existing On Hold reasons (Awaiting forensics/law enforcement/vendor/ASD response) make sense before any work has started.
 
 **Build note:** the False-Positive-only transitions are **conditional**, not pure state pairs — valid only when `Close Code = False Positive` at the moment of transition. A plain From/To lookup table cannot express this alone; the enforcing Business Rule (or an extra condition column on the matrix table) needs a second check for these specific rows.
@@ -208,3 +239,35 @@ This field feeds live calculated logic elsewhere in the app (Subsystem B), so co
 - **OAIC/NDB trigger (§B.5):** same equality-to-contains rework, specifically for the Private Information check.
 - **New validation rule:** "None Identified" must be mutually exclusive with every other value on this field. Enforce via Client Script/onChange validation — a record cannot simultaneously claim no classification applies and that Private/SOI/Critical Infrastructure Information was affected.
 - **Why this is a real fix, not a nice-to-have:** an incident touching both Private Information and Critical Infrastructure Information simultaneously (e.g. a utility metering/account data breach) is a normal scenario, not an edge case. The single-select version of this field was silently incapable of representing that — this conversion corrects an actual gap in the classification logic, not just the form UX.
+
+---
+
+## Subsystem H — UI Actions for State Progression
+
+State transitions are controlled via **UI Action buttons**, not direct State field editing. This matches the pattern used in ServiceNow's own modern ITSM modules (Incident, Problem, Change) and is a stronger design than a free-edit dropdown for several reasons: each button carries its own validation logic; available buttons change by state so analysts only see valid transitions; and it maps directly to the state transition matrix in Subsystem D.
+
+### H.1 Forward progression buttons
+
+One button per valid next state, visible only when that transition is valid from the current state:
+
+| Current State | Button Label |
+|---|---|
+| New | Begin Investigation |
+| Investigation & Diagnosis | Move to Containment |
+| Containment | Move to Eradication |
+| Eradication | Move to Recovery |
+| Recovery | Close Incident |
+
+### H.2 Special transition buttons
+
+- **Return to Containment** — visible from Eradication, Recovery, and On Hold (where pre-hold state was Eradication or Recovery). Triggers a confirmation dialog before firing: *"This will return the incident to Containment — containment actions will need to be reassessed. Are you sure?"* This is the "we didn't clean it up properly" regression path.
+- **Close as False Positive** — separate button from the standard Close, visible from New, Investigation & Diagnosis, Containment, and On Hold. Carries the False Positive exemption logic (waives Classification + Containment tab mandates). Keeps the False Positive path explicit and distinct from a normal closure.
+- **On Hold** — visible from Investigation & Diagnosis, Containment, Eradication, Recovery. Stores the current state in a hidden field (`pre_hold_state`) before transitioning — used by Resume to return to the correct state.
+- **Resume** — visible when State = On Hold. Returns to the state stored in `pre_hold_state`.
+
+### H.3 Build notes
+
+- Each button's server-side script sets `current.state` and calls `current.update()` — same pattern as any other UI Action that modifies a field.
+- Mandatory field validation for the target state should fire in the button's Condition field or script before the transition — analyst sees the validation message without the state actually changing.
+- The False Positive conditional transitions from D.2 are enforced in the "Close as False Positive" button's condition/script, not in the standard Close button — keeping the two paths structurally separate.
+- Built in Lab 28 (Client scripts and UI actions).

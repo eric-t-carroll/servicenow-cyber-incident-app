@@ -169,8 +169,8 @@ Upgraded from a simple checkbox to a proper **Approval record** (`sysapproval_ap
 | Field | Status | Notes |
 |---|---|---|
 | Impact (`task.impact`) | REUSED, relabeled | I1 — Full outage, I2 — Widespread degradation, I3 — Error, not preventing delivery of service, I4 — No impact/informational. Pure operational severity — does not encode asset type. |
-| Urgency (`task.urgency`) | MODIFIED (visibility) | Hidden via UI Policy while Cyber Incident Phase ∈ {Investigation & Diagnosis, Containment, Eradication}. Visible and mandatory at Recovery. Value preserved, not cleared, if the record regresses to an earlier phase. |
-| Priority (`task.priority`) | MODIFIED (behaviour) | Calculated natively from Impact × Urgency. Deliberately blank pre-Recovery since Urgency is unset — accurate signal, not a defect. |
+| Urgency (`task.urgency`) | MODIFIED (behaviour) | Visible and mandatory from Investigation & Diagnosis onward — no phase-gating. Urgency measures speed/time regardless of phase; early phases: urgency to contain; Recovery: urgency to restore. Single field, single label throughout. |
+| Priority (`task.priority`) | MODIFIED (behaviour) | Calculated natively from Impact × Urgency. Active from Investigation & Diagnosis onward — no longer blank pre-Recovery. Drives MIM engagement (P1/P2). Never downgraded once correctly assessed. |
 
 ---
 
