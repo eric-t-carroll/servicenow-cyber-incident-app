@@ -225,7 +225,7 @@ Five fields convert from single-select Choice to multi-select this session: Thre
 
 ### G.1 Mechanism (applies to all five)
 
-Convert to ServiceNow's native **Multiple Choice** field type — checkbox-rendered, comma-separated value storage. **Not** a custom many-to-many junction table. None of these fields require per-selection metadata (e.g. no requirement to timestamp *when* each individual containment method was applied) — a junction table would be unused complexity for a problem a native field type already solves.
+Convert to ServiceNow's native **List** field type — checkbox-rendered, comma-separated value storage. **Not** a custom many-to-many junction table. None of these fields require per-selection metadata (e.g. no requirement to timestamp *when* each individual containment method was applied) — a junction table would be unused complexity for a problem a native field type already solves.
 
 Choice values are unchanged for four of the five fields — only the selection mechanism changes. Reporting note: ServiceNow's native report builder supports "contains" filtering and grouping on Multiple Choice fields natively — no rework needed for the Threat Category trending or Essential Eight heat-map dashboard work already planned for Lab 10.
 
