@@ -87,7 +87,7 @@ servicenow-cyber-incident-app/
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Completed |
 | 12 | Import sets, transform maps and data sources | CSA | Completed |
 | 13 | Apply field register changes after design review | CSA | Completed |
-| 14 | Multiple choice conversion | CSA | Planned |
+| 14 | Multiple choice conversion | CSA | Completed |
 | 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Planned |
 | 16 | Business rule — Data Classification contains checks | CAD | Planned |
 | 17 | Regulatory Notification Task table | CAD | Planned |
