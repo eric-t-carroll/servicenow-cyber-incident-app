@@ -88,7 +88,7 @@ servicenow-cyber-incident-app/
 | 12 | Import sets, transform maps and data sources | CSA | Completed |
 | 13 | Apply field register changes after design review | CSA | Completed |
 | 14 | Multiple choice conversion | CSA | Completed |
-| 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Planned |
+| 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Completed |
 | 16 | Business rule — Data Classification contains checks | CAD | Planned |
 | 17 | Regulatory Notification Task table | CAD | Planned |
 | 18 | SOCI classification matrix-lookup | CAD | Planned |
@@ -229,3 +229,4 @@ Cross-application extensions
  - 18/6: Reports are captured in update sets, dashboards are not. Need to 'unload dashboard' to make sure it is captured in the same update set as the reports.
  - 21/6: Decided to create a proper design spec instead of 'winging it'. A lot of decisions were being made on the fly and I could see a lot of rework coming because of it. It was also a good oportunity to make sure the design aligned with ACSC specifications and other regulatory requirements.
  - 9/7: **Priority/Urgency phase-gating retired:** original design hid Urgency pre-Recovery and left Priority blank. Revised — both mandatory from Investigation & Diagnosis onward. Priority drives MIM engagement (P1/P2); a blank Priority in early phases meant MIM had no signal. Correctly assessed Priority is never downgraded — reporting integrity > real-time accuracy.
+ - **Scripted REST External Default ACL:** controls endpoint access for authenticated callers; separate from table-level ACLs that control what the caller can do once through the gate.
