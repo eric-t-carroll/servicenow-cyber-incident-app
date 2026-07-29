@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-07-29 08:04:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name> Lab16 - Data Classification contains-check</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>dcac693683d6875085257f29feaad3c9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-07-29 08:04:15</sys_created_on>
+<sys_id>afd1c2fe835a875085257f29feaad32c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-07-29 08:04:15</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_d37339b2835a075085257f29feaad397</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;When 'none identified' is selected, the other choices are not available and vice versa.&lt;/description&gt;&lt;field&gt;data_classification_of_affected_assets&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Data classification - mutual exclusivity&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue.toString().indexOf('none') !== -1) {
+        if (g_form.getValue('data_classification_of_affected_assets') === 'none') {
+            return; // already set correctly, don't fire again
+        }
+        g_form.clearValue('data_classification_of_affected_assets');
+        g_form.setValue('data_classification_of_affected_assets', 'none');
+        g_form.addInfoMessage('None Identified clears all other data classifications — other values have been removed.');
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-29 07:03:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d37339b2835a075085257f29feaad397&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Data classification - mutual exclusivity&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d37339b2835a075085257f29feaad397&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-29 07:57:18&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-526047551</payload_hash>
+<remote_update_set display_value=" Lab16 - Data Classification contains-check">afd1c2fe835a875085257f29feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-07-29 08:04:15</sys_created_on>
+<sys_id>63d1c2fe835a875085257f29feaad32e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19face0c0490000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-07-29 08:04:15</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Data classification - mutual exclusivity</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>a54086be605a8750293b4d248b0a3ce1</update_guid>
+<update_guid_history>a54086be605a8750293b4d248b0a3ce1:-526047551,9c8f3d7a4d5a87500f42f53b973f13fd:-154593009,cc7f757e1b5a8750a8143b7af345e75a:-763325727,e56ff17ed45a875089eac0cf5b4ad3fd:503957438,16ee353e845a87509d9dc7d49036fc27:1310145016,b5be3dfaec5a8750a79cc1153f909cb2:516178211,79ad397a4d5a87507db3a9a008fdf85c:-716967105,ff1df53aac5a87509af7708c0e68b1f1:156550426,85dc7df6345a8750bbb11b94078f6b54:454654742,467cb9b6595a8750f5d9530fd963c4ee:-1529717766,abcbf1767f5a875020faa95fcb93f500:-559461300,994bfdf29a5a87501672377dbf3a79f0:-1830123387,edd9f532775a87504053591122a42354:-1089655660,86e375363d1a87507eff51557aed65b9:1081536457</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="data_classification_of_affected_assets" table="x_1776078_cyber_0_cyber_incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes&gt;edge_encryption_enabled=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Data classification of affected assets&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;data_classification_of_affected_assets&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;glide_list&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;1024&lt;/max_length&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 02:22:10&lt;/sys_created_on&gt;&lt;sys_id&gt;24eedb0e8356435085257f29feaad37d&lt;/sys_id&gt;&lt;sys_name&gt;Data classification of affected assets&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_x_1776078_cyber_0_cyber_incident_data_classification_of_affected_assets&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-29 07:31:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1194514403</payload_hash>
+<remote_update_set display_value=" Lab16 - Data Classification contains-check">afd1c2fe835a875085257f29feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-07-29 08:04:15</sys_created_on>
+<sys_id>e3d1c2fe835a875085257f29feaad32d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19facc8ebc20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-07-29 08:04:15</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.Data classification of affected assets</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>105afd725a5a8750843718bf55705885</update_guid>
+<update_guid_history>105afd725a5a8750843718bf55705885:-1194514403,27a115e633160750abe8a8bdff174a05:0,0caefb860b9a435058b36af7f94f128c:0,0d5b33ceb75a4350241acc167133ffee:1344627512,cbeed34ec35643500e63fcddba21d886:0,cfeed34e3f564350422f554973404372:-346210634</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
