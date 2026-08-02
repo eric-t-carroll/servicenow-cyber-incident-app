@@ -89,8 +89,8 @@ servicenow-cyber-incident-app/
 | 13 | Apply field register changes after design review | CSA | Completed |
 | 14 | Multiple choice conversion | CSA | Completed |
 | 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Completed |
-| 16 | Business rule — Data Classification contains checks | CAD | Planned |
-| 17 | Regulatory Notification Task table | CAD | Planned |
+| 16 | Business rule — Data Classification contains checks | CAD | Completed |
+| 17 | Regulatory Notification Task table | CAD | Completed |
 | 18 | SOCI classification matrix-lookup | CAD | Planned |
 | 19 | Suggested/Confirmed approval pattern | CAD | Planned |
 | 20 | ASD/SOCI notification trigger | CAD | Planned |
@@ -154,7 +154,7 @@ servicenow-cyber-incident-app/
 
 ## Project restore instructions
 1. Retrieve and commit update sets up to and including LAB06.
-2. Import the Lab06 Groups XML export file. Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
+2. Import the Lab06 Groups XML export file (Right-click Import XML on 'groups' list view). Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
 
 To restore code challenges:
  - Retrieve and commit all update sets in order as per your existing restore instructions
@@ -162,7 +162,6 @@ To restore code challenges:
 ### Reference standards
 - [ACSC — Australian Cyber Security Centre](https://www.cyber.gov.au)
 - [ACSC Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- [Protective Security Policy Framework (PSPF)](https://www.protectivesecurity.gov.au)
 - [ServiceNow Zurich release notes](https://docs.servicenow.com)
 
 
@@ -230,3 +229,5 @@ Cross-application extensions
  - 21/6: Decided to create a proper design spec instead of 'winging it'. A lot of decisions were being made on the fly and I could see a lot of rework coming because of it. It was also a good oportunity to make sure the design aligned with ACSC specifications and other regulatory requirements.
  - 9/7: **Priority/Urgency phase-gating retired:** original design hid Urgency pre-Recovery and left Priority blank. Revised — both mandatory from Investigation & Diagnosis onward. Priority drives MIM engagement (P1/P2); a blank Priority in early phases meant MIM had no signal. Correctly assessed Priority is never downgraded — reporting integrity > real-time accuracy.
  - **Scripted REST External Default ACL:** controls endpoint access for authenticated callers; separate from table-level ACLs that control what the caller can do once through the gate.
+ - 29/7: Field Messages must be set before clearing or setting values on an onChange script. Otherwise the field message is cleared on the value change.
+  - 2/8: Full restore via source control and individual update sets completed successfully.
