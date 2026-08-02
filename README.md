@@ -91,7 +91,7 @@ servicenow-cyber-incident-app/
 | 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Completed |
 | 16 | Business rule — Data Classification contains checks | CAD | Completed |
 | 17 | Regulatory Notification Task table | CAD | Completed |
-| 18 | SOCI classification matrix-lookup | CAD | Planned |
+| 18 | SOCI classification matrix-lookup | CAD | Completed |
 | 19 | Suggested/Confirmed approval pattern | CAD | Planned |
 | 20 | ASD/SOCI notification trigger | CAD | Planned |
 | 21 | OAIC/NDB notification trigger | CAD | Planned |
@@ -180,6 +180,8 @@ To restore code challenges:
 - GlideRecord utility Script Include for common queries
 - IntegrationHub spoke for ASD notification (SOCI Act)
 - Severity-based MIM call-out info message (High/Critical severity)
+- After programmatic clearValue/setValue(''), re-selecting "Regulated/Essential Services" as the first choice
+   doesn't register. Flagged for review in polish pass.
 
 
 **Form/field hygiene**
