@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-05 12:32:20">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Suggested/Confirmed approval pattern</description>
+<inserted/>
+<name>Lab19 - Suggested/Confirmed approval pattern</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>fdf2624183a2031044779cb6feaad3a8</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:18</sys_created_on>
+<sys_id>da52c78183a6031044779cb6feaad31d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:18</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_state</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="state" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>state</element><name>x_1776078_cyber_0_regulatory_notification_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:07:17</sys_created_on><sys_id>af9cb2858366031044779cb6feaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_state</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:07:17</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Pending</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>-5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:16:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>68ce3e898366031044779cb6feaad3b7</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:17:19</sys_updated_on><value>-5</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Open</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:17:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c4eeb2c98366031044779cb6feaad38d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:17:08</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Work in Progress</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:18:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4b2fbac98366031044779cb6feaad355</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:18:25</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Closed Complete</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:18:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a04fbec98366031044779cb6feaad357</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:18:48</sys_updated_on><value>3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Closed Incomplete</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:19:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2f4f720d8366031044779cb6feaad321</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:19:01</sys_updated_on><value>4</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Closed No Longer Required</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>8</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:07:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c26c72858366031044779cb6feaad363</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:19:21</sys_updated_on><value>8</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1739586959</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:18</sys_created_on>
+<sys_id>1652c78183a6031044779cb6feaad31e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd1dd30c70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:18</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.state</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>246f760d5e660310e07ef7a2324d857a</update_guid>
+<update_guid_history>246f760d5e660310e07ef7a2324d857a:-1739586959,af4ff20d84660310b4efd0029820cc54:-1581184956,ac4f320de066031044dd0ae31841bfd4:-1878744243,c72fbec94b6603100b7cf766b0b29948:-492158949,8c1fbac90d6603103a4c40c8d2e8dd51:1523763315,beeeb6c98b660310bb93e1aaf0b90517:-1899946514,c8ee36c9fd6603104b31d374f1a5ada7:-1402537531,28ce32c9ff6603103d976c0d33eb873a:1481582334,0ebd3e09a76603101d071e60c09bd01f:165421197,68bcba85436603104baef9b0af6f22c4:1993582902,739c3a850a6603102a93e4d17ec1118a:-1362232849</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_c827aa4983a2031044779cb6feaad3d9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;suggested_soci_classificationINsignificant,relevant^acsc_incident_severityINc1,c2,c3,c4,c6^EQ&lt;item display_value="significant,relevant" endquery="false" field="suggested_soci_classification" goto="false" newquery="false" operator="IN" or="false" value="significant,relevant"/&gt;&lt;item display_value="c1,c2,c3,c4,c6" endquery="false" field="acsc_incident_severity" goto="false" newquery="false" operator="IN" or="false" value="c1,c2,c3,c4,c6"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Update scratch pad on REG notification&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	//let client know a soci notification is required
+    g_scratchpad.soci_notification_required = true;
+
+	//search for existing REG tasks already created
+    var grReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+    grReg.addQuery('parent_cyber_incident', current.sys_id);
+    grReg.addQuery('notification_type', 'asd_soci_notification');
+    grReg.setLimit(1);
+    grReg.query();
+
+	//if REG exist, let client know including the task state
+    if (grReg.next()) {
+        g_scratchpad.soci_task_exists = true;
+        g_scratchpad.soci_task_state = grReg.getValue('state');
+
+	//else let client know there is no existing REG task
+    } else {
+        g_scratchpad.soci_task_exists = false;
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-05 10:37:38&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c827aa4983a2031044779cb6feaad3d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update scratch pad on REG notification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c827aa4983a2031044779cb6feaad3d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-05 12:31:48&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before_display&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c827aa4983a2031044779cb6feaad3d9"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1232481008</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>2652c78183a6031044779cb6feaad31f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd1e895a10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Update scratch pad on REG notification</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>3632438109a60310532cf71d01743cf8</update_guid>
+<update_guid_history>3632438109a60310532cf71d01743cf8:-1232481008,9e610b0172a6031058a1025c12596888:-820501207,7100834d8e660310c8fa7f58844abb8b:91388362,83fffa4d1766031039d98ac476abd0a6:301790943,74bf724d15660310f936f371e29e3e25:-926353245,ed5cfe452b660310dd4663e962266e52:1377275095,c3c5bec5e12603108b8970b6215eb011:2108411171,5d70b24d6be203101872b2d52d08212a:1777718056,e55e260950e2031042fe40bcffe6d497:995095270,d63e6209fae20310a49d3475850e627b:-422333826,c43e220936e20310363a998912404bf5:1268820574,ee186ac9f2a20310a984d658384114bc:-561294282</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_x_1776078_cyber_0_cyber_incident_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">dd4f6a8983e2031044779cb6feaad355</list_id><order_by/><position>0</position><related_list>x_1776078_cyber_0_regulatory_notification_task.parent_cyber_incident</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:08:57</sys_created_on><sys_id>594f6a8983e2031044779cb6feaad358</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:08:57</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">dd4f6a8983e2031044779cb6feaad355</list_id><order_by/><position>1</position><related_list>task_sla.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:08:57</sys_created_on><sys_id>594f6a8983e2031044779cb6feaad359</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:08:57</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">dd4f6a8983e2031044779cb6feaad355</list_id><order_by/><position>2</position><related_list>task_cmdb_ci_service.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:08:57</sys_created_on><sys_id>dd4f6a8983e2031044779cb6feaad359</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:08:57</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Cyber Incident - Default view" name="x_1776078_cyber_0_cyber_incident" related_list="NULL" sys_domain="global" view="Default view">dd4f6a8983e2031044779cb6feaad355</list_id><order_by/><position>3</position><related_list>task_ci.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:08:57</sys_created_on><sys_id>554f6a8983e2031044779cb6feaad35a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:08:57</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Cyber Incident - Default view</calculated_name><filter/><name>x_1776078_cyber_0_cyber_incident</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:08:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dd4f6a8983e2031044779cb6feaad355</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cyber Incident - Default view</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_related_x_1776078_cyber_0_cyber_incident_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:08:57</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>-289942771</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>2a52c78183a6031044779cb6feaad320</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd19cbb990000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>dd4f6a89e2e20310868a1e018706055c</update_guid>
+<update_guid_history>dd4f6a89e2e20310868a1e018706055c:-289942771,89cce9c02d668b106ff924117e31f4cf:-1347414095</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_883707008362cb1044779cb6feaad3e2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;stateIN12,13,14,3^EQ&lt;item display_value="12,13,14,3" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="12,13,14,3"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Affected asset type is mandatory during containment&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 10:22:28&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;883707008362cb1044779cb6feaad3e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Affected asset type is mandatory during containment&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_883707008362cb1044779cb6feaad3e2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-05 11:43:34&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1222680206</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>6a52c78183a6031044779cb6feaad31f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd1bc6c450000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Affected asset type is mandatory during containment</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>d437f6c94726031071396719071a7bf8</update_guid>
+<update_guid_history>d437f6c94726031071396719071a7bf8:1222680206,606943440662cb101cf184fc0a4086ad:2095220380,c7d70f409262cb10a98c3b633152f53f:-782369300</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_2614d24483668b1044779cb6feaad38a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="2614d24483668b1044779cb6feaad38a" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>d09f66c983e2031044779cb6feaad38d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>parent_cyber_incident</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>589f66c983e2031044779cb6feaad38e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_type</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>149f66c983e2031044779cb6feaad38f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>regulator_reference_number</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>dc9f66c983e2031044779cb6feaad38f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>989f66c983e2031044779cb6feaad390</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>549f66c983e2031044779cb6feaad391</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_deadline</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>109f66c983e2031044779cb6feaad392</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>d89f66c983e2031044779cb6feaad392</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:10:15</sys_created_on><sys_id>949f66c983e2031044779cb6feaad393</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:10:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2614d24483668b1044779cb6feaad38a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_2614d24483668b1044779cb6feaad38a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:20</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>747735551</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>6e52c78183a6031044779cb6feaad320</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd19ded0a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>909f66c940e20310dc492e540e46f797</update_guid>
+<update_guid_history>909f66c940e20310dc492e540e46f797:747735551,ef8d5ac889ea8b10ed1dd57a98ed88a3:-255578757,2afbd60862ea8b10d5b1b5a982131472:531133315,a6fbd608a3ea8b10bb65ce34b15b0c60:1737131230</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_fe82ba59c391431043481cedd40131b2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Classification" section_id="fe82ba59c391431043481cedd40131b2" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>threat_category</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>a5d63e898326031044779cb6feaad330</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>threat_actor_classification</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>a9d63e898326031044779cb6feaad331</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>attack_vector</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>65d63e898326031044779cb6feaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>mitre_att_ck_tactic</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>21d63e898326031044779cb6feaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>e9d63e898326031044779cb6feaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>data_classification_of_affected_assets</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>a5d63e898326031044779cb6feaad334</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>affected_asset_type</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:42:01</sys_created_on><sys_id>61d63e898326031044779cb6feaad335</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Classification" display_value="Classification" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">fe82ba59c391431043481cedd40131b2</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:42:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Classification</caption><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:43:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fe82ba59c391431043481cedd40131b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_fe82ba59c391431043481cedd40131b2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:43:16</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1216637950</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>a252c78183a6031044779cb6feaad321</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd1bb01cd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>69d63e8959260310fe81e708e0a78838</update_guid>
+<update_guid_history>69d63e8959260310fe81e708e0a78838:1216637950,5e3787007c62cb10a055e2ffd41acbe2:-1803002976,15cc2dc06b668b10dd59fab7d3fabf0d:1861797059</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_0a377ac98326031044779cb6feaad32c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>affected_asset_type</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 11:43:54</sys_created_on><sys_id>0a377ac98326031044779cb6feaad32c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>affected_asset_type</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_0a377ac98326031044779cb6feaad32c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 11:43:54</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="Affected asset type is mandatory during containment">883707008362cb1044779cb6feaad3e2</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=0a377ac98326031044779cb6feaad32c"/></record_update>]]></payload>
+<payload_hash>354577684</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>ae52c78183a6031044779cb6feaad31f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd1bcbacd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>affected_asset_type</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>5547bac971260310d1b2706c59994e94</update_guid>
+<update_guid_history>5547bac971260310d1b2706c59994e94:354577684</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_5498cf408362cb1044779cb6feaad36c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_policy_action"&gt;&lt;sys_ui_policy_action action="DELETE"&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;ignore&lt;/disabled&gt;&lt;field&gt;affected_asset_type&lt;/field&gt;&lt;field_message/&gt;&lt;field_message_type&gt;none&lt;/field_message_type&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;sys_class_name&gt;sys_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 10:25:51&lt;/sys_created_on&gt;&lt;sys_id&gt;5498cf408362cb1044779cb6feaad36c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;affected_asset_type&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_action_5498cf408362cb1044779cb6feaad36c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 10:25:51&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_policy display_value="Affected asset type is active and mandatory when data is breached"&gt;883707008362cb1044779cb6feaad3e2&lt;/ui_policy&gt;&lt;value/&gt;&lt;value_action&gt;ignore&lt;/value_action&gt;&lt;visible&gt;true&lt;/visible&gt;&lt;/sys_ui_policy_action&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5498cf408362cb1044779cb6feaad36c"/&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_ui_policy_action_5498cf408362cb1044779cb6feaad36c&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_policy_action"&gt;&lt;sys_ui_policy_action action="INSERT_OR_UPDATE"&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;ignore&lt;/disabled&gt;&lt;field&gt;affected_asset_type&lt;/field&gt;&lt;field_message/&gt;&lt;field_message_type&gt;none&lt;/field_message_type&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;sys_class_name&gt;sys_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 10:25:51&lt;/sys_created_on&gt;&lt;sys_id&gt;5498cf408362cb1044779cb6feaad36c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;affected_asset_type&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_action_5498cf408362cb1044779cb6feaad36c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 10:25:51&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_policy display_value="Affected asset type is active and mandatory when data is breached"&gt;883707008362cb1044779cb6feaad3e2&lt;/ui_policy&gt;&lt;value/&gt;&lt;value_action&gt;ignore&lt;/value_action&gt;&lt;visible&gt;true&lt;/visible&gt;&lt;/sys_ui_policy_action&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5498cf408362cb1044779cb6feaad36c"/&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-2126945818&lt;/payload_hash&gt;&lt;record_name&gt;affected_asset_type&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;3b5207848322cb1044779cb6feaad390&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 10:25:51&lt;/sys_created_on&gt;&lt;sys_id&gt;a4a887c08362cb1044779cb6feaad329&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc20232800000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 10:25:51&lt;/sys_updated_on&gt;&lt;type&gt;UI Policy Action&lt;/type&gt;&lt;update_guid&gt;64a887c0a962cb10bc5e4ed455f96628&lt;/update_guid&gt;&lt;update_guid_history&gt;64a887c0a962cb10bc5e4ed455f96628:-2126945818&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-05 11:42:48&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_ui_policy_action"&gt;sys_ui_policy_action&lt;/sys_db_object&gt;&lt;sys_id&gt;0234e9e4d50749188314fb037f111a40&lt;/sys_id&gt;&lt;sys_metadata&gt;5498cf408362cb1044779cb6feaad36c&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;affected_asset_type&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="Affected asset type is active and mandatory when data is breached"&gt;883707008362cb1044779cb6feaad3e2&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_ui_policy_action_5498cf408362cb1044779cb6feaad36c&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_ui_policy_action_5498cf408362cb1044779cb6feaad36c"&gt;a4a887c08362cb1044779cb6feaad329&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-05 11:42:48&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-402343940</payload_hash>
+<remote_update_set display_value="Lab19 - Suggested/Confirmed approval pattern">da52c78183a6031044779cb6feaad31d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-05 12:32:19</sys_created_on>
+<sys_id>e252c78183a6031044779cb6feaad320</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd1bbb7ee0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-05 12:32:19</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>affected_asset_type</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>c50772c919260310b3af9477fead0de2</update_guid>
+<update_guid_history>c50772c919260310b3af9477fead0de2:-402343940,64a887c0a962cb10bc5e4ed455f96628:-2126945818</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

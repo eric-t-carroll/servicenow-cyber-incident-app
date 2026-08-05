@@ -93,6 +93,7 @@ servicenow-cyber-incident-app/
 | 17 | Regulatory Notification Task table | CAD | Completed |
 | 18 | SOCI classification matrix-lookup | CAD | Completed |
 | 19 | Suggested/Confirmed approval pattern | CAD | Planned |
+| 19b | Legal approval for REG task | CAD | Planned |
 | 20 | ASD/SOCI notification trigger | CAD | Planned |
 | 21 | OAIC/NDB notification trigger | CAD | Planned |
 | 22 | Ransomware payment reporting trigger | CAD | Planned |
