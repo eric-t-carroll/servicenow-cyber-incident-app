@@ -92,8 +92,8 @@ servicenow-cyber-incident-app/
 | 16 | Business rule — Data Classification contains checks | CAD | Completed |
 | 17 | Regulatory Notification Task table | CAD | Completed |
 | 18 | SOCI classification matrix-lookup | CAD | Completed |
-| 19 | Suggested/Confirmed approval pattern | CAD | Planned |
-| 19b | Legal approval for REG task | CAD | Planned |
+| 19 | Suggested/Confirmed approval pattern | CAD | Completed |
+| 19b | Legal approval for REG task | CAD | Completed |
 | 20 | ASD/SOCI notification trigger | CAD | Planned |
 | 21 | OAIC/NDB notification trigger | CAD | Planned |
 | 22 | Ransomware payment reporting trigger | CAD | Planned |
@@ -233,4 +233,5 @@ Cross-application extensions
  - 9/7: **Priority/Urgency phase-gating retired:** original design hid Urgency pre-Recovery and left Priority blank. Revised — both mandatory from Investigation & Diagnosis onward. Priority drives MIM engagement (P1/P2); a blank Priority in early phases meant MIM had no signal. Correctly assessed Priority is never downgraded — reporting integrity > real-time accuracy.
  - **Scripted REST External Default ACL:** controls endpoint access for authenticated callers; separate from table-level ACLs that control what the caller can do once through the gate.
  - 29/7: Field Messages must be set before clearing or setting values on an onChange script. Otherwise the field message is cleared on the value change.
-  - 2/8: Full restore via source control and individual update sets completed successfully.
+ - 2/8: Full restore via source control and individual update sets completed successfully.
+ - 6/8: Approval tasks need 'sysapproval' field set along with 'document_id' - otherwise they don't appear in related approval lists.
