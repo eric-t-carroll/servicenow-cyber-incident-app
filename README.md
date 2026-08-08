@@ -94,7 +94,7 @@ servicenow-cyber-incident-app/
 | 18 | SOCI classification matrix-lookup | CAD | Completed |
 | 19 | Suggested/Confirmed approval pattern | CAD | Completed |
 | 19b | Legal approval for REG task | CAD | Completed |
-| 20 | ASD/SOCI notification trigger | CAD | Planned |
+| 20 | ASD/SOCI notification trigger | CAD | Completed |
 | 21 | OAIC/NDB notification trigger | CAD | Planned |
 | 22 | Ransomware payment reporting trigger | CAD | Planned |
 | 22a | Application Properties — configurable SLA targets | CAD | Planned |
@@ -235,3 +235,4 @@ Cross-application extensions
  - 29/7: Field Messages must be set before clearing or setting values on an onChange script. Otherwise the field message is cleared on the value change.
  - 2/8: Full restore via source control and individual update sets completed successfully.
  - 6/8: Approval tasks need 'sysapproval' field set along with 'document_id' - otherwise they don't appear in related approval lists.
+ - 8/8: UI Actions use the 'onClick' field to call a function. The function is defined in the script field. gsftSubmit saves the form and triggers server-side script.
