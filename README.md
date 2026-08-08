@@ -95,7 +95,7 @@ servicenow-cyber-incident-app/
 | 19 | Suggested/Confirmed approval pattern | CAD | Completed |
 | 19b | Legal approval for REG task | CAD | Completed |
 | 20 | ASD/SOCI notification trigger | CAD | Completed |
-| 21 | OAIC/NDB notification trigger | CAD | Planned |
+| 21 | OAIC/NDB notification trigger | CAD | Completed |
 | 22 | Ransomware payment reporting trigger | CAD | Planned |
 | 22a | Application Properties — configurable SLA targets | CAD | Planned |
 | 23 | Warning/info banner | CAD | Planned |

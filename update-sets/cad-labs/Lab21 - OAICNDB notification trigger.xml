@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-08 05:04:09">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>OAIC/NDB notification trigger</description>
+<inserted/>
+<name>Lab21 - OAIC/NDB notification trigger</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>3417a00e8362c71044779cb6feaad37a</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 05:04:08</sys_created_on>
+<sys_id>6288b0828326c71044779cb6feaad31c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 05:04:08</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_31377c4e83e2c71044779cb6feaad35c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Regulatory Notification Task activity formatter fields</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.x_1776078_cyber_0_regulatory_notification_task_activity.fields</name><read_roles/><suffix>x_1776078_cyber_0</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 04:58:21</sys_created_on><sys_id>31377c4e83e2c71044779cb6feaad35c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>glide.ui.x_1776078_cyber_0_regulatory_notification_task_activity.fields</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_31377c4e83e2c71044779cb6feaad35c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 04:59:00</sys_updated_on><type>string</type><value>assigned_to,cmdb_ci,state,impact,priority,opened_by,work_notes,comments,*Attachments*</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=31377c4e83e2c71044779cb6feaad35c"/></record_update>]]></payload>
+<payload_hash>-1401425676</payload_hash>
+<remote_update_set display_value="Lab21 - OAIC/NDB notification trigger">6288b0828326c71044779cb6feaad31c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 05:04:08</sys_created_on>
+<sys_id>2a88b0828326c71044779cb6feaad31c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fdfbd37680000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 05:04:08</sys_updated_on>
+<table/>
+<target_name>glide.ui.x_1776078_cyber_0_regulatory_notification_task_activity.fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>8d67b48edbe2c710fce8763b4fe710ec</update_guid>
+<update_guid_history>8d67b48edbe2c710fce8763b4fe710ec:-1401425676,2737bc4ec2e2c7109927b295150ce638:-1162559110</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_c5adac4a83a2c71044779cb6feaad37b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;data_classification_of_affected_assetsVALCHANGES^EQ&lt;item endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Update REG when no longer private info&lt;/name&gt;&lt;order&gt;130&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //check if data classificaiton previously held 'private information'
+    var previousPrivateInfo = previous.getValue('data_classification_of_affected_assets') || '';
+    var currentPrivateInfo = current.getValue('data_classification_of_affected_assets') || '';
+    if (previousPrivateInfo.indexOf('private_information') != -1  &amp;&amp; currentPrivateInfo.indexOf('private_information') == -1 ) {
+
+        //check for active NDB notification task
+        var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+        existingReg.addQuery('parent_cyber_incident', current.sys_id);
+        existingReg.addQuery('notification_type', 'oaic_ndb_notification');
+        var existingRegOr = existingReg.addQuery('state', '-5');
+        existingRegOr.addOrCondition('state', '1');
+        existingRegOr.addOrCondition('state', '2');
+        existingRegOr.addOrCondition('state', '3');
+        existingReg.query();
+
+        //if NDB notification exists add a work note advising the CYB no longer contains private information
+        if (existingReg.next()) {
+            existingReg.work_notes = 'Data Classification has been updated and no longer contains Private Information — please review whether this OAIC/NDB notification task is still required';
+            existingReg.update();
+        }
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 04:17:27&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c5adac4a83a2c71044779cb6feaad37b&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update REG when no longer private info&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c5adac4a83a2c71044779cb6feaad37b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 05:02:44&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c5adac4a83a2c71044779cb6feaad37b"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>618703467</payload_hash>
+<remote_update_set display_value="Lab21 - OAIC/NDB notification trigger">6288b0828326c71044779cb6feaad31c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 05:04:08</sys_created_on>
+<sys_id>2a88b0828326c71044779cb6feaad31d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fdfc0898e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 05:04:08</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Update REG when no longer private info</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>0e3874424426c71012b21dd08feb412c</update_guid>
+<update_guid_history>0e3874424426c71012b21dd08feb412c:618703467,aad73802ec26c710256949fc0f39f839:-796447820,d686700e9ce2c7101b1f27d432136a4f:-1067765477,bff534caace2c7105db58eacb2ef00be:529422932,adc57c8a00e2c710dc0c3c80de8c2382:-274661459,ee45704a68e2c710ec27fecc1a0167f9:1448644778,e025f44ac1e2c7109c25e5b140641d9e:706412815,ccb4380af7e2c7108e5666f53bb90bc6:-1391851347,0a543cc685e2c7106f99be3a89168088:1063786212,ff04b486cae2c71042d741f7b741f969:-1885209816,50a37486ede2c7102f415816d0a1c713:1425911668,3df2b80693e2c71084d9e0c58a33d140:-497877309,0772f4c2f6e2c71020587b279f61f5b7:1292289479,d7f1f88287e2c71080861d751903d825:-1504328994,9aa13c427fe2c710d38503c53a590f50:1642645815,66e07402c2e2c7105d38568dc6b7cbe1:1425911668,2cb0bcce8da2c7105fb59521c432618c:728777844,76dd648ab6a2c710a677882b7a35ec7e:1827810794</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_d6696c0283a2c71044779cb6feaad3e6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;data_classification_of_affected_assetsLIKEprivate_information^EQ&lt;item endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="LIKE" or="false" value="private_information"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Create REG when private information&lt;/name&gt;&lt;order&gt;150&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //check for existing OAIC / NDB notifications
+    var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+    existingReg.addQuery('parent_cyber_incident', current.sys_id);
+    existingReg.addQuery('notification_type', 'oaic_ndb_notification');
+    var existingRegOr = existingReg.addQuery('state', '-5');
+    existingRegOr.addOrCondition('state', '1');
+    existingRegOr.addOrCondition('state', '2');
+    existingRegOr.addOrCondition('state', '3');
+    existingReg.setLimit(1);
+    existingReg.query();
+
+    //if REG does not exist, create one
+    if (!existingReg.next()) {
+        var newReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+        newReg.initialize();
+        newReg.setValue('parent_cyber_incident', current.sys_id);
+        newReg.setValue('notification_type', 'oaic_ndb_notification');
+        newReg.setValue('state', '1');
+		newReg.setValue('assignment_group', 'b7aa36d9c3d1431043481cedd40131f1')
+        newReg.insert();
+        current.work_notes = newReg.number + ': ' + newReg.getDisplayValue('notification_type') + ' created.';
+        current.update();
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 03:59:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d6696c0283a2c71044779cb6feaad3e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create REG when private information&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_d6696c0283a2c71044779cb6feaad3e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 04:12:53&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d6696c0283a2c71044779cb6feaad3e6"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1419141505</payload_hash>
+<remote_update_set display_value="Lab21 - OAIC/NDB notification trigger">6288b0828326c71044779cb6feaad31c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 05:04:08</sys_created_on>
+<sys_id>6e88b0828326c71044779cb6feaad31d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fdf92e4620000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 05:04:08</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Create REG when private information</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>37ccecc630a2c7102f9363d621b0f559</update_guid>
+<update_guid_history>37ccecc630a2c7102f9363d621b0f559:-1419141505,00bcacc68fa2c71050b3c79838e7a562:-142497983,439ce0c639a2c71091d6d4d9dc78d2ee:-1376955039,4b5ca0c6b5a2c71022e45cb9ffb29a68:1854434827,cf3c6c862aa2c710445c80bf6f0c2dce:1187546844,043ca886b4a2c7106c5708af7e040704:912303820,d31ca486eaa2c710df0d27cc8e86f108:1816729019,94d9e8427aa2c7101abe1da6cbd7d217:-1710375233,39a96442ada2c710e97974b099b16ce2:-1569143169</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_672c880683ae871044779cb6feaad3d0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;soci_notification&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;(current.suggested_soci_classification == 'significant' || current.suggested_soci_classification == 'relevant') &amp;amp;&amp;amp; !current.acsc_incident_severity.nil()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Create SOCI Notification&lt;/name&gt;&lt;onclick&gt;soci_notification()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function soci_notification() {
+    gsftSubmit(null, g_form.getFormElement(), 'soci_notification');
+}
+
+if (typeof window == 'undefined') {
+    //check for existing REG tasks - except for Closed Incomplete
+    var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+	var stateOrQuery = existingReg.addQuery('state', '-5');
+	stateOrQuery.addOrCondition('state', '1');
+	stateOrQuery.addOrCondition('state', '2');
+	stateOrQuery.addOrCondition('state', '3');
+    existingReg.addQuery('parent_cyber_incident', current.sys_id);
+    existingReg.addQuery('notification_type', 'asd_soci_notification');
+    existingReg.setLimit(1);
+    existingReg.query();
+
+    // if task exists, let user know and dont create task
+    if (existingReg.next()) {
+        gs.addInfoMessage('An active SOCI notification task already exists for this cyber incident - no new task has been created.');
+
+        //if no task exists, create a new one
+    } else {
+        var newReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+        newReg.initialize();
+        newReg.setValue('parent_cyber_incident', current.sys_id);
+        newReg.setValue('notification_type', 'asd_soci_notification');
+        newReg.setValue('assignment_group', 'b7aa36d9c3d1431043481cedd40131f1');
+        newReg.setValue('state', '1');
+        newReg.insert();
+        current.work_notes = newReg.number + ': ' + newReg.getDisplayValue('notification_type') + ' created.';
+		current.update();
+    }
+    action.setRedirectURL(current);
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 01:56:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;672c880683ae871044779cb6feaad3d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create SOCI Notification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_672c880683ae871044779cb6feaad3d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 04:09:21&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>6783497</payload_hash>
+<remote_update_set display_value="Lab21 - OAIC/NDB notification trigger">6288b0828326c71044779cb6feaad31c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 05:04:08</sys_created_on>
+<sys_id>a288b0828326c71044779cb6feaad31e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fdf8fa8c90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 05:04:08</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Create SOCI Notification</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>480c60c23da2c71023789ceb7e4df6c2</update_guid>
+<update_guid_history>480c60c23da2c71023789ceb7e4df6c2:6783497,026758caf8ee87104f740dca597debc9:-777510049,1ba6dc4a88ee871086b0b2a85a7688da:459594411,8e5690c658ee871004b8187ae414540b:1032414234,9e3510c695ee8710f208128c2295a66b:1491646660,36ed800a17ae8710ff90796116bb7de7:-632438559,a0bdc0c69aae87103a652d913823066d:-166079388</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
