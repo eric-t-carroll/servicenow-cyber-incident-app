@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-08 06:43:18">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Ransomware payment reporting trigger</description>
+<inserted/>
+<name>Lab22 - Ransomware payment reporting trigger</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>a845010e8366c71044779cb6feaad340</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 06:43:17</sys_created_on>
+<sys_id>7e3f4d4283e6c71044779cb6feaad3b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 06:43:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_c10d8d0e83a6c71044779cb6feaad3aa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;ransom_extortion_payment_madeCHANGESFROMtrue^EQ&lt;item endquery="false" field="ransom_extortion_payment_made" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Update REG when no longer extortion&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//check for valid existing extortion REG task
+	var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+	existingReg.addQuery('parent_cyber_incident', current.sys_id);
+	existingReg.addQuery('notification_type', 'ransomware_payment_report');
+	var existingRegOr = existingReg.addQuery('state', '-5');
+	existingRegOr.addOrCondition('state', '1');
+	existingRegOr.addOrCondition('state', '2');
+	existingRegOr.addOrCondition('state', '3');
+	existingReg.setLimit(1);
+	existingReg.query();
+
+	//if REG exists update it with notes about extortion no longer applying
+	if (existingReg.next()) {
+		existingReg.work_notes = 'Ransom/Extortion Payment Made has been unticked on ' + current.getValue('number') + ' - review if task is still required.';
+		existingReg.update();
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 06:34:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c10d8d0e83a6c71044779cb6feaad3aa&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update REG when no longer extortion&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c10d8d0e83a6c71044779cb6feaad3aa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 06:42:12&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c10d8d0e83a6c71044779cb6feaad3aa"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2124448782</payload_hash>
+<remote_update_set display_value="Lab22 - Ransomware payment reporting trigger">7e3f4d4283e6c71044779cb6feaad3b6</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 06:43:17</sys_created_on>
+<sys_id>323f4d4283e6c71044779cb6feaad3b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe01b96790000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 06:43:17</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Update REG when no longer extortion</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>8ffe0142e6e6c710b02339cd16d64d5c</update_guid>
+<update_guid_history>8ffe0142e6e6c710b02339cd16d64d5c:-2124448782,6fde4102c7e6c7105e216616999f8f8e:811228564,dd4d814ed9a6c710c7adcf0288acb8ff:1375617023</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_d6696c0283a2c71044779cb6feaad3e6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;data_classification_of_affected_assetsLIKEprivate_information^EQ&lt;item endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="LIKE" or="false" value="private_information"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Create REG when private information&lt;/name&gt;&lt;order&gt;150&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //check for existing OAIC / NDB notifications
+    var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+    existingReg.addQuery('parent_cyber_incident', current.sys_id);
+    existingReg.addQuery('notification_type', 'oaic_ndb_notification');
+    var existingRegOr = existingReg.addQuery('state', '-5');
+    existingRegOr.addOrCondition('state', '1');
+    existingRegOr.addOrCondition('state', '2');
+    existingRegOr.addOrCondition('state', '3');
+    existingReg.setLimit(1);
+    existingReg.query();
+
+    //if REG does not exist, create one
+    if (!existingReg.next()) {
+        var newReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+        newReg.initialize();
+        newReg.setValue('parent_cyber_incident', current.sys_id);
+        newReg.setValue('notification_type', 'oaic_ndb_notification');
+        newReg.setValue('state', '1');
+		newReg.setValue('assignment_group', 'b7aa36d9c3d1431043481cedd40131f1');
+		newReg.setValue('short_description', 'OAIC/NDB notification - ' + current.getValue('number'));
+        newReg.insert();
+        current.work_notes = newReg.number + ': ' + newReg.getDisplayValue('notification_type') + ' created.';
+        current.update();
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 03:59:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d6696c0283a2c71044779cb6feaad3e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create REG when private information&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_d6696c0283a2c71044779cb6feaad3e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 06:24:01&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d6696c0283a2c71044779cb6feaad3e6"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1297828618</payload_hash>
+<remote_update_set display_value="Lab22 - Ransomware payment reporting trigger">7e3f4d4283e6c71044779cb6feaad3b6</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 06:43:17</sys_created_on>
+<sys_id>763f4d4283e6c71044779cb6feaad3b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe00af1320000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 06:43:17</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Create REG when private information</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>2cda0dc639a6c710d743856c9d688c5e</update_guid>
+<update_guid_history>2cda0dc639a6c710d743856c9d688c5e:-1297828618,1e3ac5862ba6c7108c56968e37689604:1182071234,37ccecc630a2c7102f9363d621b0f559:-1419141505,00bcacc68fa2c71050b3c79838e7a562:-142497983,439ce0c639a2c71091d6d4d9dc78d2ee:-1376955039,4b5ca0c6b5a2c71022e45cb9ffb29a68:1854434827,cf3c6c862aa2c710445c80bf6f0c2dce:1187546844,043ca886b4a2c7106c5708af7e040704:912303820,d31ca486eaa2c710df0d27cc8e86f108:1816729019,94d9e8427aa2c7101abe1da6cbd7d217:-1710375233,39a96442ada2c710e97974b099b16ce2:-1569143169</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_80d5010e8366c71044779cb6feaad3f7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;ransom_extortion_payment_madeCHANGESTOtrue^EQ&lt;item endquery="false" field="ransom_extortion_payment_made" goto="false" newquery="false" operator="CHANGESTO" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Create REG on extortion payment&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//check for existing REG task
+	var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+	existingReg.addQuery('parent_cyber_incident', current.sys_id);
+	existingReg.addQuery('notification_type', 'ransomware_payment_report');
+	var existingRegOr = existingReg.addQuery('state', '-5');
+	existingRegOr.addOrCondition('state', '1');
+	existingRegOr.addOrCondition('state', '2');
+	existingRegOr.addOrCondition('state', '3');
+	existingReg.query();
+
+	//if extortion REG doesn't exist, create one
+	if (!existingReg.next()) {
+		var newReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+		newReg.initialize();
+		newReg.setValue('parent_cyber_incident', current.sys_id);
+		newReg.setValue('notification_type', 'ransomware_payment_report');
+		newReg.setValue('state', '1');
+		newReg.setValue('assignment_group', 'b7aa36d9c3d1431043481cedd40131f1');
+		newReg.setValue('short_description', 'Ransomware payment report - ' + current.getValue('number'));
+		newReg.insert();
+		current.work_notes = newReg.number + ': ' + newReg.getDisplayValue('notification_type') + ' created.';
+		current.update();
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 06:03:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;80d5010e8366c71044779cb6feaad3f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create REG on extortion payment&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_80d5010e8366c71044779cb6feaad3f7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 06:25:15&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=80d5010e8366c71044779cb6feaad3f7"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2049514735</payload_hash>
+<remote_update_set display_value="Lab22 - Ransomware payment reporting trigger">7e3f4d4283e6c71044779cb6feaad3b6</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 06:43:17</sys_created_on>
+<sys_id>b23f4d4283e6c71044779cb6feaad3b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe00c15b50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 06:43:17</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Create REG on extortion payment</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>7a1b850a6ca6c710222bfc79ad6d5149</update_guid>
+<update_guid_history>7a1b850a6ca6c710222bfc79ad6d5149:2049514735,87f98d464fa6c7101b8e84e35afed386:1685129891,12d885c259a6c710e7be924d18ac8df0:1792976873,7388c98222a6c71031f322b51fd6dadd:-1693067592,d06845821ea6c71085e1ec5acaf2e0b1:2113075266,5206894ecc66c710997ddd55c70cc257:-678389364</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_672c880683ae871044779cb6feaad3d0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;soci_notification&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;(current.suggested_soci_classification == 'significant' || current.suggested_soci_classification == 'relevant') &amp;amp;&amp;amp; !current.acsc_incident_severity.nil()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Create SOCI Notification&lt;/name&gt;&lt;onclick&gt;soci_notification()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function soci_notification() {
+    gsftSubmit(null, g_form.getFormElement(), 'soci_notification');
+}
+
+if (typeof window == 'undefined') {
+    //check for existing REG tasks - except for Closed Incomplete
+    var existingReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+	var stateOrQuery = existingReg.addQuery('state', '-5');
+	stateOrQuery.addOrCondition('state', '1');
+	stateOrQuery.addOrCondition('state', '2');
+	stateOrQuery.addOrCondition('state', '3');
+    existingReg.addQuery('parent_cyber_incident', current.sys_id);
+    existingReg.addQuery('notification_type', 'asd_soci_notification');
+    existingReg.setLimit(1);
+    existingReg.query();
+
+    // if task exists, let user know and dont create task
+    if (existingReg.next()) {
+        gs.addInfoMessage('An active SOCI notification task already exists for this cyber incident - no new task has been created.');
+
+        //if no task exists, create a new one
+    } else {
+        var newReg = new GlideRecord('x_1776078_cyber_0_regulatory_notification_task');
+        newReg.initialize();
+        newReg.setValue('parent_cyber_incident', current.sys_id);
+        newReg.setValue('notification_type', 'asd_soci_notification');
+        newReg.setValue('assignment_group', 'b7aa36d9c3d1431043481cedd40131f1');
+        newReg.setValue('state', '1');
+		newReg.setValue('short_description', 'ASD/SOCI notification - ' + current.getValue('number'));
+        newReg.insert();
+        current.work_notes = newReg.number + ': ' + newReg.getDisplayValue('notification_type') + ' created.';
+		current.update();
+    }
+    action.setRedirectURL(current);
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 01:56:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;672c880683ae871044779cb6feaad3d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create SOCI Notification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_672c880683ae871044779cb6feaad3d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 06:32:35&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1247683335</payload_hash>
+<remote_update_set display_value="Lab22 - Ransomware payment reporting trigger">7e3f4d4283e6c71044779cb6feaad3b6</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 06:43:17</sys_created_on>
+<sys_id>ba3f4d4283e6c71044779cb6feaad3b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe012c9940000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 06:43:17</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Create SOCI Notification</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>cacc050e13a6c7102a35e9040927bd67</update_guid>
+<update_guid_history>cacc050e13a6c7102a35e9040927bd67:-1247683335,dfeb458a1aa6c71083fd8c752dc548cf:1423338941,5cea010a83a6c710b2acd48e7b57f901:2111676193,b29a45c6bfa6c710ec9eb8c9e983f745:81034365,fc6a4d862ba6c710bd7b91ee8deb9658:2066403029,480c60c23da2c71023789ceb7e4df6c2:6783497,026758caf8ee87104f740dca597debc9:-777510049,1ba6dc4a88ee871086b0b2a85a7688da:459594411,8e5690c658ee871004b8187ae414540b:1032414234,9e3510c695ee8710f208128c2295a66b:1491646660,36ed800a17ae8710ff90796116bb7de7:-632438559,a0bdc0c69aae87103a652d913823066d:-166079388</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_2614d24483668b1044779cb6feaad38a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="2614d24483668b1044779cb6feaad38a" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>44898d0683a6c71044779cb6feaad314</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>parent_cyber_incident</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>4c898d0683a6c71044779cb6feaad315</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_type</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>08898d0683a6c71044779cb6feaad316</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>regulator_reference_number</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>c0898d0683a6c71044779cb6feaad317</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>8c898d0683a6c71044779cb6feaad317</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>48898d0683a6c71044779cb6feaad318</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_deadline</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>04898d0683a6c71044779cb6feaad319</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>cc898d0683a6c71044779cb6feaad319</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>88898d0683a6c71044779cb6feaad31a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>44898d0683a6c71044779cb6feaad31b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:18:14</sys_created_on><sys_id>00898d0683a6c71044779cb6feaad31c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:18:14</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2614d24483668b1044779cb6feaad38a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_2614d24483668b1044779cb6feaad38a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:20</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>757971726</payload_hash>
+<remote_update_set display_value="Lab22 - Ransomware payment reporting trigger">7e3f4d4283e6c71044779cb6feaad3b6</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 06:43:17</sys_created_on>
+<sys_id>fe3f4d4283e6c71044779cb6feaad3b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe005a8350000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 06:43:17</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>00898d065ba6c710beb6e513c62e3520</update_guid>
+<update_guid_history>00898d065ba6c710beb6e513c62e3520:757971726,909f66c940e20310dc492e540e46f797:747735551,ef8d5ac889ea8b10ed1dd57a98ed88a3:-255578757,2afbd60862ea8b10d5b1b5a982131472:531133315,a6fbd608a3ea8b10bb65ce34b15b0c60:1737131230</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

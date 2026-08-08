@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-06 10:39:48">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Legal approval record on REG task</description>
+<inserted/>
+<name>Lab 19b - Legal approval record on REG task</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>f40b535d832a831044779cb6feaad312</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>b322379d83ea831044779cb6feaad391</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_x_1776078_cyber_0_regulatory_notification_task_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Regulatory Notification Task - Default view" name="x_1776078_cyber_0_regulatory_notification_task" related_list="NULL" sys_domain="global" view="Default view">d721b31d83ea831044779cb6feaad39e</list_id><order_by/><position>0</position><related_list>sysapproval_approver.sysapproval</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 10:35:23</sys_created_on><sys_id>1721b31d83ea831044779cb6feaad3a0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 10:35:23</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Regulatory Notification Task - Default view</calculated_name><filter/><name>x_1776078_cyber_0_regulatory_notification_task</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 10:35:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d721b31d83ea831044779cb6feaad39e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Regulatory Notification Task - Default view</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_related_x_1776078_cyber_0_regulatory_notification_task_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 10:35:23</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>804118692</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>0832379d83ea831044779cb6feaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6a45c760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>1321b31d1eea8310c9a3ba2cdfed09a3</update_guid>
+<update_guid_history>1321b31d1eea8310c9a3ba2cdfed09a3:804118692,ddeea7d507ea831056959a7cf139468b:-22538027,0e6ea79586ea83101bfbb5572ba68956:2010140310,de5e279508ea83109592276aeaf67567:1207809495,c81e6b5548ea8310f496f76ef6f46a69:-1252617936</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_7ef3639d836a831044779cb6feaad3a7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 09:41:55</sys_created_on><sys_id>7ef3639d836a831044779cb6feaad3a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">2b14564483aa8b1044779cb6feaad3d2</sys_security_acl><sys_update_name>sys_security_acl_role_7ef3639d836a831044779cb6feaad3a7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 09:41:55</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal">7803ab5d836a831044779cb6feaad316</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1328632352</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>3722379d83ea831044779cb6feaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6736b4e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>d0f46f5130aa83106a53bcb23382b554</update_guid>
+<update_guid_history>d0f46f5130aa83106a53bcb23382b554:-1328632352</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_7803ab5d836a831044779cb6feaad316</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1776078_cyber_0.legal</name><scoped_admin>false</scoped_admin><suffix>legal</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 09:33:42</sys_created_on><sys_id>7803ab5d836a831044779cb6feaad316</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_user_role_7803ab5d836a831044779cb6feaad316</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 09:33:42</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>1803073219</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>4c32379d83ea831044779cb6feaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd66be3750000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.legal</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>7703eb5dee6a8310af74569fe096b4af</update_guid>
+<update_guid_history>7703eb5dee6a8310af74569fe096b4af:1803073219</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_92fda75583ea831044779cb6feaad316</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 10:21:24</sys_created_on><sys_id>92fda75583ea831044779cb6feaad316</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_user_grmember</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_scope_privilege_92fda75583ea831044779cb6feaad316</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 10:21:24</sys_updated_on><target_name>sys_user_grmember</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-280698959</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>7722379d83ea831044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6978df90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table/>
+<target_name>sys_user_grmember</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>56fda75529ea83101f80cd39232f421a</update_guid>
+<update_guid_history>56fda75529ea83101f80cd39232f421a:-280698959</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_8125a79183aa831044779cb6feaad312</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 09:43:06</sys_created_on><sys_id>8125a79183aa831044779cb6feaad312</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad328</sys_security_acl><sys_update_name>sys_security_acl_role_8125a79183aa831044779cb6feaad312</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 09:43:06</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal">7803ab5d836a831044779cb6feaad316</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>2042516588</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>7b22379d83ea831044779cb6feaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6747ce00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>d1352b91d0aa83103e8a62b7609f7aca</update_guid>
+<update_guid_history>d1352b91d0aa83103e8a62b7609f7aca:2042516588</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_eafda75583ea831044779cb6feaad38c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>create</operation><source_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 10:21:24</sys_created_on><sys_id>eafda75583ea831044779cb6feaad38c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sysapproval_approver</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_scope_privilege_eafda75583ea831044779cb6feaad38c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 10:21:24</sys_updated_on><target_name>sysapproval_approver</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-439746047</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>bb22379d83ea831044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6978e2c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table/>
+<target_name>sysapproval_approver</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>6efda755eaea83100c89e6cc9d2f108e</update_guid>
+<update_guid_history>6efda755eaea83100c89e6cc9d2f108e:-439746047</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_81e4eb5183aa831044779cb6feaad362</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 09:41:56</sys_created_on><sys_id>81e4eb5183aa831044779cb6feaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">2b14564483aa8b1044779cb6feaad3d2</sys_security_acl><sys_update_name>sys_security_acl_role_81e4eb5183aa831044779cb6feaad362</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 09:41:56</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1247746360</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>bf22379d83ea831044779cb6feaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6736b8a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>9cf46f519daa8310625935de66fee65a</update_guid>
+<update_guid_history>9cf46f519daa8310625935de66fee65a:1247746360</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_b3f4239183aa831044779cb6feaad364</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 09:42:22</sys_created_on><sys_id>b3f4239183aa831044779cb6feaad364</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">1302ae1dc31d03102d84f44ed40131c7</sys_security_acl><sys_update_name>sys_security_acl_role_b3f4239183aa831044779cb6feaad364</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 09:42:22</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal">7803ab5d836a831044779cb6feaad316</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1019265622</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>f322379d83ea831044779cb6feaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd673d1050000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.legal</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>6e052391f7aa8310a6392b3da783365e</update_guid>
+<update_guid_history>6e052391f7aa8310a6392b3da783365e:1019265622</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_de546e51c35d03102d84f44ed4013147</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description>Cyber security incident management application aligned to Australian Cyber Security Centre (ACSC) standards. Provides a secure, isolated environment for managing cyber incidents separate from standard ITSM processes. Access is restricted to Major Incident Management and Cyber Security team personnel only.</description><device_type>browser</device_type><hint/><name/><order>100</order><roles>x_1776078_cyber_0.admin,x_1776078_cyber_0.mim_user,x_1776078_cyber_0.security_analyst,x_1776078_cyber_0.user,x_1776078_cyber_0.legal</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:42:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>de546e51c35d03102d84f44ed4013147</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Cyber Incident Management</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_app_application_de546e51c35d03102d84f44ed4013147</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-06 09:45:20</sys_updated_on><title>Cyber Incident Management</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>1820494956</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>f722379d83ea831044779cb6feaad391</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd67688a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table/>
+<target_name>Cyber Incident Management</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>46b5ebd154aa8310c0598e4673685573</update_guid>
+<update_guid_history>46b5ebd154aa8310c0598e4673685573:1820494956,40cc29c08c668b10a9fbd19df6e4ab61:-1399290457</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_5ce5a31583aa831044779cb6feaad3bd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Create REG Legal approval&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //query sys_user_grmember for members of the legal group
+    var groupMembers = new GlideRecord('sys_user_grmember');
+    groupMembers.addQuery('group', '2b10a3d5836a831044779cb6feaad307');
+    groupMembers.query();
+
+    //while there are more members
+    while (groupMembers.next()) {
+
+        //create a new approver record  for each member of legal
+        var newApprover = new GlideRecord('sysapproval_approver');
+        newApprover.initialize();
+        newApprover.setValue('document_id', current.sys_id);
+		newApprover.setValue('sysapproval', current.sys_id);
+        newApprover.setValue('source_table', 'x_1776078_cyber_0_regulatory_notification_task');
+        newApprover.setValue('approval_reason', current.getValue('notification_type'));
+        newApprover.setValue('approver', groupMembers.getValue('user'));
+        newApprover.setValue('state', 'requested');
+        newApprover.insert();
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-06 10:20:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5ce5a31583aa831044779cb6feaad3bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create REG Legal approval&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_5ce5a31583aa831044779cb6feaad3bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-06 10:34:24&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5ce5a31583aa831044779cb6feaad3bd"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-153540010</payload_hash>
+<remote_update_set display_value="Lab 19b - Legal approval record on REG task">b322379d83ea831044779cb6feaad391</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-06 10:39:48</sys_created_on>
+<sys_id>ff22379d83ea831044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fd6a377150000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-06 10:39:48</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Create REG Legal approval</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>85f0bbd9d1ea8310fe7e86d24e527a3c</update_guid>
+<update_guid_history>85f0bbd9d1ea8310fe7e86d24e527a3c:-153540010,0f907b992eea83107b03037d7722f684:-1356452464,edddaf1582ea83105ab03295de1b785f:-1405946696</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

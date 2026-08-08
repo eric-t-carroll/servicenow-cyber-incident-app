@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-02 07:21:28">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Regulatory notification task table</description>
+<inserted/>
+<name>Lab17 - Regulatory notification task table</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d522524083aa8b1044779cb6feaad304</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ef6ed64c83ea8b1044779cb6feaad354</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_status_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="notification_status" label="Notification status" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>notification_status</element><help/><hint/><label>Notification status</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:12</sys_created_on><sys_id>31e59a4883aa8b1044779cb6feaad373</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Notification status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_status_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:42</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>112278656</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>236ed64c83ea8b1044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f87920000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification status</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>02fb56087aea8b10c748a7c2be0beaa8</update_guid>
+<update_guid_history>02fb56087aea8b10c748a7c2be0beaa8:112278656,8efb5608faea8b10c8b63709f7b2588f:112278656,46fb560859ea8b10ab651f2efa2bfe89:897300437,4ee59a4841aa8b10457e103d05f20cde:1500231904,4ee59a4834aa8b1071f19ccb81696c80:-486520875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_ab14564483aa8b1044779cb6feaad3be</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>ab14564483aa8b1044779cb6feaad3be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_ab14564483aa8b1044779cb6feaad3be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2035105051</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>236ed64c83ea8b1044779cb6feaad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021960000002</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>af14564491aa8b10ad3ec2496fde55c5</update_guid>
+<update_guid_history>af14564491aa8b10ad3ec2496fde55c5:-2035105051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_2614d24483668b1044779cb6feaad38a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="2614d24483668b1044779cb6feaad38a" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>6f8d5ac883ea8b1044779cb6feaad39b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>parent_cyber_incident</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>2b8d5ac883ea8b1044779cb6feaad39c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_type</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>e38d5ac883ea8b1044779cb6feaad39d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>regulator_reference_number</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>af8d5ac883ea8b1044779cb6feaad39d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>6b8d5ac883ea8b1044779cb6feaad39e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>278d5ac883ea8b1044779cb6feaad39f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_deadline</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>ef8d5ac883ea8b1044779cb6feaad39f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>ab8d5ac883ea8b1044779cb6feaad3a0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2614d24483668b1044779cb6feaad38a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_2614d24483668b1044779cb6feaad38a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:20</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-255578757</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>236ed64c83ea8b1044779cb6feaad3a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc155e0a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>ef8d5ac889ea8b10ed1dd57a98ed88a3</update_guid>
+<update_guid_history>ef8d5ac889ea8b10ed1dd57a98ed88a3:-255578757,2afbd60862ea8b10d5b1b5a982131472:531133315,a6fbd608a3ea8b10bb65ce34b15b0c60:1737131230</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_close_code</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="close_code" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>close_code</element><name>x_1776078_cyber_0_regulatory_notification_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:40</sys_created_on><sys_id>adfbd20883ea8b1044779cb6feaad3b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>close_code</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_close_code</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:40</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Submitted On Time</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a5fbd20883ea8b1044779cb6feaad3b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:40</sys_updated_on><value>submitted_on_time</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Submitted Late</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a5fbd20883ea8b1044779cb6feaad3d3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:40</sys_updated_on><value>submitted_late</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Not Required</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e9fbd20883ea8b1044779cb6feaad3fa</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><value>not_required</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>close_code</element><hint/><inactive>false</inactive><label>Cancelled</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a1fb160883ea8b1044779cb6feaad309</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><value>cancelled</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1190219468</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>276ed64c83ea8b1044779cb6feaad355</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f823f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Close code</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>a5fb16081eea8b1025b6734eabdfcb25</update_guid>
+<update_guid_history>a5fb16081eea8b1025b6734eabdfcb25:-1190219468</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_deadline</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="notification_deadline" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Notification deadline</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>notification_deadline</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">due_date</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:46:53</sys_created_on><sys_id>c98612c883aa8b1044779cb6feaad389</sys_id><sys_name>Notification deadline</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_deadline</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-851209361</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>276ed64c83ea8b1044779cb6feaad370</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f85e70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification deadline</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>31fb560832ea8b10b59f3863e739c13d</update_guid>
+<update_guid_history>31fb560832ea8b10b59f3863e739c13d:-851209361,918612c835aa8b10d54e20cf43743eb7:675184495</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_parent_cyber_incident_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="parent_cyber_incident" label="Parent cyber incident" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>parent_cyber_incident</element><help/><hint/><label>Parent cyber incident</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:23</sys_created_on><sys_id>c605d6c483aa8b1044779cb6feaad302</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Parent cyber incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_parent_cyber_incident_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-512473338</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>276ed64c83ea8b1044779cb6feaad375</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8cab0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Parent cyber incident</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>9efb9608cdea8b103c597058ad89b4fe</update_guid>
+<update_guid_history>9efb9608cdea8b103c597058ad89b4fe:-512473338,9efb96084eea8b100ecf9b38e92387cd:-512473338,56fb960863ea8b106532910118ee45c7:218363472,9a051ac401aa8b1012a025bd2e035411:1824851910,8e05d6c483aa8b10403294267b673951:-1149919536</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2314964483aa8b1044779cb6feaad32b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>2314964483aa8b1044779cb6feaad32b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">e714564483aa8b1044779cb6feaad3e7</sys_security_acl><sys_update_name>sys_security_acl_role_2314964483aa8b1044779cb6feaad32b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1651036447</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>276ed64c83ea8b1044779cb6feaad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>6714964484aa8b10484109da8fc0b52f</update_guid>
+<update_guid_history>6714964484aa8b10484109da8fc0b52f:-1651036447</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_wizard_answer_ce14d24483aa8b1044779cb6feaad340</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>New Regulatory Notification Task</answer><button_label/><dependent_value/><element/><name>Regulatory Notification Task</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">b84e9d04a56103108bb220b7a4d21278</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:18</sys_created_on><sys_id>ce14d24483aa8b1044779cb6feaad340</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Regulatory Notification Task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_wizard_answer_ce14d24483aa8b1044779cb6feaad340</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:18</sys_updated_on><table/><target_url>x_1776078_cyber_0_regulatory_notification_task.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+<payload_hash>1424668191</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>276ed64c83ea8b1044779cb6feaad3a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13009a10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table/>
+<target_name>Regulatory Notification Task</target_name>
+<type>Answer</type>
+<update_domain>global</update_domain>
+<update_guid>0a14d24444aa8b1084b1d0d38503ea45</update_guid>
+<update_guid_history>0a14d24444aa8b1084b1d0d38503ea45:1424668191</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_oral_notification_date_time</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="oral_notification_date_time" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Oral notification date/time</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>oral_notification_date_time</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">glide_date_time</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:49:23</sys_created_on><sys_id>b517d20c83aa8b1044779cb6feaad3fe</sys_id><sys_name>Oral notification date/time</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_oral_notification_date_time</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:42</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>293651416</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2b6ed64c83ea8b1044779cb6feaad371</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f89d30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Oral notification date/time</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>4afb9608f2ea8b109b296c4203523025</update_guid>
+<update_guid_history>4afb9608f2ea8b109b296c4203523025:293651416,8e17160c93aa8b10b267e117e8ae215b:-1240826984,3d17160c3daa8b10affc673a74ae602b:-1201630341</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Regulatory Notification Task" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Regulatory Notification Task</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural>Regulatory Notification Tasks</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:18</sys_created_on><sys_id>0a14d24483aa8b1044779cb6feaad32a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Regulatory Notification Task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:18</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>526487100</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2b6ed64c83ea8b1044779cb6feaad376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc1300a460000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_3b14964483aa8b1044779cb6feaad384</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:25</sys_created_on><sys_id>3b14964483aa8b1044779cb6feaad384</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad359</sys_security_acl><sys_update_name>sys_security_acl_role_3b14964483aa8b1044779cb6feaad384</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:25</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-691490964</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2b6ed64c83ea8b1044779cb6feaad37b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13023190000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>7f14964422aa8b10c78f9a743a2c4288</update_guid>
+<update_guid_history>7f14964422aa8b10c78f9a743a2c4288:-691490964</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_8e14924483aa8b1044779cb6feaad3f7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><filter_extension/><is_df_table>false</is_df_table><is_extendable>false</is_extendable><label>Regulatory Notification Task</label><live_feed_enabled>false</live_feed_enabled><name>x_1776078_cyber_0_regulatory_notification_task</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Task" name="task">fc4e9d04a56103108bb220b7a4d21277</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:18</sys_created_on><sys_id>8e14924483aa8b1044779cb6feaad3f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cyber 0 Regulatory Notification Task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_db_object_8e14924483aa8b1044779cb6feaad3f7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:18</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>70985797</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2f6ed64c83ea8b1044779cb6feaad356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13009d70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>8e14d244d0aa8b104d145c743338864b</update_guid>
+<update_guid_history>8e14d244d0aa8b104d145c743338864b:70985797</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_written_notification_date_time</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="written_notification_date_time" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Written notification date/time</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>written_notification_date_time</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">glide_date_time</internal_type><mandatory>false</mandatory><max_length>255</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:39</sys_created_on><sys_id>d1fbd20883ea8b1044779cb6feaad35b</sys_id><sys_name>Written notification date/time</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_written_notification_date_time</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>703251220</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2f6ed64c83ea8b1044779cb6feaad372</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f84500000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Written notification date/time</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>75fb16086aea8b108966b5768bd83ae8</update_guid>
+<update_guid_history>75fb16086aea8b108966b5768bd83ae8:703251220,adfbd20888ea8b1043bda55843747793:148572215</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6f14964483aa8b1044779cb6feaad359</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:25</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad359</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_6f14964483aa8b1044779cb6feaad359</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:25</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>2003865159</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2f6ed64c83ea8b1044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022f20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>af1496446daa8b10f68520a2b28baf82</update_guid>
+<update_guid_history>af1496446daa8b10f68520a2b28baf82:2003865159</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:25</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad33b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">a314964483aa8b1044779cb6feaad311</sys_security_acl><sys_update_name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:25</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1612123672</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>2f6ed64c83ea8b1044779cb6feaad3a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022b20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a31496446daa8b10bc127c52ac42f140</update_guid>
+<update_guid_history>a31496446daa8b10bc127c52ac42f140:-1612123672</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_close_code</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="close_code" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>Close code</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>close_code</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:39</sys_created_on><sys_id>55fbd20883ea8b1044779cb6feaad36f</sys_id><sys_name>Close code</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_close_code</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:40</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1998375455</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>636ed64c83ea8b1044779cb6feaad357</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f80fa0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Close code</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>6dfbd208c8ea8b10d9ba754d8c6c28b3</update_guid>
+<update_guid_history>6dfbd208c8ea8b10d9ba754d8c6c28b3:1998375455,95fbd2084eea8b10c5cc18a00118e68d:-40522206</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_written_notification_submitted</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="written_notification_submitted" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Written notification submitted</column_label><comments/><create_roles/><default_value>false</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>written_notification_submitted</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">boolean</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:49:23</sys_created_on><sys_id>fd17d20c83aa8b1044779cb6feaad3ea</sys_id><sys_name>Written notification submitted</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_written_notification_submitted</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:43</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>276678730</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>636ed64c83ea8b1044779cb6feaad373</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8d950000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Written notification submitted</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>96fbd60870ea8b10148549f7bf65e01a</update_guid>
+<update_guid_history>96fbd60870ea8b10148549f7bf65e01a:276678730,3917160cc5aa8b1098b9bd4509649a28:-2128072630</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a314564483aa8b1044779cb6feaad39e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>a314564483aa8b1044779cb6feaad39e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_a314564483aa8b1044779cb6feaad39e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2035105051</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>636ed64c83ea8b1044779cb6feaad378</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021960000003</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>6f14564415aa8b10f2885a3d0ba302c9</update_guid>
+<update_guid_history>6f14564415aa8b10f2885a3d0ba302c9:-2035105051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_a714564483aa8b1044779cb6feaad3e0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>a714564483aa8b1044779cb6feaad3e0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">ab14564483aa8b1044779cb6feaad3be</sys_security_acl><sys_update_name>sys_security_acl_role_a714564483aa8b1044779cb6feaad3e0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1366760543</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>636ed64c83ea8b1044779cb6feaad3a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021c60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>671456447faa8b10de9ea27c74caa9e5</update_guid>
+<update_guid_history>671456447faa8b10de9ea27c74caa9e5:-1366760543</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_type_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="notification_type" label="Notification type" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>notification_type</element><help/><hint/><label>Notification type</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:24</sys_created_on><sys_id>c605d6c483aa8b1044779cb6feaad32f</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Notification type</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_type_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:42</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1696296856</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>676ed64c83ea8b1044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f88bc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification type</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>c2fb560836ea8b100a55652462173ef1</update_guid>
+<update_guid_history>c2fb560836ea8b100a55652462173ef1:-1696296856,4afb560879ea8b10fb27f8612ea3f0e5:-1696296856,cafb56086aea8b10ece672310bef0fdf:1392072914,5a05d6c45caa8b10bb2242e2881e5fcd:-1250638648,0205d6c473aa8b1073937a5b77fcbe4f:1502917906</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e714564483aa8b1044779cb6feaad3e7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>e714564483aa8b1044779cb6feaad3e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_e714564483aa8b1044779cb6feaad3e7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2102923727</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>676ed64c83ea8b1044779cb6feaad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021ef0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e31456440faa8b10938bd54e373366eb</update_guid>
+<update_guid_history>e31456440faa8b10938bd54e373366eb:-2102923727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_aefbd60883ea8b1044779cb6feaad334</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Closure" section_id="aefbd60883ea8b1044779cb6feaad334" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>close_code</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>e38d5ac883ea8b1044779cb6feaad3a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Closure" display_value="Closure" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">aefbd60883ea8b1044779cb6feaad334</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>af8d5ac883ea8b1044779cb6feaad3a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Closure" display_value="Closure" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">aefbd60883ea8b1044779cb6feaad334</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>closed_at</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>6b8d5ac883ea8b1044779cb6feaad3a9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Closure" display_value="Closure" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">aefbd60883ea8b1044779cb6feaad334</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>278d5ac883ea8b1044779cb6feaad3aa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Closure" display_value="Closure" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">aefbd60883ea8b1044779cb6feaad334</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>close_notes</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:17:38</sys_created_on><sys_id>ef8d5ac883ea8b1044779cb6feaad3aa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Closure" display_value="Closure" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">aefbd60883ea8b1044779cb6feaad334</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Closure</caption><header>false</header><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aefbd60883ea8b1044779cb6feaad334</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_aefbd60883ea8b1044779cb6feaad334</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:17:38</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>2063593208</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>676ed64c83ea8b1044779cb6feaad3a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc155e0ef0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>af8d5ac8c8ea8b1098bd0ec27c6826ad</update_guid>
+<update_guid_history>af8d5ac8c8ea8b1098bd0ec27c6826ad:2063593208,e78d5ac8bdea8b1090c20e37165c577a:21467251</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="notification_status" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>Notification status</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>notification_status</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>true</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:12</sys_created_on><sys_id>7de59a4883aa8b1044779cb6feaad362</sys_id><sys_name>Notification status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_status</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:42</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1253627764</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>6b6ed64c83ea8b1044779cb6feaad370</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f871b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification status</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c6fb560811ea8b107fdade469fa7b786</update_guid>
+<update_guid_history>c6fb560811ea8b107fdade469fa7b786:-1253627764,82e59a48fdaa8b103b91f7460f315e98:-1978451892,3de59a48c1aa8b108abf4dd5aac5767d:1354434200</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_regulator_reference_number_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="regulator_reference_number" label="Regulator reference number" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>regulator_reference_number</element><help/><hint/><label>Regulator reference number</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:39</sys_created_on><sys_id>ddfbd20883ea8b1044779cb6feaad357</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Regulator reference number</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_regulator_reference_number_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-424247514</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>6b6ed64c83ea8b1044779cb6feaad375</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f83d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Regulator reference number</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>31fb160836ea8b10e9b9841489a763d2</update_guid>
+<update_guid_history>31fb160836ea8b10e9b9841489a763d2:-424247514,75fb1608b6ea8b10f880baf3ea3a6cc6:-424247514,6dfbd2088bea8b107a30d25050a70c99:1506545582</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>2714564483aa8b1044779cb6feaad3d7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">ab14564483aa8b1044779cb6feaad3b5</sys_security_acl><sys_update_name>sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-15518014</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>6b6ed64c83ea8b1044779cb6feaad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021c70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>6f145644f1aa8b1073ee311d6023cfdd</update_guid>
+<update_guid_history>6f145644f1aa8b1073ee311d6023cfdd:-15518014</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_oral_notification_made</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="oral_notification_made" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Oral notification made</column_label><comments/><create_roles/><default_value>false</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>oral_notification_made</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">boolean</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:46:53</sys_created_on><sys_id>858612c883aa8b1044779cb6feaad35d</sys_id><sys_name>Oral notification made</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_oral_notification_made</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:43</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1266018058</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>6f6ed64c83ea8b1044779cb6feaad371</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8afc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Oral notification made</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>d6fb96082eea8b10797916621e87506e</update_guid>
+<update_guid_history>d6fb96082eea8b10797916621e87506e:1266018058,9d8612c8f9aa8b10b1be5358699b93b3:1258454794</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_63f1a53377451110cd1b756f1b5a9991</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Captures the last execution timestamp of the scheduled job 'Surface New Unconnected Content of Categories'</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>taxonomy.category.new_content_job_last_run</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-08 07:43:25</sys_created_on><sys_id>63f1a53377451110cd1b756f1b5a9991</sys_id><sys_mod_count>11</sys_mod_count><sys_name>taxonomy.category.new_content_job_last_run</sys_name><sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">5a86a9c0a5a903108bb220b7a4d21227</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_63f1a53377451110cd1b756f1b5a9991</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:00:18</sys_updated_on><type>date_format</type><value>2026-08-02</value><write_roles>maint</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=63f1a53377451110cd1b756f1b5a9991"/></record_update>]]></payload>
+<payload_hash>-1730097523</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>6f6ed64c83ea8b1044779cb6feaad376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc1460b940000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table/>
+<target_name>taxonomy.category.new_content_job_last_run</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>16995a4049ea8b1066c6ae114aba2f5c</update_guid>
+<update_guid_history>16995a4049ea8b1066c6ae114aba2f5c:-1730097523,6ba35af2991203104edf10f236d194cc:-1199213209,13a35af2b81203105463bc6c2a842ec8:-437767834</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad30a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">e714964483aa8b1044779cb6feaad305</sys_security_acl><sys_update_name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad30a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1319075299</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>6f6ed64c83ea8b1044779cb6feaad37b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022090000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a3149644a8aa8b102b8512a720017f0f</update_guid>
+<update_guid_history>a3149644a8aa8b102b8512a720017f0f:1319075299</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_notification_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="notification_status" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>notification_status</element><name>x_1776078_cyber_0_regulatory_notification_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:13</sys_created_on><sys_id>c2e59a4883aa8b1044779cb6feaad39c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_notification_status</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:44:13</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_status</element><hint/><inactive>false</inactive><label>Pending</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cae59a4883aa8b1044779cb6feaad39b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:44:13</sys_updated_on><value>pending</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_status</element><hint/><inactive>false</inactive><label>In Progress</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>06e59a4883aa8b1044779cb6feaad3ab</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:44:13</sys_updated_on><value>in_progress</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_status</element><hint/><inactive>false</inactive><label>Submitted</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cae59a4883aa8b1044779cb6feaad3b9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:44:13</sys_updated_on><value>submitted</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_status</element><hint/><inactive>false</inactive><label>Cancelled</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:44:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>82e59a4883aa8b1044779cb6feaad3c8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:44:13</sys_updated_on><value>cancelled</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1543875435</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a36ed64c83ea8b1044779cb6feaad356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13749020000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification Status</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>cee59a4862aa8b10342579198ad98cd7</update_guid>
+<update_guid_history>cee59a4862aa8b10342579198ad98cd7:1543875435</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_parent_cyber_incident</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="parent_cyber_incident" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Parent cyber incident</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>parent_cyber_incident</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="x_1776078_cyber_0_cyber_incident">x_1776078_cyber_0_cyber_incident</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:23</sys_created_on><sys_id>ce0596c483aa8b1044779cb6feaad3cc</sys_id><sys_name>Parent cyber incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_parent_cyber_incident</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:43</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1215522377</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a36ed64c83ea8b1044779cb6feaad372</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8c2c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Parent cyber incident</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>d6fb96085fea8b108a4e66a0fc495ac4</update_guid>
+<update_guid_history>d6fb96085fea8b108a4e66a0fc495ac4:-1215522377,96051ac452aa8b108c4834d2ef436709:-1896545865,0a05d6c4feaa8b106cdb92acdc30283f:1712384636</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_2b14564483aa8b1044779cb6feaad3d2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>2b14564483aa8b1044779cb6feaad3d2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_2b14564483aa8b1044779cb6feaad3d2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2102923727</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a36ed64c83ea8b1044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021f10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>af149644f9aa8b1030726e1edc1e8120</update_guid>
+<update_guid_history>af149644f9aa8b1030726e1edc1e8120:-2102923727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad336</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:25</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad336</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">e714964483aa8b1044779cb6feaad331</sys_security_acl><sys_update_name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad336</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:25</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>588317305</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a36ed64c83ea8b1044779cb6feaad37c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022c10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>af14964410aa8b1095594230c74c726c</update_guid>
+<update_guid_history>af14964410aa8b1095594230c74c726c:588317305</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_close_code_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="close_code" label="Close code" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>close_code</element><help/><hint/><label>Close code</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:40</sys_created_on><sys_id>d1fbd20883ea8b1044779cb6feaad380</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Close code</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_close_code_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1958307968</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a76ed64c83ea8b1044779cb6feaad373</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f82c70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Close code</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>2dfb160893ea8b10020b9222209af250</update_guid>
+<update_guid_history>2dfb160893ea8b10020b9222209af250:1958307968,a9fb16082eea8b108e1e739b0b930d38:1958307968,edfbd20826ea8b10f39b17ac33893896:-588478884</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a314964483aa8b1044779cb6feaad311</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>a314964483aa8b1044779cb6feaad311</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_a314964483aa8b1044779cb6feaad311</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1149678645</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a76ed64c83ea8b1044779cb6feaad378</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022560000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e314964432aa8b1088b21116b075da3a</update_guid>
+<update_guid_history>e314964432aa8b1088b21116b075da3a:1149678645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e714564483aa8b1044779cb6feaad3cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>e714564483aa8b1044779cb6feaad3cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">a314564483aa8b1044779cb6feaad39e</sys_security_acl><sys_update_name>sys_security_acl_role_e714564483aa8b1044779cb6feaad3cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1121213566</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>a76ed64c83ea8b1044779cb6feaad3a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021c60000002</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a7145644d5aa8b10f201f528fd51b1d0</update_guid>
+<update_guid_history>a7145644d5aa8b10f201f528fd51b1d0:1121213566</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_oral_notification_date_time_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="oral_notification_date_time" label="Oral notification date/time" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>oral_notification_date_time</element><help/><hint/><label>Oral notification date/time</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:49:24</sys_created_on><sys_id>3517160c83aa8b1044779cb6feaad30f</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Oral notification date/time</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_oral_notification_date_time_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>352292886</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ab6ed64c83ea8b1044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8a650000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Oral notification date/time</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>4efb9608c3ea8b1010c4449d8c8a2d52</update_guid>
+<update_guid_history>4efb9608c3ea8b1010c4449d8c8a2d52:352292886,0efb9608eaea8b1004e1a77a6aef2f3a:352292886,8efb9608e3ea8b10ab9b195d984a1034:1623371812,8217160caaaa8b1013bc80c4eb00f964:344098934,f917160c31aa8b103e3921e8776b3e31:1888083044</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e714964483aa8b1044779cb6feaad305</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>e714964483aa8b1044779cb6feaad305</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_e714964483aa8b1044779cb6feaad305</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2102923727</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ab6ed64c83ea8b1044779cb6feaad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021ee0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e3149644aeaa8b104de62c0175bd9809</update_guid>
+<update_guid_history>e3149644aeaa8b104de62c0175bd9809:-2102923727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_e2fbd60883ea8b1044779cb6feaad333</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Notification" section_id="e2fbd60883ea8b1044779cb6feaad333" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>oral_notification_made</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>2efbd60883ea8b1044779cb6feaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notification" display_value="Notification" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">e2fbd60883ea8b1044779cb6feaad333</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>oral_notification_date_time</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>e6fbd60883ea8b1044779cb6feaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notification" display_value="Notification" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">e2fbd60883ea8b1044779cb6feaad333</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>a2fbd60883ea8b1044779cb6feaad399</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notification" display_value="Notification" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">e2fbd60883ea8b1044779cb6feaad333</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>written_notification_submitted</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>6efbd60883ea8b1044779cb6feaad399</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notification" display_value="Notification" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">e2fbd60883ea8b1044779cb6feaad333</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>written_notification_date_time</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>2afbd60883ea8b1044779cb6feaad39a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notification" display_value="Notification" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">e2fbd60883ea8b1044779cb6feaad333</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Notification</caption><header>false</header><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e2fbd60883ea8b1044779cb6feaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_e2fbd60883ea8b1044779cb6feaad333</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>819555310</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ab6ed64c83ea8b1044779cb6feaad3a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f927b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>e6fbd608fbea8b10de82f0c9fbcdda9d</update_guid>
+<update_guid_history>e6fbd608fbea8b10de82f0c9fbcdda9d:819555310</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_type</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="notification_type" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>Notification type</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>notification_type</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>true</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:24</sys_created_on><sys_id>ca05d6c483aa8b1044779cb6feaad305</sys_id><sys_name>Notification type</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_type</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:42</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1645925804</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>af6ed64c83ea8b1044779cb6feaad370</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f882a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification type</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>4efb560886ea8b10ad37fd6df733b6dc</update_guid>
+<update_guid_history>4efb560886ea8b10ad37fd6df733b6dc:1645925804,d605d6c47aaa8b1053cc287e0f211e7a:2003223916,4e05d6c4a4aa8b10bdcbf1035bdc263b:-163862296</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_written_notification_date_time_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="written_notification_date_time" label="Written notification date/time" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>written_notification_date_time</element><help/><hint/><label>Written notification date/time</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:39</sys_created_on><sys_id>51fbd20883ea8b1044779cb6feaad36c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Written notification date/time</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_written_notification_date_time_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-237012721</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>af6ed64c83ea8b1044779cb6feaad375</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f84d80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Written notification date/time</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>f1fb16082aea8b10cbe2104a88edf1fc</update_guid>
+<update_guid_history>f1fb16082aea8b10cbe2104a88edf1fc:-237012721,39fb16083fea8b10fcb8d5ea6cd572f0:-237012721,e9fbd2089bea8b10c097941afa68589c:-1975595628</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2b14964483aa8b1044779cb6feaad322</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>2b14964483aa8b1044779cb6feaad322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">2b14564483aa8b1044779cb6feaad3d2</sys_security_acl><sys_update_name>sys_security_acl_role_2b14964483aa8b1044779cb6feaad322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-604164738</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>af6ed64c83ea8b1044779cb6feaad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc130220c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>6f14964490aa8b10fee01c389c9bf626</update_guid>
+<update_guid_history>6f14964490aa8b10fee01c389c9bf626:-604164738</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" extends="task" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>true</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:18</sys_created_on><sys_id>ce14924483aa8b1044779cb6feaad3fd</sys_id><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-995787024</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>e36ed64c83ea8b1044779cb6feaad371</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f92110000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>aefbd608a3ea8b1098bf86ea172ea08e</update_guid>
+<update_guid_history>aefbd608a3ea8b1098bf86ea172ea08e:-995787024,0e14d2448caa8b106f1ee3d605683448:778707811</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_written_notification_submitted_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="written_notification_submitted" label="Written notification submitted" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>written_notification_submitted</element><help/><hint/><label>Written notification submitted</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:49:23</sys_created_on><sys_id>b117d20c83aa8b1044779cb6feaad3fb</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Written notification submitted</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_written_notification_submitted_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-2086201316</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>e36ed64c83ea8b1044779cb6feaad376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8e240000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Written notification submitted</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>1efbd60860ea8b10ad4742d57409be2e</update_guid>
+<update_guid_history>1efbd60860ea8b10ad4742d57409be2e:-2086201316,92fbd60828ea8b100229a4bb2fad4d23:-2086201316,16fbd608bdea8b10bfaf03ac46f2681d:844886247,f917160cccaa8b10a08c48465579e339:1711098908,7d17160c1daa8b109173c02790f08f2e:1239144679</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2b14964483aa8b1044779cb6feaad353</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:25</sys_created_on><sys_id>2b14964483aa8b1044779cb6feaad353</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad328</sys_security_acl><sys_update_name>sys_security_acl_role_2b14964483aa8b1044779cb6feaad353</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:25</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1527983094</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>e36ed64c83ea8b1044779cb6feaad37b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022c80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>6f1496441caa8b10f3a196ee33136c57</update_guid>
+<update_guid_history>6f1496441caa8b10f3a196ee33136c57:-1527983094</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_notification_type</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="notification_type" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>notification_type</element><name>x_1776078_cyber_0_regulatory_notification_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:24</sys_created_on><sys_id>1205d6c483aa8b1044779cb6feaad37f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_type</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_notification_type</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:40:24</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_type</element><hint/><inactive>false</inactive><label>ASD / SOCI Notification</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1a05d6c483aa8b1044779cb6feaad37e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:40:24</sys_updated_on><value>asd_soci_notification</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_type</element><hint/><inactive>false</inactive><label>OAIC / NDB Notification</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5605d6c483aa8b1044779cb6feaad3a7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:40:25</sys_updated_on><value>oaic_ndb_notification</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_type</element><hint/><inactive>false</inactive><label>Ransomware Payment Report</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:40:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1e05d6c483aa8b1044779cb6feaad3b5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:40:25</sys_updated_on><value>ransomware_payment_report</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1444835761</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>e76ed64c83ea8b1044779cb6feaad356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc133ccc50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification Type</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>5a05d6c4f6aa8b101e2ff87a4b1721c5</update_guid>
+<update_guid_history>5a05d6c4f6aa8b101e2ff87a4b1721c5:-1444835761</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_regulator_reference_number</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="regulator_reference_number" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Regulator reference number</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>regulator_reference_number</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:39</sys_created_on><sys_id>5dfb920883ea8b1044779cb6feaad3d7</sys_id><sys_name>Regulator reference number</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_regulator_reference_number</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:41</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1124772590</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>e76ed64c83ea8b1044779cb6feaad372</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f83480000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Regulator reference number</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>71fb16086fea8b104da1f7dae9a37367</update_guid>
+<update_guid_history>71fb16086fea8b104da1f7dae9a37367:-1124772590,a9fbd208ceea8b10bbcd52284a522290:765656373</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6f14964483aa8b1044779cb6feaad328</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_6f14964483aa8b1044779cb6feaad328</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1149678645</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>e76ed64c83ea8b1044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13022720000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>af149644faaa8b10030be45b9188f151</update_guid>
+<update_guid_history>af149644faaa8b10030be45b9188f151:1149678645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_deadline_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="notification_deadline" label="Notification deadline" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>notification_deadline</element><help/><hint/><label>Notification deadline</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:46:53</sys_created_on><sys_id>118612c883aa8b1044779cb6feaad3a7</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Notification deadline</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_deadline_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:42</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1723764094</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>eb6ed64c83ea8b1044779cb6feaad373</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f867a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification deadline</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b1fb560873ea8b10002355778933b452</update_guid>
+<update_guid_history>b1fb560873ea8b10002355778933b452:1723764094,f5fb560806ea8b10e5baa4075a6e0746:1723764094,bdfb56087eea8b100c7361ae5b83013f:-476087158,dd8612c815aa8b1077215144931757e4:-540192290,518612c8cbaa8b101a47cacb7ec25ebd:1898014922</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_ab14564483aa8b1044779cb6feaad3b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>ab14564483aa8b1044779cb6feaad3b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_ab14564483aa8b1044779cb6feaad3b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2035105051</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>eb6ed64c83ea8b1044779cb6feaad378</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc13021960000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>2b14564477aa8b1032afb19ea9fcced5</update_guid>
+<update_guid_history>2b14564477aa8b1032afb19ea9fcced5:-2035105051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_form_sections_a6fbd60883ea8b1044779cb6feaad336</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="a6fbd60883ea8b1044779cb6feaad336" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e2fbd60883ea8b1044779cb6feaad33c</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_regulatory_notification_task" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">a6fbd60883ea8b1044779cb6feaad336</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">2614d24483668b1044779cb6feaad38a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2afbd60883ea8b1044779cb6feaad33d</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_regulatory_notification_task" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">a6fbd60883ea8b1044779cb6feaad336</sys_ui_form><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a6fbd60883ea8b1044779cb6feaad344</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_regulatory_notification_task" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">a6fbd60883ea8b1044779cb6feaad336</sys_ui_form><sys_ui_section caption="Notification" display_value="Notification" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">e2fbd60883ea8b1044779cb6feaad333</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a6fbd60883ea8b1044779cb6feaad34b</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1776078_cyber_0_regulatory_notification_task" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">a6fbd60883ea8b1044779cb6feaad336</sys_ui_form><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">aefbd60883ea8b1044779cb6feaad334</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a6fbd60883ea8b1044779cb6feaad336</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_form_sections_a6fbd60883ea8b1044779cb6feaad336</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+<payload_hash>716103386</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>eb6ed64c83ea8b1044779cb6feaad3a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f902c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Sections</type>
+<update_domain>global</update_domain>
+<update_guid>66fbd60844ea8b10bae2263457f3924e</update_guid>
+<update_guid_history>66fbd60844ea8b10bae2263457f3924e:716103386,62fbd60889ea8b10f838193582841347:-1073058284,66fbd6083fea8b10ac3cfe1385229240:-1405512119,6efbd60830ea8b10b61ee92b55df1739:-1451286994</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_oral_notification_made_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="oral_notification_made" label="Oral notification made" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>oral_notification_made</element><help/><hint/><label>Oral notification made</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:46:53</sys_created_on><sys_id>c58612c883aa8b1044779cb6feaad386</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Oral notification made</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_oral_notification_made_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>28124485</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ef6ed64c83ea8b1044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f8b810000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Oral notification made</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>5efb960842ea8b10e3dca00432abb282</update_guid>
+<update_guid_history>5efb960842ea8b10e3dca00432abb282:28124485,9efb9608f2ea8b10ab3f35b121431177:28124485,56fb960888ea8b1079aacbf434d5ab71:-500288352,518612c8caaa8b10b8f31b2485fb3fc5:1299607877,d18612c80baa8b10ec3a0bf6790d07ba:986645664</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e714964483aa8b1044779cb6feaad331</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>e714964483aa8b1044779cb6feaad331</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_e714964483aa8b1044779cb6feaad331</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 06:36:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1149678645</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ef6ed64c83ea8b1044779cb6feaad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc130226a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e314964459aa8b1014d10082a6f26435</update_guid>
+<update_guid_history>e314964459aa8b1014d10082a6f26435:1149678645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_eefbd60883ea8b1044779cb6feaad330</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Notes" section_id="eefbd60883ea8b1044779cb6feaad330" sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>watch_list</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>a6fbd60883ea8b1044779cb6feaad376</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>62fbd60883ea8b1044779cb6feaad377</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes_list</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>2efbd60883ea8b1044779cb6feaad377</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>e6fbd60883ea8b1044779cb6feaad378</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>a2fbd60883ea8b1044779cb6feaad379</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>activity.xml</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:45</sys_created_on><sys_id>6efbd60883ea8b1044779cb6feaad379</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter><sys_ui_section caption="Notes" display_value="Notes" name="x_1776078_cyber_0_regulatory_notification_task" sys_domain="global" view="Default view">eefbd60883ea8b1044779cb6feaad330</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:45</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Notes</caption><header>false</header><name>x_1776078_cyber_0_regulatory_notification_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 07:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eefbd60883ea8b1044779cb6feaad330</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_eefbd60883ea8b1044779cb6feaad330</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-02 07:10:44</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>389546283</payload_hash>
+<remote_update_set display_value="Lab17 - Regulatory notification task table">ef6ed64c83ea8b1044779cb6feaad354</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-02 07:21:27</sys_created_on>
+<sys_id>ef6ed64c83ea8b1044779cb6feaad3a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fc14f92440000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-02 07:21:27</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>26fbd608a9ea8b107f75bf9337227494</update_guid>
+<update_guid_history>26fbd608a9ea8b107f75bf9337227494:389546283</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
