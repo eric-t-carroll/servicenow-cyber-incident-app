@@ -92,16 +92,16 @@ servicenow-cyber-incident-app/
 | 16 | Business rule — Data Classification contains checks | CAD | Completed |
 | 17 | Regulatory Notification Task table | CAD | Completed |
 | 18 | SOCI classification matrix-lookup | CAD | Completed |
-| 19 | Suggested/Confirmed approval pattern | CAD | Completed |
+| 19a | Suggested/Confirmed approval pattern | CAD | Completed |
 | 19b | Legal approval for REG task | CAD | Completed |
 | 20 | ASD/SOCI notification trigger | CAD | Completed |
 | 21 | OAIC/NDB notification trigger | CAD | Completed |
-| 22 | Ransomware payment reporting trigger | CAD | Completed |
-| 22a | Application Properties — configurable SLA targets | CAD | Planned |
+| 22a | Ransomware payment reporting trigger | CAD | Completed |
+| 22b | Application Properties — configurable SLA targets | CAD | Completed |
 | 23 | Warning/info banner | CAD | Planned |
 | 24 | State transition matrix — design and enforcement | CAD | Planned |
-| 25 | Closure validation + Record Integrity ACL | CAD | Planned |
-| 25a | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
+| 25a | Closure validation + Record Integrity ACL | CAD | Planned |
+| 25b | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
 | 26 | Urgency/Priority phase-gating | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
 | 28 | Client scripts and UI actions (general CAD coverage) | CAD | Planned |
@@ -110,8 +110,8 @@ servicenow-cyber-incident-app/
 | 31 | Playbook Designer — standard response playbook | CAD | Planned |
 | 32 | Playbook Designer — persistent threat branch | CAD | Planned |
 | 33 | ATF — automated testing | CAD | Planned |
-| 34 | IntegrationHub — outbound notification spoke | CAD | Planned |
-| 34a | Delegated Development walkthrough (role-play) | CAD | Planned |
+| 34a | IntegrationHub — outbound notification spoke | CAD | Planned |
+| 34b | Delegated Development walkthrough (role-play) | CAD | Planned |
 | 35 | App Engine Studio polish | CAD | Planned |
 
 

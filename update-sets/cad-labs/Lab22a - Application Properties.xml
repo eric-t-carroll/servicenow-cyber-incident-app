@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-08 07:07:53">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Application Properties</description>
+<inserted/>
+<name>Lab22a - Application Properties</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>0dc0554283e6c71044779cb6feaad32b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>f2d4d18e83e6c71044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_4443994a83e6c71044779cb6feaad3b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>100</order><property display_value="x_1776078_cyber_0.sla.ndb_assessment_days" name="x_1776078_cyber_0.sla.ndb_assessment_days">91e2114a83e6c71044779cb6feaad3fc</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:51</sys_created_on><sys_id>4443994a83e6c71044779cb6feaad3b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.ndb_assessment_days.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_4443994a83e6c71044779cb6feaad3b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:51</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>708113143</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>32d4d18e83e6c71044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02cace20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.ndb_assessment_days.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>1c43994a8be6c71024fbc1239e76cfb9</update_guid>
+<update_guid_history>1c43994a8be6c71024fbc1239e76cfb9:708113143</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_c943558a83e6c71044779cb6feaad325</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>600</order><property display_value="x_1776078_cyber_0.sla.soci_significant_oral_hours" name="x_1776078_cyber_0.sla.soci_significant_oral_hours">7671d58683e6c71044779cb6feaad33a</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:54</sys_created_on><sys_id>c943558a83e6c71044779cb6feaad325</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_significant_oral_hours.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_c943558a83e6c71044779cb6feaad325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:54</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>1885690159</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>36d4d18e83e6c71044779cb6feaad378</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02cb8b10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_significant_oral_hours.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>4543558a38e6c710b6df4ca20f3c7628</update_guid>
+<update_guid_history>4543558a38e6c710b6df4ca20f3c7628:1885690159</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_3b83d1ca83e6c71044779cb6feaad367</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Cyber Incident Management">de546e51c35d03102d84f44ed4013147</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>DIRECT</link_type><map_page/><mobile_title>SLA Configuration</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>100</order><override_menu_roles>false</override_menu_roles><query>system_properties_ui.do?sysparm_title=SLA%20Configuration&amp;sysparm_category=x_1776078_cyber_0</query><report/><require_confirmation>true</require_confirmation><roles>x_1776078_cyber_0.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:03:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3b83d1ca83e6c71044779cb6feaad367</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SLA Configuration</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_app_module_3b83d1ca83e6c71044779cb6feaad367</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:03:33</sys_updated_on><timeline_page/><title>SLA Configuration</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>827017341</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>3ad4d18e83e6c71044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02f24a00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>SLA Configuration</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>fbd39dca26e6c71063e7d5b0f78f9151</update_guid>
+<update_guid_history>fbd39dca26e6c71063e7d5b0f78f9151:827017341</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_96b2d50a83e6c71044779cb6feaad3f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>SOCI Relevant — written follow-up deadline (hours)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.soci_relevant_written_hours</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.soci_relevant_written_hours</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:58:32</sys_created_on><sys_id>96b2d50a83e6c71044779cb6feaad3f0</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_relevant_written_hours</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_96b2d50a83e6c71044779cb6feaad3f0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:07:10</sys_updated_on><type>integer</type><value>48</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=96b2d50a83e6c71044779cb6feaad3f0"/></record_update>]]></payload>
+<payload_hash>1323919294</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>3ed4d18e83e6c71044779cb6feaad375</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe03273480000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_relevant_written_hours</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>b4b49d4e82e6c7105eaec2986e7dc344</update_guid>
+<update_guid_history>b4b49d4e82e6c7105eaec2986e7dc344:1323919294,56a41d4e78e6c710b18f2dba383ac266:1437920454,96b2114a12e6c710e4aca24b92c9e92b:1323919294</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_c903954a83e6c71044779cb6feaad3ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>NDB — internal notification target (hours from Eligible determination)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.ndb_notification_hours</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.ndb_notification_hours</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:59:49</sys_created_on><sys_id>c903954a83e6c71044779cb6feaad3ca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.ndb_notification_hours</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_c903954a83e6c71044779cb6feaad3ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:59:49</sys_updated_on><type>integer</type><value>72</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=c903954a83e6c71044779cb6feaad3ca"/></record_update>]]></payload>
+<payload_hash>-1603637207</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>72d4d18e83e6c71044779cb6feaad376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02bbba20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.ndb_notification_hours</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>1d03594ad0e6c7109f2955307b4474eb</update_guid>
+<update_guid_history>1d03594ad0e6c7109f2955307b4474eb:-1603637207</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_6443158a83e6c71044779cb6feaad3ce</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>300</order><property display_value="x_1776078_cyber_0.sla.ransomware_report_hours" name="x_1776078_cyber_0.sla.ransomware_report_hours">6d13954a83e6c71044779cb6feaad373</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:53</sys_created_on><sys_id>6443158a83e6c71044779cb6feaad3ce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.ransomware_report_hours.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_6443158a83e6c71044779cb6feaad3ce</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:53</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-762979328</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>76d4d18e83e6c71044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02cb25b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.ransomware_report_hours.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>fc43158ad1e6c71053856617b23630d0</update_guid>
+<update_guid_history>fc43158ad1e6c71053856617b23630d0:-762979328</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_cd43558a83e6c71044779cb6feaad329</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>700</order><property display_value="x_1776078_cyber_0.sla.soci_significant_written_hours" name="x_1776078_cyber_0.sla.soci_significant_written_hours">cbe111c683e6c71044779cb6feaad3e1</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:55</sys_created_on><sys_id>cd43558a83e6c71044779cb6feaad329</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_significant_written_hours.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_cd43558a83e6c71044779cb6feaad329</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:55</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-992114717</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>7ad4d18e83e6c71044779cb6feaad378</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02cbaa50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_significant_written_hours.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>5943558ab2e6c710ee017db2cd7ed02c</update_guid>
+<update_guid_history>5943558ab2e6c710ee017db2cd7ed02c:-992114717</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_6d13954a83e6c71044779cb6feaad373</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Ransomware Payment — reporting deadline (hours from Payment Date/Time)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.ransomware_report_hours</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.ransomware_report_hours</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:07</sys_created_on><sys_id>6d13954a83e6c71044779cb6feaad373</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.ransomware_report_hours</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_6d13954a83e6c71044779cb6feaad373</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:07</sys_updated_on><type>integer</type><value>72</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=6d13954a83e6c71044779cb6feaad373"/></record_update>]]></payload>
+<payload_hash>1948769793</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>7ed4d18e83e6c71044779cb6feaad374</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02c0b620000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.ransomware_report_hours</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>56135d4ae4e6c71002576889893350db</update_guid>
+<update_guid_history>56135d4ae4e6c71002576889893350db:1948769793</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_7671d58683e6c71044779cb6feaad33a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>SOCI Significant — oral notification deadline (hours)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.soci_significant_oral_hours</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.soci_significant_oral_hours</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:54:22</sys_created_on><sys_id>7671d58683e6c71044779cb6feaad33a</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_significant_oral_hours</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_7671d58683e6c71044779cb6feaad33a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:57:57</sys_updated_on><type>integer</type><value>12</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=7671d58683e6c71044779cb6feaad33a"/></record_update>]]></payload>
+<payload_hash>273969441</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>b2d4d18e83e6c71044779cb6feaad375</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02a037c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_significant_oral_hours</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>b192d90ab2e6c710d9093d4d021bdc4e</update_guid>
+<update_guid_history>b192d90ab2e6c710d9093d4d021bdc4e:273969441,6b329dc63be6c710e155ad89aec65f98:-1688792192,19c111c679e6c71052da03e7717f8602:-1764661703</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_dbf0954683e6c71044779cb6feaad363</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_properties_category"&gt;&lt;sys_properties_category action="INSERT_OR_UPDATE"&gt;&lt;name&gt;x_1776078_cyber_0&lt;/name&gt;&lt;sys_class_name&gt;sys_properties_category&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-08 06:51:55&lt;/sys_created_on&gt;&lt;sys_id&gt;dbf0954683e6c71044779cb6feaad363&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_category_dbf0954683e6c71044779cb6feaad363&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-08 06:51:55&lt;/sys_updated_on&gt;&lt;title&gt;&lt;![CDATA[&lt;p&gt;Cyber Incident Management SLA targets&lt;/p&gt;]]&gt;&lt;/title&gt;&lt;/sys_properties_category&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=dbf0954683e6c71044779cb6feaad363"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1234260543</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>b6d4d18e83e6c71044779cb6feaad376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe0247e0d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0</target_name>
+<type>System Property Category</type>
+<update_domain>global</update_domain>
+<update_guid>d1315d4665e6c710504373a1a9fc5d4c</update_guid>
+<update_guid_history>d1315d4665e6c710504373a1a9fc5d4c:1234260543</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_7843158a83e6c71044779cb6feaad3d2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>400</order><property display_value="x_1776078_cyber_0.sla.soci_relevant_oral_hours" name="x_1776078_cyber_0.sla.soci_relevant_oral_hours">d272d50a83e6c71044779cb6feaad3c1</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:53</sys_created_on><sys_id>7843158a83e6c71044779cb6feaad3d2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_relevant_oral_hours.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_7843158a83e6c71044779cb6feaad3d2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:53</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-2019945446</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>bad4d18e83e6c71044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02cb4c60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_relevant_oral_hours.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>f043158ae9e6c71023d10d98ae92bad5</update_guid>
+<update_guid_history>f043158ae9e6c71023d10d98ae92bad5:-2019945446</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_cbe111c683e6c71044779cb6feaad3e1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>SOCI Significant — written follow-up deadline (hours)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.soci_significant_written_hours</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.soci_significant_written_hours</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:55:02</sys_created_on><sys_id>cbe111c683e6c71044779cb6feaad3e1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_significant_written_hours</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_cbe111c683e6c71044779cb6feaad3e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:55:47</sys_updated_on><type>integer</type><value>84</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=cbe111c683e6c71044779cb6feaad3e1"/></record_update>]]></payload>
+<payload_hash>-181017718</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>bed4d18e83e6c71044779cb6feaad378</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe0280b370000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_significant_written_hours</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>1a1299c6f1e6c710375f7ba3944a7ecb</update_guid>
+<update_guid_history>1a1299c6f1e6c710375f7ba3944a7ecb:-181017718,1fe111c62de6c710961483d554fea2e6:-1329000381</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_d272d50a83e6c71044779cb6feaad3c1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>SOCI Relevant — oral notification deadline (hours)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.soci_relevant_oral_hours</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.soci_relevant_oral_hours</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:57:27</sys_created_on><sys_id>d272d50a83e6c71044779cb6feaad3c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_relevant_oral_hours</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_d272d50a83e6c71044779cb6feaad3c1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:57:27</sys_updated_on><type>integer</type><value>72</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=d272d50a83e6c71044779cb6feaad3c1"/></record_update>]]></payload>
+<payload_hash>-828546173</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>f2d4d18e83e6c71044779cb6feaad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe0298e170000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_relevant_oral_hours</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>2672d50a6ee6c7108f402c095dcb4dc6</update_guid>
+<update_guid_history>2672d50a6ee6c7108f402c095dcb4dc6:-828546173</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_91e2114a83e6c71044779cb6feaad3fc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>NDB — assessment ceiling (days from Date/Time Became Aware)</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1776078_cyber_0.sla.ndb_assessment_days</name><read_roles>x_1776078_cyber_0.user</read_roles><suffix>sla.ndb_assessment_days</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 06:59:17</sys_created_on><sys_id>91e2114a83e6c71044779cb6feaad3fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.ndb_assessment_days</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_91e2114a83e6c71044779cb6feaad3fc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 06:59:17</sys_updated_on><type>integer</type><value>30</value><write_roles>x_1776078_cyber_0.admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=91e2114a83e6c71044779cb6feaad3fc"/></record_update>]]></payload>
+<payload_hash>-1441863821</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>f6d4d18e83e6c71044779cb6feaad375</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02b3c180000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.ndb_assessment_days</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>d1e2514a12e6c710e4777839f7f3b801</update_guid>
+<update_guid_history>d1e2514a12e6c710e4777839f7f3b801:-1441863821</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_1843994a83e6c71044779cb6feaad3bb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>200</order><property display_value="x_1776078_cyber_0.sla.ndb_notification_hours" name="x_1776078_cyber_0.sla.ndb_notification_hours">c903954a83e6c71044779cb6feaad3ca</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:52</sys_created_on><sys_id>1843994a83e6c71044779cb6feaad3bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.ndb_notification_hours.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_1843994a83e6c71044779cb6feaad3bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:52</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-1870951570</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>fad4d18e83e6c71044779cb6feaad376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02caff30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.ndb_notification_hours.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>a043994ac5e6c7107a647ed274fa87be</update_guid>
+<update_guid_history>a043994ac5e6c7107a647ed274fa87be:-1870951570</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_7c43158a83e6c71044779cb6feaad3d6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="x_1776078_cyber_0">dbf0954683e6c71044779cb6feaad363</category><order>500</order><property display_value="x_1776078_cyber_0.sla.soci_relevant_written_hours" name="x_1776078_cyber_0.sla.soci_relevant_written_hours">96b2d50a83e6c71044779cb6feaad3f0</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-08 07:00:54</sys_created_on><sys_id>7c43158a83e6c71044779cb6feaad3d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0.sla.soci_relevant_written_hours.x_1776078_cyber_0</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_properties_category_m2m_7c43158a83e6c71044779cb6feaad3d6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-08 07:00:54</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-415204848</payload_hash>
+<remote_update_set display_value="Lab22a - Application Properties">f2d4d18e83e6c71044779cb6feaad374</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-08 07:07:51</sys_created_on>
+<sys_id>fed4d18e83e6c71044779cb6feaad377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe02cb6a10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-08 07:07:51</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.sla.soci_relevant_written_hours.x_1776078_cyber_0</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>c543158a7ee6c7107c4b5a956d4062d9</update_guid>
+<update_guid_history>c543158a7ee6c7107c4b5a956d4062d9:-415204848</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
