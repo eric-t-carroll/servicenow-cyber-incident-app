@@ -99,7 +99,7 @@ servicenow-cyber-incident-app/
 | 22a | Ransomware payment reporting trigger | CAD | Completed |
 | 22b | Application Properties — configurable SLA targets | CAD | Completed |
 | 23 | SOCI warning/info banner | CAD | Completed |
-| 24 | State transition matrix — design and enforcement | CAD | Planned |
+| 24 | State transition matrix — design and enforcement | CAD | Complete |
 | 25a | Closure validation + Record Integrity ACL | CAD | Planned |
 | 25b | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
 | 26 | Urgency/Priority phase-gating | CAD | Planned |
