@@ -99,8 +99,8 @@ servicenow-cyber-incident-app/
 | 22a | Ransomware payment reporting trigger | CAD | Completed |
 | 22b | Application Properties — configurable SLA targets | CAD | Completed |
 | 23 | SOCI warning/info banner | CAD | Completed |
-| 24 | State transition matrix — design and enforcement | CAD | Complete |
-| 25a | Closure validation + Record Integrity ACL | CAD | Planned |
+| 24 | State transition matrix — design and enforcement | CAD | Completed |
+| 25a | Closure validation + Record Integrity ACL | CAD | Completed |
 | 25b | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
 | 26 | Urgency/Priority phase-gating | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
@@ -239,3 +239,4 @@ Cross-application extensions
  - 2/8: Full restore via source control and individual update sets completed successfully.
  - 6/8: Approval tasks need 'sysapproval' field set along with 'document_id' - otherwise they don't appear in related approval lists.
  - 8/8: UI Actions use the 'onClick' field to call a function. The function is defined in the script field. gsftSubmit saves the form and triggers server-side script.
+ - 9/8: Field level and wildcard access controls can get messy if you don't think about it properly before putting them in.
