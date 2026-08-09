@@ -98,13 +98,16 @@ servicenow-cyber-incident-app/
 | 21 | OAIC/NDB notification trigger | CAD | Completed |
 | 22a | Ransomware payment reporting trigger | CAD | Completed |
 | 22b | Application Properties — configurable SLA targets | CAD | Completed |
-| 23 | Warning/info banner | CAD | Planned |
+| 23 | SOCI warning/info banner | CAD | Completed |
 | 24 | State transition matrix — design and enforcement | CAD | Planned |
 | 25a | Closure validation + Record Integrity ACL | CAD | Planned |
 | 25b | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
 | 26 | Urgency/Priority phase-gating | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
-| 28 | Client scripts and UI actions (general CAD coverage) | CAD | Planned |
+| 28a | State transition UI Actions | CAD | Planned |
+| 28b | Special transition UI Actions | CAD | Planned |
+| 28c | REG task approval guard rails | CAD | Planned |
+| 28d | UI Polish | CAD | Planned |
 | 29 | Flow Designer — automated lifecycle workflow | CAD | Planned |
 | 30 | Script Includes & GlideRecord API (general CAD coverage) | CAD | Planned |
 | 31 | Playbook Designer — standard response playbook | CAD | Planned |

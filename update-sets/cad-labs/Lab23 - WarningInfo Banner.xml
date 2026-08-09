@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-09 07:51:11">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Warning/Info Banner</description>
+<inserted/>
+<name>Lab23 - Warning/Info Banner</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>345e799a832e4b1044779cb6feaad378</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-09 07:51:10</sys_created_on>
+<sys_id>cf5826de83628b1044779cb6feaad3d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-09 07:51:10</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_4a7fbd1e832e4b1044779cb6feaad3bb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Reads scratchpad values loaded by the 'Update scratch pad on REG notification' business rule. Displays a message advising when a SOCI regualtory notificaiton task activity needs attention.&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;SOCI info/warn banner&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    //if SOCI task is not required, do not display any message
+    if (!g_scratchpad.soci_notification_required) {
+        return;
+    }
+
+    //if SOCI task is required but does not exist, tell the user
+    if (!g_scratchpad.soci_task_exists) {
+        g_form.addInfoMessage('SOCI notification may be required - use the Create SOCI Notification button');
+    }
+
+    //if SOCI task is required but there is already a notification task, let the user know
+    if (g_scratchpad.soci_task_exists) {
+        if (g_scratchpad.soci_task_state === '-5' || g_scratchpad.soci_task_state === '1' || g_scratchpad.soci_task_state === '2') {
+            g_form.addInfoMessage('SOCI notification task in is progress');
+        }
+
+        if (g_scratchpad.soci_task_state === '3') {
+            g_form.addInfoMessage('SOCI notification has been completed');
+        }
+
+        if (g_scratchpad.soci_task_state === '4') {
+            g_form.addModerateMessage('The previous SOCI notification task was not completed - review if still required');
+        }
+
+        if (g_scratchpad.soci_task_state === '8') {
+            g_form.addModerateMessage('The previous SOCI notification was closed as no longer required - review if still required');
+        }
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-09 06:03:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4a7fbd1e832e4b1044779cb6feaad3bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;SOCI info/warn banner&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_4a7fbd1e832e4b1044779cb6feaad3bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-09 06:07:59&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-307776818</payload_hash>
+<remote_update_set display_value="Lab23 - Warning/Info Banner">cf5826de83628b1044779cb6feaad3d8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-09 07:51:10</sys_created_on>
+<sys_id>075826de83628b1044779cb6feaad3d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19fe522a0f80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-09 07:51:10</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>SOCI info/warn banner</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>afb05ede62ae4b1022c0055122d63091</update_guid>
+<update_guid_history>afb05ede62ae4b1022c0055122d63091:-307776818,c0b05ede27ae4b10c0e41953fd834502:-1916059411,41ef069e24ae4b1083e09392cf43372e:1107734626,bebfcadac6ae4b10441bfa664c1aa17e:-228494784</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
