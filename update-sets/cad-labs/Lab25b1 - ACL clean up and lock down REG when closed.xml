@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-25 11:30:46">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Lab25b1 - ACL clean up and lock down REG when closed</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8aab596b83fa0b1044779cb6feaad36e</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>bf04392783fe0b1044779cb6feaad3d2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a798e5ab837e0b1044779cb6feaad3cd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to table="x_1776078_cyber_0_regulatory_notification_task.work_notes">stateIN3,8^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></applies_to><condition/><controlled_by_refs/><decision_type>deny</decision_type><description>Alow all cyber roles to write to work notes when the state is closed</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task.work_notes</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:40:47</sys_created_on><sys_id>a798e5ab837e0b1044779cb6feaad3cd</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.work_notes</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_a798e5ab837e0b1044779cb6feaad3cd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:46:52</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1437706294</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3304392783fe0b1044779cb6feaad3d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03887b38c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.work_notes</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.work_notes</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>f40a25af027e0b102f7d6796be834954</update_guid>
+<update_guid_history>f40a25af027e0b102f7d6796be834954:1437706294,eca9656fbc7e0b10556ee951f1ff3f8a:-2140428050,2398a9ab6b7e0b10043ccd720704314c:892882008</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_545229ab833e0b1044779cb6feaad33d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:13:36</sys_created_on><sys_id>545229ab833e0b1044779cb6feaad33d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">225b3e1dc3d1431043481cedd40131f5</sys_security_acl><sys_update_name>sys_security_acl_role_545229ab833e0b1044779cb6feaad33d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:13:36</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-61349429</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3304792783fe0b1044779cb6feaad380</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038693ee90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>2962a9ab0e3e0b10968e6ddd312fd4b4</update_guid>
+<update_guid_history>2962a9ab0e3e0b10968e6ddd312fd4b4:-61349429</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ffb8edab837e0b1044779cb6feaad3c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:42:29</sys_created_on><sys_id>ffb8edab837e0b1044779cb6feaad3c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task.work_notes">a798e5ab837e0b1044779cb6feaad3cd</sys_security_acl><sys_update_name>sys_security_acl_role_ffb8edab837e0b1044779cb6feaad3c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:42:29</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal">7803ab5d836a831044779cb6feaad316</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-751985167</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3304792783fe0b1044779cb6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03883b09b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.work_notes</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.legal</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>2009edab277e0b1009a9df992e45eef9</update_guid>
+<update_guid_history>2009edab277e0b1009a9df992e45eef9:-751985167</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_1702ae1dc31d03102d84f44ed401319d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Create access — cyber.admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:31:12</sys_created_on><sys_id>1702ae1dc31d03102d84f44ed401319d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_1702ae1dc31d03102d84f44ed401319d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:49:35</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>2131051315</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>3704392783fe0b1044779cb6feaad3d5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385341b90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>21ec5d2f37fa0b10cf0ec15bda560b48</update_guid>
+<update_guid_history>21ec5d2f37fa0b10cf0ec15bda560b48:2131051315,70cca9c0b1668b100ec6a9358686a267:-1454720413</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e714564483aa8b1044779cb6feaad3e7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/name&gt;&lt;operation display_value="read"&gt;read&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;e714564483aa8b1044779cb6feaad3e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_e714564483aa8b1044779cb6feaad3e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_e714564483aa8b1044779cb6feaad3e7&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/name&gt;&lt;operation display_value="read"&gt;read&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;e714564483aa8b1044779cb6feaad3e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_e714564483aa8b1044779cb6feaad3e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-2102923727&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2714564483aa8b1044779cb6feaad3ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13021f10000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type&gt;Access Control&lt;/type&gt;&lt;update_guid&gt;e31456440faa8b10938bd54e373366eb&lt;/update_guid&gt;&lt;update_guid_history&gt;e31456440faa8b10938bd54e373366eb:-2102923727&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:54:20&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl"&gt;sys_security_acl&lt;/sys_db_object&gt;&lt;sys_id&gt;0045f3d840414a0682cb33b6c8ed57a4&lt;/sys_id&gt;&lt;sys_metadata&gt;e714564483aa8b1044779cb6feaad3e7&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;ce14924483aa8b1044779cb6feaad3fd&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_e714564483aa8b1044779cb6feaad3e7&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_e714564483aa8b1044779cb6feaad3e7"&gt;2714564483aa8b1044779cb6feaad3ec&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:54:20&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1498728789</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3704392783fe0b1044779cb6feaad3da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038579b090000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d7fd19ef9efa0b10d4d743f5f8b07775</update_guid>
+<update_guid_history>d7fd19ef9efa0b10d4d743f5f8b07775:-1498728789,e31456440faa8b10938bd54e373366eb:-2102923727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_8125a79183aa831044779cb6feaad312</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-06 09:43:06&lt;/sys_created_on&gt;&lt;sys_id&gt;8125a79183aa831044779cb6feaad312&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;6f14964483aa8b1044779cb6feaad328&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_8125a79183aa831044779cb6feaad312&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-06 09:43:06&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal"&gt;7803ab5d836a831044779cb6feaad316&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_8125a79183aa831044779cb6feaad312&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-06 09:43:06&lt;/sys_created_on&gt;&lt;sys_id&gt;8125a79183aa831044779cb6feaad312&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;6f14964483aa8b1044779cb6feaad328&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_8125a79183aa831044779cb6feaad312&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-06 09:43:06&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal"&gt;7803ab5d836a831044779cb6feaad316&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;2042516588&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;f40b535d832a831044779cb6feaad312&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-06 09:43:06&lt;/sys_created_on&gt;&lt;sys_id&gt;15352b9183aa831044779cb6feaad3cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fd6747ce60000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-06 09:43:06&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;d1352b91d0aa83103e8a62b7609f7aca&lt;/update_guid&gt;&lt;update_guid_history&gt;d1352b91d0aa83103e8a62b7609f7aca:2042516588&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal"&gt;9d43292f833e0b1044779cb6feaad3ce&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 10:17:25&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;8f95ec6bcb584d2895dea8101a3a8684&lt;/sys_id&gt;&lt;sys_metadata&gt;8125a79183aa831044779cb6feaad312&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;6f14964483aa8b1044779cb6feaad328&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_8125a79183aa831044779cb6feaad312&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_8125a79183aa831044779cb6feaad312"&gt;15352b9183aa831044779cb6feaad3cb&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 10:17:25&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>986653744</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3704792783fe0b1044779cb6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0386cbc120000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>9d43692f523e0b10e0f8f5d169b76cf4</update_guid>
+<update_guid_history>9d43692f523e0b10e0f8f5d169b76cf4:986653744,d1352b91d0aa83103e8a62b7609f7aca:2042516588</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_4afb729dc3d1431043481cedd40131ad</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Write access — cyber.user, MIM, Legal and Security teams only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:24:27</sys_created_on><sys_id>4afb729dc3d1431043481cedd40131ad</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_4afb729dc3d1431043481cedd40131ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:58:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1684548957</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>3b04392783fe0b1044779cb6feaad3d6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385b8c590000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>1afe9d63453e0b10882d2d4f2bf46efe</update_guid>
+<update_guid_history>1afe9d63453e0b10882d2d4f2bf46efe:1684548957,5bef8f167ae68b102e9dc7ba4cb1dfb1:2039297809,34cca9c064668b10fb51975a8498c274:339912605</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_13f869eb837e0b1044779cb6feaad3bd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:42:29</sys_created_on><sys_id>13f869eb837e0b1044779cb6feaad3bd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task.work_notes">a798e5ab837e0b1044779cb6feaad3cd</sys_security_acl><sys_update_name>sys_security_acl_role_13f869eb837e0b1044779cb6feaad3bd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:42:29</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-481350053</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3b04392783fe0b1044779cb6feaad3db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03883b14b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.work_notes</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a4092deb917e0b103a5570f4ff82e788</update_guid>
+<update_guid_history>a4092deb917e0b103a5570f4ff82e788:-481350053</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_caf869eb837e0b1044779cb6feaad3b9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:42:29</sys_created_on><sys_id>caf869eb837e0b1044779cb6feaad3b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task.work_notes">a798e5ab837e0b1044779cb6feaad3cd</sys_security_acl><sys_update_name>sys_security_acl_role_caf869eb837e0b1044779cb6feaad3b9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:42:29</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>411403642</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3b04792783fe0b1044779cb6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03883b1190000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.work_notes</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>60092debe87e0b101ff5a1a4bf420882</update_guid>
+<update_guid_history>60092debe87e0b101ff5a1a4bf420882:411403642</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_9702ae1dc31d03102d84f44ed40131bb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Create - cyber.admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:31:12</sys_created_on><sys_id>9702ae1dc31d03102d84f44ed40131bb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_9702ae1dc31d03102d84f44ed40131bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:51:02</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1085756750</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>3f04392783fe0b1044779cb6feaad3d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385496f20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>4b3d196f06fa0b10333e095906610d28</update_guid>
+<update_guid_history>4b3d196f06fa0b10333e095906610d28:1085756750,b0cca9c048668b10b0078d4ebd85ce8d:628085911</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_292dd56f83fa0b1044779cb6feaad323</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 09:51:39</sys_created_on><sys_id>292dd56f83fa0b1044779cb6feaad323</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">35db3e5dc3d1431043481cedd4013192</sys_security_acl><sys_update_name>sys_security_acl_role_292dd56f83fa0b1044779cb6feaad323</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:51:39</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-479119150</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3f04792783fe0b1044779cb6feaad37e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03855253f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>f35dd56f1afa0b109bccb7d3ce8944d4</update_guid>
+<update_guid_history>f35dd56f1afa0b109bccb7d3ce8944d4:-479119150</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_d7ad5daf83fa0b1044779cb6feaad3f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 09:55:00</sys_created_on><sys_id>d7ad5daf83fa0b1044779cb6feaad3f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">2b14564483aa8b1044779cb6feaad3d2</sys_security_acl><sys_update_name>sys_security_acl_role_d7ad5daf83fa0b1044779cb6feaad3f9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:55:00</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>2037764167</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>3f04792783fe0b1044779cb6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385835eb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>cd2eddef69fa0b102985105cf0500035</update_guid>
+<update_guid_history>cd2eddef69fa0b102985105cf0500035:2037764167</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_9f02ae1dc31d03102d84f44ed40131ea</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Delete - Cyber Admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:31:12</sys_created_on><sys_id>9f02ae1dc31d03102d84f44ed40131ea</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_9f02ae1dc31d03102d84f44ed40131ea</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:02:37</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-344584185</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>7304392783fe0b1044779cb6feaad3d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385f2f0c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e4ef1d27683e0b10bb208ac5c5099e3c</update_guid>
+<update_guid_history>e4ef1d27683e0b10bb208ac5c5099e3c:-344584185,b8cca9c0b6668b10e57360c0fa950f95:-2047796543</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2b14964483aa8b1044779cb6feaad322</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2b14964483aa8b1044779cb6feaad322&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;2b14564483aa8b1044779cb6feaad3d2&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad322&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin"&gt;e80eda15c31d03102d84f44ed401317f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad322&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2b14964483aa8b1044779cb6feaad322&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;2b14564483aa8b1044779cb6feaad3d2&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad322&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin"&gt;e80eda15c31d03102d84f44ed401317f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-604164738&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;af14964483aa8b1044779cb6feaad327&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc130220d0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;6f14964490aa8b10fee01c389c9bf626&lt;/update_guid&gt;&lt;update_guid_history&gt;6f14964490aa8b10fee01c389c9bf626:-604164738&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin"&gt;c92eddef83fa0b1044779cb6feaad339&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:55:00&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;625d1d03a7264e20846e931e262ab204&lt;/sys_id&gt;&lt;sys_metadata&gt;2b14964483aa8b1044779cb6feaad322&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;2b14564483aa8b1044779cb6feaad3d2&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad322&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_2b14964483aa8b1044779cb6feaad322"&gt;af14964483aa8b1044779cb6feaad327&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:55:00&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-840831375</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7304792783fe0b1044779cb6feaad37f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03858367e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>892eddef0ffa0b109c51bffe89d29941</update_guid>
+<update_guid_history>892eddef0ffa0b109c51bffe89d29941:-840831375,6f14964490aa8b10fee01c389c9bf626:-604164738</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e42f95a3833e0b1044779cb6feaad33a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:00:54</sys_created_on><sys_id>e42f95a3833e0b1044779cb6feaad33a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad328</sys_security_acl><sys_update_name>sys_security_acl_role_e42f95a3833e0b1044779cb6feaad33a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:00:54</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst">6a3abe59c3d1431043481cedd401310f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>296011219</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7304792783fe0b1044779cb6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385d9e580000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a37f5de3803e0b10a549ab9e396b2240</update_guid>
+<update_guid_history>a37f5de3803e0b10a549ab9e396b2240:296011219</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_state</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="state" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>state</element><name>x_1776078_cyber_0_regulatory_notification_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:07:17</sys_created_on><sys_id>af9cb2858366031044779cb6feaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_state</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:07:17</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Pending</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:16:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>68ce3e898366031044779cb6feaad3b7</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:59:33</sys_updated_on><value>-5</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Open</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:17:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c4eeb2c98366031044779cb6feaad38d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 12:17:08</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Work in Progress</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:18:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4b2fbac98366031044779cb6feaad355</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:56:46</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Oral Notification Complete</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 11:03:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4ced65e783be0b1044779cb6feaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 11:03:45</sys_updated_on><value>5</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>true</inactive><label>Closed Incomplete</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:19:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2f4f720d8366031044779cb6feaad321</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:54:52</sys_updated_on><value>4</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Closed Complete</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:18:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a04fbec98366031044779cb6feaad357</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:53:23</sys_updated_on><value>3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>state</element><hint/><inactive>false</inactive><label>Closed No Longer Required</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 12:07:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c26c72858366031044779cb6feaad363</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:59:33</sys_updated_on><value>8</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>655779335</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>7704392783fe0b1044779cb6feaad3d3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0389728ea0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.state</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>80ed65e767be0b10f868cf29ecc86644</update_guid>
+<update_guid_history>80ed65e767be0b10f868cf29ecc86644:655779335,cced65e78abe0b1072801764c24b9a30:-287180712,470de5675abe0b10f5e6ab921d3db070:-651526503,6b6c6127cfbe0b10ca19326120ecd892:-263063249,b54c2de3dcbe0b10989f1357aa7d7d8e:-1588780436,5b3ce9e316be0b10d5761c99920d390e:1813848557,7e2c29e3e7be0b10caa60af87e831fc2:2118968074,0adbada330be0b1071304afff59ef369:-1588780436,a6cbe9a3b7be0b108e54fbfa341fdcf4:1530000751,d48ba1a3bdbe0b10344d2680f448eeee:-790731853,ea7b61a31abe0b10cd9f0d07b2c9dcec:-1071072111,d57b61a3a7be0b10bad4e6005d3db14e:1745930063,c36b21a307be0b10a011a634d2a28a4c:-1071072111,246f760d5e660310e07ef7a2324d857a:-1739586959,af4ff20d84660310b4efd0029820cc54:-1581184956,ac4f320de066031044dd0ae31841bfd4:-1878744243,c72fbec94b6603100b7cf766b0b29948:-492158949,8c1fbac90d6603103a4c40c8d2e8dd51:1523763315,beeeb6c98b660310bb93e1aaf0b90517:-1899946514,c8ee36c9fd6603104b31d374f1a5ada7:-1402537531,28ce32c9ff6603103d976c0d33eb873a:1481582334,0ebd3e09a76603101d071e60c09bd01f:165421197,68bcba85436603104baef9b0af6f22c4:1993582902,739c3a850a6603102a93e4d17ec1118a:-1362232849</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_override_26ec616783be0b1044779cb6feaad369</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>task</base_table><calculation/><calculation_override>false</calculation_override><default_value/><default_value_override>false</default_value_override><dependent/><dependent_override>true</dependent_override><display_override>false</display_override><element>state</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_1776078_cyber_0_regulatory_notification_task</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:59:32</sys_created_on><sys_id>26ec616783be0b1044779cb6feaad369</sys_id><sys_mod_count>2</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_override_26ec616783be0b1044779cb6feaad369</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 11:03:45</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+<payload_hash>935351546</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>7704392783fe0b1044779cb6feaad3d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0389728080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>state</target_name>
+<type>Dictionary Entry Override</type>
+<update_domain>global</update_domain>
+<update_guid>04ed65e74dbe0b104eca6cfa2e33cf1c</update_guid>
+<update_guid_history>04ed65e74dbe0b104eca6cfa2e33cf1c:935351546,e6ec61673bbe0b107c64e9302bf355cf:1345328103,62ec6167efbe0b102db0a77335a042ae:698552787</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_ab14564483aa8b1044779cb6feaad3b5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/name&gt;&lt;operation display_value="create"&gt;create&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;ab14564483aa8b1044779cb6feaad3b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_ab14564483aa8b1044779cb6feaad3b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_ab14564483aa8b1044779cb6feaad3b5&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/name&gt;&lt;operation display_value="create"&gt;create&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;ab14564483aa8b1044779cb6feaad3b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_ab14564483aa8b1044779cb6feaad3b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-2035105051&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;6b14564483aa8b1044779cb6feaad3d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13021990000003&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type&gt;Access Control&lt;/type&gt;&lt;update_guid&gt;2b14564477aa8b1032afb19ea9fcced5&lt;/update_guid&gt;&lt;update_guid_history&gt;2b14564477aa8b1032afb19ea9fcced5:-2035105051&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:48:47&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl"&gt;sys_security_acl&lt;/sys_db_object&gt;&lt;sys_id&gt;0155eb8bbc8b4ef78b98842209630941&lt;/sys_id&gt;&lt;sys_metadata&gt;ab14564483aa8b1044779cb6feaad3b5&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;ce14924483aa8b1044779cb6feaad3fd&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_ab14564483aa8b1044779cb6feaad3b5&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_ab14564483aa8b1044779cb6feaad3b5"&gt;6b14564483aa8b1044779cb6feaad3d6&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:48:47&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-485903423</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7704392783fe0b1044779cb6feaad3d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385285050000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>75bc952febfa0b1088f1bdc60442b736</update_guid>
+<update_guid_history>75bc952febfa0b1088f1bdc60442b736:-485903423,2b14564477aa8b1032afb19ea9fcced5:-2035105051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad30a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad30a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">e714964483aa8b1044779cb6feaad305</sys_security_acl><sys_update_name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad30a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:54:46</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>518336105</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7704792783fe0b1044779cb6feaad380</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385801a60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>611e59efe6fa0b10e8c55a90fc1ec0be</update_guid>
+<update_guid_history>611e59efe6fa0b10e8c55a90fc1ec0be:518336105,a3149644a8aa8b102b8512a720017f0f:1319075299</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_6c5e692b83be0b1044779cb6feaad373</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_regulatory_notification_task"&gt;notification_type!=asd_soci_notification^EQ&lt;item display_value="ASD / SOCI Notification" endquery="false" field="notification_type" goto="false" newquery="false" operator="!=" or="false" value="asd_soci_notification"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+    g_form.addOption('state', '5', 'Oral Notification Complete', '3');
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+    g_form.removeOption('state', '5');
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Oral Notification Complete only visible on SOCI REG&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 11:06:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6c5e692b83be0b1044779cb6feaad373&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Oral Notification Complete only visible on SOCI REG&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_6c5e692b83be0b1044779cb6feaad373&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 11:12:30&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-112206273</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7704792783fe0b1044779cb6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0389f2a250000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Oral Notification Complete only visible on SOCI REG</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>9cef6deb73be0b103debafad3302a67b</update_guid>
+<update_guid_history>9cef6deb73be0b103debafad3302a67b:-112206273,d77f21ebd2be0b10d85cc6be298f1260:220653334,4f4f69abe1be0b102425c174e74039e8:1722409560,829ea16be8be0b10db5b483bd8c5994e:552117977</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_225b3e1dc3d1431043481cedd40131f5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Create access — cyber.user, MIM and Security team only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:23:30</sys_created_on><sys_id>225b3e1dc3d1431043481cedd40131f5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_225b3e1dc3d1431043481cedd40131f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:13:36</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-38043514</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>7b04392783fe0b1044779cb6feaad3d5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038693f390000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>2962a9ab523e0b10d3d3167de5e655bc</update_guid>
+<update_guid_history>2962a9ab523e0b10d3d3167de5e655bc:-38043514,34cca9c007668b108ba7a0576b8c256b:445513772</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e714964483aa8b1044779cb6feaad305</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Read - cyber.admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>e714964483aa8b1044779cb6feaad305</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_e714964483aa8b1044779cb6feaad305</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:55:46</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1620097128</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7b04392783fe0b1044779cb6feaad3da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03858ec6b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>145e95232e3e0b10a6c4a71414548698</update_guid>
+<update_guid_history>145e95232e3e0b10a6c4a71414548698:1620097128,e3149644aeaa8b104de62c0175bd9809:-2102923727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_9b02ae1dc31d03102d84f44ed40131d8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 01:31:12&lt;/sys_created_on&gt;&lt;sys_id&gt;9b02ae1dc31d03102d84f44ed40131d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value=""&gt;1302ae1dc31d03102d84f44ed40131c7&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_9b02ae1dc31d03102d84f44ed40131d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 01:31:12&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user"&gt;680eda15c31d03102d84f44ed40131bf&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_9b02ae1dc31d03102d84f44ed40131d8&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;
+    &lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;
+        &lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2026-06-05 01:31:12&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9b02ae1dc31d03102d84f44ed40131d8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user&lt;/sys_name&gt;
+        &lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;
+        &lt;sys_security_acl display_value="x_1776078_cyber_0_cyber_incident"&gt;1302ae1dc31d03102d84f44ed40131c7&lt;/sys_security_acl&gt;
+        &lt;sys_update_name&gt;sys_security_acl_role_9b02ae1dc31d03102d84f44ed40131d8&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2026-06-05 01:31:12&lt;/sys_updated_on&gt;
+        &lt;sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user"&gt;680eda15c31d03102d84f44ed40131bf&lt;/sys_user_role&gt;
+    &lt;/sys_security_acl_role&gt;
+&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-1700720864&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;f2ac298083668b1044779cb6feaad369&lt;/source&gt;&lt;source_table&gt;sys_upgrade_history&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 03:44:28&lt;/sys_created_on&gt;&lt;sys_id&gt;30cca9c083668b1044779cb6feaad3c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc092b5bc0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 03:44:28&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;fccca9c060668b104ccf5401487171c4&lt;/update_guid&gt;&lt;update_guid_history&gt;fccca9c060668b104ccf5401487171c4:-1700720864&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user"&gt;8b8dd5af83fa0b1044779cb6feaad3e7&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:52:24&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;7928bae823614b8cb1cdc67f49efe9c1&lt;/sys_id&gt;&lt;sys_metadata&gt;9b02ae1dc31d03102d84f44ed40131d8&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_9b02ae1dc31d03102d84f44ed40131d8&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_9b02ae1dc31d03102d84f44ed40131d8"&gt;30cca9c083668b1044779cb6feaad3c5&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:52:24&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1772797265</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7b04792783fe0b1044779cb6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03855d6fc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>1302ae1dc31d03102d84f44ed40131c7</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>4b8d19af00fa0b10be30fac6de03232d</update_guid>
+<update_guid_history>4b8d19af00fa0b10be30fac6de03232d:-1772797265,fccca9c060668b104ccf5401487171c4:-1700720864</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6f14964483aa8b1044779cb6feaad328</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Write - cyber.user, Legal, MIM, Cyber Security</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad328</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_6f14964483aa8b1044779cb6feaad328</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:00:54</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1243171618</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>7f04392783fe0b1044779cb6feaad3d6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385d9f7f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e77f5de3ca3e0b10c5ded1fd2a8b0273</update_guid>
+<update_guid_history>e77f5de3ca3e0b10c5ded1fd2a8b0273:1243171618,af149644faaa8b10030be45b9188f151:1149678645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_19f869eb837e0b1044779cb6feaad3b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:42:29</sys_created_on><sys_id>19f869eb837e0b1044779cb6feaad3b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task.work_notes">a798e5ab837e0b1044779cb6feaad3cd</sys_security_acl><sys_update_name>sys_security_acl_role_19f869eb837e0b1044779cb6feaad3b6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:42:29</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1017413481</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7f04392783fe0b1044779cb6feaad3db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03883b0e40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.work_notes</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>2c092deb387e0b1083f6189e01b1667b</update_guid>
+<update_guid_history>2c092deb387e0b1083f6189e01b1667b:-1017413481</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2314964483aa8b1044779cb6feaad32b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2314964483aa8b1044779cb6feaad32b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value=""&gt;e714564483aa8b1044779cb6feaad3e7&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2314964483aa8b1044779cb6feaad32b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst"&gt;6a3abe59c3d1431043481cedd401310f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_2314964483aa8b1044779cb6feaad32b&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2314964483aa8b1044779cb6feaad32b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;e714564483aa8b1044779cb6feaad3e7&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2314964483aa8b1044779cb6feaad32b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst"&gt;6a3abe59c3d1431043481cedd401310f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-1651036447&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;a714964483aa8b1044779cb6feaad330&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc130220a0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;6714964484aa8b10484109da8fc0b52f&lt;/update_guid&gt;&lt;update_guid_history&gt;6714964484aa8b10484109da8fc0b52f:-1651036447&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analys"&gt;dffd19ef83fa0b1044779cb6feaad364&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:54:20&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;096cbad0e4d34bc799d37732b94dac81&lt;/sys_id&gt;&lt;sys_metadata&gt;2314964483aa8b1044779cb6feaad32b&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_2314964483aa8b1044779cb6feaad32b&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_2314964483aa8b1044779cb6feaad32b"&gt;a714964483aa8b1044779cb6feaad330&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:54:20&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>744537302</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7f04792783fe0b1044779cb6feaad37d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038579abb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>e714564483aa8b1044779cb6feaad3e7</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>dbfd19ef8ffa0b104297df1235600d6c</update_guid>
+<update_guid_history>dbfd19ef8ffa0b104297df1235600d6c:744537302,6714964484aa8b10484109da8fc0b52f:-1651036447</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ce1f91a3833e0b1044779cb6feaad397</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:01:12</sys_created_on><sys_id>ce1f91a3833e0b1044779cb6feaad397</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">e714964483aa8b1044779cb6feaad331</sys_security_acl><sys_update_name>sys_security_acl_role_ce1f91a3833e0b1044779cb6feaad397</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:01:12</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-608693968</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>7f04792783fe0b1044779cb6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385de4930000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b38f5127ea3e0b108f745f613aac8655</update_guid>
+<update_guid_history>b38f5127ea3e0b108f745f613aac8655:-608693968</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6f14964483aa8b1044779cb6feaad359</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Delete - Cyber Admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:25</sys_created_on><sys_id>6f14964483aa8b1044779cb6feaad359</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_6f14964483aa8b1044779cb6feaad359</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:02:52</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1717679227</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>b304392783fe0b1044779cb6feaad3d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385f6aad0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d0ffdd27ac3e0b105b8178b4bb8fba31</update_guid>
+<update_guid_history>d0ffdd27ac3e0b105b8178b4bb8fba31:1717679227,af1496446daa8b10f68520a2b28baf82:2003865159</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2714564483aa8b1044779cb6feaad3d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value=""&gt;ab14564483aa8b1044779cb6feaad3b5&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user"&gt;880a7e59c3d1431043481cedd401316d&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;2714564483aa8b1044779cb6feaad3d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;ab14564483aa8b1044779cb6feaad3b5&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user"&gt;880a7e59c3d1431043481cedd401316d&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-15518014&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;af14564483aa8b1044779cb6feaad3de&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13021c90000002&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;6f145644f1aa8b1073ee311d6023cfdd&lt;/update_guid&gt;&lt;update_guid_history&gt;6f145644f1aa8b1073ee311d6023cfdd:-15518014&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user"&gt;b9bc552f83fa0b1044779cb6feaad3f2&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:48:46&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;8af7a17ae88546aab7c065f467dc6da1&lt;/sys_id&gt;&lt;sys_metadata&gt;2714564483aa8b1044779cb6feaad3d7&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_2714564483aa8b1044779cb6feaad3d7"&gt;af14564483aa8b1044779cb6feaad3de&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:48:46&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>612611112</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>b304792783fe0b1044779cb6feaad37e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03852828e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>ab14564483aa8b1044779cb6feaad3b5</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b9bc552f93fa0b10075e8085baa3a3fa</update_guid>
+<update_guid_history>b9bc552f93fa0b10075e8085baa3a3fa:612611112,6f145644f1aa8b1073ee311d6023cfdd:-15518014</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_d1ded963833e0b1044779cb6feaad3d4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 09:58:18</sys_created_on><sys_id>d1ded963833e0b1044779cb6feaad3d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident">4afb729dc3d1431043481cedd40131ad</sys_security_acl><sys_update_name>sys_security_acl_role_d1ded963833e0b1044779cb6feaad3d4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:58:18</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>368550650</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>b304792783fe0b1044779cb6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385b3b5b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>99ee5d633c3e0b103e392b2d584f379d</update_guid>
+<update_guid_history>99ee5d633c3e0b103e392b2d584f379d:368550650</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a314564483aa8b1044779cb6feaad39e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Create access — cyber.admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>a314564483aa8b1044779cb6feaad39e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_a314564483aa8b1044779cb6feaad39e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:49:27</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-164554201</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>b704392783fe0b1044779cb6feaad3d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385321b70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e7dcd92f1afa0b1053cc1637f0f21624</update_guid>
+<update_guid_history>e7dcd92f1afa0b1053cc1637f0f21624:-164554201,6f14564415aa8b10f2885a3d0ba302c9:-2035105051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2b14964483aa8b1044779cb6feaad353</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;2b14964483aa8b1044779cb6feaad353&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;6f14964483aa8b1044779cb6feaad328&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad353&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin"&gt;e80eda15c31d03102d84f44ed401317f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad353&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;2b14964483aa8b1044779cb6feaad353&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;6f14964483aa8b1044779cb6feaad328&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad353&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin"&gt;e80eda15c31d03102d84f44ed401317f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-1527983094&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;af14964483aa8b1044779cb6feaad358&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13022cb0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;6f1496441caa8b10f3a196ee33136c57&lt;/update_guid&gt;&lt;update_guid_history&gt;6f1496441caa8b10f3a196ee33136c57:-1527983094&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin"&gt;af7f5de3833e0b1044779cb6feaad343&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 10:00:54&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;4e2aa237166d4b6fb233780fc2fdf8e1&lt;/sys_id&gt;&lt;sys_metadata&gt;2b14964483aa8b1044779cb6feaad353&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;6f14964483aa8b1044779cb6feaad328&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_2b14964483aa8b1044779cb6feaad353&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_2b14964483aa8b1044779cb6feaad353"&gt;af14964483aa8b1044779cb6feaad358&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 10:00:54&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>233752387</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>b704792783fe0b1044779cb6feaad37f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385d9ee00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>eb7f5de38f3e0b10cc07353574e77564</update_guid>
+<update_guid_history>eb7f5de38f3e0b10cc07353574e77564:233752387,6f1496441caa8b10f3a196ee33136c57:-1527983094</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_f62e1123833e0b1044779cb6feaad3a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 09:55:18</sys_created_on><sys_id>f62e1123833e0b1044779cb6feaad3a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">2b14564483aa8b1044779cb6feaad3d2</sys_security_acl><sys_update_name>sys_security_acl_role_f62e1123833e0b1044779cb6feaad3a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:55:18</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>154589208</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>b704792783fe0b1044779cb6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038587cc50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>1d3e9123ca3e0b10ef8cea524ec15242</update_guid>
+<update_guid_history>1d3e9123ca3e0b10ef8cea524ec15242:154589208</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_12d0bd6f83be0b1044779cb6feaad3a9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/collection&gt;&lt;condition&gt;current.getValue('state') === '5'&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_regulatory_notification_task"&gt;notification_type!=asd_soci_notification^EQ&lt;item display_value="ASD / SOCI Notification" endquery="false" field="notification_type" goto="false" newquery="false" operator="!=" or="false" value="asd_soci_notification"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Block Oral Notification Complete&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //message the user and abort save
+    gs.addErrorMessage('Cannot save when Notification Type is ASD / SOCI and State is Oral Notification Complete.');
+    current.setAbortAction(true);
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 11:25:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;12d0bd6f83be0b1044779cb6feaad3a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Block Oral Notification Complete&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_12d0bd6f83be0b1044779cb6feaad3a9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 11:27:19&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=12d0bd6f83be0b1044779cb6feaad3a9"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>171891643</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>bb04392783fe0b1044779cb6feaad3d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038acbb380000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Block Oral Notification Complete</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>1d43bda3affe0b1008e0b116d093251e</update_guid>
+<update_guid_history>1d43bda3affe0b1008e0b116d093251e:171891643,d6333da310fe0b10daf165eb35b7768b:-273202757,1b2339a300fe0b1013e856000da1adef:-1838736837,abb2f16b74be0b10e45082d2c8b52b8a:-754419831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_ab14564483aa8b1044779cb6feaad3be</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Create access — MIM and Security team only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>ab14564483aa8b1044779cb6feaad3be</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_ab14564483aa8b1044779cb6feaad3be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:49:03</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1031970350</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>bb04392783fe0b1044779cb6feaad3d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03852c46f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>71cc192f0afa0b10898396fdad2007be</update_guid>
+<update_guid_history>71cc192f0afa0b10898396fdad2007be:1031970350,af14564491aa8b10ad3ec2496fde55c5:-2035105051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad336</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;6f14964483aa8b1044779cb6feaad336&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;e714964483aa8b1044779cb6feaad331&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad336&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst"&gt;6a3abe59c3d1431043481cedd401310f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad336&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;6f14964483aa8b1044779cb6feaad336&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;e714964483aa8b1044779cb6feaad331&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad336&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.security_analyst" name="x_1776078_cyber_0.security_analyst"&gt;6a3abe59c3d1431043481cedd401310f&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;588317305&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;ef14964483aa8b1044779cb6feaad36d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13022c60000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;af14964410aa8b1095594230c74c726c&lt;/update_guid&gt;&lt;update_guid_history&gt;af14964410aa8b1095594230c74c726c:588317305&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analys"&gt;f78f5127833e0b1044779cb6feaad346&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 10:01:12&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;7bbd62e6dc784a4c9085fa3d87258484&lt;/sys_id&gt;&lt;sys_metadata&gt;6f14964483aa8b1044779cb6feaad336&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;e714964483aa8b1044779cb6feaad331&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad336&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_6f14964483aa8b1044779cb6feaad336"&gt;ef14964483aa8b1044779cb6feaad36d&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 10:01:12&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1457926445</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>bb04792783fe0b1044779cb6feaad380</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385de44c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.security_analyst</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b78f5127e73e0b101e14898c09429a4e</update_guid>
+<update_guid_history>b78f5127e73e0b101e14898c09429a4e:-1457926445,af14964410aa8b1095594230c74c726c:588317305</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_2b14564483aa8b1044779cb6feaad3d2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Read - cyber.user, legal, MIM &amp; cyber security</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>2b14564483aa8b1044779cb6feaad3d2</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_2b14564483aa8b1044779cb6feaad3d2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:55:00</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>305230352</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>bf04392783fe0b1044779cb6feaad3d5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385836fb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>492eddef52fa0b1027a55d229cb74449</update_guid>
+<update_guid_history>492eddef52fa0b1027a55d229cb74449:305230352,af149644f9aa8b1030726e1edc1e8120:-2102923727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e714964483aa8b1044779cb6feaad331</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Write - cyber.admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:36:24</sys_created_on><sys_id>e714964483aa8b1044779cb6feaad331</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_e714964483aa8b1044779cb6feaad331</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:01:12</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1454517561</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>bf04392783fe0b1044779cb6feaad3da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385de4db0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>b38f5127973e0b101de115910e10835d</update_guid>
+<update_guid_history>b38f5127973e0b101de115910e10835d:-1454517561,e314964459aa8b1014d10082a6f26435:1149678645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_c0d7ad2b837e0b1044779cb6feaad30c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:37:42</sys_created_on><sys_id>c0d7ad2b837e0b1044779cb6feaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident.work_notes.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_cyber_incident.work_notes">9391d71a83e68b1044779cb6feaad3e5</sys_security_acl><sys_update_name>sys_security_acl_role_c0d7ad2b837e0b1044779cb6feaad30c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:37:42</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>45666990</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>bf04792783fe0b1044779cb6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0387f4f700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident.work_notes</table>
+<target_name>x_1776078_cyber_0_cyber_incident.work_notes.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>aae7a16b877e0b10b275082fa0d52b61</update_guid>
+<update_guid_history>aae7a16b877e0b10b275082fa0d52b61:45666990</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_35db3e5dc3d1431043481cedd4013192</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Read access — cyber.user, MIM, Legal and Security teams only</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 03:23:52</sys_created_on><sys_id>35db3e5dc3d1431043481cedd4013192</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_35db3e5dc3d1431043481cedd4013192</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:51:51</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1192348478</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>f304392783fe0b1044779cb6feaad3d6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03855539d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>b66d91af73fa0b107e8bc94f541cbc19</update_guid>
+<update_guid_history>b66d91af73fa0b107e8bc94f541cbc19:1192348478,4a409b56ebe68b100e0a49d1a022d5b5:-1953603214,78cca9c000668b10c5c97769e5f8ca6f:-850317818</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_049829ab837e0b1044779cb6feaad329</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:41:47</sys_created_on><sys_id>049829ab837e0b1044779cb6feaad329</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.*.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task.*">c288a5ab837e0b1044779cb6feaad3b4</sys_security_acl><sys_update_name>sys_security_acl_role_049829ab837e0b1044779cb6feaad329</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:41:47</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-767309444</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>f304392783fe0b1044779cb6feaad3db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a038830d290000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.*</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.*.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>d6d8a5ebda7e0b109f98bea1da1ee772</update_guid>
+<update_guid_history>d6d8a5ebda7e0b109f98bea1da1ee772:-767309444</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_c343e92f833e0b1044779cb6feaad34c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:17:46</sys_created_on><sys_id>c343e92f833e0b1044779cb6feaad34c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad328</sys_security_acl><sys_update_name>sys_security_acl_role_c343e92f833e0b1044779cb6feaad34c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:17:46</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.legal" name="x_1776078_cyber_0.legal">7803ab5d836a831044779cb6feaad316</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>2042516588</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>f304792783fe0b1044779cb6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0386d0fd50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.legal</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>2e53e92f1f3e0b10c90a776e9334e456</update_guid>
+<update_guid_history>2e53e92f1f3e0b10c90a776e9334e456:2042516588</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_9302ae1dc31d03102d84f44ed40131d3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Write - cyber.admin</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_cyber_incident</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 01:31:12</sys_created_on><sys_id>9302ae1dc31d03102d84f44ed40131d3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_9302ae1dc31d03102d84f44ed40131d3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:22:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>540719443</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>f704392783fe0b1044779cb6feaad3d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03871837c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>7d74e5ef613e0b107a877708cdaa57b3</update_guid>
+<update_guid_history>7d74e5ef613e0b107a877708cdaa57b3:540719443,70cca9c07d668b104be279668050af89:-2052292973</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_291f95a3833e0b1044779cb6feaad300</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:00:54</sys_created_on><sys_id>291f95a3833e0b1044779cb6feaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad328</sys_security_acl><sys_update_name>sys_security_acl_role_291f95a3833e0b1044779cb6feaad300</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:00:54</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1671256380</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>f704792783fe0b1044779cb6feaad37e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385d9e080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>a37f19e3d03e0b10a22563140a4f7fb5</update_guid>
+<update_guid_history>a37f19e3d03e0b10a22563140a4f7fb5:-1671256380</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_d34fd9a3833e0b1044779cb6feaad32c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:00:54</sys_created_on><sys_id>d34fd9a3833e0b1044779cb6feaad32c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">6f14964483aa8b1044779cb6feaad328</sys_security_acl><sys_update_name>sys_security_acl_role_d34fd9a3833e0b1044779cb6feaad32c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:00:54</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.user" name="x_1776078_cyber_0.user">680eda15c31d03102d84f44ed40131bf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>850833828</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>f704792783fe0b1044779cb6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385d9f210000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>e77f5de3103e0b105312dec2f03b416b</update_guid>
+<update_guid_history>e77f5de3103e0b105312dec2f03b416b:850833828</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a314964483aa8b1044779cb6feaad311</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;a314964483aa8b1044779cb6feaad311&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_a314964483aa8b1044779cb6feaad311&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_a314964483aa8b1044779cb6feaad311&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:24&lt;/sys_created_on&gt;&lt;sys_id&gt;a314964483aa8b1044779cb6feaad311&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_a314964483aa8b1044779cb6feaad311&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:24&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;1149678645&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;2714964483aa8b1044779cb6feaad33b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13022670000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;type&gt;Access Control&lt;/type&gt;&lt;update_guid&gt;e314964432aa8b1088b21116b075da3a&lt;/update_guid&gt;&lt;update_guid_history&gt;e314964432aa8b1088b21116b075da3a:1149678645&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:59:31&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl"&gt;sys_security_acl&lt;/sys_db_object&gt;&lt;sys_id&gt;19accb8950e44ff08c7bed2fd7727284&lt;/sys_id&gt;&lt;sys_metadata&gt;a314964483aa8b1044779cb6feaad311&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;ce14924483aa8b1044779cb6feaad3fd&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_a314964483aa8b1044779cb6feaad311&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_a314964483aa8b1044779cb6feaad311"&gt;2714964483aa8b1044779cb6feaad33b&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:59:31&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1598204197</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>fb04392783fe0b1044779cb6feaad3d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385c5a020000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>572f19a3183e0b1081aba4ec9cf3abe8</update_guid>
+<update_guid_history>572f19a3183e0b1081aba4ec9cf3abe8:-1598204197,e314964432aa8b1088b21116b075da3a:1149678645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_4a29a12f837e0b1044779cb6feaad399</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:43:14</sys_created_on><sys_id>4a29a12f837e0b1044779cb6feaad399</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task.work_notes">a798e5ab837e0b1044779cb6feaad3cd</sys_security_acl><sys_update_name>sys_security_acl_role_4a29a12f837e0b1044779cb6feaad399</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:43:14</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.admin" name="x_1776078_cyber_0.admin">e80eda15c31d03102d84f44ed401317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1904389125</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>fb04792783fe0b1044779cb6feaad37f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0388462450000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.work_notes</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.work_notes.x_1776078_cyber_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b729e12f367e0b10c32b8568472a095f</update_guid>
+<update_guid_history>b729e12f367e0b10c32b8568472a095f:-1904389125</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_f65c59eb83fa0b1044779cb6feaad31a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 09:48:08</sys_created_on><sys_id>f65c59eb83fa0b1044779cb6feaad31a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task">ab14564483aa8b1044779cb6feaad3be</sys_security_acl><sys_update_name>sys_security_acl_role_f65c59eb83fa0b1044779cb6feaad31a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 09:48:08</sys_updated_on><sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user">880a7e59c3d1431043481cedd401316d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>816324754</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>fb04792783fe0b1044779cb6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03851ef1d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>e49c112fbefa0b10a102106ccf0506b1</update_guid>
+<update_guid_history>e49c112fbefa0b10a102106ccf0506b1:816324754</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_1302ae1dc31d03102d84f44ed40131c7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description/&gt;&lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;&lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;&lt;operation display_value="read"&gt;read&lt;/operation&gt;&lt;script/&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 01:31:12&lt;/sys_created_on&gt;&lt;sys_id&gt;1302ae1dc31d03102d84f44ed40131c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_cyber_incident&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_1302ae1dc31d03102d84f44ed40131c7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 01:31:12&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_1302ae1dc31d03102d84f44ed40131c7&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;
+    &lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;admin_overrides&gt;true&lt;/admin_overrides&gt;
+        &lt;advanced&gt;false&lt;/advanced&gt;
+        &lt;applies_to/&gt;
+        &lt;condition/&gt;
+        &lt;controlled_by_refs/&gt;
+        &lt;decision_type&gt;allow&lt;/decision_type&gt;
+        &lt;description/&gt;
+        &lt;local_or_existing&gt;Existing&lt;/local_or_existing&gt;
+        &lt;name&gt;x_1776078_cyber_0_cyber_incident&lt;/name&gt;
+        &lt;operation display_value="read"&gt;read&lt;/operation&gt;
+        &lt;script/&gt;
+        &lt;security_attribute/&gt;
+        &lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2026-06-05 01:31:12&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1302ae1dc31d03102d84f44ed40131c7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;x_1776078_cyber_0_cyber_incident&lt;/sys_name&gt;
+        &lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_security_acl_1302ae1dc31d03102d84f44ed40131c7&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2026-06-05 01:31:12&lt;/sys_updated_on&gt;
+        &lt;type display_value="record"&gt;record&lt;/type&gt;
+    &lt;/sys_security_acl&gt;
+&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;628085911&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_cyber_incident&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;f2ac298083668b1044779cb6feaad369&lt;/source&gt;&lt;source_table&gt;sys_upgrade_history&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 03:44:27&lt;/sys_created_on&gt;&lt;sys_id&gt;fccca9c083668b1044779cb6feaad362&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc092b39b0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 03:44:27&lt;/sys_updated_on&gt;&lt;type&gt;Access Control&lt;/type&gt;&lt;update_guid&gt;bccca9c0d9668b101de7968f4b333262&lt;/update_guid&gt;&lt;update_guid_history&gt;bccca9c0d9668b101de7968f4b333262:628085911&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:52:24&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl"&gt;sys_security_acl&lt;/sys_db_object&gt;&lt;sys_id&gt;08e86a9bfb074c02829a8a404d258664&lt;/sys_id&gt;&lt;sys_metadata&gt;1302ae1dc31d03102d84f44ed40131c7&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_cyber_incident&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="x_1776078_cyber_0_cyber_incident"&gt;53ac698083668b1044779cb6feaad30b&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_1302ae1dc31d03102d84f44ed40131c7&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_1302ae1dc31d03102d84f44ed40131c7"&gt;fccca9c083668b1044779cb6feaad362&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:52:24&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1433071752</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:45</sys_created_on>
+<sys_id>ff04392783fe0b1044779cb6feaad3d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03855d7530000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:45</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>x_1776078_cyber_0_cyber_incident</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>478d19af69fa0b10b07174226fbd7a36</update_guid>
+<update_guid_history>478d19af69fa0b10b07174226fbd7a36:1433071752,bccca9c0d9668b101de7968f4b333262:628085911</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_c288a5ab837e0b1044779cb6feaad3b4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to table="x_1776078_cyber_0_regulatory_notification_task.*">stateIN3,8^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></applies_to><condition/><controlled_by_refs/><decision_type>deny</decision_type><description>Locks all fields on Closed records — only admin passes</description><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_regulatory_notification_task.*</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 10:40:24</sys_created_on><sys_id>c288a5ab837e0b1044779cb6feaad3b4</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1776078_cyber_0_regulatory_notification_task.*</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_c288a5ab837e0b1044779cb6feaad3b4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 10:46:47</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-83297675</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>ff04392783fe0b1044779cb6feaad3d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03887a0e80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task.*</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.*</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>6bf961afa17e0b10e178ae77855da8b8</update_guid>
+<update_guid_history>6bf961afa17e0b10e178ae77855da8b8:-83297675,ecb9a56f147e0b10e0d648cf35ab12e3:840553581,4688a5abc57e0b10be40a415047953bc:-77371167</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="DELETE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;6f14964483aa8b1044779cb6feaad33b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value=""&gt;a314964483aa8b1044779cb6feaad311&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user"&gt;880a7e59c3d1431043481cedd401316d&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl_role"&gt;&lt;sys_security_acl_role action="INSERT_OR_UPDATE"&gt;&lt;sys_class_name&gt;sys_security_acl_role&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;6f14964483aa8b1044779cb6feaad33b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_security_acl display_value="x_1776078_cyber_0_regulatory_notification_task"&gt;a314964483aa8b1044779cb6feaad311&lt;/sys_security_acl&gt;&lt;sys_update_name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;sys_user_role display_value="x_1776078_cyber_0.mim_user" name="x_1776078_cyber_0.mim_user"&gt;880a7e59c3d1431043481cedd401316d&lt;/sys_user_role&gt;&lt;/sys_security_acl_role&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-1612123672&lt;/payload_hash&gt;&lt;record_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;d522524083aa8b1044779cb6feaad304&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 06:36:25&lt;/sys_created_on&gt;&lt;sys_id&gt;e314964483aa8b1044779cb6feaad341&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19fc13022b50000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-02 06:36:25&lt;/sys_updated_on&gt;&lt;type&gt;Access Roles&lt;/type&gt;&lt;update_guid&gt;a31496446daa8b10bc127c52ac42f140&lt;/update_guid&gt;&lt;update_guid_history&gt;a31496446daa8b10bc127c52ac42f140:-1612123672&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user"&gt;4f2f19a3833e0b1044779cb6feaad3d7&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 09:59:31&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_security_acl_role"&gt;sys_security_acl_role&lt;/sys_db_object&gt;&lt;sys_id&gt;3fbbb926583547b2a15259a85459d9e4&lt;/sys_id&gt;&lt;sys_metadata&gt;6f14964483aa8b1044779cb6feaad33b&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_security_acl_role_6f14964483aa8b1044779cb6feaad33b"&gt;e314964483aa8b1044779cb6feaad341&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 09:59:31&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1725016759</payload_hash>
+<remote_update_set display_value="Lab25b1 - ACL clean up and lock down REG when closed">bf04392783fe0b1044779cb6feaad3d2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 11:30:46</sys_created_on>
+<sys_id>ff04792783fe0b1044779cb6feaad380</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0385c59a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 11:30:46</sys_updated_on>
+<table>a314964483aa8b1044779cb6feaad311</table>
+<target_name>x_1776078_cyber_0_regulatory_notification_task.x_1776078_cyber_0.mim_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>4b2f19a3fd3e0b10a5c51e04132103df</update_guid>
+<update_guid_history>4b2f19a3fd3e0b10a5c51e04132103df:-1725016759,a31496446daa8b10bc127c52ac42f140:-1612123672</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

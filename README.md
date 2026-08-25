@@ -98,6 +98,7 @@ servicenow-cyber-incident-app/
 | 21 | OAIC/NDB notification trigger | CAD | Completed |
 | 22a | Ransomware payment reporting trigger | CAD | Completed |
 | 22b | Application Properties — configurable SLA targets | CAD | Completed |
+| 22b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
 | 23 | SOCI warning/info banner | CAD | Completed |
 | 24 | State transition matrix — design and enforcement | CAD | Completed |
 | 25a | Closure validation + Record Integrity ACL | CAD | Completed |
@@ -241,3 +242,4 @@ Cross-application extensions
  - 8/8: UI Actions use the 'onClick' field to call a function. The function is defined in the script field. gsftSubmit saves the form and triggers server-side script.
  - 9/8: Field level and wildcard access controls can get messy if you don't think about it properly before putting them in.
   - 25/8: SLA engine appears to run SLA creation scripts twice. Caused 'notificationDueTime' to be calculated in a way similar to +=, each time adding the SLA days onto itself. Fixed by creating a new GlideDateTime so notificationDueTime was a clone of the paymentTime's value, not a direct reference to it.
+ - 25/8: Users need the ITIL role otherwise they can't edit fields inherited from task. NExt time I would likely create the CYB table completely from scratch as there weren't that many inherited fields I ended up using.

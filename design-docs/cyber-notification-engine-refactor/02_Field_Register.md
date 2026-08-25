@@ -158,7 +158,7 @@ Upgraded from a simple checkbox to a proper **Approval record** (`sysapproval_ap
 | Classification Basis | Reference/display, read-only | Rolled up from parent |
 | Assignment group | Reference | Defaults to Cyber Security |
 | Priority | Choice | Drives SLA target, editable/downgradable by Cyber Security |
-| State | Choice | Standard task states + Cancelled + 3 Closed-type values (final labels TBD — see Open Items Register). Shared value **"Oral Notification Done"** added for the SOCI/NDB oral pathway — filtered per Notification Type via Dependent Choice List. Dependent Choice List is form-side only; a Business Rule/ACL must independently validate the saved value against Notification Type. |
+| State | Choice | Standard task states + Cancelled + 2 Closed-type values (**Closed Complete**, **Closed No Longer Required** — `Closed Incomplete` removed, see Open Items Register). SOCI-only value **"Oral Notification Complete"** added, filtered per Notification Type via Dependent Choice List; Business Rule/ACL enforces server-side (not form-only). |
 
 **Note:** the 30-day NDB Assessment SLA ("Assess Suspect Data Breach") is not a field on this table — it lives on the Cyber Incident record. See §6.1.
 

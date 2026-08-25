@@ -136,15 +136,15 @@ The revised design keeps the three-field split intact — ACSC Severity still do
 
 ## 16. Why the SOCI initial SLA uses an OR stop condition, not a single fixed path
 
-The initial 12hr/72hr SLA was designed to stop on **either** `State = Oral Notification Done` **or** any Closed state, whichever happens first — not on a single fixed sequence. The reasoning: the statutory obligation is satisfied by written notification alone, with no oral step required. Modelling the SLA as a strict oral-then-written sequence would have created a false dependency — a task where written notification was submitted first (satisfying the deadline) would have looked "incomplete" against a model that expected oral first.
+The initial 12hr/72hr SLA was designed to stop on **either** `State = Oral Notification Complete` **or** any Closed state, whichever happens first — not on a single fixed sequence. The reasoning: the statutory obligation is satisfied by written notification alone, with no oral step required. Modelling the SLA as a strict oral-then-written sequence would have created a false dependency — a task where written notification was submitted first (satisfying the deadline) would have looked "incomplete" against a model that expected oral first.
 
-**The follow-up is conditional, not universal:** the 84hr/48hr written follow-up SLA only starts if `Oral Notification Done` was actually reached before the initial deadline. If written notification was the first and only channel used, the follow-up obligation never legally existed — so no follow-up SLA is created. Building it as an always-on second clock would have manufactured a deadline that doesn't exist in the Act.
+**The follow-up is conditional, not universal:** the 84hr/48hr written follow-up SLA only starts if `Oral Notification Complete` was actually reached before the initial deadline. If written notification was the first and only channel used, the follow-up obligation never legally existed — so no follow-up SLA is created. Building it as an always-on second clock would have manufactured a deadline that doesn't exist in the Act.
 
 ---
 
 ## 17. Why oral/written completion is state-driven, not a tickbox + date field
 
-The earlier design used `Oral notification made` and `Written notification submitted` as boolean + date/reference-number fields. Both were cut in favour of a shared `State` value (`Oral Notification Done`) plus Closed-state completion.
+The earlier design used `Oral notification made` and `Written notification submitted` as boolean + date/reference-number fields. Both were cut in favour of a shared `State` value (`Oral Notification Complete`) plus Closed-state completion.
 
 **The reasoning connects directly to decision #11 (write ACL over UI Policy):** a boolean field can be ticked and its accompanying date backdated by anyone with edit access, with nothing in the system distinguishing "this actually happened at this time" from "someone set this field to look that way." A Stop Condition tied to a genuine `State` transition is a different kind of fact — it's the timestamp of a real, audit-logged record change, not a value someone typed into a field. For records that may underpin a regulatory notification, that distinction is the same "looks done vs. is provably done" argument used for the Closed-state write lock — applied here to task completion instead of field editability.
 
@@ -174,3 +174,9 @@ Every SLA name in the NDB pathway was deliberately chosen to match what the unde
 - **OAIC/affected-party notification target** — 72 hours, deliberately never called a "deadline," because ss26WK/26WL impose **no fixed timeframe** — "as soon as practicable" is uncapped in law. Naming this a deadline would misstate the obligation to anyone reading the SLA record later without the surrounding context — including a future auditor, a new team member, or a regulator asking why a "deadline" was missed when no such deadline exists.
 
 This mirrors the same discipline decision #5 (Ransomware Payment) and B.5 already apply elsewhere in this design: an internal guardrail must be labelled as one, every time, everywhere it appears.
+
+---
+
+## 21. Why three 'Closed States' become two
+
+'Closed Incomplete' was removed from 'state' options. A notification task is either completed or no longer required. 'Closed Incomplete' gave a REG task owner the option of just never completing the notification for no good reason.
