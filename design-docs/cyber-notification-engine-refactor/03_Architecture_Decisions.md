@@ -180,3 +180,9 @@ This mirrors the same discipline decision #5 (Ransomware Payment) and B.5 alread
 ## 21. Why three 'Closed States' become two
 
 'Closed Incomplete' was removed from 'state' options. A notification task is either completed or no longer required. 'Closed Incomplete' gave a REG task owner the option of just never completing the notification for no good reason.
+
+---
+
+## 22. REG does not need a state transition matrix
+
+Decision made that REG state transition does not need enforcement. REG are open when created, can move freely between open states and are locked down when moved to closed.

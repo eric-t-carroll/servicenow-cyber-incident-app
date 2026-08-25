@@ -98,13 +98,13 @@ servicenow-cyber-incident-app/
 | 21 | OAIC/NDB notification trigger | CAD | Completed |
 | 22a | Ransomware payment reporting trigger | CAD | Completed |
 | 22b | Application Properties — configurable SLA targets | CAD | Completed |
-| 22b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
 | 23 | SOCI warning/info banner | CAD | Completed |
 | 24 | State transition matrix — design and enforcement | CAD | Completed |
 | 25a | Closure validation + Record Integrity ACL | CAD | Completed |
 | 25b | REG task SLA definitions | CAD | In Progress |
+| 25b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
 | 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
-| 26 | Urgency/Priority phase-gating | CAD | Planned |
+| 26 | Configure Impact/Urgency/Priority | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
 | 28a | State transition UI Actions | CAD | Planned |
 | 28b | Special transition UI Actions | CAD | Planned |
