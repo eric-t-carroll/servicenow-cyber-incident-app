@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-08-25 04:53:14">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>REG task SLA definitions</description>
+<inserted/>
+<name>Lab25b - REG task SLA definitions</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>9a36ad4b836acf1044779cb6feaad3ca</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:13</sys_created_on>
+<sys_id>e41914eb83b20b1044779cb6feaad32c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:13</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>cmn_relative_duration_401b694b836acf1044779cb6feaad3fe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="cmn_relative_duration"&gt;&lt;cmn_relative_duration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;name&gt;Ransomware Payment Made Duration&lt;/name&gt;&lt;script&gt;&lt;![CDATA[// Perform relative duration calculation using the 'calculator' variable (which is a DurationCalculator object)
+
+(function() {
+    var paymentTime;
+
+    // Work out if "current" is a Task record or Task SLA and then get the "payment_date_time" element from the Task
+    var tableName = current.getTableName();
+    if (tableName) {
+        var baseTableName = GlideDBObjectManager.getAbsoluteBase(tableName);
+        if (baseTableName == "task")
+             paymentTime = current.getElement("parent_cyber_incident.payment_date_time");
+        else if (baseTableName == "task_sla")
+            paymentTime = current.getElement("task.parent_cyber_incident.payment_date_time");
+    }
+
+    //add application system property for ransomware onto the payment date time
+    var ransomwareSLA = Number(gs.getProperty('x_1776078_cyber_0.sla.ransomware_report_hours')) * 3600;
+    var notificationDueTime = new GlideDateTime(paymentTime.getGlideObject());
+    notificationDueTime.addSeconds(ransomwareSLA);
+
+    // if we've got a "breach date" and it's already breached, set the "breach date" to 1 second in the future
+	var slaCreated = new GlideDateTime(calculator.startDateTime);
+    if (notificationDueTime.before(slaCreated)) {
+        slaCreated.addSeconds(1);
+		notificationDueTime = slaCreated;
+    }
+
+    // set the endDateTime property of the calculator object
+    calculator.endDateTime = notificationDueTime;
+    calculator.calcScheduleDuration();
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;cmn_relative_duration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-11 11:56:46&lt;/sys_created_on&gt;&lt;sys_id&gt;401b694b836acf1044779cb6feaad3fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;Ransomware Payment Made Duration&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;cmn_relative_duration_401b694b836acf1044779cb6feaad3fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 04:25:04&lt;/sys_updated_on&gt;&lt;/cmn_relative_duration&gt;&lt;/record_update&gt;</payload>
+<payload_hash>177194041</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:13</sys_created_on>
+<sys_id>201914eb83b20b1044779cb6feaad32d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0372a27400000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:13</sys_updated_on>
+<table/>
+<target_name>Ransomware Payment Made Duration</target_name>
+<type>Relative Duration</type>
+<update_domain>global</update_domain>
+<update_guid>84a290a3fab20b109d45c8eb5880244b</update_guid>
+<update_guid_history>84a290a3fab20b109d45c8eb5880244b:177194041,0df050af06720b10bdf13507dfeba350:1335228911,29a0d46f2b720b10b1ca161fef7a82b1:494368173,8aa8c46f2e320b10dc07bcbd48b0233e:-1799058072,b068082fa0320b1009ff5c2f1204831c:972373926,fec744eb7e320b1012caf63df5255b13:-2035511239,35640ca31b320b10654e6c9279786004:2041459888,0e14c4e34a320b10482077e51aec6414:1539706416,f993c8a35c320b10c9b760957c37edca:2041459888,3bf20463d7320b10f723443c76485ba5:-1029924635,34828423ae320b1074f13c932a7ba14c:-1211309630,e6524023ad320b1016d5d03979a95b21:-32002485,8f9140af98fec710d6629a5539299e9b:561486427,f78048ebc5fec71046a72b43870463a1:-2022201306,98577f1b3fbec710d84eda75c6b59142:-656987034,0d2533179ebec71077e0d4272a018db9:1261611039,4fe4ffd304bec710e9c837c65662d4bb:1269110356,a6c3bb5397bec71036f553b1935677b6:1384134413,1b53bb13babec71056a7d2cd348b5127:1076347975,e1e0f7db4f7ec7108caa6173e57c101c:-815767508,d6bc424bbdaecf10c74835be6ae4e846:2079583942,660a0ac3b2aecf10fa8b8fabf3e83c27:-1082796531,1bc94a0bf26ecf103045a10773b7232e:2028512711,76888ecb5c6ecf102fc5a3b7c9831917:2111651017,8a488ecf336ecf1016cf7d0c452c64b9:-68358932,2e364e8b6f6ecf10cc302a1c195523c4:968840479,94c3b90755eacf108c1e628b8c1e8696:1630853091</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>contract_sla_efd3394783eacf1044779cb6feaad325</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla"><contract_sla action="INSERT_OR_UPDATE"><active>true</active><adv_condition_type>none</adv_condition_type><cancel_condition/><collection>x_1776078_cyber_0_regulatory_notification_task</collection><condition_class/><duration>1970-01-01 00:00:00</duration><duration_type display_value="Ransomware Payment Made Duration">401b694b836acf1044779cb6feaad3fe</duration_type><enable_logging>false</enable_logging><flow display_value="Default SLA flow">828f267973333300e289235f04f6a7a3</flow><name>Ransomware Payment Notification</name><pause_condition/><relative_duration_works_on>SLA record</relative_duration_works_on><reset_action>cancel</reset_action><reset_condition/><resume_condition/><retroactive>false</retroactive><retroactive_pause>true</retroactive_pause><schedule display_value="24 x 7">38fa64edc0a8016400f4a5724b0434b8</schedule><schedule_source>sla_definition</schedule_source><schedule_source_field/><set_start_to/><start_condition table="x_1776078_cyber_0_regulatory_notification_task">notification_type=ransomware_payment_report^EQ<item display_value="Ransomware Payment Report" endquery="false" field="notification_type" goto="false" newquery="false" operator="=" or="false" value="ransomware_payment_report"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></start_condition><stop_condition table="x_1776078_cyber_0_regulatory_notification_task">stateIN3,4,8^EQ<item display_value="3,4,8" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="3,4,8"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></stop_condition><sys_class_name>contract_sla</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 12:00:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>efd3394783eacf1044779cb6feaad325</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Ransomware Payment Notification</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>contract_sla_efd3394783eacf1044779cb6feaad325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 04:01:52</sys_updated_on><target>resolution</target><timezone/><timezone_source>task.caller_id.time_zone</timezone_source><type>SLA</type><vendor/><when_to_cancel>on_condition</when_to_cancel><when_to_resume>on_condition</when_to_resume><workflow/></contract_sla></record_update>]]></payload>
+<payload_hash>-196571319</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>2419142383f20b1044779cb6feaad30d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a03714eb600000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Ransomware Payment Notification</target_name>
+<type>SLA Definition</type>
+<update_domain>global</update_domain>
+<update_guid>dc5d04e7ab720b1031a08657b658a1f1</update_guid>
+<update_guid_history>dc5d04e7ab720b1031a08657b658a1f1:-196571319,34da04a30c720b10e160755d7b442f42:-1952874032,f240b71b0f7ec71086ca028e5e56288d:-196571319,8943ca474b6ecf10a9f29671f1017b92:-629122746,12e6f5cb4eeacf10c5b232256fb17c8c:1211160700,e3e5794baeeacf10f8c2dcd6f5164b46:-1166654604,6c947d87b1eacf105cdffb903ae00690:-151401344</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_63f1a53377451110cd1b756f1b5a9991</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Captures the last execution timestamp of the scheduled job 'Surface New Unconnected Content of Categories'</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>taxonomy.category.new_content_job_last_run</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-08 07:43:25</sys_created_on><sys_id>63f1a53377451110cd1b756f1b5a9991</sys_id><sys_mod_count>13</sys_mod_count><sys_name>taxonomy.category.new_content_job_last_run</sys_name><sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">5a86a9c0a5a903108bb220b7a4d21227</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_63f1a53377451110cd1b756f1b5a9991</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-22 00:38:20</sys_updated_on><type>date_format</type><value>2026-08-22</value><write_roles>maint</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=63f1a53377451110cd1b756f1b5a9991"/></record_update>]]></payload>
+<payload_hash>4006927</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>2819142383f20b1044779cb6feaad30e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a026e7815d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table/>
+<target_name>taxonomy.category.new_content_job_last_run</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>65f184664d32031025b69b9e2887d2e4</update_guid>
+<update_guid_history>65f184664d32031025b69b9e2887d2e4:4006927,c5337e8af3e20b10a3b9ae1181dc0658:931571015,16995a4049ea8b1066c6ae114aba2f5c:-1730097523,6ba35af2991203104edf10f236d194cc:-1199213209,13a35af2b81203105463bc6c2a842ec8:-437767834</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_a0e7794f83eacf1044779cb6feaad307</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;ransom_extortion_payment_made=true^EQ&lt;item endquery="false" field="ransom_extortion_payment_made" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+	g_form.hideFieldMsg('payment_date_time', true);
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+    if (g_form.getValue('payment_date_time') === '') {
+        g_form.showFieldMsg('payment_date_time', 'Payment Date/Time is mandatory when Ransom/Extortion Payment Made is ticked', 'error');
+    }
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;When Ransomware payment is made - payment date/time is mandatory (message for data policy)&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-11 12:16:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a0e7794f83eacf1044779cb6feaad307&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;When Ransomware payment is made - payment date/time is mandatory (message for data policy)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_a0e7794f83eacf1044779cb6feaad307&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-11 12:53:37&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1802355244</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>2c19142383f20b1044779cb6feaad30f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ff0e2b7720000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>When Ransomware payment is made - payment date/time is mandatory (message for data policy)</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>49c00a8f082ecf10f661971bbf49bb75</update_guid>
+<update_guid_history>49c00a8f082ecf10f661971bbf49bb75:-1802355244,e3ea7dc3a42ecf10db7121c76e65938f:-771933705,74aa3983a42ecf1049e69272960d6582:750602311,b91af1cfd7eacf1001de1ba8c467801b:-1229771500,feb8f1cfaceacf10d3a842992cdb5a35:1306658665,7e58b18f8feacf1022c2de3b15eeedd5:-1446497848</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_a988794f83eacf1044779cb6feaad314</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_policy_action"&gt;&lt;sys_ui_policy_action action="DELETE"&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;ignore&lt;/disabled&gt;&lt;field&gt;payment_date_time&lt;/field&gt;&lt;field_message/&gt;&lt;field_message_type&gt;none&lt;/field_message_type&gt;&lt;mandatory&gt;ignore&lt;/mandatory&gt;&lt;sys_class_name&gt;sys_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-11 12:17:46&lt;/sys_created_on&gt;&lt;sys_id&gt;a988794f83eacf1044779cb6feaad314&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;payment_date_time&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_action_a988794f83eacf1044779cb6feaad314&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-11 12:17:46&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_policy display_value="When Ransomware payment is made - payment date/time is mandatory (message for data policy)"&gt;a0e7794f83eacf1044779cb6feaad307&lt;/ui_policy&gt;&lt;value/&gt;&lt;value_action&gt;ignore&lt;/value_action&gt;&lt;visible&gt;ignore&lt;/visible&gt;&lt;/sys_ui_policy_action&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a988794f83eacf1044779cb6feaad314"/&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_ui_policy_action_a988794f83eacf1044779cb6feaad314&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_policy_action"&gt;&lt;sys_ui_policy_action action="INSERT_OR_UPDATE"&gt;&lt;cleared&gt;false&lt;/cleared&gt;&lt;disabled&gt;ignore&lt;/disabled&gt;&lt;field&gt;payment_date_time&lt;/field&gt;&lt;field_message/&gt;&lt;field_message_type&gt;none&lt;/field_message_type&gt;&lt;mandatory&gt;ignore&lt;/mandatory&gt;&lt;sys_class_name&gt;sys_ui_policy_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-11 12:17:46&lt;/sys_created_on&gt;&lt;sys_id&gt;a988794f83eacf1044779cb6feaad314&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;payment_date_time&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_action_a988794f83eacf1044779cb6feaad314&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-11 12:17:46&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_policy display_value="When Ransomware payment is made - payment date/time is mandatory (message for data policy)"&gt;a0e7794f83eacf1044779cb6feaad307&lt;/ui_policy&gt;&lt;value/&gt;&lt;value_action&gt;ignore&lt;/value_action&gt;&lt;visible&gt;ignore&lt;/visible&gt;&lt;/sys_ui_policy_action&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a988794f83eacf1044779cb6feaad314"/&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;353872955&lt;/payload_hash&gt;&lt;record_name&gt;payment_date_time&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;9a36ad4b836acf1044779cb6feaad3ca&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-11 12:17:46&lt;/sys_created_on&gt;&lt;sys_id&gt;73887d0f83eacf1044779cb6feaad347&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;19ff0c1e49d0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-11 12:17:46&lt;/sys_updated_on&gt;&lt;type&gt;UI Policy Action&lt;/type&gt;&lt;update_guid&gt;33887d0f0eeacf10f1d6dda3ab8d2046&lt;/update_guid&gt;&lt;update_guid_history&gt;33887d0f0eeacf10f1d6dda3ab8d2046:353872955&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-11 12:18:01&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_ui_policy_action"&gt;sys_ui_policy_action&lt;/sys_db_object&gt;&lt;sys_id&gt;2bbcfb7b41e240e090c4498908986100&lt;/sys_id&gt;&lt;sys_metadata&gt;a988794f83eacf1044779cb6feaad314&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;payment_date_time&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="When Ransomware payment is made - payment date/time is mandatory (message for data policy)"&gt;a0e7794f83eacf1044779cb6feaad307&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_ui_policy_action_a988794f83eacf1044779cb6feaad314&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_ui_policy_action_a988794f83eacf1044779cb6feaad314"&gt;73887d0f83eacf1044779cb6feaad347&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-11 12:18:01&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2012515093</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>6019142383f20b1044779cb6feaad310</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ff0c21fec0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>payment_date_time</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>eb9831cf6beacf10e3887e92e3a7e334</update_guid>
+<update_guid_history>eb9831cf6beacf10e3887e92e3a7e334:-2012515093,33887d0f0eeacf10f1d6dda3ab8d2046:353872955</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>pwd_process_4ff0c881bf220100710071a7bf0739fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pwd_process"><pwd_process action="INSERT_OR_UPDATE"><active>false</active><allow_verification_choice>false</allow_verification_choice><apply_to_all_users>true</apply_to_all_users><auto_gen_password>true</auto_gen_password><change>false</change><cred_store display_value="Local ServiceNow Instance">6e51033fbf020100710071a7bf0739e0</cred_store><description>Service-desk process for the local ServiceNow as a stand-alone credential-store</description><display_captcha>false</display_captcha><display_password>true</display_password><email_password_reset_url>false</email_password_reset_url><enable_security_score_notification>false</enable_security_score_notification><enabled_on_chatbot>false</enabled_on_chatbot><enrollment_reminder>false</enrollment_reminder><expiration_run_period/><expiration_run_start/><expiration_run_time/><expiration_run_time_zone/><expiration_schedule_frequency/><expiration_warn_days/><identification_type/><label>Service-Desk Password Reset for Local ServiceNow</label><min_verifications>1</min_verifications><name>Service-Desk Password Reset for Local ServiceNow</name><password_needs_reset>true</password_needs_reset><post_processor/><process_owner/><public_access>false</public_access><public_url/><pwd_validity_days/><redirect_url/><reset>true</reset><run_dayofmonth/><run_dayofweek/><run_start/><run_time/><run_type/><security_score/><send_email>true</send_email><send_expiration_reminder>false</send_expiration_reminder><sender_alias/><sys_class_name>pwd_process</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2013-07-11 18:00:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4ff0c881bf220100710071a7bf0739fa</sys_id><sys_mod_count>14</sys_mod_count><sys_name>Service-Desk Password Reset for Local ServiceNow</sys_name><sys_package display_value="Password Reset" source="com.glideapp.password_reset">b2746dcca5e503108bb220b7a4d2126b</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>pwd_process_4ff0c881bf220100710071a7bf0739fa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-23 14:00:00</sys_updated_on><unlock_account>true</unlock_account><url_suffix/><user_experience_entry/><user_experience_failure/><user_experience_footer/><user_experience_header/><user_experience_success/></pwd_process><sys_translated_text action="delete_multiple" query="documentkey=4ff0c881bf220100710071a7bf0739fa"/></record_update>]]></payload>
+<payload_hash>559401970</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>6819142383f20b1044779cb6feaad30d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a02eebcee20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table/>
+<target_name>Service-Desk Password Reset for Local ServiceNow</target_name>
+<type>Password Reset Process</type>
+<update_domain>global</update_domain>
+<update_guid>e60340c7d7320710a6717170e456e9d8</update_guid>
+<update_guid_history>e60340c7d7320710a6717170e456e9d8:559401970,87e31af6451203107d43fc50ef30d1b0:559401970</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_05fa974883e2cb1044779cb6feaad36a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;impactVALCHANGES^ORaffected_asset_typeVALCHANGES^ORdata_classification_of_affected_assetsVALCHANGES^EQ&lt;item endquery="false" field="impact" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="false" field="affected_asset_type" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="false" field="data_classification_of_affected_assets" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Set suggested SOCI classification&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    //Get Impact, Affected Asset Type, Data Classification from current
+    var myImpact = current.getValue('impact');
+    var myAssetType = current.getValue('affected_asset_type');
+
+    //if Impact or Affected Asset Type empty → clear result and return
+	if (!myImpact || !myAssetType) {
+        current.suggested_soci_classification = '';
+        return;
+    }
+    //Matrix lookup → result = matrix[impact][assetType]
+    var matrixAsset = myAssetType.indexOf('regulated') !== -1 ? 'regulated' : 'corporate';
+    var reportMatrix = {
+        '1': {
+            'regulated': 'significant',
+            'corporate': 'relevant'
+        },
+        '2': {
+            'regulated': 'significant',
+            'corporate': 'relevant'
+        },
+        '3': {
+            'regulated': 'relevant',
+            'corporate': 'no_report'
+        },
+        '4': {
+            'regulated': 'no_report',
+            'corporate': 'no_report'
+        }
+    };
+    var myResult = reportMatrix[myImpact][matrixAsset];
+
+    //Floor check → if Data Classification contains PI/SOI/CII AND result === 'no_report' → result = 'relevant'
+    var myDataClass = current.getValue('data_classification_of_affected_assets');
+    if ((myDataClass.indexOf('sensitive_operational') !== -1 ||
+            myDataClass.indexOf('private_information') !== -1 ||
+            myDataClass.indexOf('critical_infrastructure') !== -1) &amp;&amp;
+        myResult === 'no_report') {
+        myResult = 'relevant';
+    }
+
+    //Set current.suggested_soci_classification = result
+    current.suggested_soci_classification = myResult;
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-02 11:46:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;05fa974883e2cb1044779cb6feaad36a&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set suggested SOCI classification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_05fa974883e2cb1044779cb6feaad36a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 03:04:50&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=05fa974883e2cb1044779cb6feaad36a"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1577383794</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>6c19142383f20b1044779cb6feaad30e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a036e0b28a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Set suggested SOCI classification</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>7c4044ebe4fec71012d0eb98cbb17264</update_guid>
+<update_guid_history>7c4044ebe4fec71012d0eb98cbb17264:1577383794,71cb2b0c9666cb10590c1287a3ef1364:1538501782,72aaaf489f66cb10faf8004f1e0e993b:1577383794,9e2aaf088766cb10688426e7c003c1b4:1437654851,539963c4d466cb106fcdea199b5f404a:-1510703491,71d8a384d666cb104bc7accee2074251:1343244121,82a02b041926cb10a9d8c0ed9b00094d:-139197799,be20af806f26cb103a18b703182c740e:-1210454360,548b9788a3e2cb1011293c3620a9ac21:-1388641581,5b2b5f4827e2cb10958c0682032041d5:-794370507</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_18ec229a83a28b1044779cb6feaad310</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;stateVALCHANGES^EQ&lt;item endquery="false" field="state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;State transition validation&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //guard to prevent error when SLA task creation engine runs twice by design. This was triggering state validation on the second pass, but there is no values for previous availble.
+    if (!previous.getValue('state')) {
+        gs.info('State transition validation skipped - no previous state available.\nCurrent state: ' + current.getValue('state') + ' - previous state: ' + previous.getValue('state') + ' - isNewRecord: ' + current.isNewRecord());
+        return;
+    }
+
+
+    //allow save if close code is false positive and any state except eradication
+    if (current.getValue('close_code') === 'false_positive' &amp;&amp; current.getValue('state') === '3') {
+        if (previous.getValue('state') === '13') {
+            gs.addErrorMessage('Incidents cannot be closed directly from Eradication - progress to Recovery first.')
+            current.setAbortAction(true);
+        }
+        return;
+    }
+
+    //allow save if state transition is valid
+    var validStateTransition = {
+        '1': ['11'],
+        '11': ['12', '15'],
+        '12': ['13', '11', '15'],
+        '13': ['14', '12', '11'],
+        '14': ['3', '13', '12', '11'],
+        '15': ['11', '12', '13', '14'],
+        '3': []
+    };
+    if (validStateTransition[previous.getValue('state')].indexOf(current.getValue('state')) !== -1) {
+        return;
+    } else {
+        gs.addErrorMessage('Invalid state transition - changing State from ' + previous.getDisplayValue('state') + ' to ' + current.getDisplayValue('state') + ' is not permitted.');
+        current.setAbortAction(true);
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-09 08:57:27&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;18ec229a83a28b1044779cb6feaad310&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;State transition validation&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_18ec229a83a28b1044779cb6feaad310&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 04:45:16&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=18ec229a83a28b1044779cb6feaad310"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1842566768</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>a019142383f20b1044779cb6feaad30f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0373ca5770000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>State transition validation</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>bb37142f7bb20b102681fd83813c47a9</update_guid>
+<update_guid_history>bb37142f7bb20b102681fd83813c47a9:1842566768,9eb690ebf1b20b106d6a3f32bcd3d0b2:1331670007,44a69cab60b20b10a2eaeb2a407c5f66:1317309031,e326986b2eb20b10813f9fc231c6f6f7:645384911,4c3594e771b20b10074da63cd7250b78:915106808,d2f458a7ceb20b10082230682d7a39e4:391454882,49949867c8b20b1082530178651546f8:-383211834,2012dc23f8b20b100268f03a68ebe67b:-1242449515,21b1d02326b20b10255b67c5de3eea3f:839849733,a6e10caf97fec71099159484a2411d85:-1242449515,adae731bccfec7104c99c67f8d08d42d:753718896,32bdb39794fec71063f9e6e4549e95b8:1329712251,80fcf717c2fec71049eccf852d947ae2:1503219958,1fd9b216d3268b10e779168ad7c99351:94043621,63c9321684268b1078f8d62457440549:-1101637773,b269fe927a268b101ec092a89dcc8aff:893160167,068772de11e28b10ccc9c66b3edee70b:-1836578151</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_x_1776078_cyber_0_regulatory_notification_task_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_1776078_cyber_0_regulatory_notification_task" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Regulatory Notification Task - Default view" name="x_1776078_cyber_0_regulatory_notification_task" related_list="NULL" sys_domain="global" view="Default view">414d390b832ecf1044779cb6feaad3d3</list_id><order_by/><position>0</position><related_list>sysapproval_approver.sysapproval</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 12:38:20</sys_created_on><sys_id>894d390b832ecf1044779cb6feaad3d5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 12:38:20</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Regulatory Notification Task - Default view" name="x_1776078_cyber_0_regulatory_notification_task" related_list="NULL" sys_domain="global" view="Default view">414d390b832ecf1044779cb6feaad3d3</list_id><order_by/><position>1</position><related_list>task_sla.task</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 12:38:20</sys_created_on><sys_id>894d390b832ecf1044779cb6feaad3d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 12:38:20</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Regulatory Notification Task - Default view</calculated_name><filter/><name>x_1776078_cyber_0_regulatory_notification_task</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 12:38:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>414d390b832ecf1044779cb6feaad3d3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Regulatory Notification Task - Default view</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_related_x_1776078_cyber_0_regulatory_notification_task_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 12:38:20</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>-768802103</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>a419142383f20b1044779cb6feaad310</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ff0d4b85f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>014d390b522ecf10d3bb02cbeb06f9d9</update_guid>
+<update_guid_history>014d390b522ecf10d3bb02cbeb06f9d9:-768802103,1321b31d1eea8310c9a3ba2cdfed09a3:804118692,ddeea7d507ea831056959a7cf139468b:-22538027,0e6ea79586ea83101bfbb5572ba68956:2010140310,de5e279508ea83109592276aeaf67567:1207809495,c81e6b5548ea8310f496f76ef6f46a69:-1252617936</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_data_policy2_f957b50f83eacf1044779cb6feaad339</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2"><sys_data_policy2 action="INSERT_OR_UPDATE"><active>true</active><apply_import_set>true</apply_import_set><apply_soap>true</apply_soap><conditions table="x_1776078_cyber_0_cyber_incident">ransom_extortion_payment_made=true^EQ<item endquery="false" field="ransom_extortion_payment_made" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></conditions><description>When Ransomware payment is made - payment date/time is mandatory</description><enforce_ui>true</enforce_ui><inherit>false</inherit><model_id/><model_table>x_1776078_cyber_0_cyber_incident</model_table><reverse_if_false>true</reverse_if_false><short_description>Payment date/time is mandatory</short_description><sys_class_name>sys_data_policy2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 12:13:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f957b50f83eacf1044779cb6feaad339</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Payment date/time is mandatory</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_data_policy2_f957b50f83eacf1044779cb6feaad339</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 12:13:19</sys_updated_on></sys_data_policy2></record_update>]]></payload>
+<payload_hash>559558886</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>ac19142383f20b1044779cb6feaad30d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ff0bdd13e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table/>
+<target_name>Payment date/time is mandatory</target_name>
+<type>Data Policy</type>
+<update_domain>global</update_domain>
+<update_guid>6287350fd1eacf107084cd9dc9064aea</update_guid>
+<update_guid_history>6287350fd1eacf107084cd9dc9064aea:559558886</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_data_policy_rule_4cb7714f83eacf1044779cb6feaad35e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule"><sys_data_policy_rule action="INSERT_OR_UPDATE"><disabled>ignore</disabled><field>payment_date_time</field><mandatory>true</mandatory><sys_class_name>sys_data_policy_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-11 12:14:31</sys_created_on><sys_data_policy display_value="Payment date/time is mandatory">f957b50f83eacf1044779cb6feaad339</sys_data_policy><sys_id>4cb7714f83eacf1044779cb6feaad35e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>payment_date_time</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_data_policy_rule_4cb7714f83eacf1044779cb6feaad35e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-11 12:14:31</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table></sys_data_policy_rule></record_update>]]></payload>
+<payload_hash>1834749737</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>e019142383f20b1044779cb6feaad30e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19ff0beeb430000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>payment_date_time</target_name>
+<type>Data Policy Rule</type>
+<update_domain>global</update_domain>
+<update_guid>d8d7714fd7eacf105ef7006798e60dd6</update_guid>
+<update_guid_history>d8d7714fd7eacf105ef7006798e60dd6:1834749737</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_5ce5a31583aa831044779cb6feaad3bd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_regulatory_notification_task&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Create REG Legal approval&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //query sys_user_grmember for members of the legal group
+    var groupMembers = new GlideRecord('sys_user_grmember');
+    groupMembers.addQuery('group', '2b10a3d5836a831044779cb6feaad307');
+    groupMembers.query();
+
+    //while there are more members
+    while (groupMembers.next()) {
+
+        //create a new approver record  for each member of legal
+        var newApprover = new GlideRecord('sysapproval_approver');
+        newApprover.initialize();
+        newApprover.setValue('document_id', current.sys_id);
+		newApprover.setValue('sysapproval', current.sys_id);
+        newApprover.setValue('source_table', 'x_1776078_cyber_0_regulatory_notification_task');
+        newApprover.setValue('approval_reason', current.getValue('notification_type'));
+        newApprover.setValue('approver', groupMembers.getValue('user'));
+        newApprover.setValue('state', 'requested');
+        newApprover.insert();
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-06 10:20:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5ce5a31583aa831044779cb6feaad3bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create REG Legal approval&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_5ce5a31583aa831044779cb6feaad3bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 03:50:11&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5ce5a31583aa831044779cb6feaad3bd"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-153540010</payload_hash>
+<remote_update_set display_value="Lab25b - REG task SLA definitions">e41914eb83b20b1044779cb6feaad32c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-08-25 04:53:14</sys_created_on>
+<sys_id>e419142383f20b1044779cb6feaad30f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0370a36390000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-08-25 04:53:14</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Create REG Legal approval</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>09aa0c6333720b10c30c0b1614c3792a</update_guid>
+<update_guid_history>09aa0c6333720b10c30c0b1614c3792a:-153540010,d13a8c23e5720b10bb2939a8c2856b6d:1409412965,85f0bbd9d1ea8310fe7e86d24e527a3c:-153540010,0f907b992eea83107b03037d7722f684:-1356452464,edddaf1582ea83105ab03295de1b785f:-1405946696</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
