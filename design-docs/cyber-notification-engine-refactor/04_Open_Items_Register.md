@@ -4,6 +4,12 @@
 
 ---
 
+## Design-only, not yet built (as of 25 Aug 2026 session)
+
+- SOCI Significant Notification, SOCI Relevant Notification, Assess Suspect Data Breach, and Notify OAIC and affected individuals are all fully designed (Refactor Specification §B.4–B.5, this register) but **none are built in the PDI yet**. Flagged explicitly so this register isn't misread later as describing shipped behaviour.
+
+---
+
 ## Needs external/legal confirmation (not buildable from public sources alone)
 
 - **FIRB Data and Security Conditions.** The general FIRB/national-security-business framework was confirmed, but the specific claim of a standardised "Data and Security Conditions" clause requiring concurrent Treasury notification could not be verified — FIRB conditions are bespoke per company's actual No Objection Notification, not public law. **Action:** legal/compliance team to retrieve and review the actual conditions document. If a genuine obligation is confirmed, it slots into the Regulatory Notification Task table as an additional Notification Type with minimal extra build work.
@@ -32,6 +38,9 @@
 - **NDB statement content requirements** (Privacy Act s26WL — entity identity/contact, description of breach, kinds of information involved, recommended steps for individuals). Not yet built into Lab 08 email templates.
 - **"Serious harm" assessment factors** (sensitivity of data, encryption status, who obtained it, realistic risk of misuse). Currently a judgement call captured within the Eligible Data Breach Determination Approval, not a structured checklist. Candidate for refinement into a structured field set if it proves too vague once real incidents are run through it.
 - **MIM routing escalation level.** Confirmed as a static assignment group for now. If the organisation's actual MIM process uses an on-call roster instead, that's a more involved future build, not a go-live blocker.
+- **REG task State Transition Matrix.** A Lab-24-style matrix, but dimensioned by Notification Type — valid states differ per type (e.g. `Oral Notification Done` is meaningless on a Cyber Security Act – Ransomware Payment Report task). Deliberately deferred to when that specific build task is reached — a scoping call, not a gap.
+- **Dependent Choice List + server-side validation for the REG task `State` field.** Two separate deliverables: the Dependent Choice List config (filters which `State` values are selectable per `Notification Type` on the form) and a Business Rule/ACL enforcing the same restriction against non-form writes (API, Import Set, background script). Building only the first leaves the rule enforceable in the UI and nowhere else.
+- **Final labels for the REG task's 3 Closed-type states.** Referenced throughout this session's design (Stop Condition equivalence rules in Refactor Specification §B.3–B.5) but not yet named. Needs resolving before the Dependent Choice List or any Stop Condition can actually be built.
 
 ---
 

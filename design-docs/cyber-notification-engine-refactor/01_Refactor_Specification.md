@@ -57,6 +57,8 @@ See Field Register §2 for the full field list. Behavioural rules:
 - **MIM:** added to the task's native `Watch list` field on creation. Static assignment group (confirmed — not an on-call roster, parked as a future-work item if that's ever needed).
 - **Downgrade/Cancel:** Cyber Security can edit Priority downward or cancel the task entirely if further review determines a lower classification or non-reportable outcome.
 - **Multiple SLAs per task:** where a pathway has more than one clock (NDB), attach multiple SLA Definitions to the same task record — same native pattern ServiceNow uses for Incident Response + Resolution SLAs running concurrently on one record. Do not split into multiple tasks for this.
+- **Task completion mechanism:** notification tasks complete via a shared `State` value, working name **"Oral Notification Done"**, added to the Regulatory Notification Task's own `State` choice list — not via boolean+date tick fields. The value is filtered per Notification Type using a native Dependent Choice List (Dictionary "Depend on field" + `sys_choice` "Dependent value"), so it's hidden on task types where it doesn't apply (e.g. Ransomware Payment Report). **Dependent Choice Lists are client/form-side filtering only** — a Business Rule (or ACL) must independently validate that the saved `State` is legal for that task's `Notification Type`, since API calls, Import Sets, and background scripts bypass the form entirely.
+- **Closed-state equivalence:** this task table's `State` field carries three distinct Closed-type values (final labels TBD — see Open Items Register). Every Stop Condition on every SLA attached to this table, regardless of Notification Type, must treat all three as equivalent to "Completed" for SLA purposes. This is a cross-cutting rule stated once here, not repeated per pathway in B.4–B.6.
 
 ### B.4 ASD/SOCI Notification (Security of Critical Infrastructure Act 2018, ss 30BC/30BD)
 
@@ -64,21 +66,34 @@ See Field Register §2 for the full field list. Behavioural rules:
 - **SLA — Significant:** 12hr oral/written notification; 84hr written follow-up if reported orally first
 - **SLA — Relevant:** 72hr oral/written notification; 48hr written follow-up if reported orally first
 - **Clock starts:** `Date/Time Became Aware`
+- **Initial SLA stop condition:** stops when the task reaches **either** `State = Oral Notification Done` **or** any Closed state — whichever occurs first. Written notification can satisfy the initial deadline directly, with no oral step required.
+- **Follow-up SLA trigger (conditional, not always-on):** the 84hr (Significant) / 48hr (Relevant) written follow-up SLA only starts if `State = Oral Notification Done` was reached before the initial deadline elapsed. If written notification satisfied the initial deadline directly, no follow-up SLA is created.
+- **Follow-up SLA stop condition:** any Closed state (per B.3's equivalence rule).
 - **Recipients:** urgent oral via 1300CYBER1 (1300 292 371); written via ACSC cyber incident reporting portal (cyber.gov.au)
 - **Field automation:** `Notification required to ASD` (boolean) = true when Confirmed SOCI Classification ∈ {Significant, Relevant}. **This retires the old "Severity = Critical" rule entirely.**
 - **Verification item (not a build task):** confirm whether your specific asset class sits on the SOCI (Application) Rules mandated list (s5, LIN 22/026) — if not, this is voluntary-but-built-to-the-same-standard, not strictly mandatory. Doesn't change the build either way.
 - **ACSC Severity scoping:** ACSC Severity (C1–C6) applies to this notification pathway only — not to OAIC/NDB or Ransomware Payment tasks. Field lives on the parent Cyber Incident (single source of truth) and is dot-walked into this task for reference. See Subsystem C for mandatory gate timing.
 
-### B.5 OAIC Notification (Privacy Act 1988, Part IIIC — NDB scheme)
+### B.5 NDB — Assessment (Privacy Act 1988, s26WH) and Notification (ss26WK/26WL)
 
-- **Trigger:** `Data Classification of Affected Assets` = Private Information → suggests "Possible Eligible Breach — Review Required"
-- **Eligibility test (human-assessed via Approval, not auto-calculated):** unauthorised access/disclosure/loss of personal information + likely serious harm + remediation didn't eliminate the risk. Effective containment can eliminate this obligation entirely — if remediation prevents the likely risk of serious harm, it never becomes an "eligible data breach."
-- **Two independent SLAs on one task:**
-  - **Assessment:** 30 calendar days from Date/Time Became Aware, stops when `Eligible Data Breach Determination` is set (either outcome). This is a **ceiling on the assessment**, not a notify-by deadline.
-  - **Notification (internal target, not legal):** 72 hours, starts only when Eligible Data Breach Determination = Eligible. Must be clearly labelled in the SLA Definition name as an internal guardrail, never presented as a legal requirement — legally it's "as soon as practicable," uncapped.
-- **Recipients:** OAIC (formal NDB statement) + affected individuals (direct preferred, published notice if impractical)
-- **Regulator confirmed:** OAIC/Privacy Act 1988 (Cth) — your org is private-sector (Vic energy utility, not a NSW government agency), so the NSW IPC/MNDB scheme does not apply.
-- **Cross-regime note:** this can fire **simultaneously** with B.4 — same `Private Information` fact, two regulators, two independent clocks. Expected, not a conflict.
+This pathway splits into two independent mechanisms, not "two SLAs on one task" as in the earlier draft — they live on different records and don't share a lifecycle.
+
+**Assess Suspect Data Breach — Cyber Incident–level SLA**
+- **Trigger:** always attached, starts from `Date/Time Became Aware` on the parent Cyber Incident — independent of whether a Regulatory Notification Task ever gets created.
+- **SLA:** 30 calendar days — a genuine statutory ceiling under s26WH, not an internal target. Safe to present as a deadline.
+- **Stop condition:** `Eligible Data Breach Determination` is set, either outcome (Eligible / Not Eligible – Remediated / Not Eligible – Low Risk).
+- **Why it lives here and not on a task:** an incident assessed as Not Eligible never spawns a Regulatory Notification Task at all — anchoring the SLA to a task that may never exist doesn't work. The Cyber Incident record is the only thing guaranteed to exist from the moment awareness is recorded.
+
+**Notify OAIC and affected individuals — Regulatory Notification Task**
+- **Trigger:** created when `Eligible Data Breach Determination = Eligible`.
+- **Eligibility test (human-assessed via Approval, not auto-calculated):** unauthorised access/disclosure/loss of personal information + likely serious harm + remediation didn't eliminate the risk.
+- **SLA name:** **OAIC/affected-party notification target** — 72 hours, internal guardrail only. ss26WK/26WL impose no fixed timeframe in law ("as soon as practicable"), so this is deliberately named a *target*, never a *deadline*.
+- **Stop condition:** any Closed state (per B.3's equivalence rule).
+- **Recipients:** OAIC (formal NDB statement) + affected individuals (direct preferred, published notice if impractical).
+- **Regulator confirmed:** OAIC/Privacy Act 1988 (Cth) — private-sector entity, NSW IPC/MNDB scheme does not apply.
+- **Cross-regime note:** can fire simultaneously with B.4 — same `Private Information` fact, two regulators, two independent clocks. Expected, not a conflict.
+
+**Date/Time Became Aware:** mandatory at insert on the Cyber Incident, but left **empty** by default — see Field Register §6.1 and Architecture Decisions §19 for the rationale.
 
 ### B.6 Ransomware/Cyber Extortion Payment Reporting (Cyber Security Act 2024, Part 3)
 

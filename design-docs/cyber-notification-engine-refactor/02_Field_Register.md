@@ -132,7 +132,7 @@ Plus multi-select conversion per §3.1.
 | Field | Type | Values/Notes |
 |---|---|---|
 | Suggested SOCI Classification | Choice, read-only/calculated | No Report, Relevant, Significant — `MAX(lookup(Impact, Affected Asset Type), data_classification_floor)` |
-| Date/Time Became Aware | Date/Time | Drives SOCI + NDB clocks. Not `sys_created_on`. Go-live default = Acknowledged Time. |
+| Date/Time Became Aware | Date/Time | Drives SOCI + NDB clocks. Not `sys_created_on`. **Mandatory at insert, left empty by default** — forces an explicit choice between "now" and a backdated time; never auto-populated from Acknowledged Time. |
 | Awareness Basis | Text | Documents reasoning for the awareness time selected |
 | Acknowledged Time | Date/Time | When someone with the ability to recognise a cyber incident actually reviewed/confirmed it |
 | Ransom/Extortion Demand Received | Boolean | Tracked independently of payment |
@@ -140,6 +140,8 @@ Plus multi-select conversion per §3.1.
 | Payment Date/Time | Date/Time | Independent clock from Became Aware — starts 72hr ransomware reporting SLA |
 | Eligible Data Breach Determination | Choice | Pending Assessment, Eligible, Not Eligible – Remediated, Not Eligible – Low Risk |
 | Notification SLA Status | Choice, rollup | No Active Notifications, On Track, At Risk, Breached — drives persistent warning banner |
+
+**New SLA Definition (Cyber Incident table): "Assess Suspect Data Breach"** — 30-day SLA, starts `Date/Time Became Aware`, stops when `Eligible Data Breach Determination` is set. Lives on the Cyber Incident record, not the Regulatory Notification Task — see Refactor Specification §B.5.
 
 ### 6.2 Modified field — Confirmed by Legal/Compliance
 
@@ -152,13 +154,13 @@ Upgraded from a simple checkbox to a proper **Approval record** (`sysapproval_ap
 | Field | Type | Notes |
 |---|---|---|
 | Parent Cyber Incident | Reference | |
-| Notification Type | Choice | ASD/SOCI Notification, OAIC/NDB Notification, SOI Internal Routing *(parked)*, Cyber Security Act – Ransomware Payment Report |
+| Notification Type | Choice | ASD/SOCI Notification, **Notify OAIC and affected individuals** (renamed from OAIC/NDB Notification), SOI Internal Routing *(parked)*, Cyber Security Act – Ransomware Payment Report |
 | Classification Basis | Reference/display, read-only | Rolled up from parent |
 | Assignment group | Reference | Defaults to Cyber Security |
 | Priority | Choice | Drives SLA target, editable/downgradable by Cyber Security |
-| State | Choice | Standard task states + Cancelled |
-| Oral notification made | Boolean + timestamp | |
-| Written notification submitted | Boolean + reference number | |
+| State | Choice | Standard task states + Cancelled + 3 Closed-type values (final labels TBD — see Open Items Register). Shared value **"Oral Notification Done"** added for the SOCI/NDB oral pathway — filtered per Notification Type via Dependent Choice List. Dependent Choice List is form-side only; a Business Rule/ACL must independently validate the saved value against Notification Type. |
+
+**Note:** the 30-day NDB Assessment SLA ("Assess Suspect Data Breach") is not a field on this table — it lives on the Cyber Incident record. See §6.1.
 
 `Notification required to ASD` (boolean, §1) auto-tick rule: = true when Confirmed SOCI Classification ∈ {Significant, Relevant}.
 

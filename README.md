@@ -63,8 +63,8 @@ servicenow-cyber-incident-app/
 | Branch | Purpose |
 |--------|---------|
 | `main` | Stable, completed work only. Merged into at the end of each completed lab. |
-| `csa-labs` | Active branch for CSA phase labs (Labs 01-13) and related coding challenges. |
-| `cad-labs` | Active branch for CAD phase labs (Labs 14-21) and related coding challenges. To be created when Lab 14 begins. |
+| `csa-labs` | Active branch for CSA phase labs (Labs 01-15) and related coding challenges. |
+| `cad-labs` | Active branch for CAD phase labs (Labs 16-35) and related coding challenges. To be created when Lab 14 begins. |
 
 - All work is done in the phase branch and merged into `main` on lab completion.
 - Coding challenge `.js` files are committed to the active phase branch under `code-challenges/`.
@@ -174,7 +174,6 @@ To restore code challenges:
 **CAD-phase scripting/architecture**
 - SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern
 - Configurable SLA duration parameters (admin-adjustable)
-- Regulatory SLA timers tied to specific notifications
 - Child tasks generated for notifications (ASD/Private Info/Critical Infrastructure)
 - Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
 - Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
@@ -241,4 +240,4 @@ Cross-application extensions
  - 6/8: Approval tasks need 'sysapproval' field set along with 'document_id' - otherwise they don't appear in related approval lists.
  - 8/8: UI Actions use the 'onClick' field to call a function. The function is defined in the script field. gsftSubmit saves the form and triggers server-side script.
  - 9/8: Field level and wildcard access controls can get messy if you don't think about it properly before putting them in.
-  - 25/8: SLA engine appears to run SLA creation scripts twice.
+  - 25/8: SLA engine appears to run SLA creation scripts twice. Caused 'notificationDueTime' to be calculated in a way similar to +=, each time adding the SLA days onto itself. Fixed by creating a new GlideDateTime so notificationDueTime was a clone of the paymentTime's value, not a direct reference to it.

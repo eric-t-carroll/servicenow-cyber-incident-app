@@ -131,3 +131,46 @@ That defence was subsequently revisited and found to be incomplete. The real ope
 The revised design keeps the three-field split intact — ACSC Severity still does its cyber-domain characterisation job, SOCI Classification still does its regulatory job, and Priority still does its MIM-triggering and operational triage job — but removes the phase-gating that was making Priority useless for the first half of every incident's life.
 
 **The judgement call worth naming directly:** when a design defence requires arguing that a blank field is "intentional and correct," that's a signal worth examining carefully. In this case, the blank Priority was genuinely harming the operational usefulness of the application.
+
+---
+
+## 16. Why the SOCI initial SLA uses an OR stop condition, not a single fixed path
+
+The initial 12hr/72hr SLA was designed to stop on **either** `State = Oral Notification Done` **or** any Closed state, whichever happens first — not on a single fixed sequence. The reasoning: the statutory obligation is satisfied by written notification alone, with no oral step required. Modelling the SLA as a strict oral-then-written sequence would have created a false dependency — a task where written notification was submitted first (satisfying the deadline) would have looked "incomplete" against a model that expected oral first.
+
+**The follow-up is conditional, not universal:** the 84hr/48hr written follow-up SLA only starts if `Oral Notification Done` was actually reached before the initial deadline. If written notification was the first and only channel used, the follow-up obligation never legally existed — so no follow-up SLA is created. Building it as an always-on second clock would have manufactured a deadline that doesn't exist in the Act.
+
+---
+
+## 17. Why oral/written completion is state-driven, not a tickbox + date field
+
+The earlier design used `Oral notification made` and `Written notification submitted` as boolean + date/reference-number fields. Both were cut in favour of a shared `State` value (`Oral Notification Done`) plus Closed-state completion.
+
+**The reasoning connects directly to decision #11 (write ACL over UI Policy):** a boolean field can be ticked and its accompanying date backdated by anyone with edit access, with nothing in the system distinguishing "this actually happened at this time" from "someone set this field to look that way." A Stop Condition tied to a genuine `State` transition is a different kind of fact — it's the timestamp of a real, audit-logged record change, not a value someone typed into a field. For records that may underpin a regulatory notification, that distinction is the same "looks done vs. is provably done" argument used for the Closed-state write lock — applied here to task completion instead of field editability.
+
+---
+
+## 18. Why NDB Assessment lives on the Cyber Incident record, not the Notification task
+
+The 30-day assessment clock (s26WH) was originally modelled as one of two SLAs on the Regulatory Notification Task. That was revised once a real scenario was worked through: an incident assessed as **Not Eligible** never spawns a Notification task at all — there's nothing to notify. A clock that's supposed to run for every incident from the moment awareness is recorded can't live on a record that might never exist.
+
+Anchoring `Assess Suspect Data Breach` to the Cyber Incident itself means the clock always starts, regardless of the eventual outcome — the Notification task (and its own `OAIC/affected-party notification target` SLA) only comes into existence downstream, once Eligible is actually confirmed.
+
+---
+
+## 19. Why Date/Time Became Aware is mandatory but empty at insert, not defaulted
+
+The same pattern from decision #12 (the State=New insert-time rule with zero exceptions) was applied here: the field is required at insert, but deliberately **not** auto-populated from `Acknowledged Time` or `sys_created_on`. A silent default is a value nobody actually looked at — it satisfies "the field is filled in" without satisfying "someone made a considered legal judgement about when this organisation first became aware."
+
+Making the field mandatory-but-blank forces that judgement to happen explicitly at the point of creation — accept the current time, or actively backdate to when awareness genuinely occurred. The mechanism differs from decision #12 (a Before Insert Business Rule enforcing `State = New` vs. a mandatory dictionary attribute with no default), but the underlying principle — don't let a system timestamp quietly stand in for a decision that has legal weight — is the same one.
+
+---
+
+## 20. Naming convention — "target" vs "deadline," backed by statute
+
+Every SLA name in the NDB pathway was deliberately chosen to match what the underlying law actually requires, not just company convenience:
+
+- **Assess Suspect Data Breach** — 30 days, framed and named as a real ceiling, because s26WH imposes an actual statutory limit on the assessment step.
+- **OAIC/affected-party notification target** — 72 hours, deliberately never called a "deadline," because ss26WK/26WL impose **no fixed timeframe** — "as soon as practicable" is uncapped in law. Naming this a deadline would misstate the obligation to anyone reading the SLA record later without the surrounding context — including a future auditor, a new team member, or a regulator asking why a "deadline" was missed when no such deadline exists.
+
+This mirrors the same discipline decision #5 (Ransomware Payment) and B.5 already apply elsewhere in this design: an internal guardrail must be labelled as one, every time, everywhere it appears.
