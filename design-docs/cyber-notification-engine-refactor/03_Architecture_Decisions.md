@@ -186,3 +186,30 @@ This mirrors the same discipline decision #5 (Ransomware Payment) and B.5 alread
 ## 22. REG does not need a state transition matrix
 
 Decision made that REG state transition does not need enforcement. REG are open when created, can move freely between open states and are locked down when moved to closed.
+
+---
+
+## 23. Why SOCI written notification SLA is always calculated from Oral Notification Complete
+
+The actual legal mechanism is that the written follow-up is always due 84 hours after the oral report was given. There is no hard cap based on Date/Time Became Aware. If the Oral Notification is early or late, the written follow up is still required based on when the initial notification was done.
+
+---
+
+## 24. Why was ACSC's rating decoupled from the SOCI Classification classification trigger
+
+ACSC's rating is externally assigned and may not even exist yet at report time. It is also not an input into calculating the SOCI Classification (Relevant/Significant).
+
+---
+
+## 25. Why REG task carries it's own SOCI Classification
+
+SOCI Classification is stored on the REG task (copied from CYB at insert) ionstead of (a) a live dot-walk to the parent, or (b) a separate "Confirmed" field alongside "Suggested":
+ - this keeps an audit trail, showing the point in time decision legal made about the SOCI Classifciation - recorded by LEgal updating the SOCI Classification on the reg task. This keeps the original value on the CYB untouched.
+ - It simplifies the SLA mechanism. SLA can be calculated off a single field on the REG task, instead of having to refer to the SOCI CLassification on CYB record for the initial SLA creation, but then dynamically updating when the SOCI Classification is updated on the REG task by Legal.
+
+ ---
+
+ ## 26. Rejected as a state on REG
+
+ Rejected state is used to confirm when Legal do not agree with the values input into the SOCI CLassification matrix. In this case Legal reject the REG task with a note to update the CYB record. The analyst updates the CYB record with correct values and recreates the SOCI notification task, which is calculated from teh date/time became aware field - meaning it still has correct breach times.
+

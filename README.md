@@ -41,6 +41,10 @@ Coding challenges are supported by Claude acting as a tutor/coach.
  - Claude guides toward solutions through questions and hints rather than providing direct answers, only sharing code when explicitly requested. 
  - All code is written, tested and understood by me before being committed.
 
+ **Note regarding use of Claude (26/8)**
+  - I've leant on Claude pretty heavily to create the design documents during this project. I started just wanting to get hands on experience with ServiceNow, which I have. I didn't realise design documents were needed for good development, now I do. My next projects will have documents all written by me.
+  - What I am finding invaluable is using Claude as a kind of 'technical sounding board' when talking through design considerations. Claude is prompting me to think about technical issues and limitation, and what 'good'' process looks like as I'm working through the application. I'm still working through the reasoning and making the decisions. I will continue to use Claude as a technical peer for brainstorming and exploring ideas for future projects. Having multiple regulatory notification pathways added complexity I wasn't expecting. Working through the SLA triggers and mechanisms allowed me to come up with a workable design, without running into multiple roadblocks.
+
 
 ## Technical references
 - Scope name: cyber_0
@@ -101,8 +105,9 @@ servicenow-cyber-incident-app/
 | 23 | SOCI warning/info banner | CAD | Completed |
 | 24 | State transition matrix — design and enforcement | CAD | Completed |
 | 25a | Closure validation + Record Integrity ACL | CAD | Completed |
-| 25b | REG task SLA definitions | CAD | In Progress |
+| 25b | REG task SLA definitions | CAD | Completed |
 | 25b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
+| 25b2 | More REG task SLA definitions | CAD | In Progress |
 | 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
 | 26 | Configure Impact/Urgency/Priority | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |

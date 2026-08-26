@@ -40,7 +40,7 @@
 
 ### B.2 Warning/info banner
 
-- **Trigger condition:** `Suggested/Confirmed SOCI Classification ≠ No Report`. **Must check this single calculated field — not the individual inputs (Affected Asset Type, Data Classification) separately.** Checking inputs independently was an earlier draft design that created a real gap (a corporate-only, zero-availability-impact breach with Critical Infrastructure data wouldn't have tripped an input-level check, but does trip the classification-level check via the escalation floor).
+- **Trigger condition:** `Suggested SOCI Classification ≠ No Report`. **Must check this single calculated field — not the individual inputs (Affected Asset Type, Data Classification) separately.** Checking inputs independently was an earlier draft design that created a real gap (a corporate-only, zero-availability-impact breach with Critical Infrastructure data wouldn't have tripped an input-level check, but does trip the classification-level check via the escalation floor).
 - **Mechanism:** Display Business Rule (server-side, `when=display`) sets `g_scratchpad`; client picks it up via `g_form.addWarningMessage()` (At Risk) / `g_form.addErrorMessage()` (Breached or Significant/Relevant present).
 - **Persistence:** fires on every form load while the condition holds — no dismiss-and-suppress behaviour. This is native `addWarningMessage`/`addErrorMessage` behaviour, requires no extra build to achieve "persistent until resolved."
 - **Message content:** must state *why* it fired (e.g. "Flagged due to Affected Asset Type: Regulated/Essential-Service" vs. "...Data Classification: Critical Infrastructure Information") — a banner with no visible regulated CI on the form needs to explain itself.
@@ -51,19 +51,23 @@
 See Field Register §2 for the full field list. Behavioural rules:
 
 - **Auto-creation trigger:** fires on successful record save when the Notification Type's specific trigger condition is met (see B.4–B.6) AND all required fields are populated. Task is created complete — no partially-populated child records. A **duplicate guard** prevents a second task of the same Notification Type being created if the record is edited and re-saved after the task already exists: condition is "no active task of this Notification Type already exists on this parent incident."
+- **SLA attach/cancel mechanism:** any change to the REG task's SOCI Classification field (at insert or later edit) triggers cancelling whichever SLA is currently active on the task and attaching the SLA Definition matching the new value. Both creation and override use the identical mechanism — no separate trigger paths.
 - **SLA clock:** starts from `Date/Time Became Aware` (analyst-set field) at the point the task is created — not from `sys_created_on` and not from when Suggested SOCI Classification was first calculated. The statutory clock is anchored to awareness time, not system processing time.
 - **Assignment:** group = Cyber Security (confirmed: same group as the main incident, not a separate "Cyber Security Operations" group).
 - **Legal:** Approval record (`sysapproval_approver`), not a checkbox. Runs in **parallel** with the task's SLA clock — legal review must not block the clock from running, since statutory deadlines don't pause for internal process.
 - **MIM:** added to the task's native `Watch list` field on creation. Static assignment group (confirmed — not an on-call roster, parked as a future-work item if that's ever needed).
 - **Downgrade/Cancel:** Cyber Security can edit Priority downward or cancel the task entirely if further review determines a lower classification or non-reportable outcome.
 - **Multiple SLAs per task:** where a pathway has more than one clock (NDB), attach multiple SLA Definitions to the same task record — same native pattern ServiceNow uses for Incident Response + Resolution SLAs running concurrently on one record. Do not split into multiple tasks for this.
+- **REG task SOCI Classification:** the REG task's SOCI classification field (repurposed Classification Basis, renamed — see Field Register) is populated by copy at insert from the parent's Suggested SOCI Classification, not a live dot-walk. Legal/Cyber Admin write access only after creation.
 - **Task completion mechanism:** notification tasks complete via a shared `State` value, working name **"Oral Notification Complete"**, added to the Regulatory Notification Task's own `State` choice list — not via boolean+date tick fields. The value is filtered per Notification Type using a native Dependent Choice List (Dictionary "Depend on field" + `sys_choice` "Dependent value"), so it's hidden on task types where it doesn't apply (e.g. Ransomware Payment Report). **Dependent Choice Lists are client/form-side filtering only** — a Business Rule (or ACL) must independently validate that the saved `State` is legal for that task's `Notification Type`, since API calls, Import Sets, and background scripts bypass the form entirely.
   - Notification-Type-scoped state visibility: Oral Notification Complete is a SOCI-only state — it does not apply to and is not selectable on any other Notification Type (NDB, FIRB, or otherwise, per the current Notification Type list). This follows the same mechanism already specified above: the Dependent Choice List filters the value out of the form for non-SOCI task types, and the same Business Rule/ACL that validates State against Notification Type on save must independently enforce that Oral Notification Complete is only a legal saved value when Notification Type = SOCI. Form-side filtering alone does not stop the value being written via API, Import Set, or background script.
 - **Closed-state equivalence:** this task table's `State` field two distinct Closed-type values (Closed Complete, Closed No Longer Required). Every Stop Condition on every SLA attached to this table, regardless of Notification Type, must treat both as equivalent to "Completed" for SLA purposes. This is a cross-cutting rule stated once here, not repeated per pathway in B.4–B.6.
+- **Rejected REG State:** must count as non-active for the duplicate guard (§B.3's existing creation-blocking check), and needs an explicit SLA stop condition — stated as its own case, not folded silently into the Closed-state equivalence group, since "stopped" and "successfully completed" mean different things here.
+- **two-path override process - when Legal disagree with SOCI Classification:** Path A (inputs were wrong) — reject, correct parent inputs, Suggested recalculates, new REG auto-creates once the old one is non-active. Path B (Legal disagrees with matrix output, facts are correct) — Legal edits the REG task's own SOCI Classification field directly on the same record, no new task, no reject needed.
 
 ### B.4 ASD/SOCI Notification (Security of Critical Infrastructure Act 2018, ss 30BC/30BD)
 
-- **Trigger:** Confirmed SOCI Classification = Significant or Relevant
+- **Trigger:** Suggested SOCI Classification = Significant or Relevant
 - **SLA — Significant:** 12hr oral/written notification; 84hr written follow-up if reported orally first
 - **SLA — Relevant:** 72hr oral/written notification; 48hr written follow-up if reported orally first
 - **Clock starts:** `Date/Time Became Aware`
@@ -72,9 +76,12 @@ See Field Register §2 for the full field list. Behavioural rules:
 - **Follow-up SLA trigger (conditional, not always-on):** the 84hr (Significant) / 48hr (Relevant) written follow-up SLA only starts if `State = Oral Notification Complete` was reached before the initial deadline elapsed. If written notification satisfied the initial deadline directly, no follow-up SLA is created.
 - **Follow-up SLA stop condition:** any Closed state (per B.3's equivalence rule).
 - **Recipients:** urgent oral via 1300CYBER1 (1300 292 371); written via ACSC cyber incident reporting portal (cyber.gov.au)
-- **Field automation:** `Notification required to ASD` (boolean) = true when Confirmed SOCI Classification ∈ {Significant, Relevant}. **This retires the old "Severity = Critical" rule entirely.**
+- **Field automation:** `Notification required to ASD` (boolean) = true when Suggested SOCI Classification ∈ {Significant, Relevant}. **This retires the old "Severity = Critical" rule entirely.**
 - **Verification item (not a build task):** confirm whether your specific asset class sits on the SOCI (Application) Rules mandated list (s5, LIN 22/026) — if not, this is voluntary-but-built-to-the-same-standard, not strictly mandatory. Doesn't change the build either way.
 - **ACSC Severity scoping:** ACSC Severity (C1–C6) applies to this notification pathway only — not to OAIC/NDB or Ransomware Payment tasks. Field lives on the parent Cyber Incident (single source of truth) and is dot-walked into this task for reference. See Subsystem C for mandatory gate timing.
+- **SLA calculations:**
+  - Initial SLA (12hr Significant / 72hr Relevant) — starts at Date/Time Became Aware, stops on Oral Notification Complete OR either Closed state.
+  - Follow-up SLA (84hr Significant / 48hr Relevant) — starts at the Oral Notification Complete state-change timestamp, stops on either Closed state. Only created/relevant if oral was used.
 
 ### B.5 NDB — Assessment (Privacy Act 1988, s26WH) and Notification (ss26WK/26WL)
 
@@ -116,16 +123,16 @@ Not built this session. Confirmed scope only:
 
 ### B.8 Executive Escalation / MIM Engagement — Process Rule, Not a Build
 
-Deliberately **not** a ServiceNow mechanism — your standalone MIM process owns this. Documented trigger for that process, derived from the same Confirmed SOCI Classification field used everywhere else (no separate/duplicate check):
+Deliberately **not** a ServiceNow mechanism — your standalone MIM process owns this. Documented trigger for that process, derived from the same Suggested SOCI Classification field used everywhere else (no separate/duplicate check):
 
-| Confirmed SOCI Classification | MIM Engagement |
+| Suggested SOCI Classification | MIM Engagement |
 |---|---|
 | Significant | Full MIM invocation |
 | Relevant | MIM notify/standby |
 | No Report | No MIM trigger |
 
 - `Persistent Threat = true` does **not** independently escalate MIM engagement — it rides entirely on SOCI classification like everything else.
-- **Out-of-band comms trigger (definition only, mechanism designed in a separate dedicated session):** `Persistent Threat = true` AND `Confirmed SOCI Classification = Significant` (i.e., MIM is engaged).
+- **Out-of-band comms trigger (definition only, mechanism designed in a separate dedicated session):** `Persistent Threat = true` AND `Suggested SOCI Classification = Significant` (i.e., MIM is engaged).
 
 ### B.9 FIRB Data and Security Conditions — PARKED
 
@@ -143,15 +150,17 @@ Not designed this session — could not be verified against public sources. FIRB
 - `Priority` = native, calculated from Impact × Urgency. **Active from Investigation & Diagnosis onward** — no longer blank pre-Recovery. MIM process fires cleanly off P1/P2 from this point. Priority is also the trigger for MIM engagement in the standalone MIM process — see B.8.
 - **Priority is never downgraded once correctly assessed.** A correctly assessed P1 or P2 stays that way for reporting integrity. Teams can slow their response behaviourally without changing the record. The historical accuracy of the Priority record matters more than real-time adjustment.
 
-### C.1 ACSC Severity — mandatory gate (revised)
+### C.1 ACSC Severity — mandatory gate (revised again)
 
-ACSC Severity is no longer mandatory at Investigation & Diagnosis as a blanket rule. It becomes mandatory on the parent Cyber Incident form **only when `Suggested SOCI Classification ≠ No Report`** — enforced via UI Policy with that condition.
+ACSC Severity is fully decoupled from the SOCI notification pathway. It is no longer tied to `Suggested SOCI Classification` in any way, and no longer gates REG task creation.
 
-**Rationale:** ACSC Severity describes actual current incident state (e.g. C1 = "sustained disruption to essential systems") — it cannot be accurately assessed before the scope of the incident is known. Making it mandatory early forces a speculative assessment that may never be revisited. It becomes assessable and relevant at the point a SOCI notification obligation is identified, which is exactly when Suggested SOCI Classification moves off "No Report."
+**Rationale:** ACSC Severity is a rating assigned externally by ACSC itself, reflecting events as observed across industry — it may not be confirmed until *after* this organisation has already reported to ACSC, and confirmation is entirely out of this organisation's control. It also plays no role in the internal SOCI/NDB determination process. Making it mandatory before or during the notification pathway forces a value that may not yet exist, and gates a time-critical statutory workflow on an external, uncontrollable input.
 
-**Field location:** parent Cyber Incident (single source of truth). Dot-walked into the ASD/SOCI Regulatory Notification Task for reference and Legal review. Applies to ASD/SOCI notification pathway only — not present on OAIC/NDB or Ransomware Payment tasks.
+**Build note:** the "Create SOCI Notification" UI action's condition script originally included `&& !current.acsc_incident_severity.nil()`, left over from the pre-decoupling design. Removed to align with the decoupling above — this was the one place the old dependency still lived in the actual build.
 
-**Notification task creation dependency:** the ASD/SOCI Regulatory Notification Task is not created until the parent record saves successfully with ACSC Severity set. This ensures the task is created complete. See B.3 for the full creation trigger and duplicate guard.
+**Mandatory point:** moved to Resolution — see Subsystem D.1, folded into the existing Closed-state mandatory field group. Purely a reporting/trend-analysis field at that point, not an input to any calculation.
+
+**Field location:** parent Cyber Incident (single source of truth). Dot-walked into the ASD/SOCI Regulatory Notification Task for reference only. Applies to ASD/SOCI notification pathway only — not present on OAIC/NDB or Ransomware Payment tasks.
 
 ### C.2 Impact floor — soft prompt by Data Classification
 
@@ -178,11 +187,10 @@ Sort/filter the Cyber Incident dashboard by Priority from Investigation & Diagno
 | State | Newly-mandatory |
 |---|---|
 | Investigation & Diagnosis | Impact, Urgency, Assigned to |
-| When Suggested SOCI Classification ≠ No Report | ACSC Incident Severity (conditional — see Subsystem C.1) |
 | Containment | Classification tab (Threat category, Threat actor classification, Attack vector, MITRE ATT&CK tactic, Data classification of affected assets) |
 | Eradication | Containment tab (Containment method, Containment notes) |
 | On Hold | On hold reason |
-| Closed | Resolution tab (ACSC Essential Eight control gap, Close code, Close notes) |
+| Closed | Resolution tab (ACSC Essential Eight control gap, Close code, Close notes), ACSC Incident Severity - see Subsystem C.1 |
 
 **False Positive exemption:** `Close Code = False Positive` waives the entire Classification + Containment tab mandate. Legally consistent, not just a UI convenience — no genuine incident occurred, so the downstream SOCI/NDB/ransomware chains were never going to trigger either.
 

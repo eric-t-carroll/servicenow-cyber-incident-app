@@ -155,14 +155,24 @@ Upgraded from a simple checkbox to a proper **Approval record** (`sysapproval_ap
 |---|---|---|
 | Parent Cyber Incident | Reference | |
 | Notification Type | Choice | ASD/SOCI Notification, **Notify OAIC and affected individuals** (renamed from OAIC/NDB Notification), SOI Internal Routing *(parked)*, Cyber Security Act – Ransomware Payment Report |
-| Classification Basis | Reference/display, read-only | Rolled up from parent |
+| SOCI Classification | Choice | Copied at insert from parent's Suggested SOCI Classification. Legal + Cyber Admin write only. Drives SLA attach/cancel — see §B.3. |
 | Assignment group | Reference | Defaults to Cyber Security |
 | Priority | Choice | Drives SLA target, editable/downgradable by Cyber Security |
-| State | Choice | Standard task states + Cancelled + 2 Closed-type values (**Closed Complete**, **Closed No Longer Required** — `Closed Incomplete` removed, see Open Items Register). SOCI-only value **"Oral Notification Complete"** added, filtered per Notification Type via Dependent Choice List; Business Rule/ACL enforces server-side (not form-only). |
+| State | Choice | Standard task states + Cancelled + 3 Closed-type values (**Closed Complete**, **Closed No Longer Required**, **Rejected** — `Closed Incomplete` removed, see Open Items Register). SOCI-only value **"Oral Notification Complete"** added, filtered per Notification Type via Dependent Choice List; Business Rule/ACL enforces server-side (not form-only). |
+
+`Notification required to ASD` (boolean, §1) auto-tick rule: = true when Suggested SOCI Classification ∈ {Significant, Relevant}.
 
 **Note:** the 30-day NDB Assessment SLA ("Assess Suspect Data Breach") is not a field on this table — it lives on the Cyber Incident record. See §6.1.
 
-`Notification required to ASD` (boolean, §1) auto-tick rule: = true when Confirmed SOCI Classification ∈ {Significant, Relevant}.
+**New SLA Definition (Regulatory Notification Task table): "ASD/SOCI Initial Notification – Significant"** — 12hr SLA, starts `Date/Time Became Aware`, stops on `Oral Notification Complete` OR either Closed state. Start Condition: `Notification Type = ASD/SOCI Notification AND SOCI Classification = Significant`. See Refactor Specification §B.4.
+
+**New SLA Definition (Regulatory Notification Task table): "ASD/SOCI Initial Notification – Relevant"** — 72hr SLA, starts `Date/Time Became Aware`, stops on `Oral Notification Complete` OR either Closed state. Start Condition: `Notification Type = ASD/SOCI Notification AND SOCI Classification = Relevant`. See Refactor Specification §B.4.
+
+**New SLA Definition (Regulatory Notification Task table): "ASD/SOCI Written Follow-up – Significant"** — 84hr SLA, starts at the `Oral Notification Complete` state-change timestamp, stops on either Closed state. Start Condition: `Notification Type = ASD/SOCI Notification AND SOCI Classification = Significant AND State = Oral Notification Complete`. See Refactor Specification §B.4.
+
+**New SLA Definition (Regulatory Notification Task table): "ASD/SOCI Written Follow-up – Relevant"** — 48hr SLA, starts at the `Oral Notification Complete` state-change timestamp, stops on either Closed state. Start Condition: `Notification Type = ASD/SOCI Notification AND SOCI Classification = Relevant AND State = Oral Notification Complete`. See Refactor Specification §B.4.
+
+**New SLA Definition (Regulatory Notification Task table): "OAIC/Affected-Party Notification Target"** — 72hr internal target (non-legal), starts `Date/Time Became Aware` (task creation), stops on either Closed state. Start Condition: `Notification Type = Notify OAIC and affected individuals`. See Refactor Specification §B.5.
 
 ---
 
