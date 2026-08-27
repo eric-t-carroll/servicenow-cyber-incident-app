@@ -107,7 +107,7 @@ servicenow-cyber-incident-app/
 | 25a | Closure validation + Record Integrity ACL | CAD | Completed |
 | 25b | REG task SLA definitions | CAD | Completed |
 | 25b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
-| 25b2 | More REG task SLA definitions | CAD | In Progress |
+| 25b2 | More REG task SLA definitions | CAD | Completed |
 | 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
 | 26 | Configure Impact/Urgency/Priority | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
@@ -115,10 +115,12 @@ servicenow-cyber-incident-app/
 | 28b | Special transition UI Actions | CAD | Planned |
 | 28c | REG task approval guard rails | CAD | Planned |
 | 28d | UI Polish | CAD | Planned |
+| 28e | End-to-end application testing (pre-Flow Designer) | CAD | Planned |
 | 29 | Flow Designer — automated lifecycle workflow | CAD | Planned |
 | 30 | Script Includes & GlideRecord API (general CAD coverage) | CAD | Planned |
 | 31 | Playbook Designer — standard response playbook | CAD | Planned |
 | 32 | Playbook Designer — persistent threat branch | CAD | Planned |
+| 32b | End-to-end application testing (post-Playbooks) | CAD | Planned |
 | 33 | ATF — automated testing | CAD | Planned |
 | 34a | IntegrationHub — outbound notification spoke | CAD | Planned |
 | 34b | Delegated Development walkthrough (role-play) | CAD | Planned |
