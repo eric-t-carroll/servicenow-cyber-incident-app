@@ -43,7 +43,7 @@ Coding challenges are supported by Claude acting as a tutor/coach.
 
  **Note regarding use of Claude (26/8)**
   - I've leant on Claude pretty heavily to create the design documents during this project. I started just wanting to get hands on experience with ServiceNow, which I have. I didn't realise design documents were needed for good development, now I do. My next projects will have documents all written by me.
-  - What I am finding invaluable is using Claude as a kind of 'technical sounding board' when talking through design considerations. Claude is prompting me to think about technical issues and limitation, and what 'good'' process looks like as I'm working through the application. I'm still working through the reasoning and making the decisions. I will continue to use Claude as a technical peer for brainstorming and exploring ideas for future projects. Having multiple regulatory notification pathways added complexity I wasn't expecting. Working through the SLA triggers and mechanisms allowed me to come up with a workable design, without running into multiple roadblocks.
+  - What I am finding invaluable is using Claude as a kind of 'technical sounding board' when talking through design considerations. Claude is prompting me to think about technical issues and limitations, and what 'good'' process looks like as I'm working through the application. I'm still working through the reasoning and making the decisions. I will continue to use Claude as a technical peer for brainstorming and exploring ideas for future projects. e.g. Having multiple regulatory notification pathways added complexity I wasn't expecting. Talking through the SLA triggers and mechanisms allowed me to come up with a workable design, without running into multiple roadblocks.
 
 
 ## Technical references
@@ -108,7 +108,7 @@ servicenow-cyber-incident-app/
 | 25b | REG task SLA definitions | CAD | Completed |
 | 25b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
 | 25b2 | More REG task SLA definitions | CAD | Completed |
-| 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Planned |
+| 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Completed |
 | 26 | Configure Impact/Urgency/Priority | CAD | Planned |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
 | 28a | State transition UI Actions | CAD | Planned |

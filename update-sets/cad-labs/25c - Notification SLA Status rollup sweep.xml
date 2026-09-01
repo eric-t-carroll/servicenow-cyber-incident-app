@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-09-01 12:52:01">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Notification SLA Status rollup sweep</description>
+<inserted/>
+<name>25c - Notification SLA Status rollup sweep</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>93ec9d31834f8b5044779cb6feaad31d</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>06c906f183c3cb5044779cb6feaad349</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_67b0793d83cf8b5044779cb6feaad3de</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 11:02:36</sys_created_on><sys_id>67b0793d83cf8b5044779cb6feaad3de</sys_id><sys_mod_count>0</sys_mod_count><sys_name>task_sla</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_scope_privilege_67b0793d83cf8b5044779cb6feaad3de</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 11:02:36</sys_updated_on><target_name>task_sla</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-89167269</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>02c906f183c3cb5044779cb6feaad34c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05ca29edb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table/>
+<target_name>task_sla</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>63b0793d6acf8b50c327202f5347a3e3</update_guid>
+<update_guid_history>63b0793d6acf8b50c327202f5347a3e3:-89167269</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_cyber_incident_notification_sla_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="notification_sla_status" table="x_1776078_cyber_0_cyber_incident"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>NDB Assessment SLA Status</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>notification_sla_status</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition>No Active Notifications</function_definition><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_cyber_incident</name><next_element/><primary>false</primary><read_only>true</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 10:23:06</sys_created_on><sys_id>3baca98083668b1044779cb6feaad3c0</sys_id><sys_name>NDB Assessment SLA Status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_cyber_incident_notification_sla_status</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 11:03:31</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1492871395</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>0ec906f183c3cb5044779cb6feaad34a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05ca375f40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.NDB Assessment SLA Status</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>01f0b17d59cf8b500e4d6a6c3018d1f5</update_guid>
+<update_guid_history>01f0b17d59cf8b500e4d6a6c3018d1f5:-1492871395,2cae15b54e4f8b5049bf07a724a0472d:-272378566,68aed1b5314f8b503f5e3288d62027b2:-2126768230,47bc65c066668b106a5de5d34c96983b:0,0bbc65c079668b102cfa038a79e6d227:1310258725</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_deadline</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="notification_deadline" table="x_1776078_cyber_0_regulatory_notification_task"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>Notification SLA Status</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>notification_deadline</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_regulatory_notification_task</name><next_element/><primary>false</primary><read_only>true</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:46:53</sys_created_on><sys_id>c98612c883aa8b1044779cb6feaad389</sys_id><sys_name>Notification SLA Status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_regulatory_notification_task_notification_deadline</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 12:30:32</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-757558510</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>42c906f183c3cb5044779cb6feaad34b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05cf323780000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification SLA Status</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>37d44239cc83cb501de78d62c06cb06c</update_guid>
+<update_guid_history>37d44239cc83cb501de78d62c06cb06c:-757558510,f001757ddecf8b505344c7c101ce7fbf:1501270087,e291e17d344f8b50da28f66b7bba6ae5:-140163574,371f99f5f74f8b504264a3ac261d9e1a:-1534373653,1efed1f5304f8b5086e74104b041f082:990071663,31fb560832ea8b10b59f3863e739c13d:-851209361,918612c835aa8b10d54e20cf43743eb7:675184495</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_0b243df18303cb5044779cb6feaad3d1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1776078_cyber_0_cyber_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_1776078_cyber_0_cyber_incident"&gt;eligible_data_breach_determinationINeligible,not_eligible_remediated,not_eligible_Low_risk^EQ&lt;item display_value="eligible,not_eligible_remediated,not_eligible_Low_risk" endquery="false" field="eligible_data_breach_determination" goto="false" newquery="false" operator="IN" or="false" value="eligible,not_eligible_remediated,not_eligible_Low_risk"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;SLA Status when NDB assessment done&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-01 11:18:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0b243df18303cb5044779cb6feaad3d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;SLA Status when NDB assessment done&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_0b243df18303cb5044779cb6feaad3d1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-01 11:18:56&lt;/sys_updated_on&gt;&lt;template&gt;notification_sla_status=Assessment Complete^EQ&lt;/template&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0b243df18303cb5044779cb6feaad3d1"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1492591677</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>46c906f183c3cb5044779cb6feaad34c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05cb1926e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>SLA Status when NDB assessment done</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f674b535fa03cb50260090da817bcdec</update_guid>
+<update_guid_history>f674b535fa03cb50260090da817bcdec:-1492591677</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_notification_sla_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="notification_sla_status" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>notification_sla_status</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 10:31:15</sys_created_on><sys_id>01bced8083668b1044779cb6feaad34d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_sla_status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_notification_sla_status</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-21 10:31:15</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_sla_status</element><hint/><inactive>false</inactive><label>On Track</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 10:31:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2acc250483668b1044779cb6feaad3f7</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 09:56:28</sys_updated_on><value>on_track</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_sla_status</element><hint/><inactive>false</inactive><label>At Risk</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 10:31:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e6cc650483668b1044779cb6feaad312</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 09:56:28</sys_updated_on><value>at_risk</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_sla_status</element><hint/><inactive>false</inactive><label>Breached</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 10:32:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eecc650483668b1044779cb6feaad320</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 09:56:28</sys_updated_on><value>breached</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_sla_status</element><hint/><inactive>false</inactive><label>Assessment Complete</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 10:08:27</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>525469f1838f8b5044779cb6feaad3fc</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 11:45:03</sys_updated_on><value>assessment_complete</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-779054376</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>4ac906f183c3cb5044779cb6feaad349</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05cc97be10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.NDB Assessment SLA Status</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>597a75713443cb50dc456df4e946bc35</update_guid>
+<update_guid_history>597a75713443cb50dc456df4e946bc35:-779054376,9a54a9f1d38f8b5078915ec6fd76bb57:-318874791,f291257d7e4f8b5002340ce616f09ae9:646557899,f291257d724f8b503c0d3aa7f5fbc7af:-914466580,64ae15b52d4f8b50ad6d011ee7f53603:-616087371,a8aed1b5654f8b50ed8c939a2a101bc5:-652979211,a2cc65046e668b10ccb195a6363e833c:0,aacc25047a668b103c302c2ea09e4770:-1690469495</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_cyber_incident_notification_sla_status_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="notification_sla_status" label="NDB Assessment SLA Status" language="en" table="x_1776078_cyber_0_cyber_incident"><sys_documentation action="INSERT_OR_UPDATE"><element>notification_sla_status</element><help/><hint/><label>NDB Assessment SLA Status</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-21 10:23:06</sys_created_on><sys_id>ffaca98083668b1044779cb6feaad3dd</sys_id><sys_mod_count>13</sys_mod_count><sys_name>NDB Assessment SLA Status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_cyber_incident_notification_sla_status_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 11:03:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-119176023</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>86c906f183c3cb5044779cb6feaad34b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05ca3768a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.NDB Assessment SLA Status</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>89f0f17ddbcf8b50392db64ed525260f</update_guid>
+<update_guid_history>89f0f17ddbcf8b50392db64ed525260f:-119176023,74ae15b59a4f8b507ea3b014bdcd8037:-119176023,a8ae15b53a4f8b50f3e97d7b8fade230:-690622029,25bc21c019668b105d0be917a2ce3b37:0,21bc21c002668b1083210eb583c94d33:1001904051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_fd98b57d8303cb5044779cb6feaad347</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1776078_cyber_0_cyber_incident"&gt;notification_sla_statusANYTHING^EQ&lt;item display_value="-- None --" endquery="false" field="notification_sla_status" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;200&lt;/order&gt;&lt;reverse_if_false&gt;false&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+	var assessmentSLA = g_form.getValue('notification_sla_status');
+	if (assessmentSLA === 'at_risk') {
+		g_form.getControl('notification_sla_status').style.backgroundColor = 'yellow';
+	} else if (assessmentSLA === 'breached') {
+		g_form.getControl('impact').style.backgroundColor = 'red';
+	} else if (assessmentSLA === 'assessment_complete') {
+		g_form.getControl('impact').style.backgroundColor = 'green';
+	} else {
+		g_form.getControl('notification_sla_status').style.backgroundColor = '';
+	}
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Highlight NDB SLA Status field&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-01 11:47:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fd98b57d8303cb5044779cb6feaad347&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Highlight NDB SLA Status field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_fd98b57d8303cb5044779cb6feaad347&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-01 12:10:55&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;sys_ui_policy_fd98b57d8303cb5044779cb6feaad347&lt;/name&gt;&lt;payload&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;&amp;lt;record_update sys_domain="global" table="sys_ui_policy"&amp;gt;&amp;lt;sys_ui_policy action="INSERT_OR_UPDATE"&amp;gt;&amp;lt;active&amp;gt;true&amp;lt;/active&amp;gt;&amp;lt;conditions table="x_1776078_cyber_0_cyber_incident"&amp;gt;notification_sla_statusANYTHING^EQ&amp;lt;item display_value="-- None --" endquery="false" field="notification_sla_status" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&amp;gt;&amp;lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&amp;gt;&amp;lt;/conditions&amp;gt;&amp;lt;description/&amp;gt;&amp;lt;global&amp;gt;true&amp;lt;/global&amp;gt;&amp;lt;inherit&amp;gt;false&amp;lt;/inherit&amp;gt;&amp;lt;isolate_script&amp;gt;true&amp;lt;/isolate_script&amp;gt;&amp;lt;model_id/&amp;gt;&amp;lt;model_table/&amp;gt;&amp;lt;on_load&amp;gt;true&amp;lt;/on_load&amp;gt;&amp;lt;order&amp;gt;200&amp;lt;/order&amp;gt;&amp;lt;reverse_if_false&amp;gt;false&amp;lt;/reverse_if_false&amp;gt;&amp;lt;run_scripts&amp;gt;true&amp;lt;/run_scripts&amp;gt;&amp;lt;script_false&amp;gt;&amp;lt;![CDATA[function onCondition() {
+
+}]]&amp;gt;&amp;lt;/script_false&amp;gt;&amp;lt;script_true&amp;gt;&amp;lt;![CDATA[function onCondition() {
+	var assessmentSLA = g_form.getValue('notification_sla_status');
+	if (assessmentSLA === 'at_risk') {
+		g_form.getControl('notification_sla_status').style.backgroundColor = 'yellow';
+	} else if (assessmentSLA === 'breached') {
+		g_form.getControl('impact').style.backgroundColor = 'red';
+	} else if (assessmentSLA === 'assessment_complete') {
+		g_form.getControl('impact').style.backgroundColor = 'green';
+	} else {
+		g_form.getControl('notification_sla_status').style.backgroundColor = '';
+	}
+}]]&amp;gt;&amp;lt;/script_true&amp;gt;&amp;lt;set_values/&amp;gt;&amp;lt;short_description&amp;gt;Highlight NDB SLA Status field&amp;lt;/short_description&amp;gt;&amp;lt;sys_class_name&amp;gt;sys_ui_policy&amp;lt;/sys_class_name&amp;gt;&amp;lt;sys_created_by&amp;gt;admin&amp;lt;/sys_created_by&amp;gt;&amp;lt;sys_created_on&amp;gt;2026-09-01 11:47:20&amp;lt;/sys_created_on&amp;gt;&amp;lt;sys_domain&amp;gt;global&amp;lt;/sys_domain&amp;gt;&amp;lt;sys_domain_path&amp;gt;/&amp;lt;/sys_domain_path&amp;gt;&amp;lt;sys_id&amp;gt;fd98b57d8303cb5044779cb6feaad347&amp;lt;/sys_id&amp;gt;&amp;lt;sys_mod_count&amp;gt;9&amp;lt;/sys_mod_count&amp;gt;&amp;lt;sys_name&amp;gt;Highlight NDB SLA Status field&amp;lt;/sys_name&amp;gt;&amp;lt;sys_overrides/&amp;gt;&amp;lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&amp;gt;9c0eda15c31d03102d84f44ed4013148&amp;lt;/sys_package&amp;gt;&amp;lt;sys_policy/&amp;gt;&amp;lt;sys_scope display_value="Cyber Incident Management"&amp;gt;9c0eda15c31d03102d84f44ed4013148&amp;lt;/sys_scope&amp;gt;&amp;lt;sys_update_name&amp;gt;sys_ui_policy_fd98b57d8303cb5044779cb6feaad347&amp;lt;/sys_update_name&amp;gt;&amp;lt;sys_updated_by&amp;gt;admin&amp;lt;/sys_updated_by&amp;gt;&amp;lt;sys_updated_on&amp;gt;2026-09-01 12:10:55&amp;lt;/sys_updated_on&amp;gt;&amp;lt;table&amp;gt;x_1776078_cyber_0_cyber_incident&amp;lt;/table&amp;gt;&amp;lt;ui_type&amp;gt;10&amp;lt;/ui_type&amp;gt;&amp;lt;view/&amp;gt;&amp;lt;/sys_ui_policy&amp;gt;&amp;lt;/record_update&amp;gt;&lt;/payload&gt;&lt;payload_hash&gt;1118170392&lt;/payload_hash&gt;&lt;record_name&gt;Highlight NDB SLA Status field&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;93ec9d31834f8b5044779cb6feaad31d&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-01 12:10:55&lt;/sys_created_on&gt;&lt;sys_id&gt;506006b98343cb5044779cb6feaad39b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;1a05ce12bd10000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-01 12:10:55&lt;/sys_updated_on&gt;&lt;type&gt;UI Policy&lt;/type&gt;&lt;update_guid&gt;9c6006b99a43cb5069dcb647cb915c99&lt;/update_guid&gt;&lt;update_guid_history&gt;9c6006b99a43cb5069dcb647cb915c99:1118170392,1a1f35f95b43cb50fa882e028e8122a5:-2010352484,936db5f56e43cb509e3df0e1d4ad1fa1:-1463117281,3c1dfdb52943cb50ba0a3fffa8bbd378:1795438921,8ecc75b52343cb50980c65bda6d97037:1350016249,778c3d756c43cb50404fd048b40bcfba:-1996601001,9c6cb5751143cb503ac5a82a8e428910:-2123705386,7beb3535ad43cb50299566aa86c172a2:-2010352484,066bfdb10143cb50cb68c937de6a3a5d:1987395541,7efa75b19643cb50697e05a9aa83bade:-2052238058&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete/&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-01 12:16:31&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="sys_ui_policy"&gt;sys_ui_policy&lt;/sys_db_object&gt;&lt;sys_id&gt;3a2fe8ebca864c72938b20de011e3be1&lt;/sys_id&gt;&lt;sys_metadata&gt;fd98b57d8303cb5044779cb6feaad347&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Highlight NDB SLA Status field&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="Cyber Incident"&gt;39022e1dc31d03102d84f44ed4013130&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;sys_ui_policy_fd98b57d8303cb5044779cb6feaad347&lt;/sys_update_name&gt;&lt;sys_update_version display_value="sys_ui_policy_fd98b57d8303cb5044779cb6feaad347"&gt;506006b98343cb5044779cb6feaad39b&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-01 12:16:31&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>207835093</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>8ac906f183c3cb5044779cb6feaad34c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05ce64ab10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Highlight NDB SLA Status field</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>12a10a31d483cb50f6e6b4f9ceb6880c</update_guid>
+<update_guid_history>12a10a31d483cb50f6e6b4f9ceb6880c:207835093,9c6006b99a43cb5069dcb647cb915c99:1118170392,1a1f35f95b43cb50fa882e028e8122a5:-2010352484,936db5f56e43cb509e3df0e1d4ad1fa1:-1463117281,3c1dfdb52943cb50ba0a3fffa8bbd378:1795438921,8ecc75b52343cb50980c65bda6d97037:1350016249,778c3d756c43cb50404fd048b40bcfba:-1996601001,9c6cb5751143cb503ac5a82a8e428910:-2123705386,7beb3535ad43cb50299566aa86c172a2:-2010352484,066bfdb10143cb50cb68c937de6a3a5d:1987395541,7efa75b19643cb50697e05a9aa83bade:-2052238058</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_notification_deadline</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="notification_deadline" table="x_1776078_cyber_0_regulatory_notification_task" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>notification_deadline</element><name>x_1776078_cyber_0_regulatory_notification_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 09:47:08</sys_created_on><sys_id>827f1939834f8b5044779cb6feaad3c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_deadline</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_regulatory_notification_task_notification_deadline</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 09:47:08</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_deadline</element><hint/><inactive>false</inactive><label>On Track</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 12:30:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f7d442398383cb5044779cb6feaad3a5</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 12:34:51</sys_updated_on><value>on_track</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_deadline</element><hint/><inactive>false</inactive><label>At Risk</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 12:30:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bbd442398383cb5044779cb6feaad3b4</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 12:34:56</sys_updated_on><value>at_risk</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>notification_deadline</element><hint/><inactive>false</inactive><label>Breached</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 12:30:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>73d442398383cb5044779cb6feaad3c3</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 12:35:00</sys_updated_on><value>breached</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>2087028061</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>c6c906f183c3cb5044779cb6feaad34a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05cf739fb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification SLA Status</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>51e5cab96583cb50f7373cba356c073c</update_guid>
+<update_guid_history>51e5cab96583cb50f7373cba356c073c:2087028061,40e58ab91783cb505dd5429a16cc756c:-557670019,76d54ab91a83cb50740ff7e1eb43f16a:-886773698,bfd44239b383cb50e64542b0656c9fd2:1157711773,f3d442394083cb504706d14c164182a3:-1879874090,fbd442392d83cb50bf729815342acb91:1724479345,bfd442392e83cb50e8996adda0cf837f:1020183181,82848ab5fc83cb507164d4214e23198a:2087028061,41848ab55c83cb50a874fd023d5e5b2a:-557670019,dc844ab51283cb50e9d6e6e0273fa672:-886773698,6291257d5c4f8b50d473370c85415140:1157711773,e291e17db34f8b50e8c0946e4b8062f9:408806974,0e7f5939764f8b502b8f8c5c0159d655:1475540568</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_deadline_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="notification_deadline" label="Notification SLA Status" language="en" table="x_1776078_cyber_0_regulatory_notification_task"><sys_documentation action="INSERT_OR_UPDATE"><element>notification_deadline</element><help/><hint/><label>Notification SLA Status</label><language>en</language><name>x_1776078_cyber_0_regulatory_notification_task</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-02 06:46:53</sys_created_on><sys_id>118612c883aa8b1044779cb6feaad3a7</sys_id><sys_mod_count>21</sys_mod_count><sys_name>Notification SLA Status</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_regulatory_notification_task_notification_deadline_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 12:30:33</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-185925388</payload_hash>
+<remote_update_set display_value="25c - Notification SLA Status rollup sweep">06c906f183c3cb5044779cb6feaad349</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-01 12:52:00</sys_created_on>
+<sys_id>cac906f183c3cb5044779cb6feaad34b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a05cf325ce0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-01 12:52:00</sys_updated_on>
+<table>x_1776078_cyber_0_regulatory_notification_task</table>
+<target_name>Regulatory Notification Task.Notification SLA Status</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7fd44239f283cb50a5c0c7e39e9303df</update_guid>
+<update_guid_history>7fd44239f283cb50a5c0c7e39e9303df:-185925388,9efed1f5854f8b50300966c09dfada97:-185925388,5afed1f52b4f8b50403cc106fd733a85:1520517513,f5fb560806ea8b10e5baa4075a6e0746:1723764094,bdfb56087eea8b100c7361ae5b83013f:-476087158,dd8612c815aa8b1077215144931757e4:-540192290,518612c8cbaa8b101a47cacb7ec25ebd:1898014922</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
