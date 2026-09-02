@@ -181,8 +181,7 @@ To restore code challenges:
 ### Future work
 **CAD-phase scripting/architecture**
 - SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern
-- Configurable SLA duration parameters (admin-adjustable)
-- Child tasks generated for notifications (ASD/Private Info/Critical Infrastructure)
+- Build out the REG task workflow when Legal reject a notification assessment.
 - Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
 - Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
 - Cyber incident response playbook (Lab 22)
