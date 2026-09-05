@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-09-05 01:59:56">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Lab26 - Configure Impact/Urgency/Priority</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>874b3286834b4f5044779cb6feaad3ad</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>01ea9ccb8307079044779cb6feaad348</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_priority_lookup_priority_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="priority" label="Priority" language="en" table="x_1776078_cyber_0_priority_lookup"><sys_documentation action="INSERT_OR_UPDATE"><element>priority</element><help/><hint/><label>Priority</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:10</sys_created_on><sys_id>76d7503a8307839044779cb6feaad386</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_priority_lookup_priority_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:13:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-466716111</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>01ea9ccb8307079044779cb6feaad38d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4420c60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Priority</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>631910fa1707839095d5e97ac72ba5d1</update_guid>
+<update_guid_history>631910fa1707839095d5e97ac72ba5d1:-466716111,0bd7503a9207839075dc25cc6f5b7ef4:-466716111,b6d7503a9e0783901dcf40ac17dd87c4:1771276937</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_fcc97f2a8303839044779cb6feaad3f3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="fcc97f2a8303839044779cb6feaad3f3" sys_domain="global" table="x_1776078_cyber_0_priority_lookup" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>82df84b683c3839044779cb6feaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>impact</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>c6df84b683c3839044779cb6feaad364</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priotity</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>82df84b683c3839044779cb6feaad365</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>4edf84b683c3839044779cb6feaad365</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_scope</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>0adf84b683c3839044779cb6feaad366</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>c2df84b683c3839044779cb6feaad367</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:10</sys_created_on><sys_id>8edf84b683c3839044779cb6feaad367</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_priority_lookup" sys_domain="global" view="Default view">fcc97f2a8303839044779cb6feaad3f3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:33:10</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_priority_lookup</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fcc97f2a8303839044779cb6feaad3f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_fcc97f2a8303839044779cb6feaad3f3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:41</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1427505734</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>01ea9ccb8307079044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b1f06920000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>46df84b62ec383909cca969a82d8386b</update_guid>
+<update_guid_history>46df84b62ec383909cca969a82d8386b:1427505734,34c9bf2a3403839094b48ca7e1d685c2:645943676</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_f1d590438307079044779cb6feaad302</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Prompt a user to engage the MIM team when changing priorty to P1 or P2.&lt;/description&gt;&lt;field&gt;priority&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Major CYB Prompt&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    if (newValue === '1' || newValue === '2') {
+        var gm = new GlideModal("glide_confirm_standard", true, 600);
+        gm.setTitle("All priority 1 and priority 2 major incidents must be assessed and managed by the MIM team. Click 'okay' to confirm you are calling the MIM team on 01-123-123.");
+        gm.setPreference("onPromptComplete", function() {});
+        gm.setPreference("onPromptCancel", function() {
+            return false;
+        });
+        gm.render();
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-05 01:41:25&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f1d590438307079044779cb6feaad302&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Major CYB Prompt&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f1d590438307079044779cb6feaad302&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-05 01:58:13&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-169701045</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>05ea9ccb8307079044779cb6feaad38e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06f49a9150000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Major CYB Prompt</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>c08a948b8b070790d1ed978a9cf6ced0</update_guid>
+<update_guid_history>c08a948b8b070790d1ed978a9cf6ced0:-169701045,191a508ba1070790464dbb17d6096f74:1804725200,9af9584b2c0707900bfa9b21206b2139:1226128629,63c9944b77070790c4b7c7e858a3dff5:2043980540,9cb85c879c0707907f3e05d984bb4f00:-1358543488,9b6854873e0707901c461f13d91fb89e:1942650561,97281087980707907e638f6133b6bd5b:-85152521,0aa65c83e20707906a56dfc4d596ee5b:-1519195444</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_274054f683c3839044779cb6feaad3be</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>3</impact><order>700</order><priority>3</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:35:19</sys_created_on><sys_id>274054f683c3839044779cb6feaad3be</sys_id><sys_mod_count>4</sys_mod_count><sys_name>700</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_274054f683c3839044779cb6feaad3be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:31</sys_updated_on><urgency>2</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>-1583643041</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>05ea9ccb8307079044779cb6feaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a61e60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>700</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>7baad4bebd07839031c61cae0e14527e</update_guid>
+<update_guid_history>7baad4bebd07839031c61cae0e14527e:-1583643041,d0199cba6507839045f60d57913cfe91:827231430,1df858baeb078390962952e3f96d19cd:-2047569281,010454feb6c38390036e07ba78c38c41:2144163235,5d50d4fee4838390b71e2cf0ec6e067b:1357666863</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>dl_definition_rel_match_770a84ba8383839044779cb6feaad35f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition_rel_match"><dl_definition_rel_match action="INSERT_OR_UPDATE"><dl_definition display_value="CYB Impact vs Urgency = Priority">022cbfae8303839044779cb6feaad351</dl_definition><exact_match>true</exact_match><matcher_table>x_1776078_cyber_0_priority_lookup</matcher_table><matcher_table_field>impact</matcher_table_field><source_table>x_1776078_cyber_0_cyber_incident</source_table><source_table_field>impact</source_table_field><sys_class_name>dl_definition_rel_match</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:08:18</sys_created_on><sys_id>770a84ba8383839044779cb6feaad35f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>impact</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>dl_definition_rel_match_770a84ba8383839044779cb6feaad35f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:08:18</sys_updated_on></dl_definition_rel_match></record_update>]]></payload>
+<payload_hash>174104440</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>09ea9ccb8307079044779cb6feaad349</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b0843f50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>impact</target_name>
+<type>Matcher Field Definitions</type>
+<update_domain>global</update_domain>
+<update_guid>752ac8bae583839041e8c72627489fcc</update_guid>
+<update_guid_history>752ac8bae583839041e8c72627489fcc:174104440</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_priority_lookup_urgency</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="urgency" table="x_1776078_cyber_0_priority_lookup" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>urgency</element><name>x_1776078_cyber_0_priority_lookup</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_id>a6cbff6e8303839044779cb6feaad375</sys_id><sys_mod_count>0</sys_mod_count><sys_name>urgency</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_priority_lookup_urgency</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:33</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>urgency</element><hint/><inactive>false</inactive><label>1 - High</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aecbff6e8303839044779cb6feaad374</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:11:51</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>urgency</element><hint/><inactive>false</inactive><label>2 - Medium</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aacbff6e8303839044779cb6feaad378</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:11:54</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>urgency</element><hint/><inactive>false</inactive><label>3 - Low</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>26cbff6e8303839044779cb6feaad37b</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:11:57</sys_updated_on><value>3</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1101382078</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>09ea9ccb8307079044779cb6feaad38a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b0b98800000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Urgency</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>c7fa883e66838390d7e78c078ba95fe4</update_guid>
+<update_guid_history>c7fa883e66838390d7e78c078ba95fe4:-1101382078,92fa883eaa8383904ff60cf768191039:-1327786525,39fa883e0f838390693688cabd96b02f:-1844934966,26cbff6e6a0383902009db171e0c487f:1635852733</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e5c9336a8303839044779cb6feaad33a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_priority_lookup</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>e5c9336a8303839044779cb6feaad33a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_e5c9336a8303839044779cb6feaad33a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>118836007</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>09ea9ccb8307079044779cb6feaad38f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6be9e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>a1c9336aa303839062df139d5eaa583e</update_guid>
+<update_guid_history>a1c9336aa303839062df139d5eaa583e:118836007</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_8e5094f683c3839044779cb6feaad3de</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>3</impact><order>800</order><priority>3</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:35:30</sys_created_on><sys_id>8e5094f683c3839044779cb6feaad3de</sys_id><sys_mod_count>4</sys_mod_count><sys_name>800</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_8e5094f683c3839044779cb6feaad3de</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:34</sys_updated_on><urgency>1</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>1935444094</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>09ea9ccb8307079044779cb6feaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a6d640000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>800</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>1cba18becc07839040664575da98d235</update_guid>
+<update_guid_history>1cba18becc07839040664575da98d235:1935444094,94199cba8d078390fc2585ea78b7a18a:-645567259,b9f8dc7a7d07839078667b91c9b4f1eb:405787742,e90454fe53c383901a77b5199a57d9b8:-379367264,446018f663c38390f0bcc2ec45eaf12d:1566365166</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_priority</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="priority" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>priority</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:54:45</sys_created_on><sys_id>4ac4dc328307839044779cb6feaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_name>priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_priority</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:54:45</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>1 - Critical</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:56:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4a251c328307839044779cb6feaad33e</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:18:48</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>2 - High</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:56:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>011558728307839044779cb6feaad309</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:18:50</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>3 - Moderate</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:55:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b6e4d0728307839044779cb6feaad384</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:18:56</sys_updated_on><value>3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>4 - Low</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:54:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ddb450fe83c3839044779cb6feaad3a5</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:18:58</sys_updated_on><value>4</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-754870012</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>0dea9ccb8307079044779cb6feaad34a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b48f4b80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.priority</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>3c5a1c7e4b078390e4cd4b8df7354e00</update_guid>
+<update_guid_history>3c5a1c7e4b078390e4cd4b8df7354e00:-754870012,585ad87ebd078390a814dde835d888b9:1815480924,f24a987e57078390f10942084fe81f66:384846759,da4a987eae0783906ca9ecfd8c20b12b:252523014,d73a187ea6078390f26d33ce59ccba6c:1814766181,1a3ad47e0a0783901b06bff2e52161f3:819745113,91355c726a078390d53157dd2cf4ea2a:-633684730,9525d872220783904393f9c6de097710:-261077479,8015187252078390b670f4098c1ed2f0:1940565861,06c4dc3283078390fe93f31ba17f3d14:-257577320</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_priority_lookup_priority</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="priority" table="x_1776078_cyber_0_priority_lookup"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>Priority</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>priority</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_priority_lookup</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:10</sys_created_on><sys_id>f6d7503a8307839044779cb6feaad381</sys_id><sys_name>Priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_priority_lookup_priority</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:08:11</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1634376493</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>0dea9ccb8307079044779cb6feaad38b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b3f15ec0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Priority</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>8bd7503a14078390373c96f325107bdc</update_guid>
+<update_guid_history>8bd7503a14078390373c96f325107bdc:1634376493,76d7503aae0783907c837d5f466ec0c1:-1398951670</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_95c9336a8303839044779cb6feaad301</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>95c9336a8303839044779cb6feaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_priority_lookup">ddc9ff2a8303839044779cb6feaad3ec</sys_security_acl><sys_update_name>sys_security_acl_role_95c9336a8303839044779cb6feaad301</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1832855391</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>0dea9ccb8307079044779cb6feaad390</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6bd320000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>91c9336af5038390fc8d0e50c9353c08</update_guid>
+<update_guid_history>91c9336af5038390fc8d0e50c9353c08:-1832855391</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_f290dc3683c3839044779cb6feaad375</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>1</impact><order>300</order><priority>1</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:36:39</sys_created_on><sys_id>f290dc3683c3839044779cb6feaad375</sys_id><sys_mod_count>6</sys_mod_count><sys_name>300</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_f290dc3683c3839044779cb6feaad375</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:19</sys_updated_on><urgency>2</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>1513082339</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>0dea9ccb8307079044779cb6feaad395</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a30e40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>300</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>e8aa54be15078390317873e8160a6f81</update_guid>
+<update_guid_history>e8aa54be15078390317873e8160a6f81:1513082339,d4199cbaf70783909b9f1c54981d1aac:-513064270,8ee8d4ba36078390b09e530defd7c7d0:-1340177841,8ef314feefc383901c61291ca9a51a34:-2138763635,89e15cbadbc383909d79991b21418b3d:-969273327,69d0943af4c38390c30fe21deafb72d3:352036398,89a0503afdc38390beed6c47f2337111:560734701</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_cyber_incident_urgency</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="urgency" table="x_1776078_cyber_0_cyber_incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>urgency</element><name>x_1776078_cyber_0_cyber_incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:53:23</sys_created_on><sys_id>127410328307839044779cb6feaad358</sys_id><sys_mod_count>0</sys_mod_count><sys_name>urgency</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_cyber_incident_urgency</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:53:23</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>urgency</element><hint/><inactive>false</inactive><label>1 - High</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence/><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:53:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c55410328307839044779cb6feaad34e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:53:23</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>urgency</element><hint/><inactive>false</inactive><label>2 - Medium</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence/><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:53:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>758454328307839044779cb6feaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:53:52</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>urgency</element><hint/><inactive>false</inactive><label>3 - Low</label><language>en</language><name>x_1776078_cyber_0_cyber_incident</name><sequence/><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:54:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7a9458328307839044779cb6feaad3ad</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:59:02</sys_updated_on><value>3</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>916527553</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>41ea9ccb8307079044779cb6feaad34b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b36b3da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident.urgency</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>7cc5dcb21b078390f00fda3e485c1e9c</update_guid>
+<update_guid_history>7cc5dcb21b078390f00fda3e485c1e9c:916527553,87b59cb2e9078390a26a4c9bc5ce60a7:1996284635,ada498324b0783906356921104e638fb:1080636697,4d941832ca078390f3bf3bf204375d5d:307718978,52741432a9078390db6bcb40de8777e1:-1525005604</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_priority_lookup_priotity</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="priotity" table="x_1776078_cyber_0_priority_lookup"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>PriorityOLD</column_label><comments/><create_roles/><default_value>low</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>priotity</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_priority_lookup</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:31</sys_created_on><sys_id>4ecbbf6e8303839044779cb6feaad3a8</sys_id><sys_name>PriorityOLD</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_priority_lookup_priotity</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:08:12</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-724390056</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>41ea9ccb8307079044779cb6feaad38c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4419dc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.priotity</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>cb1910fadb0783907ae54b41be38ab64</update_guid>
+<update_guid_history>cb1910fadb0783907ae54b41be38ab64:-724390056,83d7903ab90783900b9a27ecbdba6b11:1401777548,6f161cf2790783902e272289d4d94066:-1365416078,0feb37ae45038390c9ef7793eb1be4e1:1496308598,12cbff6e850383907a68e19b7b779127:-1196589711,0acbbf6e2e038390faf50379641056fe:1311074638</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_9cee72ce834b4f5044779cb6feaad31d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>priority</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:22:38</sys_created_on><sys_id>9cee72ce834b4f5044779cb6feaad31d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_policy_action_9cee72ce834b4f5044779cb6feaad31d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:22:38</sys_updated_on><table>x_1776078_cyber_0_cyber_incident</table><ui_policy display_value="Priority is read-only">f8ce7ec6834b4f5044779cb6feaad3cf</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=9cee72ce834b4f5044779cb6feaad31d"/></record_update>]]></payload>
+<payload_hash>-479311604</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>41ea9ccb8307079044779cb6feaad391</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a061db52200000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>priority</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>32eeb2ceec4b4f502664d13ccfe14e33</update_guid>
+<update_guid_history>32eeb2ceec4b4f502664d13ccfe14e33:-479311604</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>dl_definition_022cbfae8303839044779cb6feaad351</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition"><dl_definition action="INSERT_OR_UPDATE"><active>true</active><matcher_table>x_1776078_cyber_0_priority_lookup</matcher_table><name>CYB Impact vs Urgency = Priority</name><run_on_form_change>true</run_on_form_change><run_on_insert>true</run_on_insert><run_on_update>true</run_on_update><source_table>x_1776078_cyber_0_cyber_incident</source_table><sys_class_name>dl_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:08:37</sys_created_on><sys_id>022cbfae8303839044779cb6feaad351</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CYB Impact vs Urgency = Priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>dl_definition_022cbfae8303839044779cb6feaad351</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:08:37</sys_updated_on></dl_definition></record_update>]]></payload>
+<payload_hash>-753387924</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>45ea9ccb8307079044779cb6feaad348</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ad19fa20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>CYB Impact vs Urgency = Priority</target_name>
+<type>Data Lookup Definitions</type>
+<update_domain>global</update_domain>
+<update_guid>237c3bee5903839041927adc0fe99b5e</update_guid>
+<update_guid_history>237c3bee5903839041927adc0fe99b5e:-753387924</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_priority_lookup_priotity_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="priotity" label="PriorityOLD" language="en" table="x_1776078_cyber_0_priority_lookup"><sys_documentation action="DELETE"><element>priotity</element><help/><hint/><label>PriorityOLD</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:31</sys_created_on><sys_id>4ecbbf6e8303839044779cb6feaad3df</sys_id><sys_mod_count>13</sys_mod_count><sys_name>PriorityOLD</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_priority_lookup_priotity_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:08:12</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>5181344</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>45ea9ccb8307079044779cb6feaad38d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4417b50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.priotity</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>8f1910fa1407839053f5c315b911204c</update_guid>
+<update_guid_history>8f1910fa1407839053f5c315b911204c:5181344,cbd7903ac10783906307869821c0671a:-754930576,03d7903a0f078390f597b384c224dc14:2127479622,37161cf2830783907ef85e2db6305570:-2102576015,eb161cf21b078390ed4bed0632282269:759053513,6ecbff6ed8038390246be7dc454d9540:322641519,52cbff6e0403839081e7af0b4bbba108:59605321</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_06df84b683c3839044779cb6feaad378</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>4</impact><order>1000</order><priority>4</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:33:32</sys_created_on><sys_id>06df84b683c3839044779cb6feaad378</sys_id><sys_mod_count>4</sys_mod_count><sys_name>1000</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_06df84b683c3839044779cb6feaad378</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:41</sys_updated_on><urgency>3</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>-1461525616</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>45ea9ccb8307079044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a86160000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>1000</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>4eba58bec3078390b1f0e3a71265051a</update_guid>
+<update_guid_history>4eba58bec3078390b1f0e3a71265051a:-1461525616,10199cbad8078390f7bd785e9090ad65:-1168300817,6ff890ba410783906c820a3191b83d4b:446238843,b20494fe0bc38390d04d8744cb7d7538:-1313468052,d3ef08b664c383907f0771a6cc1509f9:1134198658</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_55c9336a8303839044779cb6feaad30a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_priority_lookup</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>55c9336a8303839044779cb6feaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_55c9336a8303839044779cb6feaad30a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-402278275</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>49ea9ccb8307079044779cb6feaad38e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6bd830000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>d5c9336ad0038390af9d8eb3919d5a1a</update_guid>
+<update_guid_history>d5c9336ad0038390af9d8eb3919d5a1a:-402278275</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_3f60d4f683c3839044779cb6feaad3ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>2</impact><order>500</order><priority>2</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:35:57</sys_created_on><sys_id>3f60d4f683c3839044779cb6feaad3ed</sys_id><sys_mod_count>4</sys_mod_count><sys_name>500</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_3f60d4f683c3839044779cb6feaad3ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:25</sys_updated_on><urgency>2</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>-35280351</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>49ea9ccb8307079044779cb6feaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a48c80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>500</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>86aad4be800783907f8e5195ea56b015</update_guid>
+<update_guid_history>86aad4be800783907f8e5195ea56b015:-35280351,5c199cba0d07839094f788da0d19e89e:-1109127276,fbe818ba97078390eab9c3b0653ce784:1754371662,67f314fe9bc38390a88615a3866355b4:624570535,22701cf687c3839020db0f4e028dca04:1574639023</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>dl_definition_rel_set_3e68147a8307839044779cb6feaad3c5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition_rel_set"><dl_definition_rel_set action="INSERT_OR_UPDATE"><always_replace>true</always_replace><dl_definition display_value="CYB Impact vs Urgency = Priority">022cbfae8303839044779cb6feaad351</dl_definition><matcher_table>x_1776078_cyber_0_priority_lookup</matcher_table><matcher_table_field>priority</matcher_table_field><source_table>x_1776078_cyber_0_cyber_incident</source_table><source_table_field>priority</source_table_field><sys_class_name>dl_definition_rel_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:10:47</sys_created_on><sys_id>3e68147a8307839044779cb6feaad3c5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>dl_definition_rel_set_3e68147a8307839044779cb6feaad3c5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:12:04</sys_updated_on></dl_definition_rel_set></record_update>]]></payload>
+<payload_hash>740306320</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>4dea9ccb8307079044779cb6feaad349</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b42a56f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>priority</target_name>
+<type>Setter Field Definitions</type>
+<update_domain>global</update_domain>
+<update_guid>fbb850ba7f078390c03530cdc01c4055</update_guid>
+<update_guid_history>fbb850ba7f078390c03530cdc01c4055:740306320,3c78947a3807839066c9fc427e356817:-347292559</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_08c97f2a8303839044779cb6feaad3f7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><filter_extension/><is_df_table>false</is_df_table><is_extendable>false</is_extendable><label>Priority Lookup</label><live_feed_enabled>false</live_feed_enabled><name>x_1776078_cyber_0_priority_lookup</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Data Lookup Matcher Rules" name="dl_matcher">77332584a5a503108bb220b7a4d2120d</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:39</sys_created_on><sys_id>08c97f2a8303839044779cb6feaad3f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cyber 0 Priority Lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_db_object_08c97f2a8303839044779cb6feaad3f7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:39</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>186053198</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>4dea9ccb8307079044779cb6feaad38a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6ad0f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>90c9bf2aa8038390e8dd3778bc960930</update_guid>
+<update_guid_history>90c9bf2aa8038390e8dd3778bc960930:186053198</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2dc9336a8303839044779cb6feaad33f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>2dc9336a8303839044779cb6feaad33f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_priority_lookup">e5c9336a8303839044779cb6feaad33a</sys_security_acl><sys_update_name>sys_security_acl_role_2dc9336a8303839044779cb6feaad33f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>442005029</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>4dea9ccb8307079044779cb6feaad38f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6bef90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>21c9336aa00383903d69390928eff044</update_guid>
+<update_guid_history>21c9336aa00383903d69390928eff044:442005029</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_a9805cf683c3839044779cb6feaad355</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>1</impact><order>200</order><priority>2</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:36:19</sys_created_on><sys_id>a9805cf683c3839044779cb6feaad355</sys_id><sys_mod_count>4</sys_mod_count><sys_name>200</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_a9805cf683c3839044779cb6feaad355</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:16</sys_updated_on><urgency>3</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>286651171</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>4dea9ccb8307079044779cb6feaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a24680000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>200</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>7f9a54be03078390db6cf6f8aec55677</update_guid>
+<update_guid_history>7f9a54be03078390db6cf6f8aec55677:286651171,14199cba2507839024a5405440b06db3:768523286,d9e8d4ba2d078390ddb0eb755c6ed419:797083216,fad39cbee7c38390eb6bcab8dbbcb24e:2053304621,04905cf638c3839048c48fe5fd916bd3:143338095</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>dl_definition_rel_set_9d5a44fa8383839044779cb6feaad377</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="dl_definition_rel_set"&gt;&lt;dl_definition_rel_set action="DELETE"&gt;&lt;always_replace&gt;true&lt;/always_replace&gt;&lt;dl_definition display_value="CYB Impact vs Urgency = Priority"&gt;022cbfae8303839044779cb6feaad351&lt;/dl_definition&gt;&lt;matcher_table&gt;x_1776078_cyber_0_priority_lookup&lt;/matcher_table&gt;&lt;matcher_table_field&gt;priotity&lt;/matcher_table_field&gt;&lt;source_table&gt;x_1776078_cyber_0_cyber_incident&lt;/source_table&gt;&lt;source_table_field&gt;priority&lt;/source_table_field&gt;&lt;sys_class_name&gt;dl_definition_rel_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 06:09:17&lt;/sys_created_on&gt;&lt;sys_id&gt;9d5a44fa8383839044779cb6feaad377&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;priority&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;dl_definition_rel_set_9d5a44fa8383839044779cb6feaad377&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 06:09:17&lt;/sys_updated_on&gt;&lt;/dl_definition_rel_set&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;dl_definition_rel_set_9d5a44fa8383839044779cb6feaad377&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="dl_definition_rel_set"&gt;&lt;dl_definition_rel_set action="INSERT_OR_UPDATE"&gt;&lt;always_replace&gt;true&lt;/always_replace&gt;&lt;dl_definition display_value="CYB Impact vs Urgency = Priority"&gt;022cbfae8303839044779cb6feaad351&lt;/dl_definition&gt;&lt;matcher_table&gt;x_1776078_cyber_0_priority_lookup&lt;/matcher_table&gt;&lt;matcher_table_field&gt;priotity&lt;/matcher_table_field&gt;&lt;source_table&gt;x_1776078_cyber_0_cyber_incident&lt;/source_table&gt;&lt;source_table_field&gt;priority&lt;/source_table_field&gt;&lt;sys_class_name&gt;dl_definition_rel_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 06:09:17&lt;/sys_created_on&gt;&lt;sys_id&gt;9d5a44fa8383839044779cb6feaad377&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;priority&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;dl_definition_rel_set_9d5a44fa8383839044779cb6feaad377&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 06:09:17&lt;/sys_updated_on&gt;&lt;/dl_definition_rel_set&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-678555246&lt;/payload_hash&gt;&lt;record_name&gt;priority&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;874b3286834b4f5044779cb6feaad3ad&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 06:09:17&lt;/sys_created_on&gt;&lt;sys_id&gt;406a84fa8383839044779cb6feaad390&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;1a06b09298f0000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 06:09:17&lt;/sys_updated_on&gt;&lt;type&gt;Setter Field Definitions&lt;/type&gt;&lt;update_guid&gt;006a84facf838390df1f5668da82618f&lt;/update_guid&gt;&lt;update_guid_history&gt;006a84facf838390df1f5668da82618f:-678555246&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="priority"&gt;15865c368307839044779cb6feaad31f&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 07:02:20&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="dl_definition_rel_set"&gt;dl_definition_rel_set&lt;/sys_db_object&gt;&lt;sys_id&gt;94f823d905244f06be6b2176da87ba44&lt;/sys_id&gt;&lt;sys_metadata&gt;9d5a44fa8383839044779cb6feaad377&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;priority&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="CYB Impact vs Urgency = Priority"&gt;022cbfae8303839044779cb6feaad351&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;dl_definition_rel_set_9d5a44fa8383839044779cb6feaad377&lt;/sys_update_name&gt;&lt;sys_update_version display_value="dl_definition_rel_set_9d5a44fa8383839044779cb6feaad377"&gt;406a84fa8383839044779cb6feaad390&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 07:02:20&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2088709283</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>81ea9ccb8307079044779cb6feaad34a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b39bd2c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>priority</target_name>
+<type>Setter Field Definitions</type>
+<update_domain>global</update_domain>
+<update_guid>51865c368807839085706d725daee827</update_guid>
+<update_guid_history>51865c368807839085706d725daee827:-2088709283,006a84facf838390df1f5668da82618f:-678555246</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_priority_lookup_impact</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="impact" table="x_1776078_cyber_0_priority_lookup"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>3</choice><choice_field/><choice_table/><column_label>Impact</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>impact</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_priority_lookup</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:30</sys_created_on><sys_id>31cbbf6e8303839044779cb6feaad3a1</sys_id><sys_name>Impact</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_priority_lookup_impact</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:34</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1647961131</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>81ea9ccb8307079044779cb6feaad38b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06aced2e00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Impact</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>7acbff6ea7038390979baa8eef3db99d</update_guid>
+<update_guid_history>7acbff6ea7038390979baa8eef3db99d:1647961131,12cbff6e430383905811575a4ebfa905:15966918</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_51c9336a8303839044779cb6feaad31c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>51c9336a8303839044779cb6feaad31c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_priority_lookup">55c9336a8303839044779cb6feaad30a</sys_security_acl><sys_update_name>sys_security_acl_role_51c9336a8303839044779cb6feaad31c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1370344142</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>81ea9ccb8307079044779cb6feaad390</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6bdd50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>55c9336ad7038390ec6b4fb967bd6420</update_guid>
+<update_guid_history>55c9336ad7038390ec6b4fb967bd6420:-1370344142</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_bc6018f683c3839044779cb6feaad390</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>2</impact><order>600</order><priority>3</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:35:42</sys_created_on><sys_id>bc6018f683c3839044779cb6feaad390</sys_id><sys_mod_count>4</sys_mod_count><sys_name>600</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_bc6018f683c3839044779cb6feaad390</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:28</sys_updated_on><urgency>3</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>1064098849</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>81ea9ccb8307079044779cb6feaad395</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a55ae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>600</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>3aaad4be850783908b16a8bab6d53175</update_guid>
+<update_guid_history>3aaad4be850783908b16a8bab6d53175:1064098849,10199cbafa0783908aae911011a1c398:879239816,e8f858ba9807839093edb0a3b22c34c4:209088577,140454febac383907c5cf84a75b14039:831361957,4f6058f6c6c38390249d5d92c94a33f9:1607604079</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_priority_lookup_impact</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="impact" table="x_1776078_cyber_0_priority_lookup" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>impact</element><name>x_1776078_cyber_0_priority_lookup</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:34</sys_created_on><sys_id>becbff6e8303839044779cb6feaad3ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>impact</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_priority_lookup_impact</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:34</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>impact</element><hint/><inactive>false</inactive><label>I1 — Full outage</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>10</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3acbff6e8303839044779cb6feaad3a1</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:10:45</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>impact</element><hint/><inactive>false</inactive><label>I2 — Widespread degradation</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>20</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b2cbff6e8303839044779cb6feaad3be</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:10:47</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>impact</element><hint/><inactive>false</inactive><label>I3 — Error, not preventing delivery of service</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>30</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3ecbff6e8303839044779cb6feaad3c0</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:10:50</sys_updated_on><value>3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>impact</element><hint/><inactive>false</inactive><label>I4 — No impact/informational</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>40</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b6cbff6e8303839044779cb6feaad3c3</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:10:52</sys_updated_on><value>4</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>79026422</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>85ea9ccb8307079044779cb6feaad34b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b0a9c030000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Impact</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>d3ba803e5783839008218e8bb9797abb</update_guid>
+<update_guid_history>d3ba803e5783839008218e8bb9797abb:79026422,7eba803e9c838390b32d6d42a4407c7f:-1620625222,c2ba803e7b8383903d0583eb831aca76:-144986254,25ba803eea838390c729b57eed9ad047:-1435126495,b2aa003eef83839025347a328d28b71d:1993486174,b1aaccfade83839024ff782941dd5c97:914689729,28aaccfa6c838390d4737987a877c18d:267903794,ab9a8cfa87838390086f54afd44eb3d5:-945564049,b6cbff6e2303839037af9bd27a80bac7:-1138893994</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_priority_lookup_urgency</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="urgency" table="x_1776078_cyber_0_priority_lookup"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>1</choice><choice_field/><choice_table/><column_label>Urgency</column_label><comments/><create_roles/><default_value>low</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>urgency</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_priority_lookup</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:31</sys_created_on><sys_id>82cbbf6e8303839044779cb6feaad3e3</sys_id><sys_name>Urgency</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_priority_lookup_urgency</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:06:09</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1724888176</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>85ea9ccb8307079044779cb6feaad38c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06acf5b1b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Urgency</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>d3eb77aef403839039a97c27cfc92713</update_guid>
+<update_guid_history>d3eb77aef403839039a97c27cfc92713:-1724888176,62cbff6e4e0383905769d5d5118abc71:-1105678389,0ecbff6e1c038390633c3d684c5fba01:-640673778</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_f8ce7ec6834b4f5044779cb6feaad3cf</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions/&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;60&lt;/order&gt;&lt;reverse_if_false&gt;false&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Priority is read-only&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-02 11:22:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f8ce7ec6834b4f5044779cb6feaad3cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Priority is read-only&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_f8ce7ec6834b4f5044779cb6feaad3cf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-02 11:22:22&lt;/sys_updated_on&gt;&lt;table&gt;x_1776078_cyber_0_cyber_incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1221573652</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>85ea9ccb8307079044779cb6feaad391</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a061db14be0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Priority is read-only</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>bedefe8e2f4b4f501357911cc416b1f6</update_guid>
+<update_guid_history>bedefe8e2f4b4f501357911cc416b1f6:1221573652</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_priority_lookup_urgency_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="urgency" label="Urgency" language="en" table="x_1776078_cyber_0_priority_lookup"><sys_documentation action="INSERT_OR_UPDATE"><element>urgency</element><help/><hint/><label>Urgency</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:31</sys_created_on><sys_id>86cbbf6e8303839044779cb6feaad3e8</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Urgency</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_priority_lookup_urgency_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:06:09</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1100460812</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>89ea9ccb8307079044779cb6feaad38d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06acf5b9d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Urgency</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>93eb77ae7b0383901cf72a26064f7c21</update_guid>
+<update_guid_history>93eb77ae7b0383901cf72a26064f7c21:-1100460812,e2cbff6ed7038390e91a1faaf8f4fa86:-1100460812,decbff6efb038390af9f76bf2a044e0a:1069582597</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_113050f683c3839044779cb6feaad3dd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>4</impact><order>1100</order><priority>3</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:34:56</sys_created_on><sys_id>113050f683c3839044779cb6feaad3dd</sys_id><sys_mod_count>5</sys_mod_count><sys_name>1100</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_113050f683c3839044779cb6feaad3dd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:44</sys_updated_on><urgency>1</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>305588491</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>89ea9ccb8307079044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a929e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>1100</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>76ba50ba89078390780db49e3f2d9b19</update_guid>
+<update_guid_history>76ba50ba89078390780db49e3f2d9b19:305588491,44199cbaab078390a54fdd4f421f525f:-1521824892,d8091cba53078390d9c500f350362531:-1642959765,bf04d4feecc38390e8e111f07c2cde06:-1875779997,add198328ac3839024c66fec4206eda4:1107729647,ff3090f608c383905fbacf9ff01b5cca:1551595264</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_65c9336a8303839044779cb6feaad322</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_priority_lookup</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>65c9336a8303839044779cb6feaad322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_65c9336a8303839044779cb6feaad322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1158270151</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>8dea9ccb8307079044779cb6feaad38e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6be290000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e5c9336a49038390359fb53dead61732</update_guid>
+<update_guid_history>e5c9336a49038390359fb53dead61732:-1158270151</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_6f109cb683c3839044779cb6feaad3cc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>4</impact><order>1200</order><priority>4</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:34:42</sys_created_on><sys_id>6f109cb683c3839044779cb6feaad3cc</sys_id><sys_mod_count>4</sys_mod_count><sys_name>1200</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_6f109cb683c3839044779cb6feaad3cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:47</sys_updated_on><urgency>2</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>1857356875</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>8dea9ccb8307079044779cb6feaad393</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a9f220000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>1200</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>ebba183e79078390ff7718b39035d04c</update_guid>
+<update_guid_history>ebba183e79078390ff7718b39035d04c:1857356875,0a091cbab4078390436be2855115c5cc:1441432046,89091cbab6078390c4008b7a49e94e3a:1115045814,a814d4feb1c38390a05b559e9e80ac0e:-1579803993,603050f6bac38390b96f1fcf9004e4c4:1342896961</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>dl_definition_rel_match_694a80fa8383839044779cb6feaad35f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition_rel_match"><dl_definition_rel_match action="INSERT_OR_UPDATE"><dl_definition display_value="CYB Impact vs Urgency = Priority">022cbfae8303839044779cb6feaad351</dl_definition><exact_match>true</exact_match><matcher_table>x_1776078_cyber_0_priority_lookup</matcher_table><matcher_table_field>urgency</matcher_table_field><source_table>x_1776078_cyber_0_cyber_incident</source_table><source_table_field>urgency</source_table_field><sys_class_name>dl_definition_rel_match</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:09:01</sys_created_on><sys_id>694a80fa8383839044779cb6feaad35f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>urgency</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>dl_definition_rel_match_694a80fa8383839044779cb6feaad35f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 06:09:01</sys_updated_on></dl_definition_rel_match></record_update>]]></payload>
+<payload_hash>331810993</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c1ea9ccb8307079044779cb6feaad349</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b08e9810000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>urgency</target_name>
+<type>Matcher Field Definitions</type>
+<update_domain>global</update_domain>
+<update_guid>445a04fa688383905611fb59cca99dd0</update_guid>
+<update_guid_history>445a04fa688383905611fb59cca99dd0:331810993</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_priority_lookup_priotity</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="priotity" table="x_1776078_cyber_0_priority_lookup" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>priotity</element><name>x_1776078_cyber_0_priority_lookup</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:32</sys_created_on><sys_id>d2cbff6e8303839044779cb6feaad32c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>priotity</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_priority_lookup_priotity</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:32</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priotity</element><hint/><inactive>false</inactive><label>1 - Critical</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5acbff6e8303839044779cb6feaad32b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:32</sys_updated_on><value>critical</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priotity</element><hint/><inactive>false</inactive><label>2 - High</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6ecbff6e8303839044779cb6feaad32f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:33</sys_updated_on><value>high</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priotity</element><hint/><inactive>false</inactive><label>3 - Moderate</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e6cbff6e8303839044779cb6feaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:33</sys_updated_on><value>moderate</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priotity</element><hint/><inactive>false</inactive><label>4 - Low</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>62cbff6e8303839044779cb6feaad335</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:33</sys_updated_on><value>low</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1615403274</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c1ea9ccb8307079044779cb6feaad38a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06acece940000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Priotity</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>62cbff6e3e038390f68a568320e1b439</update_guid>
+<update_guid_history>62cbff6e3e038390f68a568320e1b439:-1615403274</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_ddc9ff2a8303839044779cb6feaad3ec</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1776078_cyber_0_priority_lookup</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>ddc9ff2a8303839044779cb6feaad3ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_security_acl_ddc9ff2a8303839044779cb6feaad3ec</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1031541303</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c1ea9ccb8307079044779cb6feaad38f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6bcd30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>51c9ff2aff038390d6f576dd45f11ff3</update_guid>
+<update_guid_history>51c9ff2aff038390d6f576dd45f11ff3:-1031541303</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_79a0503a83c3839044779cb6feaad32a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>1</impact><order>100</order><priority>1</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:36:49</sys_created_on><sys_id>79a0503a83c3839044779cb6feaad32a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>100</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_79a0503a83c3839044779cb6feaad32a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:12</sys_updated_on><urgency>1</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>-604029726</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c1ea9ccb8307079044779cb6feaad394</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a17870000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>100</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>879a14be8307839084135fbf6dba7ca8</update_guid>
+<update_guid_history>879a14be8307839084135fbf6dba7ca8:-604029726,8c199cbae807839061872c9e391e4827:1782246961,14e854ba2c0783901db9eeaf22df34cd:1141393998,d3a0503a28c38390be61f79a778d76ec:-760575024</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>dl_definition_rel_set_e288587a8307839044779cb6feaad366</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="dl_definition_rel_set"&gt;&lt;dl_definition_rel_set action="DELETE"&gt;&lt;always_replace&gt;false&lt;/always_replace&gt;&lt;dl_definition display_value="CYB Impact vs Urgency = Priority"&gt;022cbfae8303839044779cb6feaad351&lt;/dl_definition&gt;&lt;matcher_table&gt;x_1776078_cyber_0_priority_lookup&lt;/matcher_table&gt;&lt;matcher_table_field&gt;priority&lt;/matcher_table_field&gt;&lt;source_table&gt;x_1776078_cyber_0_cyber_incident&lt;/source_table&gt;&lt;source_table_field&gt;priority&lt;/source_table_field&gt;&lt;sys_class_name&gt;dl_definition_rel_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 07:11:23&lt;/sys_created_on&gt;&lt;sys_id&gt;e288587a8307839044779cb6feaad366&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;priority&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;dl_definition_rel_set_e288587a8307839044779cb6feaad366&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 07:11:23&lt;/sys_updated_on&gt;&lt;/dl_definition_rel_set&gt;&lt;sys_update_version action="INSERT_OR_UPDATE"&gt;&lt;action&gt;INSERT_OR_UPDATE&lt;/action&gt;&lt;application display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/application&gt;&lt;file_path/&gt;&lt;instance_id&gt;17118310ff778618c812f8e4fc4fd900&lt;/instance_id&gt;&lt;instance_name&gt;dev284160&lt;/instance_name&gt;&lt;name&gt;dl_definition_rel_set_e288587a8307839044779cb6feaad366&lt;/name&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="dl_definition_rel_set"&gt;&lt;dl_definition_rel_set action="INSERT_OR_UPDATE"&gt;&lt;always_replace&gt;false&lt;/always_replace&gt;&lt;dl_definition display_value="CYB Impact vs Urgency = Priority"&gt;022cbfae8303839044779cb6feaad351&lt;/dl_definition&gt;&lt;matcher_table&gt;x_1776078_cyber_0_priority_lookup&lt;/matcher_table&gt;&lt;matcher_table_field&gt;priority&lt;/matcher_table_field&gt;&lt;source_table&gt;x_1776078_cyber_0_cyber_incident&lt;/source_table&gt;&lt;source_table_field&gt;priority&lt;/source_table_field&gt;&lt;sys_class_name&gt;dl_definition_rel_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 07:11:23&lt;/sys_created_on&gt;&lt;sys_id&gt;e288587a8307839044779cb6feaad366&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;priority&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_update_name&gt;dl_definition_rel_set_e288587a8307839044779cb6feaad366&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 07:11:23&lt;/sys_updated_on&gt;&lt;/dl_definition_rel_set&gt;&lt;/record_update&gt;]]&gt;&lt;/payload&gt;&lt;payload_hash&gt;-347292559&lt;/payload_hash&gt;&lt;record_name&gt;priority&lt;/record_name&gt;&lt;reverted_from/&gt;&lt;source&gt;874b3286834b4f5044779cb6feaad3ad&lt;/source&gt;&lt;source_table&gt;sys_update_set&lt;/source_table&gt;&lt;state&gt;current&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 07:11:23&lt;/sys_created_on&gt;&lt;sys_id&gt;b598587a8307839044779cb6feaad3b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_recorded_at&gt;1a06b4202790000001&lt;/sys_recorded_at&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 07:11:23&lt;/sys_updated_on&gt;&lt;type&gt;Setter Field Definitions&lt;/type&gt;&lt;update_guid&gt;7598587aed078390c6fc27b985abedb4&lt;/update_guid&gt;&lt;update_guid_history&gt;7598587aed078390c6fc27b985abedb4:-347292559&lt;/update_guid_history&gt;&lt;/sys_update_version&gt;&lt;sys_metadata_delete action="INSERT_OR_UPDATE"&gt;&lt;sys_audit_delete display_value="priority"&gt;eeb89c7a8307839044779cb6feaad3b5&lt;/sys_audit_delete&gt;&lt;sys_class_name&gt;sys_metadata_delete&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-04 07:11:59&lt;/sys_created_on&gt;&lt;sys_db_object display_value="" name="dl_definition_rel_set"&gt;dl_definition_rel_set&lt;/sys_db_object&gt;&lt;sys_id&gt;2fc2884d850649a1902cec7715bdcef9&lt;/sys_id&gt;&lt;sys_metadata&gt;e288587a8307839044779cb6feaad366&lt;/sys_metadata&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;priority&lt;/sys_name&gt;&lt;sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_package&gt;&lt;sys_parent display_value="CYB Impact vs Urgency = Priority"&gt;022cbfae8303839044779cb6feaad351&lt;/sys_parent&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cyber Incident Management"&gt;9c0eda15c31d03102d84f44ed4013148&lt;/sys_scope&gt;&lt;sys_scope_delete display_value=""&gt;0d8f7a564bdb46e7b48aa2d1524ce849&lt;/sys_scope_delete&gt;&lt;sys_update_name&gt;dl_definition_rel_set_e288587a8307839044779cb6feaad366&lt;/sys_update_name&gt;&lt;sys_update_version display_value="dl_definition_rel_set_e288587a8307839044779cb6feaad366"&gt;b598587a8307839044779cb6feaad3b5&lt;/sys_update_version&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-09-04 07:11:59&lt;/sys_updated_on&gt;&lt;/sys_metadata_delete&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2121078419</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c5ea9ccb8307079044779cb6feaad34a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b42910a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>priority</target_name>
+<type>Setter Field Definitions</type>
+<update_domain>global</update_domain>
+<update_guid>a6b810bad30783901b41c93e1f7a6295</update_guid>
+<update_guid_history>a6b810bad30783901b41c93e1f7a6295:2121078419,7598587aed078390c6fc27b985abedb4:-347292559</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1776078_cyber_0_priority_lookup_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" extends="dl_matcher" table="x_1776078_cyber_0_priority_lookup"><active>true</active><array>false</array><attributes>update_synch=true</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1776078_cyber_0_priority_lookup</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:39</sys_created_on><sys_id>84c97f2a8303839044779cb6feaad3fd</sys_id><sys_name>x_1776078_cyber_0_priority_lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_dictionary_x_1776078_cyber_0_priority_lookup_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:39</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1964704611</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c5ea9ccb8307079044779cb6feaad38b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6acde0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>14c9bf2a2b038390efadc8f4abf7622c</update_guid>
+<update_guid_history>14c9bf2a2b038390efadc8f4abf7622c:-1964704611</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_61c9336a8303839044779cb6feaad334</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:44</sys_created_on><sys_id>61c9336a8303839044779cb6feaad334</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_priority_lookup.admin</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_security_acl display_value="x_1776078_cyber_0_priority_lookup">65c9336a8303839044779cb6feaad322</sys_security_acl><sys_update_name>sys_security_acl_role_61c9336a8303839044779cb6feaad334</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:44</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-593050620</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c5ea9ccb8307079044779cb6feaad390</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6be690000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>x_1776078_cyber_0_priority_lookup.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>65c9336a40038390fbc6f9778fec3638</update_guid>
+<update_guid_history>65c9336a40038390fbc6f9778fec3638:-593050620</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_e04014f683c3839044779cb6feaad37a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>3</impact><order>900</order><priority>4</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:35:09</sys_created_on><sys_id>e04014f683c3839044779cb6feaad37a</sys_id><sys_mod_count>5</sys_mod_count><sys_name>900</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_e04014f683c3839044779cb6feaad37a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:38</sys_updated_on><urgency>3</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>-1468842305</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c5ea9ccb8307079044779cb6feaad395</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a7a630000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>900</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>9dba58bebb0783900da727762ce29011</update_guid>
+<update_guid_history>9dba58bebb0783900da727762ce29011:-1468842305,d8199cbae407839081ddbcecb7e17a6a:621538166,e2f890ba8907839046445672df0a473f:-926406604,c60454fe7ac38390717d8599224d85c0:-1564036061,e0f0d43aa2c38390ecc7dd40f773abee:402023203,c74054f644c38390a21ce701fd12ba8d:1148968560</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1776078_cyber_0_priority_lookup_priority</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="priority" table="x_1776078_cyber_0_priority_lookup" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>priority</element><name>x_1776078_cyber_0_priority_lookup</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:11</sys_created_on><sys_id>43d7503a8307839044779cb6feaad3e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>priority</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_choice_x_1776078_cyber_0_priority_lookup_priority</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:08:11</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>1 - Critical</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4bd7503a8307839044779cb6feaad3e9</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:16:17</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>2 - High</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4bd7503a8307839044779cb6feaad3e0</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:18:11</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>3 - Moderate</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>47d7503a8307839044779cb6feaad3e4</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:16:05</sys_updated_on><value>3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>priority</element><hint/><inactive>false</inactive><label>4 - Low</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 07:08:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cfd7503a8307839044779cb6feaad3e6</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:16:15</sys_updated_on><value>4</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-982950754</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c9ea9ccb8307079044779cb6feaad34b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b483deb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Priority</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>e52a147eb8078390c235da09cad7ef2b</update_guid>
+<update_guid_history>e52a147eb8078390c235da09cad7ef2b:-982950754,e1b9543e460783908e2da0a062ed5bdf:696501117,cdb9543eca078390806a4eadd87b158a:1006786947,54b9543e2a078390fb719dd3ee00a481:-676383901,62a9143e6b0783900b42dcb31366f6e1:-317479124,23799cfa08078390d127a6b99f1d0ffd:898629498,a71910fad50783904051d268f45c97b8:1176965280,4bd7503a6c078390fb399b0b2f7f67ed:-261928638</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_priority_lookup_impact_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="impact" label="Impact" language="en" table="x_1776078_cyber_0_priority_lookup"><sys_documentation action="INSERT_OR_UPDATE"><element>impact</element><help/><hint/><label>Impact</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 05:05:31</sys_created_on><sys_id>0acbbf6e8303839044779cb6feaad3a5</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Impact</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_priority_lookup_impact_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 05:05:34</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1624481683</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c9ea9ccb8307079044779cb6feaad38c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06aced4950000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup.Impact</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7acbff6e630383903a5ac209cfc675ff</update_guid>
+<update_guid_history>7acbff6e630383903a5ac209cfc675ff:1624481683,76cbff6ede038390166de557eea495ce:1624481683,5ecbff6ef1038390b00f5b61e469190d:2004213660</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_f1092e91c351431043481cedd401311f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="f1092e91c351431043481cedd401311f" sys_domain="global" table="x_1776078_cyber_0_cyber_incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>c89bb20a834b4f5044779cb6feaad3ec</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>409bb20a834b4f5044779cb6feaad3ee</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>0c9bb20a834b4f5044779cb6feaad3ee</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>c49bb20a834b4f5044779cb6feaad3ef</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>489bb20a834b4f5044779cb6feaad3fc</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>049bb20a834b4f5044779cb6feaad3fd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>cc9bb20a834b4f5044779cb6feaad3fd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>on_hold_reason</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>889bb20a834b4f5044779cb6feaad3fe</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>449bb20a834b4f5044779cb6feaad3ff</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>009bf20a834b4f5044779cb6feaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>c89bf20a834b4f5044779cb6feaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>persistent_threat</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>849bf20a834b4f5044779cb6feaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>notification_required_to_asd</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>409bf20a834b4f5044779cb6feaad302</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>0c9bf20a834b4f5044779cb6feaad302</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>impact</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>c49bf20a834b4f5044779cb6feaad303</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>809bf20a834b4f5044779cb6feaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>16</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>4c9bf20a834b4f5044779cb6feaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>acsc_incident_severity</element><position>17</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>089bf20a834b4f5044779cb6feaad305</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>18</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>c09bf20a834b4f5044779cb6feaad306</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>19</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>8c9bf20a834b4f5044779cb6feaad306</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>20</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>489bf20a834b4f5044779cb6feaad307</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>21</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>049bf20a834b4f5044779cb6feaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>22</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-02 11:07:59</sys_created_on><sys_id>cc9bf20a834b4f5044779cb6feaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1776078_cyber_0_cyber_incident" sys_domain="global" view="Default view">f1092e91c351431043481cedd401311f</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-02 11:07:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1776078_cyber_0_cyber_incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-05 02:01:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f1092e91c351431043481cedd401311f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1776078_cyber_0_cyber_incident</sys_name><sys_overrides/><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_ui_section_f1092e91c351431043481cedd401311f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-05 02:01:41</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1082602051</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>c9ea9ccb8307079044779cb6feaad391</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a061cde9e80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_cyber_incident</table>
+<target_name>Cyber Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>589bf20af54b4f50e71e14884b3b080e</update_guid>
+<update_guid_history>589bf20af54b4f50e71e14884b3b080e:1082602051,f8112f444626cb101fd64999b81c400e:1292942839,ddcc2dc095668b10f7b9f5454a176704:508971341</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1776078_cyber_0_priority_lookup__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Priority Lookup" language="en" table="x_1776078_cyber_0_priority_lookup"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Priority Lookup</label><language>en</language><name>x_1776078_cyber_0_priority_lookup</name><plural>Priority Lookups</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 04:56:39</sys_created_on><sys_id>5cc9bf2a8303839044779cb6feaad305</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Priority Lookup</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_documentation_x_1776078_cyber_0_priority_lookup__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 04:56:39</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1516235074</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>cdea9ccb8307079044779cb6feaad38d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06ac6ad480000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table>x_1776078_cyber_0_priority_lookup</table>
+<target_name>Priority Lookup</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>x_1776078_cyber_0_priority_lookup_17701cf683c3839044779cb6feaad342</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1776078_cyber_0_priority_lookup"><x_1776078_cyber_0_priority_lookup action="INSERT_OR_UPDATE"><active>true</active><impact>2</impact><order>400</order><priority>2</priority><sys_class_name>x_1776078_cyber_0_priority_lookup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 06:36:06</sys_created_on><sys_id>17701cf683c3839044779cb6feaad342</sys_id><sys_mod_count>4</sys_mod_count><sys_name>400</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>x_1776078_cyber_0_priority_lookup_17701cf683c3839044779cb6feaad342</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 07:20:22</sys_updated_on><urgency>1</urgency></x_1776078_cyber_0_priority_lookup></record_update>]]></payload>
+<payload_hash>1157996416</payload_hash>
+<remote_update_set display_value="Lab26 - Configure Impact/Urgency/Priority">01ea9ccb8307079044779cb6feaad348</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-09-05 01:59:55</sys_created_on>
+<sys_id>cdea9ccb8307079044779cb6feaad392</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a06b4a3cef0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-09-05 01:59:55</sys_updated_on>
+<table/>
+<target_name>400</target_name>
+<type>Priority Lookup</type>
+<update_domain>global</update_domain>
+<update_guid>91aa94be59078390d392ec30bf802907</update_guid>
+<update_guid_history>91aa94be59078390d392ec30bf802907:1157996416,98199cba690783905f4baa6d127967a5:-2100946253,cfe8d4bae1078390d8f8dbe0bf8f99d9:-738416851,baf314fe44c38390518a493fe8e6c33c:-1076697688,34805cf6e1c38390d53c7c76e3b56a30:1783337326</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
