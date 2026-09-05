@@ -7,9 +7,6 @@ This custom application has been created to provide hands experience, reinforcin
 ServiceNow PDI with Zurich patch 6 (build: glide-zurich-07-01-2025__patch6-01-16-2026).
 Lab content is based on CSA and CAD certifications.
 Update sets and data exports are exported as XML and committed per lab.
-   - Post lab06: adding in daily 1 hour code-challenges, where code functionality contributes to the project.
-      - Aim is to improve my JavaScript ability while studying CAD.
-      - Script files will be synced as .js files alongside the update set XMLs going forward.
 
 
 ## Key features/decisions
@@ -25,25 +22,24 @@ Update sets and data exports are exported as XML and committed per lab.
     - Recovery
  - Application access is initially restricted to MIM and security team roles
     - Access requests managed via IT portal
- - Cyber incident playbook added (CAD phase)
 
 
 ## AI assisted development
-Project build is done with the assistance of Claude (Anthropic) as a technical coach and lab guide.
- - Overall concepts for the project are provided me me.
+Project build is done with the assistance of Claude as a technical coach and lab guide.
+ - Ideas/concepts for the project are provided me me.
  - Architectural decisions are made based on a discussion with Claude about good practice.
  - Claude provided step-by-step lab instructions, design recommendations, and answered technical questions throughout the build.
  - All decisions, configuration, and code were reviewed and implemented by me.
  - Claude is operating in an advisory capacity.
  - Guidance was accepted, rejected, or modified based on my own experience as a process lead, judgement and testing.
 
-Coding challenges are supported by Claude acting as a tutor/coach.
+Code is written first pass by me, with socratic support from Claude when I get stuck.
  - Claude guides toward solutions through questions and hints rather than providing direct answers, only sharing code when explicitly requested. 
  - All code is written, tested and understood by me before being committed.
 
  **Note regarding use of Claude (26/8)**
-  - I've leant on Claude pretty heavily to create the design documents during this project. I started just wanting to get hands on experience with ServiceNow, which I have. I didn't realise design documents were needed for good development, now I do. My next projects will have documents all written by me.
-  - What I am finding invaluable is using Claude as a kind of 'technical sounding board' when talking through design considerations. Claude is prompting me to think about technical issues and limitations, and what 'good'' process looks like as I'm working through the application. I'm still working through the reasoning and making the decisions. I will continue to use Claude as a technical peer for brainstorming and exploring ideas for future projects. e.g. Having multiple regulatory notification pathways added complexity I wasn't expecting. Talking through the SLA triggers and mechanisms allowed me to come up with a workable design, without running into multiple roadblocks.
+  - I've leant on Claude pretty heavily to create the design documents during this project. I started just wanting to get hands on experience with ServiceNow, which I have. I didn't realise how much good design documentation is needed, now I do. My next projects will have documents all written by me.
+  - What I am finding invaluable is using Claude as a kind of 'technical sounding board'. Claude is prompting me to think about technical issues and limitations, and what 'good'' process looks like as I'm working through the application. I'm still working through the reasoning and making all the decisions. I will continue to use Claude as a technical peer for brainstorming and exploring ideas for future projects. e.g. Having multiple regulatory notification pathways added complexity I wasn't expecting. Talking through the SLA triggers and mechanisms allowed me to come up with a workable design, without running into multiple roadblocks.
 
 
 ## Technical references
@@ -67,12 +63,11 @@ servicenow-cyber-incident-app/
 | Branch | Purpose |
 |--------|---------|
 | `main` | Stable, completed work only. Merged into at the end of each completed lab. |
-| `csa-labs` | Active branch for CSA phase labs (Labs 01-15) and related coding challenges. |
-| `cad-labs` | Active branch for CAD phase labs (Labs 16-35) and related coding challenges. To be created when Lab 14 begins. |
+| `csa-labs` | Active branch for CSA phase labs (Labs 01-15). |
+| `cad-labs` | Active branch for CAD phase labs (Labs 16-35). |
 
 - All work is done in the phase branch and merged into `main` on lab completion.
-- Coding challenge `.js` files are committed to the active phase branch under `code-challenges/`.
-- Once the VSCode ServiceNow extension is configured, script files will be synced directly from the PDI into the active phase branch.
+
 
 ## Work indexes
 ### Lab index
@@ -109,8 +104,8 @@ servicenow-cyber-incident-app/
 | 25b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
 | 25b2 | More REG task SLA definitions | CAD | Completed |
 | 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Completed |
-| 26 | Configure Impact/Urgency/Priority | CAD | Planned |
-| 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Planned |
+| 26 | Configure Impact/Urgency/Priority | CAD | Completed |
+| 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Completed |
 | 28a | State transition UI Actions | CAD | Planned |
 | 28b | Special transition UI Actions | CAD | Planned |
 | 28c | REG task approval guard rails | CAD | Planned |
@@ -125,19 +120,6 @@ servicenow-cyber-incident-app/
 | 34a | IntegrationHub — outbound notification spoke | CAD | Planned |
 | 34b | Delegated Development walkthrough (role-play) | CAD | Planned |
 | 35 | App Engine Studio polish | CAD | Planned |
-
-
-### Code-challenges index
-| Challenge | Name | Status |
-|-----------|------|--------|
-| 01 | Containment Notes are mandatory at save (replaced by UI Policy) | Deprecated |
-| 02 | Auto assign new CYB tickets | Complete |
-| 03 | UI Action, escalate to persistent threat | Complete |
-| 04 | Object construction from a categorical input | Planned |
-| 05 | Parameter handling/validation on a multi-field input | Planned |
-| 06 | Array.indexOf()/.includes() against a multi-select field value | Planned |
-| 07 | Building a 2D lookup and querying it | Planned |
-| 08 | Error message patterns, reading a g_scratchpad value set by a Display Business Rule | Planned |
 
 
 ## Daily workflow overview
@@ -157,20 +139,11 @@ servicenow-cyber-incident-app/
    - Browser Studio → Source Control → Commit Changes → confirm push to portfolio repo
    - Merge dev branch to main via GitHub Pull Request (Compare & pull request)
 
-### Coding Challenge Sessions
-1. Check active branch in terminal
-2. Make script changes in ServiceNow PDI
-3. Export Update Set to VSCode folder
-4. Update README coding challenges index
-5. git add . → git commit -m → git push
-
 
 ## Project restore instructions
 1. Retrieve and commit update sets up to and including LAB06.
 2. Import the Lab06 Groups XML export file (Right-click Import XML on 'groups' list view). Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
 
-To restore code challenges:
- - Retrieve and commit all update sets in order as per your existing restore instructions
 
 ### Reference standards
 - [ACSC — Australian Cyber Security Centre](https://www.cyber.gov.au)
@@ -190,22 +163,17 @@ To restore code challenges:
 - Post-incident review table extending task
 - GlideRecord utility Script Include for common queries
 - IntegrationHub spoke for ASD notification (SOCI Act)
-- Severity-based MIM call-out info message (High/Critical severity)
 - After programmatic clearValue/setValue(''), re-selecting "Regulated/Essential Services" as the first choice
    doesn't register. Flagged for review in polish pass.
-
 
 **Form/field hygiene**
 - Strip Ref:MSG watermark string from inbound email reply text before writing to work_notes
 - HTML email styling refinement / content wording review once real outbound email tested
 
 **Process/governance**
-- State transition matrix — comprehensive rules for valid state changes across full lifecycle,
-  Closed = permanent read-only lock, On Hold return-state behaviour
 - Improve catalog item/flow (e.g. ticket updates when group auto-assign completes)
 
 **Other**
-- Business Impact Assessment application
 - PDI outbound email setup (real SMTP, inbox testing)
 
 
@@ -248,4 +216,5 @@ Cross-application extensions
  - 8/8: UI Actions use the 'onClick' field to call a function. The function is defined in the script field. gsftSubmit saves the form and triggers server-side script.
  - 9/8: Field level and wildcard access controls can get messy if you don't think about it properly before putting them in.
   - 25/8: SLA engine appears to run SLA creation scripts twice. Caused 'notificationDueTime' to be calculated in a way similar to +=, each time adding the SLA days onto itself. Fixed by creating a new GlideDateTime so notificationDueTime was a clone of the paymentTime's value, not a direct reference to it.
- - 25/8: Users need the ITIL role otherwise they can't edit fields inherited from task. NExt time I would likely create the CYB table completely from scratch as there weren't that many inherited fields I ended up using.
+ - 25/8: Users need the ITIL role otherwise they can't edit fields inherited from task. Next time I would likely create the CYB table completely from scratch as there weren't that many inherited fields I ended up using.
+ - 2/9: Complex SLAs are complicated to design. A simpler design is probably a better outcome.
