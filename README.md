@@ -106,7 +106,7 @@ servicenow-cyber-incident-app/
 | 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Completed |
 | 26 | Configure Impact/Urgency/Priority | CAD | Completed |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Completed |
-| 28a | State transition UI Actions | CAD | Planned |
+| 28a | State transition UI Actions | CAD | Completed |
 | 28b | Special transition UI Actions | CAD | Planned |
 | 29 | REG task approval guard rails | CAD | Planned |
 | 30a | UI Polish | CAD | Planned |
@@ -160,7 +160,6 @@ servicenow-cyber-incident-app/
 ### More ideas
 **CAD-phase scripting/architecture**
 - SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern
-- Build out the REG task workflow when Legal reject a notification assessment.
 - Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
 - Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
 - Cyber incident response playbook (Lab 22)
