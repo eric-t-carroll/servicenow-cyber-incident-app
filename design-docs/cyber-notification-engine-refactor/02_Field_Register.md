@@ -19,7 +19,7 @@
 | Configuration item | EXISTING | Reference (cmdb_ci) | Native `task` field — single primary CI |
 | Persistent threat | EXISTING | Boolean | Triggers alternative out-of-band playbook branch when ticked (Lab 03 / playbook Lab 22a — mechanism design parked for its own session) |
 | Notification required to ASD | MODIFIED (behaviour) | Boolean | Field itself unchanged. **Auto-tick rule replaced this session** — see §6.3, Regulatory Notification Task. Old rule ("Severity = Critical") retired. |
-| Short description | EXISTING | String | Native `task` field |
+| Short description | EXISTING | String | Native `task` field, mandatory |
 | Description | EXISTING | Text | Native `task` field |
 | State | MODIFIED (transitions) | Choice | Values unchanged: New, Investigation & Diagnosis, Containment, Eradication, Recovery, On Hold, Closed. **Full transition matrix and insert-time constraint added this session** — see Refactor Specification §D. |
 | ACSC Incident Severity | MODIFIED (values) | Choice | Was Critical/High/Medium/Low → now C1, C2, C3, C4, C6 (no C5). See §1.1 detail below. |

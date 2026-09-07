@@ -107,7 +107,7 @@ servicenow-cyber-incident-app/
 | 26 | Configure Impact/Urgency/Priority | CAD | Completed |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Completed |
 | 28a | State transition UI Actions | CAD | Completed |
-| 28b | Special transition UI Actions | CAD | Planned |
+| 28b | Special transition UI Actions | CAD | Completed |
 | 29 | REG task approval guard rails | CAD | Planned |
 | 30a | UI Polish | CAD | Planned |
 | 30b | End-to-end application testing and go-live polish | CAD | Planned |
@@ -159,7 +159,8 @@ servicenow-cyber-incident-app/
 
 ### More ideas
 **CAD-phase scripting/architecture**
-- SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern
+- SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern.
+- A way to return to Investigation & Diagnosis state.
 - Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
 - Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
 - Cyber incident response playbook (Lab 22)

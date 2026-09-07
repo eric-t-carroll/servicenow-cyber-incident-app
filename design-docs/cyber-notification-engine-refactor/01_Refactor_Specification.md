@@ -198,12 +198,13 @@ Sort/filter the Cyber Incident dashboard by Priority from Investigation & Diagno
 
 | From | Allowed To |
 |---|---|
-| New | Investigation & Diagnosis; Closed *(False Positive only)* |
-| Investigation & Diagnosis | Containment; On Hold; Closed *(False Positive only)* |
-| Containment | Eradication; Investigation & Diagnosis; On Hold; Closed *(False Positive only)* |
-| Eradication | Recovery; Containment; Investigation & Diagnosis; On Hold |
-| Recovery | Closed; Eradication; Containment; Investigation & Diagnosis; On Hold |
-| On Hold | Investigation & Diagnosis; Containment; Eradication; Recovery; Closed *(False Positive only)* |
+| New | Investigation & Diagnosis; Resolved *(False Positive only)* |
+| Investigation & Diagnosis | Containment; On Hold; Resolved *(False Positive only)* |
+| Containment | Investigation & Diagnosis; Eradication; On Hold |
+| Eradication | Investigation & Diagnosis; Recovery; On Hold |
+| Recovery | Investigation & Diagnosis; Resolved; On Hold |
+| On Hold | Investigation & Diagnosis; Containment; Eradication; Recovery |
+| Resolved | Investigation & Diagnosis; Closed |
 | Closed | *(none — terminal state)* |
 
 **Key decisions baked into this matrix:**
@@ -283,9 +284,9 @@ One button per valid next state, visible only when that transition is valid from
 
 ### H.2 Special transition buttons
 
-- **Return to Containment** — visible from Eradication, Recovery, and On Hold (where pre-hold state was Eradication or Recovery). Triggers a confirmation dialog before firing: *"This will return the incident to Containment — containment actions will need to be reassessed. Are you sure?"* This is the "we didn't clean it up properly" regression path.
-- **Close as False Positive** — separate button from the standard Close, visible from New, Investigation & Diagnosis, Containment, and On Hold. Carries the False Positive exemption logic (waives Classification + Containment tab mandates). Keeps the False Positive path explicit and distinct from a normal closure.
-- **On Hold** — visible from Investigation & Diagnosis, Containment, Eradication, Recovery. Stores the current state in a hidden field (`pre_hold_state`) before transitioning — used by Resume to return to the correct state.
+- **Re-Investigate** — visible from Containment, Eradication, Recovery, and Resolved. Triggers a confirmation dialog: *"This will return the incident to Investigation & Diagnosis for reassessment. Are you sure?"* This is the "we didn't clean it up properly" regression path.
+- **False Positive** — visible from New and Investigation & Diagnosis. Carries the False Positive exemption logic (waives mandatory fields except resolution notes and resolution code). Only New and Investigation & Diagnosis are states where no containment-related action could plausibly have occurred yet. A False Positive determined later can still close via normal state progression through Resolved.
+- **On Hold/Off Hold** — visible from Investigation & Diagnosis, Containment, Eradication, Recovery. Stores the current state in a hidden field (`pre_hold_state`) before transitioning — use Off Hold to return to the previous state. Also records a work_note when a reason for going on hold is saved (via business rule).
 - **Resume** — visible when State = On Hold. Returns to the state stored in `pre_hold_state`.
 
 ### H.3 Build notes
