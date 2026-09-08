@@ -156,8 +156,6 @@ ACSC Severity is fully decoupled from the SOCI notification pathway. It is no lo
 
 **Rationale:** ACSC Severity is a rating assigned externally by ACSC itself, reflecting events as observed across industry — it may not be confirmed until *after* this organisation has already reported to ACSC, and confirmation is entirely out of this organisation's control. It also plays no role in the internal SOCI/NDB determination process. Making it mandatory before or during the notification pathway forces a value that may not yet exist, and gates a time-critical statutory workflow on an external, uncontrollable input.
 
-**Build note:** the "Create SOCI Notification" UI action's condition script originally included `&& !current.acsc_incident_severity.nil()`, left over from the pre-decoupling design. Removed to align with the decoupling above — this was the one place the old dependency still lived in the actual build.
-
 **Mandatory point:** moved to Resolution — see Subsystem D.1, folded into the existing Closed-state mandatory field group. Purely a reporting/trend-analysis field at that point, not an input to any calculation.
 
 **Field location:** parent Cyber Incident (single source of truth). Dot-walked into the ASD/SOCI Regulatory Notification Task for reference only. Applies to ASD/SOCI notification pathway only — not present on OAIC/NDB or Ransomware Payment tasks.

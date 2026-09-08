@@ -108,9 +108,10 @@ servicenow-cyber-incident-app/
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Completed |
 | 28a | State transition UI Actions | CAD | Completed |
 | 28b | Special transition UI Actions | CAD | Completed |
-| 29 | REG task approval guard rails | CAD | Planned |
-| 30a | UI Polish | CAD | Planned |
-| 30b | End-to-end application testing and go-live polish | CAD | Planned |
+| 29 | REG task post approval workflow & create SOCI REG via Business Rule | CAD | Completed |
+| 30 | CYB categorisation review | CAD | Planned |
+| 31a | UI Polish | CAD | Planned |
+| 31b | End-to-end application testing and go-live polish | CAD | Planned |
 
 - Completion of these labs brings the app to a point where it can be shared for the purpose of getting a junior developer role.
 
@@ -225,3 +226,4 @@ Cross-application extensions
  - 25/8: Users need the ITIL role otherwise they can't edit fields inherited from task. Next time I would likely create the CYB table completely from scratch as there weren't that many inherited fields I ended up using.
  - 2/9: Complex SLAs are complicated to design. A simpler design is probably a better outcome.
  - 5/9: Decided to cap the project at lab29. It's a good place to put some time into polish, with the aim of actually showing it to work colleagues. Remaining labs will still be worked on, but as a version 2 release. The other objectives (passing the CAD exam & reinforcing CAD learning post exam) have been accomplished to a good extent. I feel like I could start a junior developer role and actually bring something to the table.
+ - 8/9: Was unable to setAbortAction(true) from the REG task. The business rule works in list view, only fails in a form save. Root cause unidentified; ruled out condition logic, rule order, session context, table scope, and interference from other scripts. Implemented a client script that removed the state I was trying to abort save on, in specific scenarios.
