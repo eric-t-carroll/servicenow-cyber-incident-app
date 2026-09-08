@@ -106,20 +106,27 @@ servicenow-cyber-incident-app/
 | 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Completed |
 | 26 | Configure Impact/Urgency/Priority | CAD | Completed |
 | 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Completed |
-| 28a | State transition UI Actions | CAD | Planned |
-| 28b | Special transition UI Actions | CAD | Planned |
-| 28c | REG task approval guard rails | CAD | Planned |
-| 28d | UI Polish | CAD | Planned |
-| 28e | End-to-end application testing (pre-Flow Designer) | CAD | Planned |
-| 29 | Flow Designer — automated lifecycle workflow | CAD | Planned |
-| 30 | Script Includes & GlideRecord API (general CAD coverage) | CAD | Planned |
-| 31 | Playbook Designer — standard response playbook | CAD | Planned |
-| 32 | Playbook Designer — persistent threat branch | CAD | Planned |
-| 32b | End-to-end application testing (post-Playbooks) | CAD | Planned |
-| 33 | ATF — automated testing | CAD | Planned |
-| 34a | IntegrationHub — outbound notification spoke | CAD | Planned |
-| 34b | Delegated Development walkthrough (role-play) | CAD | Planned |
-| 35 | App Engine Studio polish | CAD | Planned |
+| 28a | State transition UI Actions | CAD | Completed |
+| 28b | Special transition UI Actions | CAD | Completed |
+| 29 | REG task post approval workflow & create SOCI REG via Business Rule | CAD | Completed |
+| 30 | CYB categorisation review | CAD | Planned |
+| 31a | UI Polish | CAD | Planned |
+| 31b | End-to-end application testing and go-live polish | CAD | Planned |
+
+- Completion of these labs brings the app to a point where it can be shared for the purpose of getting a junior developer role.
+
+### Release V2 - Lab index
+| Lab | Name | Phase | Status |
+|-----|------|-------|--------|
+| 01 | Flow Designer — automated lifecycle workflow | CAD | Planned |
+| 02 | Script Includes & GlideRecord API (general CAD coverage) | CAD | Planned |
+| 03 | Playbook Designer — standard response playbook | CAD | Planned |
+| 04 | Playbook Designer — persistent threat branch | CAD | Planned |
+| 05 | End-to-end application testing (post-Playbooks) | CAD | Planned |
+| 06 | ATF — automated testing | CAD | Planned |
+| 07 | IntegrationHub — outbound notification spoke | CAD | Planned |
+| 08 | Delegated Development walkthrough (role-play) | CAD | Planned |
+| 09 | App Engine Studio polish | CAD | Planned |
 
 
 ## Daily workflow overview
@@ -151,10 +158,10 @@ servicenow-cyber-incident-app/
 - [ServiceNow Zurich release notes](https://docs.servicenow.com)
 
 
-### Future work
+### More ideas
 **CAD-phase scripting/architecture**
-- SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern
-- Build out the REG task workflow when Legal reject a notification assessment.
+- SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern.
+- A way to return to Investigation & Diagnosis state.
 - Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
 - Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
 - Cyber incident response playbook (Lab 22)
@@ -218,3 +225,5 @@ Cross-application extensions
   - 25/8: SLA engine appears to run SLA creation scripts twice. Caused 'notificationDueTime' to be calculated in a way similar to +=, each time adding the SLA days onto itself. Fixed by creating a new GlideDateTime so notificationDueTime was a clone of the paymentTime's value, not a direct reference to it.
  - 25/8: Users need the ITIL role otherwise they can't edit fields inherited from task. Next time I would likely create the CYB table completely from scratch as there weren't that many inherited fields I ended up using.
  - 2/9: Complex SLAs are complicated to design. A simpler design is probably a better outcome.
+ - 5/9: Decided to cap the project at lab29. It's a good place to put some time into polish, with the aim of actually showing it to work colleagues. Remaining labs will still be worked on, but as a version 2 release. The other objectives (passing the CAD exam & reinforcing CAD learning post exam) have been accomplished to a good extent. I feel like I could start a junior developer role and actually bring something to the table.
+ - 8/9: Was unable to setAbortAction(true) from the REG task. The business rule works in list view, only fails in a form save. Root cause unidentified; ruled out condition logic, rule order, session context, table scope, and interference from other scripts. Implemented a client script that removed the state I was trying to abort save on, in specific scenarios.

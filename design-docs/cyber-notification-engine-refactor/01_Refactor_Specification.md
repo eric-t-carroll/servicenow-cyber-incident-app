@@ -156,8 +156,6 @@ ACSC Severity is fully decoupled from the SOCI notification pathway. It is no lo
 
 **Rationale:** ACSC Severity is a rating assigned externally by ACSC itself, reflecting events as observed across industry — it may not be confirmed until *after* this organisation has already reported to ACSC, and confirmation is entirely out of this organisation's control. It also plays no role in the internal SOCI/NDB determination process. Making it mandatory before or during the notification pathway forces a value that may not yet exist, and gates a time-critical statutory workflow on an external, uncontrollable input.
 
-**Build note:** the "Create SOCI Notification" UI action's condition script originally included `&& !current.acsc_incident_severity.nil()`, left over from the pre-decoupling design. Removed to align with the decoupling above — this was the one place the old dependency still lived in the actual build.
-
 **Mandatory point:** moved to Resolution — see Subsystem D.1, folded into the existing Closed-state mandatory field group. Purely a reporting/trend-analysis field at that point, not an input to any calculation.
 
 **Field location:** parent Cyber Incident (single source of truth). Dot-walked into the ASD/SOCI Regulatory Notification Task for reference only. Applies to ASD/SOCI notification pathway only — not present on OAIC/NDB or Ransomware Payment tasks.
@@ -198,12 +196,13 @@ Sort/filter the Cyber Incident dashboard by Priority from Investigation & Diagno
 
 | From | Allowed To |
 |---|---|
-| New | Investigation & Diagnosis; Closed *(False Positive only)* |
-| Investigation & Diagnosis | Containment; On Hold; Closed *(False Positive only)* |
-| Containment | Eradication; Investigation & Diagnosis; On Hold; Closed *(False Positive only)* |
-| Eradication | Recovery; Containment; Investigation & Diagnosis; On Hold |
-| Recovery | Closed; Eradication; Containment; Investigation & Diagnosis; On Hold |
-| On Hold | Investigation & Diagnosis; Containment; Eradication; Recovery; Closed *(False Positive only)* |
+| New | Investigation & Diagnosis; Resolved *(False Positive only)* |
+| Investigation & Diagnosis | Containment; On Hold; Resolved *(False Positive only)* |
+| Containment | Investigation & Diagnosis; Eradication; On Hold |
+| Eradication | Investigation & Diagnosis; Recovery; On Hold |
+| Recovery | Investigation & Diagnosis; Resolved; On Hold |
+| On Hold | Investigation & Diagnosis; Containment; Eradication; Recovery |
+| Resolved | Investigation & Diagnosis; Closed |
 | Closed | *(none — terminal state)* |
 
 **Key decisions baked into this matrix:**
@@ -283,9 +282,9 @@ One button per valid next state, visible only when that transition is valid from
 
 ### H.2 Special transition buttons
 
-- **Return to Containment** — visible from Eradication, Recovery, and On Hold (where pre-hold state was Eradication or Recovery). Triggers a confirmation dialog before firing: *"This will return the incident to Containment — containment actions will need to be reassessed. Are you sure?"* This is the "we didn't clean it up properly" regression path.
-- **Close as False Positive** — separate button from the standard Close, visible from New, Investigation & Diagnosis, Containment, and On Hold. Carries the False Positive exemption logic (waives Classification + Containment tab mandates). Keeps the False Positive path explicit and distinct from a normal closure.
-- **On Hold** — visible from Investigation & Diagnosis, Containment, Eradication, Recovery. Stores the current state in a hidden field (`pre_hold_state`) before transitioning — used by Resume to return to the correct state.
+- **Re-Investigate** — visible from Containment, Eradication, Recovery, and Resolved. Triggers a confirmation dialog: *"This will return the incident to Investigation & Diagnosis for reassessment. Are you sure?"* This is the "we didn't clean it up properly" regression path.
+- **False Positive** — visible from New and Investigation & Diagnosis. Carries the False Positive exemption logic (waives mandatory fields except resolution notes and resolution code). Only New and Investigation & Diagnosis are states where no containment-related action could plausibly have occurred yet. A False Positive determined later can still close via normal state progression through Resolved.
+- **On Hold/Off Hold** — visible from Investigation & Diagnosis, Containment, Eradication, Recovery. Stores the current state in a hidden field (`pre_hold_state`) before transitioning — use Off Hold to return to the previous state. Also records a work_note when a reason for going on hold is saved (via business rule).
 - **Resume** — visible when State = On Hold. Returns to the state stored in `pre_hold_state`.
 
 ### H.3 Build notes
