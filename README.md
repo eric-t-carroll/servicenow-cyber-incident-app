@@ -109,7 +109,7 @@ servicenow-cyber-incident-app/
 | 28a | State transition UI Actions | CAD | Completed |
 | 28b | Special transition UI Actions | CAD | Completed |
 | 29 | REG task post approval workflow & create SOCI REG via Business Rule | CAD | Completed |
-| 30 | CYB categorisation review | CAD | Planned |
+| 30 | CYB categorisation review | CAD | Completed |
 | 31a | UI Polish | CAD | Planned |
 | 31b | End-to-end application testing and go-live polish | CAD | Planned |
 
