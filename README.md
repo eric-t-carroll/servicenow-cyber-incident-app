@@ -110,8 +110,7 @@ servicenow-cyber-incident-app/
 | 28b | Special transition UI Actions | CAD | Completed |
 | 29 | REG task post approval workflow & create SOCI REG via Business Rule | CAD | Completed |
 | 30 | CYB categorisation review | CAD | Completed |
-| 31a | UI Polish | CAD | Planned |
-| 31b | End-to-end application testing and go-live polish | CAD | Planned |
+| 31 | End-to-end application testing and go-live polish | CAD | Completed |
 
 - Completion of these labs brings the app to a point where it can be shared for the purpose of getting a junior developer role.
 
