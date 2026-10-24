@@ -149,6 +149,7 @@ servicenow-cyber-incident-app/
 ## Project restore instructions
 1. Retrieve and commit update sets up to and including LAB06.
 2. Import the Lab06 Groups XML export file (Right-click Import XML on 'groups' list view). Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
+ - **Make sure groups have ITIL role too, especially Legal otherwise they will not be able to approve**
 
 
 ### Reference standards
