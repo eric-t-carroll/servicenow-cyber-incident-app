@@ -6,13 +6,17 @@ I built it on a personal developer instance as hands-on practice for the Service
 
 **Status.** v1.0 is complete (Labs 01 to 31). v2 is planned, see the roadmap below.
 
-**Application source.** The app is also committed directly from ServiceNow Studio to [servicenow-studio-cyb-inc-app](https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app), which holds the current version.
+**Application source.** While this repo captures the application in update sets, it is also committed directly from ServiceNow Studio to [servicenow-studio-cyb-inc-app](https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app).
 
 ## Screenshots
 
 <img src="docs/screenshots/cyber-incident-form.png" alt="Cyber incident in the Containment phase with SOCI and NDB notification tasks pending approval" width="700">
 
-One incident, two regulatory pathways. The data breach triggers a Privacy Act notifiable data breach assessment, and the full outage meets the SOCI Act "relevant impact" threshold. Both notification tasks are waiting on legal approval.
+Two regulatory pathways:
+- the data breach triggers a Privacy Act notifiable data breach assessment
+- the full outage meets the SOCI Act "relevant impact" threshold.
+
+Both notification tasks are waiting on legal approval.
 
 <img src="docs/screenshots/regulatory-task-approval.png" alt="Regulatory notification task with legal approval and a running SLA" width="700">
 
