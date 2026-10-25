@@ -1,12 +1,13 @@
 # ServiceNow Cyber Incident Custom Application
 
-This custom application has been created to provide hands experience, reinforcing the ServiceNow Certified System Administration (CSA) and Certified Application Developer (CAD) courses. I am starting this project after completing my CSA and am just starting CAD course content.
+This custom application has been created to provide hands experience, reinforcing the ServiceNow Certified System Administration (CSA) and Certified Application Developer (CAD) courses. I starting this project after completing my CSA and was learning CAD course content.
 
 
 ## Project context
 ServiceNow PDI with Zurich patch 6 (build: glide-zurich-07-01-2025__patch6-01-16-2026).
 Lab content is based on CSA and CAD certifications.
 Update sets and data exports are exported as XML and committed per lab.
+The application was also committed to a separate repo via ServiceNow Studio and can be found here > https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app
 
 
 ## Key features/decisions
