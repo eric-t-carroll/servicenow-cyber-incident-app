@@ -18,7 +18,9 @@ Two regulatory pathways:
 
 Both notification tasks are waiting on legal approval.
 
-<img src="docs/screenshots/regulatory-task-approval.png" alt="Regulatory notification task with legal approval and a running SLA" width="700">
+<img src="docs/screenshots/regulatory-task-approval.png" alt="Regulatory notification task with legal approval" width="700">
+
+<img src="docs/screenshots/regulatory-task-SLA.png" alt="Regulatory notification task SLA in progress" width="700">
 
 A regulatory notification task with its legal approval and SLA.
 
