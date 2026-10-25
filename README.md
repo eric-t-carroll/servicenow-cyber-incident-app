@@ -166,12 +166,10 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 - SLA rebuild with one scripted SLA per stage: Investigate, Contain and Eradicate, Recover.
 - A way to return to the Investigation and Diagnosis state.
 - Persistent threat mode: a continuous top-of-form banner, suppressing standard notifications, and a manual/out-of-band communications plan in the playbook.
-- A dedicated Containment tab (Containment Method and Notes only), hidden by state.
 - Problem record auto-creation on incident closure.
-- A change advisory gate between containment and eradication.
+- A change advisory gate between containment, eradication, recovery (where required).
 - A post-incident review table extending Task.
 - A GlideRecord utility script include for common queries.
-- Strip the Ref:MSG watermark from inbound email replies before writing to work notes.
 - Refine HTML email styling and wording once real outbound email is tested.
 - Improve the access request catalog item, e.g. ticket updates when group auto-assignment completes.
 - Set up real outbound email (SMTP) on the PDI.
