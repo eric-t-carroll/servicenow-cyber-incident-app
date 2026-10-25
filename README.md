@@ -1,231 +1,205 @@
-# ServiceNow Cyber Incident Custom Application
+# ServiceNow Cyber Incident Management Application
 
-This custom application has been created to provide hands experience, reinforcing the ServiceNow Certified System Administration (CSA) and Certified Application Developer (CAD) courses. I starting this project after completing my CSA and was learning CAD course content.
+A custom scoped ServiceNow application for running cyber incidents in line with Australian Cyber Security Centre (ACSC) guidance. It tracks an incident through containment, eradication and recovery, and creates notification tasks required to meet the regulatory reporting obligations of the SOCI Act, the Cyber Security Act (ransomware payments) and the Privacy Act (notifiable data breaches).
 
+I built it on a personal developer instance as hands-on practice for the ServiceNow CSA and CAD certifications, and I've since passed both. My day job is an IT Service Management Process Lead for Major Incident and Problem Management, so the process design comes from my many years of experience in ITIL roles.
 
-## Project context
-ServiceNow PDI with Zurich patch 6 (build: glide-zurich-07-01-2025__patch6-01-16-2026).
-Lab content is based on CSA and CAD certifications.
-Update sets and data exports are exported as XML and committed per lab.
-The application was also committed to a separate repo via ServiceNow Studio and can be found here > https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app
+**Status.** v1.0 is complete (Labs 01 to 31). v2 is planned, see the roadmap below.
 
+**Application source.** The app is also committed directly from ServiceNow Studio to [servicenow-studio-cyb-inc-app](https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app), which holds the current version.
 
-## Key features/decisions
- - Custom Cyber Incident Application extending the 'task' table.
-    - Decision made not to extend the 'incident' table so records are kept separate from default incident lists and views (security requirement).
-    - Also keeps core tables safe from customisation and risk of incompatibility with future versions.
- - Australian Cyber Security Centre (ACSC) aligned fields
- - 'Persistent threat' flag triggers out-of-band communications procedures
- - Phase gated form sections align to the cyber incident lifecycle
-    - Investigation & diagnosis
-    - Containment
-    - Eradication
-    - Recovery
- - Application access is initially restricted to MIM and security team roles
-    - Access requests managed via IT portal
+## Screenshots
 
+<img src="docs/screenshots/cyber-incident-form.png" alt="Cyber incident in the Containment phase with SOCI and NDB notification tasks pending approval" width="700">
 
-## AI assisted development
-Project build is done with the assistance of Claude as a technical coach and lab guide.
- - Ideas/concepts for the project are provided me me.
- - Architectural decisions are made based on a discussion with Claude about good practice.
- - Claude provided step-by-step lab instructions, design recommendations, and answered technical questions throughout the build.
- - All decisions, configuration, and code were reviewed and implemented by me.
- - Claude is operating in an advisory capacity.
- - Guidance was accepted, rejected, or modified based on my own experience as a process lead, judgement and testing.
+One incident, two regulatory pathways. The data breach triggers a Privacy Act notifiable data breach assessment, and the full outage meets the SOCI Act "relevant impact" threshold. Both notification tasks are waiting on legal approval.
 
-Code is written first pass by me, with socratic support from Claude when I get stuck.
- - Claude guides toward solutions through questions and hints rather than providing direct answers, only sharing code when explicitly requested. 
- - All code is written, tested and understood by me before being committed.
+<img src="docs/screenshots/regulatory-task-approval.png" alt="Regulatory notification task with legal approval and a running SLA" width="700">
 
- **Note regarding use of Claude (26/8)**
-  - I've leant on Claude pretty heavily to create the design documents during this project. I started just wanting to get hands on experience with ServiceNow, which I have. I didn't realise how much good design documentation is needed, now I do. My next projects will have documents all written by me.
-  - What I am finding invaluable is using Claude as a kind of 'technical sounding board'. Claude is prompting me to think about technical issues and limitations, and what 'good'' process looks like as I'm working through the application. I'm still working through the reasoning and making all the decisions. I will continue to use Claude as a technical peer for brainstorming and exploring ideas for future projects. e.g. Having multiple regulatory notification pathways added complexity I wasn't expecting. Talking through the SLA triggers and mechanisms allowed me to come up with a workable design, without running into multiple roadblocks.
+A regulatory notification task with its legal approval and SLA.
 
+<img src="docs/screenshots/cyber-dashboard.png" alt="Cyber incident dashboard" width="700">
 
-## Technical references
-- Scope name: cyber_0
-- Full scope prefix: x_1776078_cyber_0
-- Cyber Incident table: x_1776078_cyber_0_cyber_incident
-- Number prefix: CYB (starting at CYB1000001)
-- Parent table: task
+The cyber incident dashboard.
+
+## Key design decisions
+
+- **Extends Task, not Incident.** Keeps cyber records out of the standard incident lists and views. It also keeps the core Incident table free of customisations that could impact future platform upgrades. In hindsight, I would create a custom table from scratch for this application if I did it again, so the records aren't mixed in with task table views.
+- **Phase-gated lifecycle.** Form sections follow the cyber incident lifecycle: Investigation and Diagnosis, Containment, Eradication and Recovery. A state transition matrix is enforced server-side, with a UI action for each allowed transition. These UI actions are currently a bit 'clunky' and need an uplift to prompt the user for mandatory data before attempting to move to the next state.
+- **Regulatory notifications are their own tasks.** A Regulatory Notification Task table holds SOCI Act (ASD), Privacy Act notifiable data breach (OAIC) and ransomware payment reporting tasks. Business rules create them from the incident's impact and data classification, using a SOCI classification matrix lookup.
+- **Suggested, then confirmed.** The app suggests a SOCI classification and a cyber analyst confirms it. A person makes the final call because the classification sets the regulatory SLA. Notification tasks need legal approval, and the approval outcome and task state keep each other in step.
+- **SLAs with configurable targets.** Notification SLAs have documented reset, stop and cancel behaviour. Targets live in application properties which can be modified easily by a Cyber Incident Admin, and a scheduled job rolls up SLA status.
+- **Priority never goes down.** Priority is mandatory from investigation onwards because it decides whether Major Incident Management gets involved. Once assessed, it isn't downgraded, so post incident reporting captures what really happened.
+- **Locked-down access.** ACLs restrict the app to Major Incident Management, Cyber Analyst roles and Legal roles. Closed records are locked. People request access through an IT portal catalog item with an approval step. Once approved, the requestor is automatically added to the group they requested access to.
+- **Persistent threat flag.** The flag drives the Open Persistent Threats report and currently triggers an email alert. That alert is a leftover from an early lab and will be removed. A persistent threat means normal communication channels can't be trusted, so v2 will replace it with a playbook that stops standard notifications and switches the response to a manual communications plan. The flag is hidden on the form until then.
+
+The app also has reports and a dashboard, affected CIs linked from the CMDB, inbound email actions that write replies to work notes, and impact, urgency and priority configuration.
+
+## Installing
+
+**From source control.** In ServiceNow Studio, import the application from the [Studio repo](https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app.git).
+
+**From update sets.**
+1. Apply the update sets in lab order, starting with `update-sets/csa-labs` and then `update-sets/cad-labs`.
+2. Import the groups XML from `data-exports` (right-click, Import XML on the groups list view).
+3. Reassign roles and members for the Major Incident Management and Cyber Security groups.
+4. Give the groups the ITIL role, including Legal. Without it, users can't edit fields inherited from Task and Legal can't approve notification tasks.
+5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 generated incidents spread over a year, so the dashboard has something to show. Load it into the import set table with System Import Sets → Load Data, then run the "Sample Cyber Incidents" transform map. The map runs with business rules off, so the historical records keep their closed states and don't create notification tasks, SLAs or alerts. The data is fictional.
+
+## Built with
+
+- ServiceNow PDI, Zurich patch 6 (build: glide-zurich-07-01-2025__patch6-01-16-2026)
+- Scope: `x_1776078_cyber_0` (scope name `cyber_0`)
+- Main table: `x_1776078_cyber_0_cyber_incident`, extends `task`
+- Number prefix: CYB, starting at CYB1000001
+
+## AI-assisted development
+
+I built this with Claude as a technical coach and lab guide. The project ideas were mine. Claude gave step-by-step lab instructions, design recommendations and answers to technical questions. I made the decisions, and I accepted, rejected or changed its advice based on my experience as a process lead and on testing.
+
+For most labs I wrote the code first, and Claude helped with questions and hints when I got stuck, sharing code only when I asked. Debugging in the later labs was closer to pair programming, with Claude helping in real time. I've tested and understand everything committed here.
+
+I leaned on Claude heavily to draft the design documents. I started out just wanting hands-on ServiceNow experience and didn't realise how much design documentation a build needs. Now I do, and I'll write my own for future projects.
+
+The most useful part was having a technical sounding board. Multiple regulatory notification pathways that have different start time criteria added complexity I wasn't expecting, and talking through the SLA triggers got me to a design that worked without hitting a string of roadblocks.
 
 ## Repository structure
+
 ```
 servicenow-cyber-incident-app/
-├── data-exports/                   # XML exports with user and group data
+├── data-exports/        # User and group XML exports. Also contains sample incident data
+├── design-docs/         # Design documents
+├── docs/
+│   ├── screenshots/     # README images
+│   └── workflow.md      # My build and commit workflow
 ├── update-sets/
-│   ├── csa-labs/                   # Update set XML from CSA labs and coding challenges
-│   └── cad-labs/                   # Update set XML from CAD labs and coding challenges
+│   ├── csa-labs/        # Update sets from the CSA labs and coding challenges
+│   └── cad-labs/        # Update sets from the CAD labs and coding challenges
+├── LICENSE
 └── README.md
 ```
 
 ## Branching strategy
+
 | Branch | Purpose |
 |--------|---------|
 | `main` | Stable, completed work only. Merged into at the end of each completed lab. |
 | `csa-labs` | Active branch for CSA phase labs (Labs 01-15). |
 | `cad-labs` | Active branch for CAD phase labs (Labs 16-35). |
 
-- All work is done in the phase branch and merged into `main` on lab completion.
+All work happens in the phase branch and merges into `main` when a lab is complete. My day-to-day steps are in [docs/workflow.md](docs/workflow.md).
 
+## Lab index (v1)
 
-## Work indexes
-### Lab index
 | Lab | Name | Phase | Status |
 |-----|------|-------|--------|
 | 01 | PDI activation, GitHub repo and update set workflow | CSA | Completed |
 | 02 | Scoped app creation and task table extension | CSA | Completed |
 | 03 | ACSC-aligned custom fields and persistent threat flag | CSA | Completed |
 | 04 | Custom form layout and views | CSA | Completed |
-| 05 | State model & UI Policies | CSA | Completed |
-| 06 | ACLs — restrict access to MIM and security roles | CSA | Completed |
+| 05 | State model and UI policies | CSA | Completed |
+| 06 | ACLs to restrict access to MIM and security roles | CSA | Completed |
 | 07 | IT portal access request form and approval workflow | CSA | Completed |
-| 08 | Notifications and persistent threat out-of-band alert | CSA | Completed |
+| 08 | Notifications and persistent threat email alert | CSA | Completed |
 | 09 | Form hygiene, inbound email actions and 'time to triage' SLA | CSA | Completed |
-| 10 | Reports and Cyber Incident dashboard | CSA | Completed |
+| 10 | Reports and cyber incident dashboard | CSA | Completed |
 | 11 | CMDB basics and linking affected CIs to incidents | CSA | Completed |
 | 12 | Import sets, transform maps and data sources | CSA | Completed |
 | 13 | Apply field register changes after design review | CSA | Completed |
 | 14 | Multiple choice conversion | CSA | Completed |
-| 15 | Scripted REST API - expose Cyber Incident endpoint | CSA | Completed |
-| 16 | Business rule — Data Classification contains checks | CAD | Completed |
+| 15 | Scripted REST API to expose a Cyber Incident endpoint | CSA | Completed |
+| 16 | Business rule for data classification checks | CAD | Completed |
 | 17 | Regulatory Notification Task table | CAD | Completed |
-| 18 | SOCI classification matrix-lookup | CAD | Completed |
+| 18 | SOCI classification matrix lookup | CAD | Completed |
 | 19a | Suggested/Confirmed approval pattern | CAD | Completed |
 | 19b | Legal approval for REG task | CAD | Completed |
 | 20 | ASD/SOCI notification trigger | CAD | Completed |
 | 21 | OAIC/NDB notification trigger | CAD | Completed |
 | 22a | Ransomware payment reporting trigger | CAD | Completed |
-| 22b | Application Properties — configurable SLA targets | CAD | Completed |
+| 22b | Application properties for configurable SLA targets | CAD | Completed |
 | 23 | SOCI warning/info banner | CAD | Completed |
-| 24 | State transition matrix — design and enforcement | CAD | Completed |
-| 25a | Closure validation + Record Integrity ACL | CAD | Completed |
+| 24 | State transition matrix design and enforcement | CAD | Completed |
+| 25a | Closure validation and record integrity ACL | CAD | Completed |
 | 25b | REG task SLA definitions | CAD | Completed |
-| 25b1 | Lab25b1 - ACL clean up and lock down REG when closed | CAD | Completed |
+| 25b1 | ACL clean-up and lock down REG when closed | CAD | Completed |
 | 25b2 | More REG task SLA definitions | CAD | Completed |
-| 25c | Scheduled Job — Notification SLA Status rollup sweep | CAD | Completed |
-| 26 | Configure Impact/Urgency/Priority | CAD | Completed |
-| 27 | Resolved / Resolved By — mandatory & auto-populate at Closure | CAD | Completed |
-| 28a | State transition UI Actions | CAD | Completed |
-| 28b | Special transition UI Actions | CAD | Completed |
-| 29 | REG task post approval workflow & create SOCI REG via Business Rule | CAD | Completed |
+| 25c | Scheduled job for notification SLA status rollup | CAD | Completed |
+| 26 | Configure impact, urgency and priority | CAD | Completed |
+| 27 | Resolved and Resolved by, mandatory and auto-populated at closure | CAD | Completed |
+| 28a | State transition UI actions | CAD | Completed |
+| 28b | Special transition UI actions | CAD | Completed |
+| 29 | REG task post-approval workflow and SOCI REG creation via business rule | CAD | Completed |
 | 30 | CYB categorisation review | CAD | Completed |
 | 31 | End-to-end application testing and go-live polish | CAD | Completed |
 
-- Completion of these labs brings the app to a point where it can be shared for the purpose of getting a junior developer role.
+## Roadmap
 
-### Release V2 - Lab index
+### v2 lab index
+
 | Lab | Name | Phase | Status |
 |-----|------|-------|--------|
-| 01 | Flow Designer — automated lifecycle workflow | CAD | Planned |
-| 02 | Script Includes & GlideRecord API (general CAD coverage) | CAD | Planned |
-| 03 | Playbook Designer — standard response playbook | CAD | Planned |
-| 04 | Playbook Designer — persistent threat branch | CAD | Planned |
-| 05 | End-to-end application testing (post-Playbooks) | CAD | Planned |
-| 06 | ATF — automated testing | CAD | Planned |
-| 07 | IntegrationHub — outbound notification spoke | CAD | Planned |
-| 08 | Delegated Development walkthrough (role-play) | CAD | Planned |
-| 09 | App Engine Studio polish | CAD | Planned |
+| 01 | Improve state transition UI Actions to prompt for mandatory data | CAD | Planned |
+| 02 | Flow Designer automated lifecycle workflow | CAD | Planned |
+| 03 | Script includes and GlideRecord API | CAD | Planned |
+| 04 | Playbook Designer standard response playbook | CAD | Planned |
+| 05 | Playbook Designer persistent threat branch, including disabling the previous persistent threat alert | CAD | Planned |
+| 06 | End-to-end application testing (post-Playbooks) | CAD | Planned |
+| 07 | ATF automated testing | CAD | Planned |
+| 08 | IntegrationHub outbound notification spoke | CAD | Planned |
+| 09 | Delegated Development walkthrough (role-play) | CAD | Planned |
+| 10 | App Engine Studio polish | CAD | Planned |
 
+### Other ideas for this app
 
-## Daily workflow overview
-### Project Build Sessions
-1. Apply Remote Changes in browser Studio before starting any session
-   - Browser Studio → Source Control → Apply Remote Changes
-2. Check active branch
-   - Labs 01-15 → csa-labs
-   - Labs 16-35 → cad-labs
-3. Do lab work in ServiceNow PDI as normal
-4. Export Update Set to VSCode folder
-5. Update README lab index
-6. git add . → git commit -m → git push
-7. Merge to `main` when lab is fully complete
- - git checkout main → git merge csa-labs → git push → git checkout csa-labs
-8. Commit application changes via ServiceNow Studio source control
-   - Browser Studio → Source Control → Commit Changes → confirm push to portfolio repo
-   - Merge dev branch to main via GitHub Pull Request (Compare & pull request)
+- SLA rebuild with one scripted SLA per stage: Investigate, Contain and Eradicate, Recover.
+- A way to return to the Investigation and Diagnosis state.
+- Persistent threat mode: a continuous top-of-form banner, suppressing standard notifications, and a manual/out-of-band communications plan in the playbook.
+- A dedicated Containment tab (Containment Method and Notes only), hidden by state.
+- Problem record auto-creation on incident closure.
+- A change advisory gate between containment and eradication.
+- A post-incident review table extending Task.
+- A GlideRecord utility script include for common queries.
+- Strip the Ref:MSG watermark from inbound email replies before writing to work notes.
+- Refine HTML email styling and wording once real outbound email is tested.
+- Improve the access request catalog item, e.g. ticket updates when group auto-assignment completes.
+- Set up real outbound email (SMTP) on the PDI.
 
+### Ideas for after this app
 
-## Project restore instructions
-1. Retrieve and commit update sets up to and including LAB06.
-2. Import the Lab06 Groups XML export file (Right-click Import XML on 'groups' list view). Then manually re-assign roles and groups for Major Incident Management and Cyber Security groups.
- - **Make sure groups have ITIL role too, especially Legal otherwise they will not be able to approve**
+- A Business Impact Assessment (BIA) application, with tasks for technical teams to record impacted services during a large-scale event. Later, BIA data and the type of data breached could adjust SLA targets dynamically.
+- IntegrationHub outbound spoke for ASD notification (SOCI Act).
 
+## Known issues
 
-### Reference standards
-- [ACSC — Australian Cyber Security Centre](https://www.cyber.gov.au)
-- [ACSC Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-- [ServiceNow Zurich release notes](https://docs.servicenow.com)
-
-
-### More ideas
-**CAD-phase scripting/architecture**
-- SLA rebuild: Investigate / Contain & Eradicate / Recover stages, scripted single-SLA-per-stage pattern.
-- A way to return to Investigation & Diagnosis state.
-- Persistent threat mode: continuous top-of-form banner and suppress other standard notifications once active.
-- Dedicated Containment tab (Containment Method + Notes only), properly hidden by state.
-- Cyber incident response playbook (Lab 22)
-- Problem record auto-creation on incident closure
-- Change advisory gate between containment and eradication phases
-- Post-incident review table extending task
-- GlideRecord utility Script Include for common queries
-- IntegrationHub spoke for ASD notification (SOCI Act)
-- After programmatic clearValue/setValue(''), re-selecting "Regulated/Essential Services" as the first choice
-   doesn't register. Flagged for review in polish pass.
-
-**Form/field hygiene**
-- Strip Ref:MSG watermark string from inbound email reply text before writing to work_notes
-- HTML email styling refinement / content wording review once real outbound email tested
-
-**Process/governance**
-- Improve catalog item/flow (e.g. ticket updates when group auto-assign completes)
-
-**Other**
-- PDI outbound email setup (real SMTP, inbox testing)
-
-
-### Ideas for after the Cyber Incident Application
-Standalone applications / major builds
- - BIA (Business Impact Assessment) application
-      - standalone application/table. Tasks for technical teams to populate impacted services during a large scale event. Eventually would link into teams to present the tasks.
-      - Possible future link: recovery/regulatory SLA complexity could eventually pull in BIA data and breached-data-type to dynamically adjust SLA targets.
- - IntegrationHub spoke for ASD/SOCI Act — formal integration build, not a simple script
-
-Cross-application extensions
- - Problem record auto-creation on closure
- - Change advisory gate between containment and eradication - enable easy change management
- - Post-incident review table — extending task, separate review processes
-
+- After a programmatic `clearValue`/`setValue('')`, re-selecting "Regulated/Essential Services" as the first choice doesn't register.
+- A before-update business rule using `setAbortAction(true)` on the REG task blocks list-view saves but not form saves. The workaround is a client script. Details are in the 8/9 learning below.
 
 ## Notable learnings
- - 1/6: Initially extended the Incident table. Decided to start again with task table extension, so CYB records did not appear in the Incident lists and views.
-  - 5/6: Testing recovery of the application via 'release instance and retrieve all update sets' found Lab02 - Scoped application did not capture creation of the application scope.
-      - This is by design.
-      - I have to manually publish an application to update set, from the application record after creating it - 'application record > publish to update set'.
-   - 5/6: Full restore up to Lab06 successful. After importing groups XML you still need to reassign the roles and group members.
-   - 6/6: VSCode has been configured with the ServiceNow Extension for VSCode and my custom application has been synced.
-      - Had to install JSNode to resolve npm install issue
-      - Cyber Incident Management/ folder contains PDI-synced app files
-         - Do not manually edit files in this folder — always edit in ServiceNow and sync down
-      - Always sync FROM ServiceNow into VSCode
-         - Never edit the .js files directly in VSCode and expect them to push back to ServiceNow.
-         - The sync is one direction: PDI → VSCode → GitHub.
- - 9/6: created a script version of 'auto-assign new tickets to Cyber Security' and then disabled it, for code practice. Then created a version using 'actions' which is left enabled (best practice). Both are captured in the update set.
- - 16/6: created a portfolio repo and linked the application to source control via ServiceNow Studio. The first commit created multiple 'historical' commits in my repo. ServiceNow then detected those as a discrepancy with my local version. Had to stash the changes I was working on and pull the historical commits before I could commit the new Lab update. ServiceNow also created a 'stash' local update set, even though I had already completed my update set and exported it. Found the 2 updates sets to be identical when examining the contents in VS Code. Has worked without issue since puling down the historical commits.
- - 18/6: Working through the process of analysing business process and creating design documents would reduce development friction. I'm basically making design decisions on the fly based on my previous work experience.
- - 18/6: Reports are captured in update sets, dashboards are not. Need to 'unload dashboard' to make sure it is captured in the same update set as the reports.
- - 21/6: Decided to create a proper design spec instead of 'winging it'. A lot of decisions were being made on the fly and I could see a lot of rework coming because of it. It was also a good oportunity to make sure the design aligned with ACSC specifications and other regulatory requirements.
- - 9/7: **Priority/Urgency phase-gating retired:** original design hid Urgency pre-Recovery and left Priority blank. Revised — both mandatory from Investigation & Diagnosis onward. Priority drives MIM engagement (P1/P2); a blank Priority in early phases meant MIM had no signal. Correctly assessed Priority is never downgraded — reporting integrity > real-time accuracy.
- - **Scripted REST External Default ACL:** controls endpoint access for authenticated callers; separate from table-level ACLs that control what the caller can do once through the gate.
- - 29/7: Field Messages must be set before clearing or setting values on an onChange script. Otherwise the field message is cleared on the value change.
- - 2/8: Full restore via source control and individual update sets completed successfully.
- - 6/8: Approval tasks need 'sysapproval' field set along with 'document_id' - otherwise they don't appear in related approval lists.
- - 8/8: UI Actions use the 'onClick' field to call a function. The function is defined in the script field. gsftSubmit saves the form and triggers server-side script.
- - 9/8: Field level and wildcard access controls can get messy if you don't think about it properly before putting them in.
-  - 25/8: SLA engine appears to run SLA creation scripts twice. Caused 'notificationDueTime' to be calculated in a way similar to +=, each time adding the SLA days onto itself. Fixed by creating a new GlideDateTime so notificationDueTime was a clone of the paymentTime's value, not a direct reference to it.
- - 25/8: Users need the ITIL role otherwise they can't edit fields inherited from task. Next time I would likely create the CYB table completely from scratch as there weren't that many inherited fields I ended up using.
- - 2/9: Complex SLAs are complicated to design. A simpler design is probably a better outcome.
- - 5/9: Decided to cap the project at lab29. It's a good place to put some time into polish, with the aim of actually showing it to work colleagues. Remaining labs will still be worked on, but as a version 2 release. The other objectives (passing the CAD exam & reinforcing CAD learning post exam) have been accomplished to a good extent. I feel like I could start a junior developer role and actually bring something to the table.
- - 8/9: Was unable to setAbortAction(true) from the REG task. The business rule works in list view, only fails in a form save. Root cause unidentified; ruled out condition logic, rule order, session context, table scope, and interference from other scripts. Implemented a client script that removed the state I was trying to abort save on, in specific scenarios.
- - 9/9: Simplified the design by aligning all REG creation to use the same workflows/business rules. I also removed a few extraneous reporting fields that seemed like duplication. Feels better.
+
+- **1/6:** I first extended the Incident table, then started again extending Task so CYB records didn't appear in incident lists and views.
+- **5/6:** Testing a restore ('release instance and retrieve all update sets') showed the Lab 02 update set didn't capture creating the application scope. This is by design. After creating an application you have to publish it to an update set manually from the application record.
+- **5/6:** Full restore using update sets worked. After importing the groups XML you still need to reassign roles and group members.
+- **9/6:** Wrote a script version of "auto-assign new tickets to Cyber Security" for coding practice, then disabled it and built the same thing with assignment actions, which is best practice.
+- **16/6:** Linking the app to source control through ServiceNow Studio created several 'historical' commits in the repo, which Studio then flagged as a discrepancy with my local version. I had to stash my work and pull those commits before I could commit the new lab. Studio also created a 'stash' update set, which turned out to be identical to the one I'd already exported. It has worked without issue since.
+- **18/6:** Analysing the business process and writing design documents first would reduce development friction. I was making design decisions on the fly from my work experience.
+- **18/6:** Reports are captured in update sets, dashboards aren't. You need to unload the dashboard so it lands in the same update set as the reports.
+- **21/6:** Decided to write a proper design spec instead of winging it. Too many decisions were being made on the fly and I could see rework coming. It was also a chance to check the design against ACSC guidance and the other regulatory requirements.
+- **9/7:** Retired priority and urgency phase-gating. The original design hid urgency until Recovery and left priority blank. Both are now mandatory from Investigation and Diagnosis onwards, because priority drives MIM engagement (P1/P2) and a blank priority meant MIM had no signal. A correctly assessed priority is never downgraded, because reporting integrity matters more than real-time accuracy.
+- **Scripted REST:** the External Default ACL controls endpoint access for authenticated callers. That's separate from the table-level ACLs that control what the caller can do once through the gate.
+- **29/7:** Field messages must be set before clearing or setting values in an onChange script. Otherwise the value change clears the message.
+- **2/8:** Full restore via source control and individual update sets completed successfully.
+- **6/8:** Approval tasks need the `sysapproval` field set as well as `document_id`, or they don't appear in related approval lists.
+- **8/8:** UI actions call a function from the onClick field, and the function is defined in the script field. `gsftSubmit` saves the form and triggers the server-side script.
+- **9/8:** Field-level and wildcard ACLs get messy if you don't plan them before building them.
+- **25/8:** The SLA engine appears to run SLA creation scripts twice. That made `notificationDueTime` behave like `+=`, adding the SLA days onto itself each time. Fixed by creating a new GlideDateTime so `notificationDueTime` is a copy of the payment time's value, not a reference to it.
+- **25/8:** Users need the ITIL role to edit fields inherited from Task. Next time I'd probably build the CYB table from scratch, since I didn't end up using many inherited fields.
+- **2/9:** Complex SLAs are hard to design. A simpler design is probably the better outcome.
+- **5/9:** Capped v1 at Lab 29 to spend time on polish before showing it to work colleagues. The remaining labs moved to v2. The other goals, passing the CAD exam and reinforcing what I'd learned, were met.
+- **8/9:** Couldn't get `setAbortAction(true)` to work from the REG task. The business rule works in list view but not on a form save. I ruled out condition logic, rule order, session context, table scope and interference from other scripts, but didn't find the root cause. I added a client script that removes the state the user was trying to save in specific scenarios.
+- **9/9:** Simplified the design by making all REG task creation use the same workflows and business rules, and removed a few reporting fields that duplicated others. It feels better.
+
+## Reference standards
+
+- [ACSC, Australian Cyber Security Centre](https://www.cyber.gov.au)
+- [ACSC Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+- [ServiceNow Zurich release notes](https://docs.servicenow.com)
