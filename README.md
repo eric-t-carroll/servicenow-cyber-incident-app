@@ -194,19 +194,18 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 - **18/6:** Analysing the business process and writing design documents first would reduce development friction. I was making design decisions on the fly from my work experience.
 - **18/6:** Reports are captured in update sets, dashboards aren't. You need to unload the dashboard so it lands in the same update set as the reports.
 - **21/6:** Decided to write a proper design spec instead of winging it. Too many decisions were being made on the fly and I could see rework coming. It was also a chance to check the design against ACSC guidance and the other regulatory requirements.
-- **9/7:** Retired priority and urgency phase-gating. The original design hid urgency until Recovery and left priority blank. Both are now mandatory from Investigation and Diagnosis onwards, because priority drives MIM engagement (P1/P2) and a blank priority meant MIM had no signal. A correctly assessed priority is never downgraded, because reporting integrity matters more than real-time accuracy.
-- **Scripted REST:** the External Default ACL controls endpoint access for authenticated callers. That's separate from the table-level ACLs that control what the caller can do once through the gate.
+- **9/7:** Retired priority and urgency phase-gating. The original design hid urgency until Recovery and left priority blank. Both are now mandatory from Investigation and Diagnosis onwards, because priority drives MIM engagement (P1/P2) and a blank priority meant MIM had no signal. A correctly assessed priority is never downgraded, so that post incident reporting remains accurate.
 - **29/7:** Field messages must be set before clearing or setting values in an onChange script. Otherwise the value change clears the message.
 - **2/8:** Full restore via source control and individual update sets completed successfully.
 - **6/8:** Approval tasks need the `sysapproval` field set as well as `document_id`, or they don't appear in related approval lists.
 - **8/8:** UI actions call a function from the onClick field, and the function is defined in the script field. `gsftSubmit` saves the form and triggers the server-side script.
 - **9/8:** Field-level and wildcard ACLs get messy if you don't plan them before building them.
-- **25/8:** The SLA engine appears to run SLA creation scripts twice. That made `notificationDueTime` behave like `+=`, adding the SLA days onto itself each time. Fixed by creating a new GlideDateTime so `notificationDueTime` is a copy of the payment time's value, not a reference to it.
-- **25/8:** Users need the ITIL role to edit fields inherited from Task. Next time I'd build the CYB table from scratch, since I didn't end up using many inherited fields.
+- **25/8:** The SLA engine appears to run SLA creation scripts twice. That made `notificationDueTime` behave like `+=`, adding the SLA days onto itself each time. Fixed by creating a new GlideDateTime so `notificationDueTime` is a copy of the ransomware payment time's value, not a reference to the original variable.
+- **25/8:** Users need the ITIL role to edit fields inherited from Task. Next time I'd build the CYB table from scratch. I didn't end up using many inherited fields anyway - would be easy to recreate what's necessary.
 - **2/9:** Complex SLAs are hard to design. A simpler design is probably the better outcome.
-- **5/9:** Capped v1 at Lab 29 to spend time on polish before showing it to work colleagues. The remaining labs moved to v2. The other goals, passing the CAD exam and reinforcing what I'd learned, were met.
-- **8/9:** Couldn't get `setAbortAction(true)` to work from the REG task. The business rule works in list view but not on a form save. I ruled out condition logic, rule order, session context, table scope and interference from other scripts, but didn't find the root cause. I added a client script that removes the state the user was trying to save in specific scenarios.
-- **9/9:** Simplified the design by making all REG task creation use the same workflows and business rules, and removed a few reporting fields that duplicated others. It feels better.
+- **5/9:** Capped v1 at Lab 29 to spend time on polish before showing it to work colleagues. The remaining labs moved to v2. Passed my CAD exam.
+- **8/9:** Couldn't get `setAbortAction(true)` to work from the REG task. The business rule works in list view but not on a form save. I ruled out condition logic, rule order, session context, table scope and interference from other scripts, but didn't find the root cause. I added a client script that removes the state the user was trying to save as, in specific scenarios.
+- **9/9:** Simplified the design by making all REG task creation use the same workflows and business rules, and removed a few reporting fields that duplicated others. It feels like a better user experience.
 
 ## Reference standards
 
