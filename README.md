@@ -45,7 +45,7 @@ The cyber incident dashboard.
 - **Locked-down access.** ACLs restrict the app to Major Incident Management, Cyber Analyst roles and Legal roles. Closed records are locked. People request access through an IT portal catalog item with an approval step. Once approved, the requestor is automatically added to the group they requested access to.
 - **Persistent threat flag.** The flag drives the Open Persistent Threats report and currently triggers an email alert. That alert is a leftover from an early lab and will be removed. A persistent threat means normal communication channels can't be trusted, so v2 will replace it with a playbook that stops standard notifications and switches the response to a manual communications plan. The flag is hidden on the form until then.
 
-The app also has reports and a dashboard, affected CIs linked from the CMDB, inbound email actions that write replies to work notes, and impact, urgency and priority configuration.
+The app also has reports and a dashboard, affected CIs linked from the CMDB, email notifications, and impact, urgency and priority configuration.
 
 ## Installing
 
@@ -67,9 +67,9 @@ The app also has reports and a dashboard, affected CIs linked from the CMDB, inb
 
 ## AI-assisted development
 
-I built this with Claude as a technical coach and lab guide. The project ideas were mine. Claude gave step-by-step lab instructions, design recommendations and answers to technical questions. I made the decisions, and I accepted, rejected or changed its advice based on my experience as a process lead and on testing.
+I built this with Claude as a technical coach and lab guide. The project ideas and overall design are mine. Initially, Claude gave step-by-step lab instructions, design recommendations and answers to technical questions. I made the decisions, and I accepted, rejected or changed its advice based on my experience as a process lead and on testing. As I moved through the labs I began to work more independently, needing less step by step instructions and moving towards more general guidance for each lab.
 
-For most labs I wrote the code first, and Claude helped with questions and hints when I got stuck, sharing code only when I asked. Debugging in the later labs was closer to pair programming, with Claude helping in real time. I've tested and understand everything committed here.
+For all scripting I wrote the code first, and Claude helped with questions and hints when I got stuck, sharing code only when I asked. For some challenging bugs that occurred later in the build debugging was closer to pair programming, with Claude helping in real time. I've tested and understand everything committed here.
 
 I leaned on Claude heavily to draft the design documents. I started out just wanting hands-on ServiceNow experience and didn't realise how much design documentation a build needs. Now I do, and I'll write my own for future projects.
 
@@ -186,7 +186,7 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 
 ## Notable learnings
 
-- **1/6:** I first extended the Incident table, then started again extending Task so CYB records didn't appear in incident lists and views.
+- **1/6:** I first extended the Incident table, then started again extending Task so CYB records didn't appear in incident lists and views. I'd do it as a fresh table from scratch next time, for full isolation.
 - **5/6:** Testing a restore ('release instance and retrieve all update sets') showed the Lab 02 update set didn't capture creating the application scope. This is by design. After creating an application you have to publish it to an update set manually from the application record.
 - **5/6:** Full restore using update sets worked. After importing the groups XML you still need to reassign roles and group members.
 - **9/6:** Wrote a script version of "auto-assign new tickets to Cyber Security" for coding practice, then disabled it and built the same thing with assignment actions, which is best practice.
@@ -202,7 +202,7 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 - **8/8:** UI actions call a function from the onClick field, and the function is defined in the script field. `gsftSubmit` saves the form and triggers the server-side script.
 - **9/8:** Field-level and wildcard ACLs get messy if you don't plan them before building them.
 - **25/8:** The SLA engine appears to run SLA creation scripts twice. That made `notificationDueTime` behave like `+=`, adding the SLA days onto itself each time. Fixed by creating a new GlideDateTime so `notificationDueTime` is a copy of the payment time's value, not a reference to it.
-- **25/8:** Users need the ITIL role to edit fields inherited from Task. Next time I'd probably build the CYB table from scratch, since I didn't end up using many inherited fields.
+- **25/8:** Users need the ITIL role to edit fields inherited from Task. Next time I'd build the CYB table from scratch, since I didn't end up using many inherited fields.
 - **2/9:** Complex SLAs are hard to design. A simpler design is probably the better outcome.
 - **5/9:** Capped v1 at Lab 29 to spend time on polish before showing it to work colleagues. The remaining labs moved to v2. The other goals, passing the CAD exam and reinforcing what I'd learned, were met.
 - **8/9:** Couldn't get `setAbortAction(true)` to work from the REG task. The business rule works in list view but not on a form save. I ruled out condition logic, rule order, session context, table scope and interference from other scripts, but didn't find the root cause. I added a client script that removes the state the user was trying to save in specific scenarios.
