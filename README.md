@@ -84,9 +84,8 @@ The app also has reports and a dashboard, affected CIs linked from the CMDB, ema
 4. Give the same groups the ITIL role, including Legal. Without it, users can't edit fields inherited from Task and Legal can't approve notification tasks.
 5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 AI-generated incidents spread over a year, for reporting. The data is fictional.
    - The staging table and the "Sample Cyber Incidents" transform map come with the app (Studio import), or with update set Lab33 if installing from update sets.
-   - Go to **System Import Sets > Load Data**, select **Existing table** and choose **Cyber Incident Sample Data**. Set Source to **File**, choose the xlsx, set **Sheet number** to `1` and **Header row** to `1`, then **Submit**.
-   - On the next page, click **Run Transform**, select **Sample Cyber Incidents**, then **Transform**. Expect 77 inserts and 0 errors.
-   - The map runs with business rules off, so the historical records keep their closed states and don't create notification tasks, SLAs or alerts.
+   - Go to System Import Sets > Load Data > select `Existing table` and choose `Cyber Incident Sample Data`. Set Source to `File` > choose the xlsx > set `Sheet number` to 1 and `Header row` to 1 > `Submit`.
+   - Click `Run Transform` > choose `Sample Cyber Incidents` > click `Transform`. Expect 77 inserts.
 
 ## Built with
 
