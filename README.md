@@ -80,9 +80,13 @@ The app also has reports and a dashboard, affected CIs linked from the CMDB, ema
 3. Add roles to the Major Incident Management, Cyber Security and Legal groups.
    - Cyber Security group > add role `x_1776078_cyber_0.security_analyst`.
    - MIM group > add role `x_1776078_cyber_0.mim_user`.
-   - Legal group > add role **28/10 found cyber incident Legal role missing from update sets - fix in progress**
+   - Legal group > add role `x_1776078_cyber_0.legal`.
 4. Give the same groups the ITIL role, including Legal. Without it, users can't edit fields inherited from Task and Legal can't approve notification tasks.
-5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 AI-generated incidents spread over a year for reporting. Load it into the import set table with System Import Sets → Load Data, then run the "Sample Cyber Incidents" transform map. The map runs with business rules off, so the historical records keep their closed states and don't create notification tasks, SLAs or alerts. The data is fictional.
+5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 AI-generated incidents spread over a year, for reporting. The data is fictional.
+   - The staging table and the "Sample Cyber Incidents" transform map come with the app (Studio import), or with update set Lab33 if installing from update sets.
+   - Go to **System Import Sets > Load Data**, select **Existing table** and choose **Cyber Incident Sample Data**. Set Source to **File**, choose the xlsx, set **Sheet number** to `1` and **Header row** to `1`, then **Submit**.
+   - On the next page, click **Run Transform**, select **Sample Cyber Incidents**, then **Transform**. Expect 77 inserts and 0 errors.
+   - The map runs with business rules off, so the historical records keep their closed states and don't create notification tasks, SLAs or alerts.
 
 ## Built with
 
@@ -169,6 +173,8 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 | 29 | REG task post-approval workflow and SOCI REG creation via business rule | CAD | Completed |
 | 30 | CYB categorisation review | CAD | Completed |
 | 31 | End-to-end application testing and go-live polish | CAD | Completed |
+| 32 | Captured Legal role for update set gap | CAD | Completed |
+| 33 | Sample Incidents loader, report and dashboard updates | CAD | Completed |
 
 ## Roadmap
 
@@ -232,7 +238,7 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 - **5/9:** Capped v1 at Lab 29 to spend time on polish before showing it to work colleagues. The remaining labs moved to v2. Passed my CAD exam.
 - **8/9:** Couldn't get `setAbortAction(true)` to work from the REG task. The business rule works in list view but not on a form save. I ruled out condition logic, rule order, session context, table scope and interference from other scripts, but didn't find the root cause. I added a client script that removes the state the user was trying to save as, in specific scenarios.
 - **9/9:** Simplified the design by making all REG task creation use the same workflows and business rules, and removed a few reporting fields that duplicated others. It feels like a better user experience.
-- **28/10:** Tested a full restore from Studio commits and update sets. It worked, but found the Legal role missing from the update sets (fix in progress). Consistent update set naming would make it much easier to see which one was committed last.
+- **28/10:** Tested a full restore from Studio commits and update sets. It worked, but found the Legal role missing from the update sets (since fixed via update set Lab32). Consistent update set naming would make it much easier to see which one was committed last.
 
 ## Reference standards
 

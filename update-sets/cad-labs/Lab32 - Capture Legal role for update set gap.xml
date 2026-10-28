@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-10-28 05:50:37">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<application_name>Cyber Incident Management</application_name>
+<application_scope>x_1776078_cyber_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Lab32 - Capture Legal role for update set gap</description>
+<inserted/>
+<name>Lab32 - Capture Legal role for update set gap</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>859b8e4893549310036cf889dd03d69d</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-28 05:50:36</sys_created_on>
+<sys_id>45fbca8893549310036cf889dd03d606</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-28 05:50:36</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_7803ab5d836a831044779cb6feaad316</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Cyber incident management application role for the Legal team to provide review and aprove access for REG tasks.</description><elevated_privilege>false</elevated_privilege><federated_id>3Po47q1jXCe/kCvX3Aa4Ejm5UGNR2AzCeirYfgbWho8=</federated_id><grantable>true</grantable><includes_roles/><name>x_1776078_cyber_0.legal</name><scoped_admin>false</scoped_admin><suffix>legal</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-06 09:33:42</sys_created_on><sys_id>7803ab5d836a831044779cb6feaad316</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1776078_cyber_0.legal</sys_name><sys_package display_value="Cyber Incident Management" source="x_1776078_cyber_0">9c0eda15c31d03102d84f44ed4013148</sys_package><sys_policy/><sys_scope display_value="Cyber Incident Management">9c0eda15c31d03102d84f44ed4013148</sys_scope><sys_update_name>sys_user_role_7803ab5d836a831044779cb6feaad316</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-28 05:50:09</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>321041665</payload_hash>
+<remote_update_set display_value="Lab32 - Capture Legal role for update set gap">45fbca8893549310036cf889dd03d606</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-28 05:50:36</sys_created_on>
+<sys_id>0dfbca8893549310036cf889dd03d606</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1810f0e4b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-28 05:50:36</sys_updated_on>
+<table/>
+<target_name>x_1776078_cyber_0.legal</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>66dbc688a3549310131e998ea2eb4955</update_guid>
+<update_guid_history>66dbc688a3549310131e998ea2eb4955:321041665,83a6ce4cf0149310172cee3f570c4b6d:274674198</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
