@@ -21,12 +21,12 @@ Both notification tasks are waiting on legal approval.
 
 <img src="docs/screenshots/regulatory-task-approval.png" alt="Regulatory notification task with legal approval" width="700">
 
-A regulatory notification task with its legal approval..
+A regulatory notification task with its legal approval.
 
 
 <img src="docs/screenshots/regulatory-task-SLA.png" alt="Regulatory notification task SLA in progress" width="700">
 
-..and SLA.
+Notification task SLAs in progress.
 
 
 <img src="docs/screenshots/cyber-dashboard.png" alt="Cyber incident dashboard" width="700">
@@ -38,7 +38,7 @@ The cyber incident dashboard.
 
 - **Extends Task, not Incident.** Keeps cyber records out of the standard incident lists and views. It also keeps the core Incident table free of customisations that could impact future platform upgrades. In hindsight, I would create a custom table from scratch for this application if I did it again, so the records aren't mixed in with task table views.
 - **Phase-gated lifecycle.** Form sections follow the cyber incident lifecycle: Investigation and Diagnosis, Containment, Eradication and Recovery. A state transition matrix is enforced server-side, with a UI action for each allowed transition. These UI actions are currently a bit 'clunky' and need an uplift to prompt the user for mandatory data before attempting to move to the next state.
-- **Regulatory notifications are their own tasks.** A Regulatory Notification Task table holds SOCI Act (ASD), Privacy Act notifiable data breach (OAIC) and ransomware payment reporting tasks. Business rules create them from the incident's impact and data classification, using a SOCI classification matrix lookup.
+- **Regulatory notifications are their own tasks.** A Regulatory Notification Task table holds SOCI Act (ASD), Privacy Act notifiable data breach (OAIC) and ransomware payment reporting tasks. Each notification has an assignee, SLA and legal approval.
 - **Suggested, then confirmed by Legal.** A matrix suggests the SOCI classification from impact and data classification, and the notification task is created automatically. Legal reviews it and can change the classification before approving, because the classification sets the regulatory SLA.
 - **SLAs with configurable targets.** Notification SLAs have documented reset, stop and cancel behaviour. Targets live in application properties which can be modified easily by a Cyber Incident Admin, and a scheduled job rolls up SLA status.
 - **Priority never goes down.** Priority is mandatory from investigation onwards because it decides whether Major Incident Management gets involved. Once assessed, it isn't downgraded, so post incident reporting captures what really happened.
@@ -49,14 +49,40 @@ The app also has reports and a dashboard, affected CIs linked from the CMDB, ema
 
 ## Installing
 
-**From source control.** In ServiceNow Studio, import the application from the [Studio repo](https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app.git).
+**Please install this to a sandbox PDI, so as to avoid any potential impacts to production or in development work**
 
-**From update sets.**
-1. Apply the update sets in lab order, starting with `update-sets/csa-labs` and then `update-sets/cad-labs`.
-2. Import the groups XML from `data-exports` (right-click, Import XML on the groups list view).
-3. Reassign roles and members for the Major Incident Management and Cyber Security groups.
-4. Give the groups the ITIL role, including Legal. Without it, users can't edit fields inherited from Task and Legal can't approve notification tasks.
-5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 generated incidents spread over a year, so the dashboard has something to show. Load it into the import set table with System Import Sets → Load Data, then run the "Sample Cyber Incidents" transform map. The map runs with business rules off, so the historical records keep their closed states and don't create notification tasks, SLAs or alerts. The data is fictional.
+**From source control - Recommended Easy Mode.**
+1. In ServiceNow Studio, import the application from the [Studio repo](https://github.com/eric-t-carroll/servicenow-studio-cyb-inc-app).
+2. Go to section **Importing Groups, sample records and configure roles** below.
+
+**From update sets - Warning Hard Mode! This method is time consuming.**
+
+**Before starting, see Update set retrieval known errors below.**
+1. Copy the update set and import XML files to your local machine by running `git clone https://github.com/eric-t-carroll/servicenow-updateset-cyb-inc-app` in your target folder.
+   - Update sets are numbered in order, starting with `update-sets/csa-labs` and then `update-sets/cad-labs`.
+2. Import one update set at a time in a ServiceNow instance using the same release documented in the **Built with** section below.
+   - In ServiceNow > `Retrieved Update Sets` from the menu > click `Import Update Set from XML`.
+   - Then click on the retrieved update set > click `Preview Update Set` > click `Commit Update Set`.
+   - Repeat through all update sets. If you see any issues preventing update set import, stop and please let me know. Sorting update sets by `Loaded` makes it easier to tell where you are up to.
+3. Go to section **Importing Groups, sample records and configure roles** below.
+
+**Update set retrieval known errors:**
+- Lab03, Lab07.3, Lab18 & Lab26 will contain a warning about deleting existing records. This is due to unwanted fields being deleted in the cyber incident app as a part of my build work. This is okay to proceed with the warning if there are no historical records in the app yet - next time I will retire fields instead of deleting.
+- Lab14, Lab18, Lab19, Lab25, Lab25b, Lab25b1, Lab25b2, Lab25c, Lab27, Lab28a, Lab28b & Lab30 contain warnings 'Found a local update that is newer than this one'. This is due to restore sequence timing, where the instance contains a version of the record that is newer than what the update set contains. Okay to 'Accept remote update' and continue. 
+- Lab17 & Lab25b both contain errors for remote update 'sys_properties_63f1a53377451110cd1b756f1b5a9991'. This error occurs when a Global system property is accidentally captured in my update, because a background job ran while I was creating the update set. Choose 'Skip remote update' for both errors and continue.
+- Lab25b contains an error for 'pwd_process_4ff0c881bf220100710071a7bf0739fa' which occurred due to a password reset that occurred in global while working on my customer application. Okay to 'skip remote update' and proceed.
+- Lab30 contains an error for 'sys_choice_x_1776078_cyber_0_cyber_incident_account_compromise' a cyber incident custom field was deleted in global scope. okay to choose 'skip remote update' and proceed.
+
+
+**Importing Groups, sample records and configure roles**
+1. In System Security > Groups - Import the groups XML from `data-exports` (right-click, Import XML on the groups list view).
+2. Browse to `sys_user_grmember.list` in the main menu search. Import the group memberships file (right-click header, Import XML).
+3. Add roles to the Major Incident Management, Cyber Security and Legal groups.
+   - Cyber Security group > add role `x_1776078_cyber_0.security_analyst`.
+   - MIM group > add role `x_1776078_cyber_0.mim_user`.
+   - Legal group > add role **28/10 found cyber incident Legal role missing from update sets - fix in progress**
+4. Give the same groups the ITIL role, including Legal. Without it, users can't edit fields inherited from Task and Legal can't approve notification tasks.
+5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 AI-generated incidents spread over a year for reporting. Load it into the import set table with System Import Sets → Load Data, then run the "Sample Cyber Incidents" transform map. The map runs with business rules off, so the historical records keep their closed states and don't create notification tasks, SLAs or alerts. The data is fictional.
 
 ## Built with
 
@@ -78,7 +104,7 @@ The most useful part was having a technical sounding board. Multiple regulatory 
 ## Repository structure
 
 ```
-servicenow-cyber-incident-app/
+servicenow-updateset-cyb-inc-app/
 ├── data-exports/        # User and group XML exports. Also contains sample incident data
 ├── design-docs/         # Design documents
 ├── docs/
@@ -163,11 +189,11 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 
 ### Other ideas for this app
 
-- SLA rebuild with one scripted SLA per stage: Investigate, Contain and Eradicate, Recover.
+- SLA rebuild with one scripted SLA per stage: Investigate, Contain, Eradicate and Recover.
 - A way to return to the Investigation and Diagnosis state.
 - Persistent threat mode: a continuous top-of-form banner, suppressing standard notifications, and a manual/out-of-band communications plan in the playbook.
 - Problem record auto-creation on incident closure.
-- A change advisory gate between containment, eradication, recovery (where required).
+- A change advisory gate between containment, eradication and recovery (where required).
 - A post-incident review table extending Task.
 - A GlideRecord utility script include for common queries.
 - Refine HTML email styling and wording once real outbound email is tested.
@@ -206,6 +232,7 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 - **5/9:** Capped v1 at Lab 29 to spend time on polish before showing it to work colleagues. The remaining labs moved to v2. Passed my CAD exam.
 - **8/9:** Couldn't get `setAbortAction(true)` to work from the REG task. The business rule works in list view but not on a form save. I ruled out condition logic, rule order, session context, table scope and interference from other scripts, but didn't find the root cause. I added a client script that removes the state the user was trying to save as, in specific scenarios.
 - **9/9:** Simplified the design by making all REG task creation use the same workflows and business rules, and removed a few reporting fields that duplicated others. It feels like a better user experience.
+- **28/10:** Tested a full restore from Studio commits and update sets. It worked, but found the Legal role missing from the update sets (fix in progress). Consistent update set naming would make it much easier to see which one was committed last.
 
 ## Reference standards
 
