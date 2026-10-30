@@ -2,7 +2,7 @@
 
 A custom scoped ServiceNow application for running cyber incidents in line with Australian Cyber Security Centre (ACSC) guidance. It tracks an incident through containment, eradication and recovery, and creates notification tasks required to meet the regulatory reporting obligations of the SOCI Act, the Cyber Security Act (ransomware payments) and the Privacy Act (notifiable data breaches).
 
-I built it on a personal developer instance as hands-on practice for the ServiceNow CSA and CAD certifications, and I've since passed both. My day job is an IT Service Management Process Lead for Major Incident and Problem Management, so the process design comes from my many years of experience in ITIL roles.
+I built it on a personal developer instance as hands-on practice for the ServiceNow CSA and CAD certifications. My day job is an IT Service Management Process Lead for Major Incident and Problem Management, so the process design comes from my many years of experience in ITIL roles.
 
 **Status.** v1.0 is complete (Labs 01 to 31). v2 is planned, see the roadmap below.
 
@@ -69,23 +69,22 @@ The app also has reports and a dashboard, affected CIs linked from the CMDB, ema
 **Update set retrieval known errors:**
 - Lab03, Lab07.3, Lab18 & Lab26 will contain a warning about deleting existing records. This is due to unwanted fields being deleted in the cyber incident app as a part of my build work. This is okay to proceed with the warning if there are no historical records in the app yet - next time I will retire fields instead of deleting.
 - Lab14, Lab18, Lab19, Lab25, Lab25b, Lab25b1, Lab25b2, Lab25c, Lab27, Lab28a, Lab28b & Lab30 contain warnings 'Found a local update that is newer than this one'. This is due to restore sequence timing, where the instance contains a version of the record that is newer than what the update set contains. Okay to 'Accept remote update' and continue. 
-- Lab17 & Lab25b both contain errors for remote update 'sys_properties_63f1a53377451110cd1b756f1b5a9991'. This error occurs when a Global system property is accidentally captured in my update, because a background job ran while I was creating the update set. Choose 'Skip remote update' for both errors and continue.
+- Lab17 & Lab25b both contain errors for remote update 'sys_properties_63f1a53377451110cd1b756f1b5a9991'. This error occurs when a Global system property is accidentally captured in my update (`last update time`), because a background job ran while I was creating the update set. Choose 'Skip remote update' for both errors and continue.
 - Lab25b contains an error for 'pwd_process_4ff0c881bf220100710071a7bf0739fa' which occurred due to a password reset that occurred in global while working on my customer application. Okay to 'skip remote update' and proceed.
 - Lab30 contains an error for 'sys_choice_x_1776078_cyber_0_cyber_incident_account_compromise' a cyber incident custom field was deleted in global scope. okay to choose 'skip remote update' and proceed.
 
 
 **Importing Groups, sample records and configure roles**
-1. In System Security > Groups - Import the groups XML from `data-exports` (right-click, Import XML on the groups list view).
-2. Browse to `sys_user_grmember.list` in the main menu search. Import the group memberships file (right-click header, Import XML).
-3. Add roles to the Major Incident Management, Cyber Security and Legal groups.
-   - Cyber Security group > add role `x_1776078_cyber_0.security_analyst`.
-   - MIM group > add role `x_1776078_cyber_0.mim_user`.
-   - Legal group > add role `x_1776078_cyber_0.legal`.
-4. Give the same groups the ITIL role, including Legal. Without it, users can't edit fields inherited from Task and Legal can't approve notification tasks.
-5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 AI-generated incidents spread over a year, for reporting. The data is fictional.
-   - The staging table and the "Sample Cyber Incidents" transform map come with the app (Studio import), or with update set Lab33 if installing from update sets.
-   - Go to System Import Sets > Load Data > select `Existing table` and choose `Cyber Incident Sample Data`. Set Source to `File` > choose the xlsx > set `Sheet number` to 1 and `Header row` to 1 > `Submit`.
-   - Click `Run Transform` > choose `Sample Cyber Incidents` > click `Transform`. Expect 77 inserts.
+1. In System Security > Groups - Import the file `Lab19 - Group XML export.xml` from `data-exports` (right-click, Import XML on the groups list view).
+2. Browse to `sys_user_grmember.list` in the main menu search. Import the `Lab19 - Group memberships XML export.xml` file (right-click header, Import XML).
+3. Add the following roles to these groups.
+   - Cyber Security group > add role `ITIL` and `x_1776078_cyber_0.security_analyst`.
+   - MIM group > add role `ITIL` and `x_1776078_cyber_0.mim_user`.
+   - Legal group > add role `ITIL` and `x_1776078_cyber_0.legal`.
+5. **Optional sample data.** `data-exports/cyber_incident_sample_data.xlsx` holds 77 AI-generated incidents spread over a year, for reporting demonstration.
+   - The staging table `x_1776078_cyber_0_cyber_incidents_import` and transform map `Cyber Incidents Import` come with the app (Studio import), or with update set Lab33 if installing from update sets.
+   - Go to System Import Sets > Load Data > select `Existing table` and choose `x_1776078_cyber_0_cyber_incidents_import`. Set Source to `File` > choose the `cyber_incident_sample_data.xlsx` file > set `Sheet number` to 1 and `Header row` to 1 > `Submit`.
+   - Click `Run Transform` > choose the existing `Sample Cyber Incidents` transform map > click `Transform`.
 
 ## Built with
 
@@ -96,7 +95,7 @@ The app also has reports and a dashboard, affected CIs linked from the CMDB, ema
 
 ## AI-assisted development
 
-I built this with Claude as a technical coach and lab guide. The project ideas and overall design are mine. Initially, Claude gave step-by-step lab instructions, design recommendations and answers to technical questions. I made the decisions, and I accepted, rejected or changed its advice based on my experience as a process lead and on testing. As I moved through the labs I began to work more independently, needing less step by step instructions and moving towards more general guidance for each lab.
+I built this with Claude as a technical coach and lab guide. The project ideas and overall design are mine. Initially, Claude gave step-by-step lab instructions, design recommendations and answers to technical questions. I made the decisions based on my experience as a process lead and testing. As I moved through the labs I began to work more independently, needing less step by step instructions and moving towards more general guidance for each lab.
 
 For all scripting I wrote the code first, and Claude helped with questions and hints when I got stuck, sharing code only when I asked. For some challenging bugs that occurred later in the build debugging was closer to pair programming, with Claude helping in real time. I've tested and understand everything committed here.
 
@@ -189,7 +188,7 @@ All work happens in the phase branch and merges into `main` when a lab is comple
 | 06 | End-to-end application testing (post-Playbooks) | CAD | Planned |
 | 07 | ATF automated testing | CAD | Planned |
 | 08 | IntegrationHub outbound notification spoke | CAD | Planned |
-| 09 | Delegated Development walkthrough (role-play) | CAD | Planned |
+| 09 | Delegated Development walkthrough | CAD | Planned |
 | 10 | App Engine Studio polish | CAD | Planned |
 
 ### Other ideas for this app
